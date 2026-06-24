@@ -1220,24 +1220,24 @@ function Index() {
 
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/60 mb-6 r-rise">
-              Bắt đầu một dự án
+              Gửi dự án cho Lotus
             </p>
             <h3 className="font-serif text-5xl md:text-7xl leading-[1.02] italic font-light r-rise r-d1 text-pretty">
-              Hệ sơn phù hợp <br />
-              <span className="not-italic font-normal">cho từng vật liệu của bạn.</span>
+              Gửi ảnh hạng mục. <br />
+              <span className="not-italic font-normal">Lotus đề xuất đúng hệ sơn.</span>
             </h3>
             <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-relaxed r-rise r-d2">
-              Gửi yêu cầu qua Zalo để đội kỹ thuật Lotus đề xuất hệ phủ, định mức và báo giá
-              theo dự án. Phản hồi trong 24 giờ.
+              Nhắn Zalo kèm ảnh bề mặt, vật liệu nền, yêu cầu hoàn thiện và quy mô công việc.
+              Lotus tư vấn hệ phù hợp và hướng xử lý rõ ràng — phản hồi trong 24 giờ làm việc.
             </p>
 
             {/* Project intake — what to send */}
             <ul className="mt-12 max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8 text-left r-rise r-d3">
               {[
-                { k: "01", v: "Ảnh công trình" },
+                { k: "01", v: "Ảnh hạng mục" },
                 { k: "02", v: "Vật liệu nền" },
-                { k: "03", v: "Hoàn thiện mong muốn" },
-                { k: "04", v: "Yêu cầu độ bền · môi trường" },
+                { k: "03", v: "Yêu cầu hoàn thiện" },
+                { k: "04", v: "Diện tích · điều kiện sử dụng" },
               ].map((t) => (
                 <li key={t.k} className="border-t border-clay/20 pt-4">
                   <div className="font-mono text-[10px] tracking-[0.32em] uppercase text-clay/45">
