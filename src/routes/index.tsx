@@ -355,33 +355,33 @@ const CATEGORIES: Category[] = [
 const MOOD: Record<string, { crop: string; pause: string; pauseSub: string }> = {
   wood: {
     crop: "center 38%",
-    pause: "Vân gỗ, không phai.",
-    pauseSub: "Lớp phủ thấm vào thớ — bảo vệ từ chiều sâu.",
+    pause: "Đều màu khi chạy số lượng lớn.",
+    pauseSub: "Hệ ổn định cho xưởng nội thất và nhà máy gỗ xuất khẩu.",
   },
   metal: {
     crop: "center 28%",
-    pause: "Thép giữ hình.",
-    pauseSub: "Lớp epoxy giàu kẽm chống ăn mòn từ nền.",
+    pause: "Đúng hệ — đúng môi trường.",
+    pauseSub: "Chọn cấp chống ăn mòn theo công trình thật, không theo cảm tính.",
   },
   "metal-wood": {
     crop: "65% 55%",
-    pause: "Kim loại, học vân gỗ.",
-    pauseSub: "Vẻ ấm của gỗ trên nền nhôm và thép.",
+    pause: "Đẹp khi bàn giao. Bền sau một mùa nắng.",
+    pauseSub: "Hệ giả gỗ trên kim loại cho nhà thầu cần giảm rủi ro làm lại.",
   },
   "cement-wood": {
     crop: "center 68%",
-    pause: "Cement, mang chiều sâu của gỗ.",
-    pauseSub: "Bền nước, không cong vênh, vân thật.",
+    pause: "Chọn đúng hệ ngay từ đầu.",
+    pauseSub: "Tránh sửa cả một mặt cement đã lên vân.",
   },
   composite: {
     crop: "30% 50%",
-    pause: "Bám trên bề mặt khó nhất.",
-    pauseSub: "Hóa học của sự gắn kết trên nhựa kỹ thuật.",
+    pause: "Đồng đều trên cả dây chuyền.",
+    pauseSub: "Hệ phủ cho nhà máy sản xuất nhựa và composite xuất khẩu.",
   },
   floor: {
     crop: "center 78%",
-    pause: "Một mặt phẳng, liền mạch.",
-    pauseSub: "Chịu tải, kháng hóa chất, dễ vệ sinh.",
+    pause: "Bền hay không, quyết định từ đầu.",
+    pauseSub: "Hệ sàn chọn theo nền, tải trọng và môi trường vận hành.",
   },
 };
 
