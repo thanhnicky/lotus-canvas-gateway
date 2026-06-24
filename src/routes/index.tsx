@@ -379,7 +379,7 @@ function Index() {
   return (
     <div
       className="bg-clay text-onyx grain"
-      style={{ ["--accent" as string]: active.accent } as React.CSSProperties}
+      style={{ ["--accent" as string]: active.accent } as CSSProperties}
     >
       {/* ╔══════════════════════ HERO ══════════════════════╗ */}
       <section
