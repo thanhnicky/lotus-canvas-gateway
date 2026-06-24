@@ -411,13 +411,13 @@ function Index() {
     const container = scrollContainerRef.current;
     if (!container) return;
 
-    // Subtle left-right nudge after a short delay
+    // More noticeable left-right nudge after a short delay
     const timer = setTimeout(() => {
-      container.scrollTo({ left: 60, behavior: 'smooth' });
+      container.scrollTo({ left: 100, behavior: 'smooth' });
       setTimeout(() => {
         container.scrollTo({ left: 0, behavior: 'smooth' });
-      }, 400);
-    }, 1200);
+      }, 600);
+    }, 800);
 
     return () => clearTimeout(timer);
   }, []);
@@ -579,18 +579,40 @@ function Index() {
               <span className="inline-block h-px w-8 bg-onyx/35" />
               <span>06 hệ phủ</span>
             </div>
-            {/* Mobile progress indicator */}
-            <span className="md:hidden font-mono text-[10px] tracking-[0.25em] text-onyx/50">
-              Hệ {CATEGORIES.findIndex((c) => c.id === activeId) + 1}/06
-            </span>
+            {/* Mobile progress indicator with visual connection */}
+            <div className="md:hidden flex items-center gap-2">
+              <span className="font-mono text-[10px] tracking-[0.25em] text-onyx/50">
+                Hệ {CATEGORIES.findIndex((c) => c.id === activeId) + 1}/06
+              </span>
+              <div className="flex gap-1">
+                {CATEGORIES.map((c, i) => (
+                  <span
+                    key={c.id}
+                    className={`w-1 h-1 rounded-full transition-all duration-300 ${
+                      c.id === activeId ? 'bg-onyx/60' : 'bg-onyx/20'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
 
-          {/* Mobile browsing hint */}
-          <p className="md:hidden font-sans text-[11px] text-onyx/40 mb-4 tracking-wide">
-            Vuốt ngang để xem 6 hệ sơn
-          </p>
+          {/* Mobile browsing hint with chevron */}
+          <div className="md:hidden flex items-center gap-2 mb-4">
+            <p className="font-sans text-[12px] text-onyx/60 tracking-wide">
+              Vuốt ngang để xem 6 hệ sơn
+            </p>
+            <svg 
+              className="w-4 h-4 text-onyx/40 animate-pulse" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
 
-          <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-4 md:pr-0">
+          <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-12 md:pr-0">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
               {CATEGORIES.map((c) => {
                 const isActive = c.id === activeId;
