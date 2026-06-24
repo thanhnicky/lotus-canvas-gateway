@@ -164,6 +164,8 @@ const CATEGORIES: Category[] = [
     manifesto: "Khi kim loại học cách kể câu chuyện của khu rừng.",
     image: catMetalWood,
     imageTone: "light",
+    accent: "#8a5a36",
+    signature: "Teak",
     description:
       "Giải pháp phủ vân gỗ chân thực trên nền nhôm, sắt hộp và lam che nắng — bền bỉ trước thời tiết nhiệt đới, mang vẻ ấm của gỗ tự nhiên cho kiến trúc kim loại hiện đại.",
     applications: [
