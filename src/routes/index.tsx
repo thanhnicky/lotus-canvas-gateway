@@ -432,6 +432,7 @@ function Index() {
             width={1920}
             height={1200}
             className="absolute inset-0 w-full h-full object-cover plate-in drift"
+            style={{ objectPosition: mood.crop }}
           />
           {/* Material wash — accent tint, gathered on the right */}
           <div
