@@ -525,29 +525,19 @@ function Index() {
 
         {/* Bottom — editorial INDEX (the selector, type-specimen style) */}
         <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-8 md:pb-10">
-          <div className="flex items-end justify-between mb-4 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+          <div className="flex items-end justify-between mb-4 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/65">
             <div className="flex items-center gap-3">
-              <span className="inline-block h-px w-8 bg-onyx/40" />
-              <span>Material Specimen — Vol. I / 06</span>
+              <span className="inline-block h-px w-8 bg-onyx/45" />
+              <span>Chọn hệ sơn để khám phá · 06 hệ phủ</span>
             </div>
-            <a
-              href={ZALO_URL}
-              target="_blank"
-              rel="noopener"
-              className="group hidden md:inline-flex items-center gap-3 text-onyx transition-colors"
-            >
+            <span className="hidden md:inline-flex items-center gap-2 text-onyx/55">
+              <span>Hệ đang xem</span>
               <span
                 className="inline-block size-1.5 rounded-full"
                 style={{ background: "var(--accent)" }}
               />
-              <span className="group-hover:tracking-[0.4em] transition-[letter-spacing] duration-500">
-                Nhắn Zalo · tìm hiểu thêm
-              </span>
-              <span
-                className="inline-block h-px w-8 group-hover:w-14 transition-all"
-                style={{ background: "var(--accent)" }}
-              />
-            </a>
+              <span className="text-onyx/85">{active.signature}</span>
+            </span>
           </div>
 
           <div className="border-t border-onyx/25 hide-scrollbar overflow-x-auto">
