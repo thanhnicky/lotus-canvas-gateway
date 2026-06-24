@@ -902,7 +902,7 @@ function Index() {
                   Nơi <span className="not-italic">Lotus</span> được tin dùng.
                 </h3>
                 <p className="mt-6 text-onyx/65 max-w-xs r-rise r-d2">
-                  Hệ {active.name.toLowerCase()} phù hợp cho các nhà thầu, xưởng sản xuất và dự án có yêu cầu kỹ thuật cao.
+                  Dành cho nhà thầu, xưởng sản xuất và dự án có yêu cầu kỹ thuật cao.
                 </p>
               </div>
             </div>
