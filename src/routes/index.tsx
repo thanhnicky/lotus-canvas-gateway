@@ -509,8 +509,8 @@ function Index() {
             </h1>
 
             <p className="mt-12 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
-              Sáu hệ sơn cho xưởng, nhà thầu và nhà máy —
-              chọn đúng từ đầu để giảm làm lại và dễ bàn giao.
+              Sáu hệ sơn — chọn đúng theo vật liệu nền và môi trường vận hành.
+              Ít làm lại. Đúng tiến độ. Dễ nghiệm thu.
             </p>
 
             <div className="mt-12 md:mt-14 flex flex-wrap items-center gap-x-8 gap-y-3">
