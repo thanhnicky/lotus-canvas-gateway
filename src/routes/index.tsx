@@ -1008,7 +1008,7 @@ function Index() {
             </div>
 
             <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45 text-right">
-              Đội kỹ thuật Lotus sẽ điều chỉnh hệ theo công trình cụ thể.
+              Hệ trên là gợi ý chuẩn — Lotus điều chỉnh theo bề mặt, môi trường và quy mô thực tế của từng dự án.
             </p>
           </div>
         </section>
