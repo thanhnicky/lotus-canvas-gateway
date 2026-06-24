@@ -948,23 +948,23 @@ function Index() {
         </section>
 
         {/* ── Spec sheet · catalog page ───────────────────────── */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 bg-paper">
+        <section className="px-6 md:px-12 lg:px-16 py-32 md:py-44 bg-paper">
           <div className="max-w-6xl mx-auto">
             {/* Header treated like a printed catalog spread */}
-            <div className="flex items-end justify-between mb-10 md:mb-14 border-b border-onyx/30 pb-6">
+            <div className="flex items-end justify-between mb-14 md:mb-20 border-b border-onyx/25 pb-8">
               <div className="r-rise">
-                <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber mb-3">
+                <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber mb-4">
                   Hệ phủ đề xuất
                 </p>
                 <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
-                  Lotus / {active.nameEn}
+                  Lotus · {active.nameEn}
                 </h3>
               </div>
-              <div className="hidden md:block text-right font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                <div>Spec sheet</div>
-                <div>Rev. 24·11 / {active.id.toUpperCase()}</div>
+              <div className="hidden md:block text-right font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40">
+                <div>{active.id.toUpperCase()}</div>
               </div>
             </div>
+
 
             <div className="r-wipe overflow-x-auto">
               <table className="w-full text-left">
