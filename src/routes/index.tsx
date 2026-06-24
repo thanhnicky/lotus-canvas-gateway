@@ -509,8 +509,7 @@ function Index() {
             </h1>
 
             <p className="mt-12 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
-              Sáu hệ sơn — chọn đúng theo vật liệu nền và môi trường vận hành.
-              Ít làm lại. Đúng tiến độ. Dễ nghiệm thu.
+              Sáu hệ sơn, chọn theo vật liệu nền và môi trường vận hành — để xưởng giữ tiến độ, nhà thầu dễ nghiệm thu.
             </p>
 
             <div className="mt-12 md:mt-14 flex flex-wrap items-center gap-x-8 gap-y-3">
@@ -800,9 +799,9 @@ function Index() {
         <section className="px-6 md:px-12 lg:px-16 py-24 md:py-36 border-t border-onyx/10">
           <div className="max-w-4xl mx-auto text-center r-rise">
             <p className="font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
-              Lotus bán <span className="not-italic" style={{ color: "var(--accent)" }}>hệ phủ</span>,
-              <span className="not-italic"> không bán thùng sơn.</span>
-              Đúng nền. Đúng môi trường. Đúng quy mô.
+              Lotus không bán thùng sơn —
+              Lotus chịu trách nhiệm cho <span className="not-italic" style={{ color: "var(--accent)" }}>cả hệ phủ</span>,
+              từ lớp lót đến khi bàn giao.
             </p>
           </div>
         </section>
@@ -882,7 +881,7 @@ function Index() {
                   Ai đang dùng <span className="not-italic">hệ này.</span>
                 </h3>
                 <p className="mt-6 text-onyx/65 max-w-xs r-rise r-d2">
-                  Xưởng chạy số lượng. Nhà thầu chịu nghiệm thu. Nhà máy phải giao đúng hạn. Không phải khách lẻ.
+                  Dành cho xưởng chạy sản lượng, nhà thầu chịu nghiệm thu và nhà máy giao hàng theo hạn — không tối ưu cho khách lẻ.
                 </p>
               </div>
             </div>
@@ -918,8 +917,8 @@ function Index() {
                   <span className="italic font-light text-clay/80">không bỏ qua bước nào.</span>
                 </h2>
                 <p className="mt-8 text-clay/55 max-w-xs leading-relaxed r-rise r-d2">
-                  90% lỗi bong, lệch màu và làm lại đến từ một bước bị cắt để chạy nhanh.
-                  Bốn bước dưới đây không có bước nào thừa.
+                  Phần lớn lỗi bong, lệch màu và làm lại đến từ một bước bị rút gọn để chạy nhanh.
+                  Cả bốn bước dưới đây đều cần thiết.
                 </p>
 
                 <div className="mt-10 inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-clay/50 r-rise r-d3">
@@ -1027,8 +1026,7 @@ function Index() {
                 </h3>
               </div>
               <p className="col-span-12 md:col-span-4 md:col-start-9 text-onyx/60 max-w-sm r-rise r-d1">
-                Ảnh chụp tại xưởng và công trường đang chạy hệ {active.name.toLowerCase()} Lotus.
-                Không render. Không phối cảnh.
+                Ảnh chụp trực tiếp tại xưởng và công trường đang vận hành hệ {active.name.toLowerCase()} Lotus — không render, không dựng cảnh.
               </p>
             </div>
           </div>
@@ -1227,8 +1225,8 @@ function Index() {
               <span className="not-italic font-normal">Lotus đề xuất đúng hệ sơn.</span>
             </h3>
             <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-relaxed r-rise r-d2">
-              Gửi ảnh, vật liệu nền, yêu cầu hoàn thiện và quy mô.
-              Kỹ thuật Lotus chốt hệ phủ và bước thi công trong 24 giờ làm việc.
+              Gửi ảnh hạng mục, vật liệu nền, yêu cầu hoàn thiện và quy mô.
+              Kỹ thuật Lotus đề xuất hệ phủ, định mức và hướng thi công — trong 24 giờ làm việc.
             </p>
 
             {/* Project intake — what to send */}
