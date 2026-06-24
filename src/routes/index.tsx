@@ -456,45 +456,64 @@ function Index() {
         </header>
 
         {/* Center — editorial cover */}
-        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-10 md:pt-16">
+        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-10 md:pt-14">
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-6 flex items-center gap-4">
-              <span className="inline-block h-px w-10 bg-onyx/45" />
-              <span>Bộ sưu tập sáu hệ phủ vật liệu — MMXXIV</span>
+            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/70 mb-6 flex items-center gap-4">
+              <span className="inline-block h-px w-10 bg-onyx/55" />
+              <span>Nhà sản xuất sơn công nghiệp · Việt Nam</span>
             </div>
-            <h1 className="font-serif text-[clamp(3rem,9vw,9.5rem)] leading-[0.88] tracking-[-0.025em] text-balance">
-              <span className="block">Vật liệu</span>
-              <span className="block italic font-light text-onyx/85 -mt-1 md:-mt-2">
-                được&nbsp;phủ&nbsp;bằng <span className="not-italic font-normal">ý&nbsp;đồ.</span>
+            <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.9] tracking-[-0.025em] text-balance text-onyx">
+              <span className="block">Vật liệu,</span>
+              <span className="block italic font-light text-onyx/90 -mt-1 md:-mt-2">
+                được phủ bằng <span className="not-italic font-normal">ý đồ.</span>
               </span>
             </h1>
 
-            <p className="mt-8 md:mt-10 max-w-xl text-[0.95rem] md:text-base leading-relaxed text-onyx/75">
-              Sơn Lotus — nhà sản xuất sơn công nghiệp Việt Nam.
-              <br className="hidden md:block" />
-              Sáu hệ sơn, một triết lý: <em className="font-serif text-onyx">bảo vệ mà không che lấp</em>.
+            <p className="mt-7 md:mt-8 max-w-xl text-[0.98rem] md:text-[1.05rem] leading-relaxed text-onyx/85">
+              Sáu hệ sơn chuyên biệt cho gỗ, kim loại, xi măng, composite và sàn công nghiệp —
+              pha chế tại Bình Dương, điều chỉnh theo từng dự án.
             </p>
+
+            <div className="mt-8 md:mt-9 flex flex-wrap items-center gap-x-7 gap-y-3">
+              <a
+                href={ZALO_URL}
+                target="_blank"
+                rel="noopener"
+                className="group inline-flex items-center gap-3 bg-onyx text-clay pl-5 pr-4 py-3 hover:bg-ash transition-colors"
+              >
+                <span className="font-mono text-[11px] uppercase tracking-[0.32em]">
+                  Nhắn Zalo · Tư vấn dự án
+                </span>
+                <span
+                  className="inline-block h-px w-6 group-hover:w-10 transition-all"
+                  style={{ background: "var(--accent)" }}
+                />
+              </a>
+              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/60">
+                Phản hồi trong 24h
+              </span>
+            </div>
           </div>
 
           {/* Right side — active material data card */}
           <aside className="hidden md:flex col-span-3 self-end justify-end items-end pb-6">
             <div key={active.id + "-meta"} className="text-right space-y-3 soft-in">
-              <div className="flex items-center justify-end gap-2 font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/55">
+              <div className="flex items-center justify-end gap-2 font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/65">
                 <span
                   className="inline-block size-2 rounded-full"
                   style={{ background: "var(--accent)" }}
                 />
                 <span>{active.signature}</span>
               </div>
-              <div className="font-serif text-[5rem] leading-none italic text-onyx/90 tracking-tight">
+              <div className="font-serif text-[5rem] leading-none italic text-onyx tracking-tight">
                 {active.index}
               </div>
-              <div className="font-serif text-xl text-onyx/80 italic">
+              <div className="font-serif text-xl text-onyx/85 italic">
                 {active.name}
               </div>
               <div className="ml-auto h-px w-16" style={{ background: "var(--accent)" }} />
-              <div className="text-[11px] text-onyx/60 max-w-[14rem] leading-snug ml-auto">
-                <span className="font-mono uppercase tracking-[0.25em] text-onyx/40 mr-1">
+              <div className="text-[11px] text-onyx/70 max-w-[14rem] leading-snug ml-auto">
+                <span className="font-mono uppercase tracking-[0.25em] text-onyx/50 mr-1">
                   {active.specs[0].label}
                 </span>
                 {active.specs[0].value}
@@ -502,6 +521,7 @@ function Index() {
             </div>
           </aside>
         </div>
+
 
         {/* Bottom — editorial INDEX (the selector, type-specimen style) */}
         <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-8 md:pb-10">
