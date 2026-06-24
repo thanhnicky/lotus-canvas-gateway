@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 import catWood from "@/assets/cat-wood.jpg";
 import catMetal from "@/assets/cat-metal.jpg";
@@ -44,6 +44,10 @@ type Category = {
   manifesto: string;
   image: string;
   imageTone: "dark" | "light";
+  /** Material atmosphere — drives accent ink + chapter wash for this universe */
+  accent: string;
+  /** Short signature word for the printed index (e.g. "Walnut", "Steel") */
+  signature: string;
   description: string;
   applications: string[];
   specs: { label: string; value: string }[];
@@ -64,6 +68,8 @@ const CATEGORIES: Category[] = [
       "Mỗi đường vân là một câu chuyện đã được rừng viết. Chúng tôi chỉ giữ cho câu chuyện ấy không phai.",
     image: catWood,
     imageTone: "dark",
+    accent: "#6f4a2a",
+    signature: "Walnut",
     description:
       "Hệ sơn gỗ Lotus tôn vinh từng đường vân tự nhiên, đồng thời tạo lớp màng bảo vệ siêu bền trước độ ẩm, tia UV và va đập cơ học — sự cân bằng giữa thẩm mỹ thủ công và hóa học hiện đại.",
     applications: [
@@ -111,6 +117,8 @@ const CATEGORIES: Category[] = [
       "Thép không sợ thời gian, chỉ sợ ẩm. Lotus đứng giữa hai lực ấy.",
     image: catMetal,
     imageTone: "dark",
+    accent: "#4a5560",
+    signature: "Steel",
     description:
       "Hệ sơn kim loại Lotus cho kết cấu thép, nhôm và hợp kim — kết hợp lớp chống gỉ epoxy cùng lớp phủ PU bền màu, đáp ứng yêu cầu khắt khe của công trình công nghiệp và kiến trúc hiện đại.",
     applications: [
@@ -156,6 +164,8 @@ const CATEGORIES: Category[] = [
     manifesto: "Khi kim loại học cách kể câu chuyện của khu rừng.",
     image: catMetalWood,
     imageTone: "light",
+    accent: "#8a5a36",
+    signature: "Teak",
     description:
       "Giải pháp phủ vân gỗ chân thực trên nền nhôm, sắt hộp và lam che nắng — bền bỉ trước thời tiết nhiệt đới, mang vẻ ấm của gỗ tự nhiên cho kiến trúc kim loại hiện đại.",
     applications: [
@@ -201,6 +211,8 @@ const CATEGORIES: Category[] = [
     manifesto: "Cement gánh tải trọng. Gỗ gánh cảm xúc. Lotus là cái bắt tay.",
     image: catCementWood,
     imageTone: "light",
+    accent: "#7a6347",
+    signature: "Oak Cement",
     description:
       "Phủ vân gỗ tự nhiên trên tấm cement Smartboard, Duraflex hoặc cement composite — bền nước, không cong vênh, mang vẻ đẹp ấm áp của gỗ cho ốp tường, trần và sàn ngoại thất.",
     applications: [
@@ -246,6 +258,8 @@ const CATEGORIES: Category[] = [
     manifesto: "Trên một bề mặt khó bám nhất, chúng tôi tìm thấy hóa học của sự gắn kết.",
     image: catComposite,
     imageTone: "light",
+    accent: "#3d4a4a",
+    signature: "Polymer",
     description:
       "Hệ sơn cho ABS, PC, FRP, fiberglass và composite — độ bám tuyệt vời trên bề mặt nhựa nhẵn, bền màu, thân thiện cho ngành ô tô, thiết bị y tế và sản phẩm xuất khẩu.",
     applications: [
@@ -289,6 +303,8 @@ const CATEGORIES: Category[] = [
     manifesto: "Một mặt phẳng liền mạch — nơi mỗi bước chân là một thí nghiệm về độ bền.",
     image: catFloor,
     imageTone: "light",
+    accent: "#525a55",
+    signature: "Graphite",
     description:
       "Hệ sơn sàn Epoxy và PU Lotus dành cho nhà máy thực phẩm, kho logistics, showroom và không gian thương mại — chịu mài mòn, kháng hoá chất, dễ vệ sinh và mang lại bề mặt liền mạch.",
     applications: [
@@ -361,7 +377,10 @@ function Index() {
   }, []);
 
   return (
-    <div className="bg-clay text-onyx grain">
+    <div
+      className="bg-clay text-onyx grain"
+      style={{ ["--accent" as string]: active.accent } as CSSProperties}
+    >
       {/* ╔══════════════════════ HERO ══════════════════════╗ */}
       <section
         ref={heroRef}
@@ -377,10 +396,19 @@ function Index() {
             height={1200}
             className="absolute inset-0 w-full h-full object-cover plate-in drift"
           />
-          {/* Vignette + warm wash so type stays readable on any swatch */}
+          {/* Material wash — vignette tinted by the active category's accent */}
           <div className="absolute inset-0 bg-gradient-to-br from-clay/95 via-clay/55 to-onyx/30 mix-blend-multiply" />
+          <div
+            key={active.id + "-tint"}
+            className="absolute inset-0 mix-blend-multiply opacity-35 plate-in"
+            style={{
+              background:
+                "radial-gradient(75% 60% at 80% 90%, var(--accent), transparent 70%)",
+            }}
+          />
           <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_0%_0%,theme(colors.clay)/0.7,transparent_55%)]" />
         </div>
+
 
         {/* Frame brackets — printed-catalog corners */}
         <div className="pointer-events-none absolute inset-4 md:inset-8 z-30">
@@ -402,8 +430,10 @@ function Index() {
             </span>
           </div>
           <div className="hidden md:flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-            <span>Volume Ⅰ</span>
-            <span className="h-px w-8 bg-onyx/30" />
+            <span>Made in Vietnam</span>
+            <span className="h-px w-6 bg-onyx/30" />
+            <span>ISO 9001</span>
+            <span className="h-px w-6 bg-onyx/30" />
             <span>Material Index 06</span>
           </div>
         </header>
@@ -432,8 +462,12 @@ function Index() {
           {/* Right side — active material data card */}
           <aside className="hidden md:flex col-span-3 self-end justify-end items-end pb-6">
             <div key={active.id + "-meta"} className="text-right space-y-3 soft-in">
-              <div className="font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/55">
-                {active.nameEn}
+              <div className="flex items-center justify-end gap-2 font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/55">
+                <span
+                  className="inline-block size-2 rounded-full"
+                  style={{ background: "var(--accent)" }}
+                />
+                <span>{active.signature}</span>
               </div>
               <div className="font-serif text-[5rem] leading-none italic text-onyx/90 tracking-tight">
                 {active.index}
@@ -441,78 +475,124 @@ function Index() {
               <div className="font-serif text-xl text-onyx/80 italic">
                 {active.name}
               </div>
-              <div className="ml-auto h-px w-16 bg-onyx/30" />
-              <div className="text-[11px] text-onyx/55 max-w-[14rem] leading-snug ml-auto">
+              <div className="ml-auto h-px w-16" style={{ background: "var(--accent)" }} />
+              <div className="text-[11px] text-onyx/60 max-w-[14rem] leading-snug ml-auto">
+                <span className="font-mono uppercase tracking-[0.25em] text-onyx/40 mr-1">
+                  {active.specs[0].label}
+                </span>
                 {active.specs[0].value}
               </div>
             </div>
           </aside>
         </div>
 
-        {/* Bottom — editorial INDEX (the selector) */}
+        {/* Bottom — editorial INDEX (the selector, type-specimen style) */}
         <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-8 md:pb-10">
           <div className="flex items-end justify-between mb-4 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-            <span>Trượt — hoặc chọn để mở vật liệu</span>
+            <div className="flex items-center gap-3">
+              <span className="inline-block h-px w-8 bg-onyx/40" />
+              <span>Material Specimen — Vol. I / 06</span>
+            </div>
             <a
               href={ZALO_URL}
               target="_blank"
               rel="noopener"
-              className="group hidden md:inline-flex items-center gap-3 text-onyx hover:text-umber transition-colors"
+              className="group hidden md:inline-flex items-center gap-3 text-onyx transition-colors"
             >
-              <span className="inline-block size-1.5 rounded-full bg-umber group-hover:scale-150 transition-transform" />
-              <span>Nhắn Zalo · tìm hiểu thêm</span>
-              <span className="inline-block h-px w-8 bg-onyx/40 group-hover:w-12 transition-all" />
+              <span
+                className="inline-block size-1.5 rounded-full"
+                style={{ background: "var(--accent)" }}
+              />
+              <span className="group-hover:tracking-[0.4em] transition-[letter-spacing] duration-500">
+                Nhắn Zalo · tìm hiểu thêm
+              </span>
+              <span
+                className="inline-block h-px w-8 group-hover:w-14 transition-all"
+                style={{ background: "var(--accent)" }}
+              />
             </a>
           </div>
 
-          <div className="border-t border-onyx/25 pt-2 hide-scrollbar overflow-x-auto">
+          <div className="border-t border-onyx/25 hide-scrollbar overflow-x-auto">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
               {CATEGORIES.map((c) => {
                 const isActive = c.id === activeId;
                 return (
                   <li
                     key={c.id}
-                    className={`idx-row relative border-r border-onyx/15 last:border-r-0`}
+                    className="idx-row relative border-r border-onyx/10 last:border-r-0"
                   >
+                    {/* Top accent rule — printed register mark */}
+                    <span
+                      aria-hidden
+                      className="absolute top-0 left-0 right-0 h-[2px] origin-left transition-transform duration-700"
+                      style={{
+                        background: c.accent,
+                        transform: isActive ? "scaleX(1)" : "scaleX(0)",
+                      }}
+                    />
                     <button
                       onClick={() => setActiveId(c.id)}
-                      className={`group block w-[14rem] md:w-full text-left px-5 py-5 transition-colors duration-500 ${
-                        isActive ? "bg-onyx/[0.04]" : "hover:bg-onyx/[0.025]"
+                      onMouseEnter={() => setActiveId(c.id)}
+                      className={`group block w-[15rem] md:w-full text-left px-5 pt-5 pb-5 transition-colors duration-500 ${
+                        isActive ? "bg-paper/60" : "hover:bg-onyx/[0.025]"
                       }`}
                       aria-pressed={isActive}
                     >
                       <div className="flex items-start gap-4">
-                        {/* Material chip */}
-                        <span className="idx-chip relative inline-block size-12 md:size-14 overflow-hidden border border-onyx/20 shrink-0">
+                        {/* Material specimen — narrow strip, not a thumbnail */}
+                        <span
+                          className={`idx-chip relative inline-block w-3 overflow-hidden shrink-0 transition-all duration-700 ${
+                            isActive ? "h-20" : "h-14"
+                          }`}
+                          style={{
+                            outline: `1px solid ${isActive ? c.accent : "rgba(22,20,18,0.18)"}`,
+                            outlineOffset: "-1px",
+                          }}
+                        >
                           <img
                             src={c.image}
                             alt=""
-                            width={56}
-                            height={56}
+                            width={24}
+                            height={120}
                             loading={c.id === CATEGORIES[0].id ? "eager" : "lazy"}
                             className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
-                              isActive ? "scale-105" : "grayscale-[0.5] scale-100"
+                              isActive ? "scale-110" : "grayscale scale-100 opacity-70"
                             }`}
                           />
-                          {isActive && (
-                            <span className="absolute inset-0 ring-1 ring-onyx/40" />
-                          )}
                         </span>
 
                         <div className="flex-1 min-w-0">
                           <div className="flex items-baseline gap-2">
-                            <span className={`font-mono text-[10px] tracking-[0.25em] uppercase transition-colors ${isActive ? "text-umber" : "text-onyx/40"}`}>
+                            <span
+                              className="font-mono text-[10px] tracking-[0.25em] uppercase transition-colors"
+                              style={{ color: isActive ? c.accent : "rgba(22,20,18,0.4)" }}
+                            >
                               {c.index}
                             </span>
-                            {isActive && (
-                              <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-onyx/50 soft-in">
-                                · {c.nameEn}
-                              </span>
-                            )}
+                            <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-onyx/40">
+                              · {c.signature}
+                            </span>
                           </div>
-                          <h3 className={`mt-1 font-serif text-base md:text-[1.05rem] leading-snug transition-colors ${isActive ? "text-onyx" : "text-onyx/65 group-hover:text-onyx"}`}>
+                          <h3
+                            className={`mt-1.5 font-serif text-base md:text-[1.05rem] leading-snug transition-colors ${
+                              isActive ? "text-onyx" : "text-onyx/65 group-hover:text-onyx"
+                            }`}
+                          >
                             {c.name}
                           </h3>
+                          {/* Reveal tagline only on active — collapses gracefully */}
+                          <div
+                            className={`grid transition-[grid-template-rows,opacity] duration-500 ${
+                              isActive ? "grid-rows-[1fr] opacity-100 mt-2" : "grid-rows-[0fr] opacity-0"
+                            }`}
+                          >
+                            <div className="overflow-hidden">
+                              <p className="font-serif italic text-[12px] leading-snug text-onyx/65 max-w-[14rem]">
+                                {c.tagline}
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </button>
@@ -537,22 +617,47 @@ function Index() {
 
       {/* ╔════════════════════ LOWER · CHAPTERS ════════════════════╗ */}
       <main key={active.id} className="relative">
-        {/* ── Marquee transition ────────────────────────────────── */}
-        <div className="border-y border-onyx/15 overflow-hidden bg-clay-soft">
-          <div className="flex whitespace-nowrap ticker-track py-3.5">
+        {/* ── Manufacturer credentials — printed colophon strip ─── */}
+        <section className="border-y border-onyx/15 bg-paper">
+          <div className="px-6 md:px-12 lg:px-16 py-6 md:py-7 grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-8">
+            {[
+              { k: "Origin", v: "Sản xuất tại Việt Nam" },
+              { k: "Standard", v: "ISO 9001 · TDS / MSDS" },
+              { k: "On-site", v: "Hỗ trợ kỹ thuật tại công trình" },
+              { k: "Per project", v: "Hệ phủ điều chỉnh theo dự án" },
+            ].map((t) => (
+              <div key={t.k} className="flex items-start gap-3">
+                <span
+                  className="mt-1.5 inline-block size-1.5 rounded-full shrink-0"
+                  style={{ background: "var(--accent)" }}
+                />
+                <div>
+                  <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/45">
+                    {t.k}
+                  </div>
+                  <div className="font-serif text-[15px] md:text-base italic text-onyx/85 leading-snug mt-0.5">
+                    {t.v}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── Subtle ticker — material signature in motion ──────── */}
+        <div className="border-b border-onyx/10 overflow-hidden bg-clay-soft">
+          <div className="flex whitespace-nowrap ticker-track py-3">
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex items-center gap-10 px-6 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                <span className="text-onyx/70">{active.index} · {active.nameEn}</span>
+                <span style={{ color: "var(--accent)" }}>{active.index} · {active.signature}</span>
                 <span>—</span>
-                <span>{active.name}</span>
+                <span className="text-onyx/70">{active.nameEn}</span>
                 <span>—</span>
                 <span>{active.specs[0].label}: {active.specs[0].value}</span>
                 <span>—</span>
                 <span>{active.specs[1].label}: {active.specs[1].value}</span>
                 <span>—</span>
-                <span>Sản xuất tại Việt Nam · ISO 9001</span>
-                <span>—</span>
-                <span>Hỗ trợ kỹ thuật tại công trình</span>
+                <span>Lotus Coating Atelier · Bình Dương</span>
                 <span>—</span>
               </div>
             ))}
@@ -570,6 +675,13 @@ function Index() {
             className="absolute inset-0 w-full h-full object-cover r-scale"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-onyx/55 via-onyx/10 to-transparent" />
+          <div
+            className="absolute inset-0 mix-blend-multiply opacity-40"
+            style={{
+              background:
+                "linear-gradient(180deg, transparent 35%, var(--accent) 110%)",
+            }}
+          />
 
           <div className="relative h-full flex flex-col justify-between px-6 md:px-12 lg:px-16 py-10 md:py-14 text-clay">
             <div className="flex justify-between items-start font-mono text-[10px] uppercase tracking-[0.32em] text-clay/75 r-rise">
@@ -883,8 +995,51 @@ function Index() {
           </div>
         </section>
 
+        {/* ── Atelier note · printed colophon, trust signals woven in ── */}
+        <section className="px-6 md:px-12 lg:px-16 py-24 md:py-32 bg-paper border-t border-onyx/15">
+          <div className="max-w-6xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
+            <div className="col-span-12 md:col-span-4 r-rise">
+              <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
+                § Atelier note
+              </span>
+              <h3 className="font-serif text-3xl md:text-4xl italic leading-tight mt-5 text-balance">
+                Một nhà sản xuất, <br />
+                <span className="not-italic">không phải đại lý.</span>
+              </h3>
+            </div>
+
+            <div className="col-span-12 md:col-span-7 md:col-start-6">
+              <p className="font-serif text-xl md:text-2xl leading-relaxed text-onyx/80 text-pretty r-rise">
+                Sơn Lotus được pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
+                và đi cùng đội kỹ thuật tới tận công trình. Mỗi hệ phủ được điều chỉnh theo vật liệu
+                nền, môi trường thi công và yêu cầu thẩm mỹ của từng dự án — không bán theo
+                cảm tính, không bán theo lô có sẵn.
+              </p>
+
+              <dl className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-10 border-t border-onyx/15 pt-10">
+                {[
+                  { k: "01 — Xuất xứ", v: "Sản xuất tại Việt Nam, công thức nội bộ" },
+                  { k: "02 — Tiêu chuẩn", v: "ISO 9001 · TDS, MSDS minh bạch" },
+                  { k: "03 — Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình" },
+                  { k: "04 — Dự án", v: "Hệ phủ tinh chỉnh theo từng đơn hàng" },
+                ].map((t) => (
+                  <div key={t.k} className="r-rise">
+                    <dt className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
+                      {t.k}
+                    </dt>
+                    <dd className="mt-2 font-serif text-xl italic text-onyx/85 leading-snug">
+                      {t.v}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+        </section>
+
         {/* ── FAQ · minimal ─────────────────────────────────────── */}
         <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15">
+
           <div className="max-w-6xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
             <div className="col-span-12 md:col-span-4">
               <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
@@ -968,7 +1123,9 @@ function Index() {
                   </text>
                 </svg>
                 {/* Inner mark */}
-                <div className="relative size-24 md:size-28 rounded-full border border-clay/30 flex flex-col items-center justify-center group-hover:bg-umber group-hover:border-umber transition-all duration-700">
+                <div
+                  className="relative size-24 md:size-28 rounded-full border border-clay/30 flex flex-col items-center justify-center transition-all duration-700 group-hover:[background:var(--accent)] group-hover:[border-color:var(--accent)]"
+                >
                   <span className="font-serif italic text-3xl text-clay leading-none">L</span>
                   <span className="font-mono text-[8px] uppercase tracking-[0.32em] text-clay/60 mt-1">
                     Zalo
