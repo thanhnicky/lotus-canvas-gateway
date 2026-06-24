@@ -1131,11 +1131,11 @@ function Index() {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 md:mb-24">
               <div className="r-rise">
                 <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
-                  Trước khi gửi dự án.
+                  Hỏi trước khi báo giá.
                 </h3>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 md:text-right r-rise r-d1">
-                Theo hệ phủ · {active.nameEn}
+                Câu hỏi thường gặp · {active.nameEn}
               </p>
             </div>
 
