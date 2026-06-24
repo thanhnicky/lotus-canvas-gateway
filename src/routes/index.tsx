@@ -1142,42 +1142,96 @@ function Index() {
           </div>
         </section>
 
-        {/* ── FAQ · minimal ─────────────────────────────────────── */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15">
-
-          <div className="max-w-6xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
-            <div className="col-span-12 md:col-span-4">
-              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
-                § Hỏi & Đáp
-              </span>
-              <h3 className="font-serif text-4xl md:text-5xl italic mt-5 leading-tight r-rise r-d1">
-                Cần một câu trả lời?
-              </h3>
-              <p className="mt-6 text-onyx/60 r-rise r-d2 max-w-xs">
-                Đội kỹ thuật Lotus sẵn sàng khảo sát và đề xuất hệ phù hợp cho dự án của bạn.
+        {/* ── FAQ · editorial index, single open panel ──────────── */}
+        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15 bg-paper">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 md:mb-20">
+              <div className="r-rise">
+                <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
+                  § Hỏi &amp; Đáp
+                </span>
+                <h3 className="font-serif text-4xl md:text-5xl italic mt-4 leading-tight">
+                  Trước khi gửi dự án.
+                </h3>
+              </div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45 md:text-right max-w-xs r-rise r-d1">
+                Cập nhật theo hệ phủ đang xem<br />
+                Lotus / {active.nameEn}
               </p>
             </div>
 
-            <div className="col-span-12 md:col-span-7 md:col-start-6 border-t border-onyx/25">
-              {active.faq.map((f, i) => (
-                <details key={f.q} className="group py-7 border-b border-onyx/15 r-rise" open={i === 0}>
-                  <summary className="flex items-start justify-between gap-6 cursor-pointer list-none">
-                    <span className="font-serif text-xl md:text-2xl leading-snug pr-6">
-                      <span className="font-mono text-[11px] tracking-widest text-umber mr-3">
-                        Q·{String(i + 1).padStart(2, "0")}
-                      </span>
-                      {f.q}
+            <div className="grid grid-cols-12 gap-x-8 gap-y-10 md:gap-x-16 border-t border-onyx/25 pt-10">
+              {/* Left rail — numbered index */}
+              <ol className="col-span-12 md:col-span-4">
+                {active.faq.map((f, i) => {
+                  const isOpen = openFaq === i;
+                  return (
+                    <li key={f.q}>
+                      <button
+                        onClick={() => setOpenFaq(i)}
+                        onMouseEnter={() => setOpenFaq(i)}
+                        className="group block w-full text-left py-4 border-b border-onyx/15 transition-colors"
+                        aria-pressed={isOpen}
+                      >
+                        <div className="flex items-baseline gap-4">
+                          <span
+                            className="font-mono text-[10px] tracking-[0.32em] uppercase shrink-0 transition-colors"
+                            style={{ color: isOpen ? "var(--accent)" : "rgba(22,20,18,0.4)" }}
+                          >
+                            Q·{String(i + 1).padStart(2, "0")}
+                          </span>
+                          <span
+                            className={`font-serif text-lg md:text-xl leading-snug transition-colors ${
+                              isOpen ? "text-onyx italic" : "text-onyx/55 group-hover:text-onyx"
+                            }`}
+                          >
+                            {f.q}
+                          </span>
+                        </div>
+                        <div
+                          className={`mt-2 h-px origin-left transition-transform duration-700 ${
+                            isOpen ? "scale-x-100" : "scale-x-0"
+                          }`}
+                          style={{ background: "var(--accent)" }}
+                        />
+                      </button>
+                    </li>
+                  );
+                })}
+              </ol>
+
+              {/* Right panel — editorial answer */}
+              <div className="col-span-12 md:col-span-7 md:col-start-6 md:border-l md:border-onyx/15 md:pl-12">
+                {active.faq[openFaq] && (
+                  <div key={active.id + "-faq-" + openFaq} className="soft-in">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
+                      Trả lời · Q·{String(openFaq + 1).padStart(2, "0")}
                     </span>
-                    <span className="font-serif text-2xl text-umber pt-1 group-open:rotate-45 transition-transform">
-                      +
-                    </span>
-                  </summary>
-                  <p className="mt-4 pl-[3.4rem] text-onyx/70 leading-relaxed max-w-2xl">{f.a}</p>
-                </details>
-              ))}
+                    <p className="mt-5 font-serif text-2xl md:text-[1.75rem] italic leading-snug text-onyx/90 text-pretty">
+                      {active.faq[openFaq].q}
+                    </p>
+                    <p className="mt-6 text-onyx/75 leading-relaxed max-w-xl text-[1.02rem]">
+                      {active.faq[openFaq].a}
+                    </p>
+                    <a
+                      href={ZALO_URL}
+                      target="_blank"
+                      rel="noopener"
+                      className="group inline-flex items-center gap-3 mt-10 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
+                    >
+                      <span>Còn câu hỏi khác — Nhắn Zalo</span>
+                      <span
+                        className="inline-block h-px w-8 group-hover:w-14 transition-all"
+                        style={{ background: "var(--accent)" }}
+                      />
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </section>
+
 
         {/* ── Final chapter · wax seal CTA ─────────────────────── */}
         <section className="relative px-6 md:px-12 lg:px-16 py-32 md:py-48 bg-onyx text-clay overflow-hidden">
