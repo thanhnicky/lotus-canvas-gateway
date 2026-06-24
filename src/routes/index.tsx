@@ -962,7 +962,7 @@ function Index() {
             <div className="flex items-end justify-between mb-14 md:mb-20 border-b border-onyx/25 pb-8">
               <div className="r-rise">
                 <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber mb-4">
-                  Hệ phủ đề xuất
+                  Hệ phủ Lotus đề xuất
                 </p>
                 <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
                   Lotus · {active.nameEn}
