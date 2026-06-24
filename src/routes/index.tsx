@@ -668,10 +668,10 @@ function Index() {
         <section className="border-y border-onyx/15 bg-paper">
           <div className="px-6 md:px-12 lg:px-16 py-6 md:py-7 grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-8">
             {[
-              { k: "Origin", v: "Sản xuất tại Việt Nam" },
-              { k: "Standard", v: "ISO 9001 · TDS / MSDS" },
-              { k: "On-site", v: "Hỗ trợ kỹ thuật tại công trình" },
-              { k: "Per project", v: "Hệ phủ điều chỉnh theo dự án" },
+              { k: "Sản xuất", v: "Nhà máy tại Việt Nam, công thức nội bộ" },
+              { k: "Hồ sơ", v: "ISO 9001 · TDS / MSDS đầy đủ" },
+              { k: "Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình" },
+              { k: "Theo dự án", v: "Hệ phủ tinh chỉnh theo từng đơn hàng" },
             ].map((t) => (
               <div key={t.k} className="flex items-start gap-3">
                 <span
