@@ -69,7 +69,7 @@ const CATEGORIES: Category[] = [
     image: catWood,
     imageTone: "dark",
     accent: "#6f4a2a",
-    signature: "Workshop",
+    signature: "Gỗ",
     description:
       "Hệ sơn gỗ cho xưởng nội thất và nhà máy xuất khẩu. Màu lặp lại giữa các đợt, kiểm soát bóng/lì, ít làm lại khi chạy số lượng.",
     applications: [
@@ -118,7 +118,7 @@ const CATEGORIES: Category[] = [
     image: catMetal,
     imageTone: "dark",
     accent: "#4a5560",
-    signature: "Steel",
+    signature: "Kim loại",
     description:
       "Hệ sơn kim loại Lotus cho nhà thầu kết cấu thép, nhà máy cơ khí và công trình công nghiệp — chọn đúng cấp chống ăn mòn theo môi trường (C3 / C4 / C5) để giảm rủi ro bảo hành sau bàn giao.",
     applications: [
@@ -166,7 +166,7 @@ const CATEGORIES: Category[] = [
     image: catMetalWood,
     imageTone: "light",
     accent: "#8a5a36",
-    signature: "Teak",
+    signature: "Gỗ kim loại",
     description:
       "Hệ giả gỗ trên sắt và nhôm cho nhà thầu cần ra thẩm mỹ thật, quy trình rõ ràng và giảm rủi ro bàn giao. Vân gỗ chân thực ở khoảng nhìn thực tế, hạn chế bạc màu khi ra nắng.",
     applications: [
@@ -215,7 +215,7 @@ const CATEGORIES: Category[] = [
     image: catCementWood,
     imageTone: "light",
     accent: "#7a6347",
-    signature: "Oak Cement",
+    signature: "Xi măng",
     description:
       "Hệ giả gỗ trên Smartboard, Duraflex và tấm cement composite — dành cho nhà thầu cần ra vân thẩm mỹ trên mặt tiền, hàng rào, lam và ốp ngoại thất, với độ bền nước và độ bám phù hợp nền kiềm.",
     applications: [
@@ -264,7 +264,7 @@ const CATEGORIES: Category[] = [
     image: catComposite,
     imageTone: "light",
     accent: "#3d4a4a",
-    signature: "Polymer",
+    signature: "Nhựa",
     description:
       "Hệ phủ cho nhựa kỹ thuật và composite — dành cho nhà máy sản xuất hàng xuất khẩu cần bám dính ổn định trên nền khó, ngoại quan đồng đều và quy trình lặp lại được khi chạy số lượng.",
     applications: [
@@ -311,7 +311,7 @@ const CATEGORIES: Category[] = [
     image: catFloor,
     imageTone: "light",
     accent: "#525a55",
-    signature: "Graphite",
+    signature: "Sàn",
     description:
       "Hệ sơn sàn Epoxy và PU Lotus cho đơn vị thầu thi công sàn công nghiệp — chọn đúng hệ theo nền hiện trạng, tải trọng, hóa chất và độ ẩm để giảm rủi ro bong tróc sau bàn giao.",
     applications: [
