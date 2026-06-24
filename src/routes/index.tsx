@@ -377,7 +377,10 @@ function Index() {
   }, []);
 
   return (
-    <div className="bg-clay text-onyx grain">
+    <div
+      className="bg-clay text-onyx grain"
+      style={{ ["--accent" as string]: active.accent } as React.CSSProperties}
+    >
       {/* ╔══════════════════════ HERO ══════════════════════╗ */}
       <section
         ref={heroRef}
@@ -393,10 +396,19 @@ function Index() {
             height={1200}
             className="absolute inset-0 w-full h-full object-cover plate-in drift"
           />
-          {/* Vignette + warm wash so type stays readable on any swatch */}
+          {/* Material wash — vignette tinted by the active category's accent */}
           <div className="absolute inset-0 bg-gradient-to-br from-clay/95 via-clay/55 to-onyx/30 mix-blend-multiply" />
+          <div
+            key={active.id + "-tint"}
+            className="absolute inset-0 mix-blend-multiply opacity-35 plate-in"
+            style={{
+              background:
+                "radial-gradient(75% 60% at 80% 90%, var(--accent), transparent 70%)",
+            }}
+          />
           <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_0%_0%,theme(colors.clay)/0.7,transparent_55%)]" />
         </div>
+
 
         {/* Frame brackets — printed-catalog corners */}
         <div className="pointer-events-none absolute inset-4 md:inset-8 z-30">
