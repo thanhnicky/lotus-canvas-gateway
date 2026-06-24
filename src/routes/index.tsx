@@ -475,22 +475,22 @@ function Index() {
         </div>
 
         {/* Top bar: brand + tiny meta */}
-        <header className="relative z-20 flex justify-between items-center px-6 md:px-12 lg:px-16 pt-8 md:pt-10">
+        <header className="relative z-20 flex justify-between items-center px-6 md:px-12 lg:px-16 pt-10 md:pt-12">
           <span className="font-serif text-2xl md:text-[2rem] tracking-tight leading-none italic">
             Sơn&nbsp;Lotus
           </span>
-          <span className="hidden md:inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
-            <span>Coating Atelier · Việt Nam</span>
-            <span className="h-px w-6 bg-onyx/30" />
+          <span className="hidden md:inline-flex items-center gap-6 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+            <span>Việt Nam</span>
+            <span className="h-px w-5 bg-onyx/25" />
             <span>ISO 9001</span>
           </span>
         </header>
 
         {/* Center — editorial cover */}
-        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-16 md:pt-24">
+        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-20 md:pt-28">
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/65 mb-8 flex items-center gap-4">
-              <span className="inline-block h-px w-10 bg-onyx/55" />
+            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-10 md:mb-12 flex items-center gap-4">
+              <span className="inline-block h-px w-10 bg-onyx/45" />
               <span>Nhà sản xuất sơn công nghiệp</span>
             </div>
             <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.92] tracking-[-0.025em] text-balance text-onyx">
@@ -500,12 +500,12 @@ function Index() {
               </span>
             </h1>
 
-            <p className="mt-10 md:mt-12 max-w-lg text-[0.98rem] md:text-[1.05rem] leading-relaxed text-onyx/80">
+            <p className="mt-12 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
               Sáu hệ sơn chuyên biệt — pha chế tại Bình Dương,
               điều chỉnh theo từng dự án.
             </p>
 
-            <div className="mt-10 md:mt-12 flex flex-wrap items-center gap-x-8 gap-y-3">
+            <div className="mt-12 md:mt-14 flex flex-wrap items-center gap-x-8 gap-y-3">
               <a
                 href={ZALO_URL}
                 target="_blank"
@@ -520,29 +520,22 @@ function Index() {
                   style={{ background: "var(--accent)" }}
                 />
               </a>
-              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
+              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
                 Phản hồi trong 24h
               </span>
             </div>
           </div>
 
-          {/* Right side — active material data card */}
-          <aside className="hidden md:flex col-span-3 self-end justify-end items-end pb-6">
+          {/* Right side — quiet active material mark */}
+          <aside className="hidden md:flex col-span-3 self-end justify-end items-end pb-8">
             <div key={active.id + "-meta"} className="text-right space-y-3 soft-in">
-              <div className="flex items-center justify-end gap-2 font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/60">
-                <span
-                  className="inline-block size-2 rounded-full"
-                  style={{ background: "var(--accent)" }}
-                />
-                <span>{active.signature}</span>
-              </div>
-              <div className="font-serif text-[5rem] leading-none italic text-onyx tracking-tight">
+              <div className="font-serif text-[5.5rem] leading-none italic text-onyx/90 tracking-tight">
                 {active.index}
               </div>
-              <div className="font-serif text-lg text-onyx/75 italic">
-                {active.name}
+              <div className="ml-auto h-px w-10" style={{ background: "var(--accent)" }} />
+              <div className="font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/55">
+                {active.signature}
               </div>
-              <div className="ml-auto h-px w-12" style={{ background: "var(--accent)" }} />
             </div>
           </aside>
         </div>
@@ -550,21 +543,14 @@ function Index() {
 
 
         {/* Bottom — editorial INDEX (the selector, type-specimen style) */}
-        <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-8 md:pb-10">
-          <div className="flex items-end justify-between mb-4 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/65">
+        <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-10 md:pb-12">
+          <div className="flex items-end justify-between mb-5 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
             <div className="flex items-center gap-3">
-              <span className="inline-block h-px w-8 bg-onyx/45" />
-              <span>Chọn hệ sơn để khám phá · 06 hệ phủ</span>
+              <span className="inline-block h-px w-8 bg-onyx/35" />
+              <span>06 hệ phủ</span>
             </div>
-            <span className="hidden md:inline-flex items-center gap-2 text-onyx/55">
-              <span>Hệ đang xem</span>
-              <span
-                className="inline-block size-1.5 rounded-full"
-                style={{ background: "var(--accent)" }}
-              />
-              <span className="text-onyx/85">{active.signature}</span>
-            </span>
           </div>
+
 
           <div className="border-t border-onyx/25 hide-scrollbar overflow-x-auto">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
