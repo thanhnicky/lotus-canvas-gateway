@@ -117,6 +117,8 @@ const CATEGORIES: Category[] = [
       "Thép không sợ thời gian, chỉ sợ ẩm. Lotus đứng giữa hai lực ấy.",
     image: catMetal,
     imageTone: "dark",
+    accent: "#4a5560",
+    signature: "Steel",
     description:
       "Hệ sơn kim loại Lotus cho kết cấu thép, nhôm và hợp kim — kết hợp lớp chống gỉ epoxy cùng lớp phủ PU bền màu, đáp ứng yêu cầu khắt khe của công trình công nghiệp và kiến trúc hiện đại.",
     applications: [
