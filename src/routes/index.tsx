@@ -385,6 +385,7 @@ function Index() {
   const active = CATEGORIES.find((c) => c.id === activeId) ?? CATEGORIES[0];
   const mood = MOOD[active.id];
   const [openFaq, setOpenFaq] = useState(0);
+  useEffect(() => { setOpenFaq(0); }, [activeId]);
 
   // Wheel-to-cycle inside hero (subtle premium kinetic interaction)
   const heroRef = useRef<HTMLDivElement | null>(null);
