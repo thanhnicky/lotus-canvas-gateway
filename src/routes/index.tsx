@@ -303,6 +303,8 @@ const CATEGORIES: Category[] = [
     manifesto: "Một mặt phẳng liền mạch — nơi mỗi bước chân là một thí nghiệm về độ bền.",
     image: catFloor,
     imageTone: "light",
+    accent: "#525a55",
+    signature: "Graphite",
     description:
       "Hệ sơn sàn Epoxy và PU Lotus dành cho nhà máy thực phẩm, kho logistics, showroom và không gian thương mại — chịu mài mòn, kháng hoá chất, dễ vệ sinh và mang lại bề mặt liền mạch.",
     applications: [
