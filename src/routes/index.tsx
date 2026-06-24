@@ -16,17 +16,17 @@ import project3 from "@/assets/project-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sơn Lotus — Hệ thống sơn phủ cao cấp cho mọi vật liệu" },
+      { title: "Sơn Lotus — Hệ sơn công nghiệp cho xưởng, nhà thầu và nhà máy" },
       {
         name: "description",
         content:
-          "Sơn Lotus — nhà sản xuất sơn công nghiệp Việt Nam. Hệ sơn gỗ, kim loại, giả gỗ, composite và sơn sàn cho nhà thầu, xưởng và dự án cao cấp.",
+          "Nhà sản xuất sơn Việt Nam. Hệ sơn gỗ, kim loại, giả gỗ, composite và sàn công nghiệp — chọn đúng hệ ngay từ đầu, giảm làm lại, dễ bàn giao.",
       },
-      { property: "og:title", content: "Sơn Lotus — Hệ thống sơn phủ cao cấp" },
+      { property: "og:title", content: "Sơn Lotus — Đúng hệ sơn cho công trình thật" },
       {
         property: "og:description",
         content:
-          "Nhà sản xuất sơn đa hệ thống — kiến tạo lớp bảo vệ bề mặt cho gỗ, kim loại, xi măng, composite và sàn công nghiệp.",
+          "Lotus đề xuất hệ phủ theo vật liệu nền, môi trường và quy mô — cho xưởng nội thất, nhà thầu kết cấu, nhà máy xuất khẩu và đơn vị thi công sàn.",
       },
     ],
   }),
