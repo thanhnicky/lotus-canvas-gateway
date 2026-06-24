@@ -1116,10 +1116,9 @@ function Index() {
 
             <div className="col-span-12 md:col-span-7 md:col-start-6">
               <p className="font-serif text-xl md:text-2xl leading-relaxed text-onyx/80 text-pretty r-rise">
-                Sơn Lotus được pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
-                và đi cùng đội kỹ thuật tới tận công trình. Mỗi hệ phủ được điều chỉnh theo vật liệu
-                nền, môi trường thi công và yêu cầu thẩm mỹ của từng dự án — không bán theo
-                cảm tính, không bán theo lô có sẵn.
+                Pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
+                triển khai cùng đội kỹ thuật tại công trình — mỗi hệ phủ điều chỉnh
+                theo vật liệu nền và yêu cầu của từng dự án.
               </p>
 
               <dl className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-10 border-t border-onyx/15 pt-10">
