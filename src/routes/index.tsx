@@ -1019,16 +1019,16 @@ function Index() {
             <div className="grid grid-cols-12 gap-6 md:gap-8 items-end">
               <div className="col-span-12 md:col-span-7 r-rise">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber">
-                  Dự án
+                  Công trình thật
                 </span>
                 <h3 className="mt-5 font-serif text-4xl md:text-6xl italic leading-[1.03]">
-                  Đã được thi công <br/>
-                  <span className="not-italic">trên thực địa.</span>
+                  Đã chạy trên <br/>
+                  <span className="not-italic">xưởng và công trường.</span>
                 </h3>
               </div>
               <p className="col-span-12 md:col-span-4 md:col-start-9 text-onyx/60 max-w-sm r-rise r-d1">
-                Hình ảnh thực tế từ các công trình đã sử dụng hệ {active.name.toLowerCase()} Lotus —
-                không dàn dựng, không phối cảnh.
+                Hình ảnh từ các xưởng, nhà máy và công trình đang dùng hệ {active.name.toLowerCase()} Lotus —
+                không phối cảnh, không dàn dựng.
               </p>
             </div>
           </div>
