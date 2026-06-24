@@ -777,14 +777,13 @@ function Index() {
         {/* ── Editorial pull quote, no chrome ─────────────────── */}
         <section className="px-6 md:px-12 lg:px-16 py-20 md:py-32 border-t border-onyx/10">
           <div className="max-w-5xl mx-auto text-center r-rise">
-            <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-umber">
-              ☞ Triết lý sản xuất
+            <span className="font-mono text-[10px] uppercase tracking-[0.4em]" style={{ color: "var(--accent)" }}>
+              § Triết lý sản xuất
             </span>
             <p className="mt-6 font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
-              Chúng tôi không bán sơn — chúng tôi bán
-              <span className="not-italic"> lớp bảo vệ </span>
-              được hoá học hoá từ
-              <span className="text-umber"> bốn mươi năm</span> hiểu vật liệu.
+              Chúng tôi sản xuất <span className="not-italic">lớp bảo vệ</span> —
+              kết hợp công thức nội bộ và kinh nghiệm thi công thực tế trên
+              <span className="not-italic" style={{ color: "var(--accent)" }}> sáu nhóm vật liệu</span>.
             </p>
           </div>
         </section>
