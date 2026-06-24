@@ -597,19 +597,29 @@ function Index() {
             </div>
           </div>
 
-          {/* Mobile browsing hint with chevron */}
-          <div className="mobile-only flex items-center gap-2 mb-4">
-            <p className="font-sans text-[12px] text-onyx/60 tracking-wide">
-              Vuốt ngang để xem 6 hệ sơn
-            </p>
-            <svg
-              className="w-4 h-4 text-onyx/40 animate-pulse"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-            </svg>
+          {/* Mobile browsing hint with refined styling */}
+          <div className="mobile-only mb-5">
+            <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-onyx/[0.03] border border-onyx/[0.08] rounded-full backdrop-blur-sm">
+              <svg
+                className="w-3.5 h-3 text-onyx/50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
+              </svg>
+              <p className="font-sans text-[13px] font-medium text-onyx/70 tracking-wide">
+                Vuốt ngang để xem 6 hệ sơn
+              </p>
+              <svg
+                className="w-3.5 h-3 text-onyx/50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
           </div>
 
           <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-12 md:pr-0">
