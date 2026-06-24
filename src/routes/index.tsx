@@ -881,7 +881,7 @@ function Index() {
                   Ai đang dùng <span className="not-italic">hệ này.</span>
                 </h3>
                 <p className="mt-6 text-onyx/65 max-w-xs r-rise r-d2">
-                  Xưởng chạy số lượng. Nhà thầu chịu nghiệm thu. Nhà máy phải giao đúng hạn. Không phải khách lẻ.
+                  Dành cho xưởng chạy sản lượng, nhà thầu chịu nghiệm thu và nhà máy giao hàng theo hạn — không tối ưu cho khách lẻ.
                 </p>
               </div>
             </div>
