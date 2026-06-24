@@ -580,7 +580,7 @@ function Index() {
               <span>06 hệ phủ</span>
             </div>
             {/* Mobile progress indicator with visual connection */}
-            <div className="md:hidden flex items-center gap-2">
+            <div className="mobile-only flex items-center gap-2">
               <span className="font-mono text-[10px] tracking-[0.25em] text-onyx/50">
                 Hệ {CATEGORIES.findIndex((c) => c.id === activeId) + 1}/06
               </span>
@@ -598,14 +598,14 @@ function Index() {
           </div>
 
           {/* Mobile browsing hint with chevron */}
-          <div className="md:hidden flex items-center gap-2 mb-4">
+          <div className="mobile-only flex items-center gap-2 mb-4">
             <p className="font-sans text-[12px] text-onyx/60 tracking-wide">
               Vuốt ngang để xem 6 hệ sơn
             </p>
-            <svg 
-              className="w-4 h-4 text-onyx/40 animate-pulse" 
-              fill="none" 
-              viewBox="0 0 24 24" 
+            <svg
+              className="w-4 h-4 text-onyx/40 animate-pulse"
+              fill="none"
+              viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
