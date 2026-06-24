@@ -399,6 +399,29 @@ function Index() {
   const heroRef = useRef<HTMLDivElement | null>(null);
   const lastSwapRef = useRef(0);
 
+  // One-time swipe cue animation on mobile
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const hasCuedRef = useRef(false);
+
+  useEffect(() => {
+    // Only on mobile, once per session
+    if (window.innerWidth >= 768 || hasCuedRef.current) return;
+    hasCuedRef.current = true;
+
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    // Subtle left-right nudge after a short delay
+    const timer = setTimeout(() => {
+      container.scrollTo({ left: 60, behavior: 'smooth' });
+      setTimeout(() => {
+        container.scrollTo({ left: 0, behavior: 'smooth' });
+      }, 400);
+    }, 1200);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     const el = heroRef.current;
     if (!el) return;
@@ -556,10 +579,18 @@ function Index() {
               <span className="inline-block h-px w-8 bg-onyx/35" />
               <span>06 hệ phủ</span>
             </div>
+            {/* Mobile progress indicator */}
+            <span className="md:hidden font-mono text-[10px] tracking-[0.25em] text-onyx/50">
+              Hệ {CATEGORIES.findIndex((c) => c.id === activeId) + 1}/06
+            </span>
           </div>
 
+          {/* Mobile browsing hint */}
+          <p className="md:hidden font-sans text-[11px] text-onyx/40 mb-4 tracking-wide">
+            Vuốt ngang để xem 6 hệ sơn
+          </p>
 
-          <div className="border-t border-onyx/25 hide-scrollbar overflow-x-auto">
+          <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-4 md:pr-0">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
               {CATEGORIES.map((c) => {
                 const isActive = c.id === activeId;
