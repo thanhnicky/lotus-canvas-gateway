@@ -475,45 +475,37 @@ function Index() {
         </div>
 
         {/* Top bar: brand + tiny meta */}
-        <header className="relative z-20 flex justify-between items-start px-6 md:px-12 lg:px-16 pt-8 md:pt-10">
-          <div className="flex items-center gap-4">
-            <span className="font-serif text-2xl md:text-[2rem] tracking-tight leading-none italic">
-              Sơn&nbsp;Lotus
-            </span>
-            <span className="hidden md:block h-3 w-px bg-onyx/30" />
-            <span className="hidden md:block font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
-              Vietnam · Est. Coating Atelier
-            </span>
-          </div>
-          <div className="hidden md:flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-            <span>Made in Vietnam</span>
+        <header className="relative z-20 flex justify-between items-center px-6 md:px-12 lg:px-16 pt-8 md:pt-10">
+          <span className="font-serif text-2xl md:text-[2rem] tracking-tight leading-none italic">
+            Sơn&nbsp;Lotus
+          </span>
+          <span className="hidden md:inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
+            <span>Coating Atelier · Việt Nam</span>
             <span className="h-px w-6 bg-onyx/30" />
             <span>ISO 9001</span>
-            <span className="h-px w-6 bg-onyx/30" />
-            <span>Material Index 06</span>
-          </div>
+          </span>
         </header>
 
         {/* Center — editorial cover */}
-        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-10 md:pt-14">
+        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-16 md:pt-24">
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/70 mb-6 flex items-center gap-4">
+            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/65 mb-8 flex items-center gap-4">
               <span className="inline-block h-px w-10 bg-onyx/55" />
-              <span>Nhà sản xuất sơn công nghiệp · Việt Nam</span>
+              <span>Nhà sản xuất sơn công nghiệp</span>
             </div>
-            <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.9] tracking-[-0.025em] text-balance text-onyx">
+            <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.92] tracking-[-0.025em] text-balance text-onyx">
               <span className="block">Vật liệu,</span>
-              <span className="block italic font-light text-onyx/90 -mt-1 md:-mt-2">
+              <span className="block italic font-light text-onyx/90">
                 được phủ bằng <span className="not-italic font-normal">ý đồ.</span>
               </span>
             </h1>
 
-            <p className="mt-7 md:mt-8 max-w-xl text-[0.98rem] md:text-[1.05rem] leading-relaxed text-onyx/85">
-              Sáu hệ sơn chuyên biệt cho gỗ, kim loại, xi măng, composite và sàn công nghiệp —
-              pha chế tại Bình Dương, điều chỉnh theo từng dự án.
+            <p className="mt-10 md:mt-12 max-w-lg text-[0.98rem] md:text-[1.05rem] leading-relaxed text-onyx/80">
+              Sáu hệ sơn chuyên biệt — pha chế tại Bình Dương,
+              điều chỉnh theo từng dự án.
             </p>
 
-            <div className="mt-8 md:mt-9 flex flex-wrap items-center gap-x-7 gap-y-3">
+            <div className="mt-10 md:mt-12 flex flex-wrap items-center gap-x-8 gap-y-3">
               <a
                 href={ZALO_URL}
                 target="_blank"
@@ -528,7 +520,7 @@ function Index() {
                   style={{ background: "var(--accent)" }}
                 />
               </a>
-              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/60">
+              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
                 Phản hồi trong 24h
               </span>
             </div>
@@ -537,7 +529,7 @@ function Index() {
           {/* Right side — active material data card */}
           <aside className="hidden md:flex col-span-3 self-end justify-end items-end pb-6">
             <div key={active.id + "-meta"} className="text-right space-y-3 soft-in">
-              <div className="flex items-center justify-end gap-2 font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/65">
+              <div className="flex items-center justify-end gap-2 font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/60">
                 <span
                   className="inline-block size-2 rounded-full"
                   style={{ background: "var(--accent)" }}
@@ -547,19 +539,14 @@ function Index() {
               <div className="font-serif text-[5rem] leading-none italic text-onyx tracking-tight">
                 {active.index}
               </div>
-              <div className="font-serif text-xl text-onyx/85 italic">
+              <div className="font-serif text-lg text-onyx/75 italic">
                 {active.name}
               </div>
-              <div className="ml-auto h-px w-16" style={{ background: "var(--accent)" }} />
-              <div className="text-[11px] text-onyx/70 max-w-[14rem] leading-snug ml-auto">
-                <span className="font-mono uppercase tracking-[0.25em] text-onyx/50 mr-1">
-                  {active.specs[0].label}
-                </span>
-                {active.specs[0].value}
-              </div>
+              <div className="ml-auto h-px w-12" style={{ background: "var(--accent)" }} />
             </div>
           </aside>
         </div>
+
 
 
         {/* Bottom — editorial INDEX (the selector, type-specimen style) */}
@@ -784,20 +771,21 @@ function Index() {
                 {active.description}
               </p>
 
-              <div className="mt-12 h-px bg-onyx/20 origin-left r-line" />
+              <div className="mt-16 h-px bg-onyx/20 origin-left r-line" />
 
-              <dl className="mt-8 grid grid-cols-2 gap-x-8 gap-y-5">
+              <dl className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
                 {active.specs.map((s, i) => (
                   <div key={s.label} className={`r-rise r-d${(i % 4) + 1}`}>
-                    <dt className="font-mono text-[10px] uppercase tracking-[0.25em] text-onyx/45">
+                    <dt className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
                       {s.label}
                     </dt>
-                    <dd className="mt-1.5 font-serif italic text-[1.1rem] text-onyx leading-tight">
+                    <dd className="mt-3 font-serif italic text-[1.35rem] md:text-[1.5rem] text-onyx leading-[1.15]">
                       {s.value}
                     </dd>
                   </div>
                 ))}
               </dl>
+
             </div>
 
             {/* Side numeral */}
@@ -1102,45 +1090,50 @@ function Index() {
         </section>
 
         {/* ── Atelier note · printed colophon, trust signals woven in ── */}
-        <section className="px-6 md:px-12 lg:px-16 py-24 md:py-32 bg-paper border-t border-onyx/15">
-          <div className="max-w-6xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
-            <div className="col-span-12 md:col-span-4 r-rise">
-              <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
-                § Atelier note
-              </span>
-              <h3 className="font-serif text-3xl md:text-4xl italic leading-tight mt-5 text-balance">
-                Một nhà sản xuất, <br />
-                <span className="not-italic">không phải đại lý.</span>
-              </h3>
+        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 bg-paper border-t border-onyx/15">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-12 gap-8 md:gap-16 items-start">
+              <div className="col-span-12 md:col-span-5 r-rise">
+                <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
+                  § Atelier note
+                </span>
+                <h3 className="font-serif text-4xl md:text-[3.25rem] italic leading-[1.02] mt-6 text-balance">
+                  Một nhà sản xuất, <br />
+                  <span className="not-italic">không phải đại lý.</span>
+                </h3>
+              </div>
+
+              <div className="col-span-12 md:col-span-6 md:col-start-7 md:pt-3">
+                <p className="font-serif text-xl md:text-[1.45rem] leading-[1.55] text-onyx/80 text-pretty r-rise max-w-xl">
+                  Pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
+                  triển khai cùng đội kỹ thuật tại công trình.
+                </p>
+              </div>
             </div>
 
-            <div className="col-span-12 md:col-span-7 md:col-start-6">
-              <p className="font-serif text-xl md:text-2xl leading-relaxed text-onyx/80 text-pretty r-rise">
-                Pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
-                triển khai cùng đội kỹ thuật tại công trình — mỗi hệ phủ điều chỉnh
-                theo vật liệu nền và yêu cầu của từng dự án.
-              </p>
-
-              <dl className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-10 border-t border-onyx/15 pt-10">
-                {[
-                  { k: "01 — Xuất xứ", v: "Sản xuất tại Việt Nam, công thức nội bộ" },
-                  { k: "02 — Tiêu chuẩn", v: "ISO 9001 · TDS, MSDS minh bạch" },
-                  { k: "03 — Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình" },
-                  { k: "04 — Dự án", v: "Hệ phủ tinh chỉnh theo từng đơn hàng" },
-                ].map((t) => (
-                  <div key={t.k} className="r-rise">
-                    <dt className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                      {t.k}
-                    </dt>
-                    <dd className="mt-2 font-serif text-xl italic text-onyx/85 leading-snug">
-                      {t.v}
-                    </dd>
+            <dl className="mt-20 md:mt-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-10 border-t border-onyx/20 pt-12">
+              {[
+                { k: "01", h: "Xuất xứ", v: "Sản xuất tại Việt Nam — công thức nội bộ." },
+                { k: "02", h: "Tiêu chuẩn", v: "ISO 9001, TDS và MSDS minh bạch." },
+                { k: "03", h: "Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình." },
+                { k: "04", h: "Theo dự án", v: "Hệ phủ tinh chỉnh cho từng đơn hàng." },
+              ].map((t) => (
+                <div key={t.k} className="r-rise">
+                  <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40">
+                    {t.k}
                   </div>
-                ))}
-              </dl>
-            </div>
+                  <div className="mt-3 font-mono text-[11px] uppercase tracking-[0.28em]" style={{ color: "var(--accent)" }}>
+                    {t.h}
+                  </div>
+                  <p className="mt-3 font-serif italic text-[1.15rem] md:text-[1.2rem] text-onyx/85 leading-snug max-w-[16rem]">
+                    {t.v}
+                  </p>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
+
 
         {/* ── FAQ · editorial index, single open panel ──────────── */}
         <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15 bg-paper">
@@ -1160,9 +1153,9 @@ function Index() {
               </p>
             </div>
 
-            <div className="grid grid-cols-12 gap-x-8 gap-y-10 md:gap-x-16 border-t border-onyx/25 pt-10">
-              {/* Left rail — numbered index */}
-              <ol className="col-span-12 md:col-span-4">
+            <div className="grid grid-cols-12 gap-x-8 gap-y-10 md:gap-x-20 border-t border-onyx/25 pt-12">
+              {/* Left rail — consultation notes index */}
+              <ol className="col-span-12 md:col-span-5">
                 {active.faq.map((f, i) => {
                   const isOpen = openFaq === i;
                   return (
@@ -1170,30 +1163,24 @@ function Index() {
                       <button
                         onClick={() => setOpenFaq(i)}
                         onMouseEnter={() => setOpenFaq(i)}
-                        className="group block w-full text-left py-4 border-b border-onyx/15 transition-colors"
+                        className="group block w-full text-left py-6 border-b border-onyx/12 transition-colors"
                         aria-pressed={isOpen}
                       >
-                        <div className="flex items-baseline gap-4">
+                        <div className="grid grid-cols-12 gap-4 items-baseline">
                           <span
-                            className="font-mono text-[10px] tracking-[0.32em] uppercase shrink-0 transition-colors"
-                            style={{ color: isOpen ? "var(--accent)" : "rgba(22,20,18,0.4)" }}
+                            className="col-span-2 font-mono text-[10px] tracking-[0.32em] uppercase shrink-0 transition-colors"
+                            style={{ color: isOpen ? "var(--accent)" : "rgba(22,20,18,0.35)" }}
                           >
-                            Q·{String(i + 1).padStart(2, "0")}
+                            {String(i + 1).padStart(2, "0")} /
                           </span>
                           <span
-                            className={`font-serif text-lg md:text-xl leading-snug transition-colors ${
+                            className={`col-span-10 font-serif text-lg md:text-[1.35rem] leading-snug transition-colors ${
                               isOpen ? "text-onyx italic" : "text-onyx/55 group-hover:text-onyx"
                             }`}
                           >
                             {f.q}
                           </span>
                         </div>
-                        <div
-                          className={`mt-2 h-px origin-left transition-transform duration-700 ${
-                            isOpen ? "scale-x-100" : "scale-x-0"
-                          }`}
-                          style={{ background: "var(--accent)" }}
-                        />
                       </button>
                     </li>
                   );
@@ -1201,25 +1188,29 @@ function Index() {
               </ol>
 
               {/* Right panel — editorial answer */}
-              <div className="col-span-12 md:col-span-7 md:col-start-6 md:border-l md:border-onyx/15 md:pl-12">
+              <div className="col-span-12 md:col-span-6 md:col-start-7">
                 {active.faq[openFaq] && (
-                  <div key={active.id + "-faq-" + openFaq} className="soft-in">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                      Trả lời · Q·{String(openFaq + 1).padStart(2, "0")}
-                    </span>
-                    <p className="mt-5 font-serif text-2xl md:text-[1.75rem] italic leading-snug text-onyx/90 text-pretty">
+                  <div key={active.id + "-faq-" + openFaq} className="soft-in md:sticky md:top-24">
+                    <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
+                      <span
+                        className="inline-block h-px w-8"
+                        style={{ background: "var(--accent)" }}
+                      />
+                      <span>Ghi chú tư vấn · {String(openFaq + 1).padStart(2, "0")}</span>
+                    </div>
+                    <p className="mt-7 font-serif text-2xl md:text-[2rem] italic leading-[1.15] text-onyx text-pretty">
                       {active.faq[openFaq].q}
                     </p>
-                    <p className="mt-6 text-onyx/75 leading-relaxed max-w-xl text-[1.02rem]">
+                    <p className="mt-8 text-onyx/75 leading-[1.75] max-w-xl text-[1.02rem]">
                       {active.faq[openFaq].a}
                     </p>
                     <a
                       href={ZALO_URL}
                       target="_blank"
                       rel="noopener"
-                      className="group inline-flex items-center gap-3 mt-10 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
+                      className="group inline-flex items-center gap-3 mt-12 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
                     >
-                      <span>Còn câu hỏi khác — Nhắn Zalo</span>
+                      <span>Hỏi tiếp qua Zalo</span>
                       <span
                         className="inline-block h-px w-8 group-hover:w-14 transition-all"
                         style={{ background: "var(--accent)" }}
@@ -1229,6 +1220,7 @@ function Index() {
                 )}
               </div>
             </div>
+
           </div>
         </section>
 
@@ -1326,35 +1318,46 @@ function Index() {
       </main>
 
       {/* ── Footer ─────────────────────────────────────────────── */}
-      <footer className="px-6 md:px-12 lg:px-16 py-12 bg-clay">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-t border-onyx/15 pt-10">
-          <div>
-            <p className="font-serif italic text-2xl">Sơn&nbsp;Lotus</p>
-            <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-              Premium Coating Manufacturer · Vietnam
+      <footer className="px-6 md:px-12 lg:px-16 pt-16 pb-12 bg-clay">
+        <div className="grid grid-cols-12 gap-8 border-t border-onyx/15 pt-12">
+          <div className="col-span-12 md:col-span-5">
+            <p className="font-serif italic text-[1.75rem] leading-none">Sơn&nbsp;Lotus</p>
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+              Nhà sản xuất sơn công nghiệp · Việt Nam
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 font-mono text-[10px] uppercase tracking-[0.28em] text-onyx/55">
-            <div>
-              <div className="text-onyx/40 mb-2">Xưởng</div>
-              <div className="text-onyx/80 normal-case tracking-normal">Bình Dương, VN</div>
-            </div>
-            <div>
-              <div className="text-onyx/40 mb-2">Văn phòng</div>
-              <div className="text-onyx/80 normal-case tracking-normal">TP. Hồ Chí Minh</div>
-            </div>
-            <div>
-              <div className="text-onyx/40 mb-2">Liên hệ</div>
-              <a href={ZALO_URL} target="_blank" rel="noopener" className="text-umber hover:text-onyx normal-case tracking-normal transition-colors">
-                Nhắn Zalo →
-              </a>
-            </div>
+
+          <div className="col-span-6 md:col-span-2">
+            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 mb-3">Xưởng</div>
+            <div className="text-onyx/80 text-sm leading-relaxed">Bình Dương</div>
+          </div>
+          <div className="col-span-6 md:col-span-2">
+            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 mb-3">Văn phòng</div>
+            <div className="text-onyx/80 text-sm leading-relaxed">TP. Hồ Chí Minh</div>
+          </div>
+          <div className="col-span-12 md:col-span-3">
+            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 mb-3">Liên hệ</div>
+            <a
+              href={ZALO_URL}
+              target="_blank"
+              rel="noopener"
+              className="group inline-flex items-center gap-3 text-onyx hover:text-umber transition-colors"
+            >
+              <span className="font-serif italic text-base">Nhắn Zalo</span>
+              <span
+                className="inline-block h-px w-8 group-hover:w-12 transition-all"
+                style={{ background: "var(--accent)" }}
+              />
+            </a>
           </div>
         </div>
-        <p className="mt-10 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/35">
-          © {new Date().getFullYear()} Lotus Coating Systems · All material rights reserved.
-        </p>
+
+        <div className="mt-16 flex flex-col md:flex-row md:items-center md:justify-between gap-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/35">
+          <span>© {new Date().getFullYear()} Sơn Lotus</span>
+          <span>Lotus Coating Atelier · ISO 9001</span>
+        </div>
       </footer>
+
     </div>
   );
 }
