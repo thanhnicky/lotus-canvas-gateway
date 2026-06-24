@@ -1227,8 +1227,8 @@ function Index() {
               <span className="not-italic font-normal">Lotus đề xuất đúng hệ sơn.</span>
             </h3>
             <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-relaxed r-rise r-d2">
-              Nhắn Zalo kèm ảnh bề mặt, vật liệu nền, yêu cầu hoàn thiện và quy mô công việc.
-              Lotus tư vấn hệ phù hợp và hướng xử lý rõ ràng — phản hồi trong 24 giờ làm việc.
+              Gửi ảnh, vật liệu nền, yêu cầu hoàn thiện và quy mô.
+              Kỹ thuật Lotus chốt hệ phủ và bước thi công trong 24 giờ làm việc.
             </p>
 
             {/* Project intake — what to send */}
