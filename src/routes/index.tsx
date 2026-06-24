@@ -918,8 +918,8 @@ function Index() {
                   <span className="italic font-light text-clay/80">không bỏ qua bước nào.</span>
                 </h2>
                 <p className="mt-8 text-clay/55 max-w-xs leading-relaxed r-rise r-d2">
-                  Phần lớn lỗi bong tróc, lệch màu hay làm lại bắt nguồn từ một bước bị bỏ qua. Quy trình Lotus được viết
-                  để xưởng và nhà thầu kiểm soát từng nhịp.
+                  90% lỗi bong, lệch màu và làm lại đến từ một bước bị cắt để chạy nhanh.
+                  Bốn bước dưới đây không có bước nào thừa.
                 </p>
 
                 <div className="mt-10 inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-clay/50 r-rise r-d3">
