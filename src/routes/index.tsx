@@ -71,7 +71,7 @@ const CATEGORIES: Category[] = [
     accent: "#6f4a2a",
     signature: "Workshop",
     description:
-      "Hệ sơn gỗ Lotus được xây dựng cho xưởng nội thất và nhà máy gỗ xuất khẩu — ưu tiên độ ổn định màu giữa các đợt, dễ kiểm soát độ bóng / độ lì, và giảm tỉ lệ làm lại khi chạy số lượng lớn.",
+      "Hệ sơn gỗ cho xưởng nội thất và nhà máy xuất khẩu. Màu lặp lại giữa các đợt, kiểm soát bóng/lì, ít làm lại khi chạy số lượng.",
     applications: [
       "Xưởng thi công nội thất theo đơn",
       "Nhà máy nội thất xuất khẩu Mỹ / EU",
