@@ -16,17 +16,17 @@ import project3 from "@/assets/project-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sơn Lotus — Hệ thống sơn phủ cao cấp cho mọi vật liệu" },
+      { title: "Sơn Lotus — Hệ sơn công nghiệp cho xưởng, nhà thầu và nhà máy" },
       {
         name: "description",
         content:
-          "Sơn Lotus — nhà sản xuất sơn công nghiệp Việt Nam. Hệ sơn gỗ, kim loại, giả gỗ, composite và sơn sàn cho nhà thầu, xưởng và dự án cao cấp.",
+          "Nhà sản xuất sơn Việt Nam. Hệ sơn gỗ, kim loại, giả gỗ, composite và sàn công nghiệp — chọn đúng hệ ngay từ đầu, giảm làm lại, dễ bàn giao.",
       },
-      { property: "og:title", content: "Sơn Lotus — Hệ thống sơn phủ cao cấp" },
+      { property: "og:title", content: "Sơn Lotus — Đúng hệ sơn cho công trình thật" },
       {
         property: "og:description",
         content:
-          "Nhà sản xuất sơn đa hệ thống — kiến tạo lớp bảo vệ bề mặt cho gỗ, kim loại, xi măng, composite và sàn công nghiệp.",
+          "Lotus đề xuất hệ phủ theo vật liệu nền, môi trường và quy mô — cho xưởng nội thất, nhà thầu kết cấu, nhà máy xuất khẩu và đơn vị thi công sàn.",
       },
     ],
   }),
@@ -62,49 +62,49 @@ const CATEGORIES: Category[] = [
     id: "wood",
     index: "01",
     name: "Sơn gỗ",
-    nameEn: "Timber Coating",
-    tagline: "Linh hồn của gỗ, được Lotus gìn giữ.",
+    nameEn: "Wood Coating",
+    tagline: "Đẹp không chỉ ở mẫu test. Đẹp cả khi chạy số lượng lớn.",
     manifesto:
-      "Mỗi đường vân là một câu chuyện đã được rừng viết. Chúng tôi chỉ giữ cho câu chuyện ấy không phai.",
+      "Xưởng cần một hệ sơn chạy được ổn định mỗi ngày, không phải một mẫu màu đẹp riêng lẻ.",
     image: catWood,
     imageTone: "dark",
     accent: "#6f4a2a",
-    signature: "Walnut",
+    signature: "Workshop",
     description:
-      "Hệ sơn gỗ Lotus tôn vinh từng đường vân tự nhiên, đồng thời tạo lớp màng bảo vệ siêu bền trước độ ẩm, tia UV và va đập cơ học — sự cân bằng giữa thẩm mỹ thủ công và hóa học hiện đại.",
+      "Hệ sơn gỗ Lotus được xây dựng cho xưởng nội thất và nhà máy gỗ xuất khẩu — ưu tiên độ ổn định màu giữa các đợt, dễ kiểm soát độ bóng / độ lì, và giảm tỉ lệ làm lại khi chạy số lượng lớn.",
     applications: [
-      "Nội thất gỗ cao cấp & resort nghỉ dưỡng",
-      "Cửa sổ, cửa ra vào chịu nắng trực tiếp",
-      "Sàn gỗ tự nhiên trong nhà",
-      "Đồ gỗ xuất khẩu thị trường Mỹ & EU",
+      "Xưởng thi công nội thất theo đơn",
+      "Nhà máy nội thất xuất khẩu Mỹ / EU",
+      "Đồ gỗ cao cấp cần hoàn thiện đồng đều",
+      "Hạng mục gỗ trong nhà yêu cầu kiểm soát màu",
     ],
     specs: [
-      { label: "Độ bóng", value: "Mờ 5% — Bóng gương" },
-      { label: "Độ bền", value: "Kháng UV, chống trầy 4H" },
-      { label: "Gốc", value: "PU / NC / Water-based" },
-      { label: "VOC", value: "Thấp — dưới 50 g/L" },
+      { label: "Độ ổn định màu", value: "Lặp lại giữa các đợt" },
+      { label: "Kiểm soát bóng", value: "Mờ 5% — Bóng gương" },
+      { label: "Gốc", value: "PU 2K / NC / Water-based" },
+      { label: "Phù hợp", value: "Chạy xưởng số lượng lớn" },
     ],
     process: [
-      { step: "I", title: "Xử lý bề mặt", body: "Chà nhám độ mịn P180–P240, vệ sinh bụi gỗ và kiểm tra độ ẩm dưới 12%." },
-      { step: "II", title: "Lớp lót Primer", body: "Ngăn nhựa gỗ, làm đầy lỗ li ti và tạo chân bám tối ưu cho lớp phủ." },
-      { step: "III", title: "Lớp phủ màu", body: "Phun đều tay để đạt sắc độ mong muốn mà vẫn giữ nguyên vân gỗ tự nhiên." },
-      { step: "IV", title: "Lớp Topcoat", body: "Quyết định độ bóng cuối cùng và khả năng chống trầy xước, chống ố vàng." },
+      { step: "I", title: "Chuẩn nền gỗ", body: "Chà nhám đúng độ mịn, kiểm độ ẩm dưới 12% — bước này quyết định màu lên đều hay không." },
+      { step: "II", title: "Lót chặn nhựa", body: "Ngăn nhựa gỗ đẩy ngược, làm phẳng lỗ chân lông để lớp màu không bị loang." },
+      { step: "III", title: "Phủ màu", body: "Pha theo công thức cố định cho từng đơn, đảm bảo sắc độ lặp lại giữa các đợt." },
+      { step: "IV", title: "Topcoat kiểm soát bóng", body: "Chọn đúng độ bóng theo yêu cầu khách cuối, hạn chế lệch tông khi giao hàng." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Wood Primer P80", rate: "8–10 m²/L", coats: "01" },
-      { layer: "Lớp lót 2", product: "Lotus Sanding Sealer", rate: "10–12 m²/L", coats: "02" },
+      { layer: "Lót 2", product: "Lotus Sanding Sealer", rate: "10–12 m²/L", coats: "02" },
       { layer: "Lớp màu", product: "Lotus Stain Color", rate: "12–15 m²/L", coats: "01" },
-      { layer: "Lớp phủ", product: "Lotus Topcoat Matte/Gloss", rate: "10–12 m²/L", coats: "02" },
+      { layer: "Topcoat", product: "Lotus Topcoat Matte / Gloss", rate: "10–12 m²/L", coats: "02" },
     ],
     projects: [
-      { image: project1, title: "Villa Đà Lạt", meta: "Hệ ngoại thất gỗ tếch" },
-      { image: revealCraft, title: "Atelier Walnut", meta: "Hoàn thiện thủ công" },
-      { image: project3, title: "Lumiere Dining", meta: "Trần & vách gỗ nội thất" },
+      { image: project1, title: "Đơn hàng nội thất xuất khẩu", meta: "Hoàn thiện đồng đều cả lệnh sản xuất" },
+      { image: revealCraft, title: "Xưởng gỗ óc chó", meta: "Pha màu lặp lại cho nhiều đợt" },
+      { image: project3, title: "Nội thất nhà hàng", meta: "Kiểm soát độ lì theo yêu cầu thiết kế" },
     ],
     faq: [
-      { q: "Hệ sơn có thể thi công ngoài trời không?", a: "Có. Dòng Lotus Wood Exterior có phụ gia kháng UV và chống nước, phù hợp cho mặt tiền và hệ cửa ngoài trời." },
-      { q: "Có hỗ trợ pha màu theo bảng riêng?", a: "Có. Chúng tôi pha màu theo mẫu khách gửi và cung cấp tấm sample trước khi sản xuất hàng loạt." },
-      { q: "Định mức tiêu hao thực tế?", a: "Phụ thuộc vào loại gỗ và phương pháp thi công. Đội kỹ thuật Lotus sẽ khảo sát và đưa định mức cam kết cho từng dự án." },
+      { q: "Làm sao giữ màu đều giữa các đợt sản xuất?", a: "Lotus cố định công thức pha và lưu mẫu chuẩn cho từng mã hàng. Mỗi đợt giao đều kiểm tra đối chiếu trước khi xuất xưởng để xưởng không phải chỉnh lại tay." },
+      { q: "Đặt độ bóng theo yêu cầu khách cuối được không?", a: "Có. Mờ 5 / 10 / 20 / 30 / bán bóng / bóng gương đều pha được theo mã. Gửi mẫu hoặc thông số khách yêu cầu, Lotus làm tấm sample đối chiếu trước khi chạy số lượng." },
+      { q: "Nếu xưởng đang gặp lỗi hoàn thiện thì xử lý thế nào?", a: "Gửi ảnh sản phẩm lỗi và mô tả quy trình hiện tại qua Zalo. Đội kỹ thuật Lotus phân tích nguyên nhân và đề xuất hệ phù hợp để giảm làm lại." },
     ],
   },
   {
@@ -112,47 +112,47 @@ const CATEGORIES: Category[] = [
     index: "02",
     name: "Sơn kim loại",
     nameEn: "Metal & Steel",
-    tagline: "Phủ bền — chống ăn mòn cho kết cấu thép.",
+    tagline: "Đúng hệ chống ăn mòn cho từng môi trường vận hành.",
     manifesto:
-      "Thép không sợ thời gian, chỉ sợ ẩm. Lotus đứng giữa hai lực ấy.",
+      "Kết cấu thép hỏng vì chọn sai hệ, không phải vì sơn rẻ. Lotus đề xuất hệ theo môi trường thật.",
     image: catMetal,
     imageTone: "dark",
     accent: "#4a5560",
     signature: "Steel",
     description:
-      "Hệ sơn kim loại Lotus cho kết cấu thép, nhôm và hợp kim — kết hợp lớp chống gỉ epoxy cùng lớp phủ PU bền màu, đáp ứng yêu cầu khắt khe của công trình công nghiệp và kiến trúc hiện đại.",
+      "Hệ sơn kim loại Lotus cho nhà thầu kết cấu thép, nhà máy cơ khí và công trình công nghiệp — chọn đúng cấp chống ăn mòn theo môi trường (C3 / C4 / C5) để giảm rủi ro bảo hành sau bàn giao.",
     applications: [
-      "Kết cấu thép nhà xưởng, cầu cảng",
-      "Mặt tiền nhôm kiến trúc & lam che nắng",
-      "Thiết bị công nghiệp & cơ khí chính xác",
-      "Đồ nội thất kim loại sơn tĩnh điện",
+      "Kết cấu thép nhà xưởng, kho",
+      "Công trình ven biển, môi trường C5",
+      "Thiết bị cơ khí, khung máy",
+      "Lam nhôm và mặt tiền kim loại",
     ],
     specs: [
-      { label: "Chống ăn mòn", value: "ISO 12944 — C4 / C5" },
-      { label: "Độ bền màu", value: "QUV 1000h" },
+      { label: "Cấp chống ăn mòn", value: "ISO 12944 · C3 / C4 / C5" },
+      { label: "Bền màu ngoài trời", value: "QUV 1000h" },
       { label: "Gốc", value: "Epoxy / PU 2K" },
-      { label: "Chống trầy", value: "Cấp 4H" },
+      { label: "Phù hợp", value: "Công trình có nghiệm thu kỹ thuật" },
     ],
     process: [
-      { step: "I", title: "Làm sạch bề mặt", body: "Phun bi Sa 2.5 hoặc tẩy rỉ hóa học, đạt tiêu chuẩn ISO 8501." },
-      { step: "II", title: "Lớp lót chống gỉ", body: "Epoxy giàu kẽm tạo lớp bảo vệ catot, ngăn ăn mòn từ nền thép." },
-      { step: "III", title: "Lớp trung gian", body: "Epoxy MIO tăng độ dày khô và khả năng chống thấm hơi nước." },
-      { step: "IV", title: "Lớp phủ PU", body: "Bền màu, kháng UV và giữ sắc độ ngay cả trong môi trường khắc nghiệt." },
+      { step: "I", title: "Làm sạch bề mặt", body: "Phun bi Sa 2.5 hoặc xử lý hóa chất theo ISO 8501 — chân bám quyết định tuổi thọ cả hệ." },
+      { step: "II", title: "Lót chống gỉ", body: "Epoxy giàu kẽm cho bảo vệ catot, chọn theo cấp ăn mòn thực tế tại công trình." },
+      { step: "III", title: "Lớp trung gian", body: "Epoxy MIO tăng độ dày khô, chống thấm hơi nước cho môi trường khắc nghiệt." },
+      { step: "IV", title: "Phủ PU", body: "Bền màu, giữ ngoại quan công trình lâu dài, hạn chế phải sơn lại sớm." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Zinc-rich Epoxy", rate: "6–8 m²/L", coats: "01" },
       { layer: "Trung gian", product: "Lotus Epoxy MIO", rate: "5–7 m²/L", coats: "01" },
-      { layer: "Lớp phủ", product: "Lotus PU 2K", rate: "10–12 m²/L", coats: "02" },
+      { layer: "Phủ", product: "Lotus PU 2K", rate: "10–12 m²/L", coats: "02" },
     ],
     projects: [
-      { image: project2, title: "The Office HCMC", meta: "Mặt tiền nhôm anode" },
-      { image: catMetal, title: "Nhà máy Bình Dương", meta: "Kết cấu thép C5" },
-      { image: project3, title: "Lumiere Dining", meta: "Trần kim loại sơn matte" },
+      { image: project2, title: "Mặt tiền nhôm văn phòng", meta: "Hệ PU 2K bền màu" },
+      { image: catMetal, title: "Nhà máy ven biển", meta: "Hệ C5 cho môi trường mặn" },
+      { image: project3, title: "Trần kim loại thương mại", meta: "Hoàn thiện matte kiểm soát" },
     ],
     faq: [
-      { q: "Có dùng được cho mạ kẽm nhúng nóng?", a: "Có. Sử dụng Lotus Etch Primer làm lớp chuyển tiếp trước khi sơn epoxy." },
-      { q: "Định mức cho kết cấu C5?", a: "Tổng DFT tối thiểu 240–320 µm tùy môi trường, đội kỹ thuật sẽ thiết kế hệ phù hợp." },
-      { q: "Có chứng nhận chất lượng?", a: "Lotus có ISO 9001, đầy đủ TDS / MSDS và báo cáo kiểm nghiệm độc lập." },
+      { q: "Cách chọn đúng cấp C3 / C4 / C5?", a: "Phụ thuộc vị trí công trình: trong nhà khô, gần đường, ven biển hay nhà máy hóa chất. Gửi vị trí và mô tả môi trường, Lotus đề xuất hệ tương ứng và tổng DFT cần đạt." },
+      { q: "Có thi công lên mạ kẽm nhúng nóng không?", a: "Có. Dùng Lotus Etch Primer làm lớp chuyển tiếp trước khi sơn epoxy, đảm bảo độ bám trên bề mặt mạ." },
+      { q: "Có hồ sơ kỹ thuật để trình nghiệm thu?", a: "Có. TDS, MSDS, ISO 9001 và báo cáo kiểm nghiệm độc lập đầy đủ cho hồ sơ thầu và biên bản nghiệm thu." },
     ],
   },
   {
@@ -160,46 +160,48 @@ const CATEGORIES: Category[] = [
     index: "03",
     name: "Sơn giả gỗ trên kim loại",
     nameEn: "Wood-grain on Metal",
-    tagline: "Vẻ ấm của gỗ, sự kiên cố của thép.",
-    manifesto: "Khi kim loại học cách kể câu chuyện của khu rừng.",
+    tagline: "Đẹp khi bàn giao, bền khi đưa vào công trình.",
+    manifesto:
+      "Chủ đầu tư không quan tâm bạn dùng bao nhiêu công đoạn. Họ chỉ nhìn vân gỗ sau một mùa nắng.",
     image: catMetalWood,
     imageTone: "light",
     accent: "#8a5a36",
     signature: "Teak",
     description:
-      "Giải pháp phủ vân gỗ chân thực trên nền nhôm, sắt hộp và lam che nắng — bền bỉ trước thời tiết nhiệt đới, mang vẻ ấm của gỗ tự nhiên cho kiến trúc kim loại hiện đại.",
+      "Hệ giả gỗ trên sắt và nhôm cho nhà thầu cần ra thẩm mỹ thật, quy trình rõ ràng và giảm rủi ro bàn giao. Vân gỗ chân thực ở khoảng nhìn thực tế, hạn chế bạc màu khi ra nắng.",
     applications: [
-      "Lam nhôm mặt tiền và lan can",
-      "Cửa thép vân gỗ ngoài trời",
-      "Trần & vách kim loại trang trí",
-      "Đồ nội thất kim loại giả gỗ",
+      "Cổng sắt, hàng rào, lam che nắng",
+      "Cửa thép vân gỗ mặt tiền",
+      "Lan can, trần kim loại trang trí",
+      "Hạng mục ngoài trời và bán ngoài trời",
     ],
     specs: [
-      { label: "Mức độ chân thực", value: "Cao — vân 3D" },
-      { label: "Kháng UV", value: "QUV 1500h" },
+      { label: "Vân ở khoảng nhìn thật", value: "Khó phân biệt với gỗ" },
+      { label: "Kháng UV ngoài trời", value: "QUV 1500h" },
       { label: "Gốc", value: "PU Wood-grain" },
-      { label: "Bảo hành màu", value: "Lên đến 10 năm" },
+      { label: "Phù hợp", value: "Nhà thầu cần đúng hệ ngay từ đầu" },
     ],
     process: [
-      { step: "I", title: "Xử lý nền", body: "Tẩy dầu, xử lý hóa chuyển hóa và sơn lót epoxy chống gỉ." },
-      { step: "II", title: "Lớp nền màu gỗ", body: "Phun lớp base màu gỗ làm nền cho vân, sấy hoặc khô tự nhiên." },
-      { step: "III", title: "Vẽ vân gỗ", body: "Lăn vân chuyên dụng hoặc in chuyển nhiệt water-transfer." },
-      { step: "IV", title: "Lớp phủ bóng", body: "Topcoat trong PU khoá vân và bảo vệ khỏi tia UV." },
+      { step: "I", title: "Xử lý nền kim loại", body: "Tẩy dầu, chuyển hóa bề mặt và sơn lót epoxy chống gỉ — bỏ qua bước này là phải sửa cả mặt." },
+      { step: "II", title: "Nền màu gỗ", body: "Base tone gỗ phun đều, làm cơ sở cho vân lên đúng sắc độ." },
+      { step: "III", title: "Tạo vân", body: "Lăn vân chuyên dụng hoặc in chuyển nhiệt theo mẫu gỗ khách chọn." },
+      { step: "IV", title: "Topcoat khoá vân", body: "Phủ trong PU kháng UV, giữ vân không bạc tông khi ra ngoài trời." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Metal Primer G-200", rate: "8–10 m²/L", coats: "01" },
-      { layer: "Lớp nền", product: "Lotus Wood Base", rate: "6–8 m²/L", coats: "01" },
-      { layer: "Vẽ vân", product: "Lotus Grain Stain S-10", rate: "12–15 m²/L", coats: "01" },
-      { layer: "Lớp phủ", product: "Lotus Clear Topcoat", rate: "10–12 m²/L", coats: "01" },
+      { layer: "Nền màu", product: "Lotus Wood Base", rate: "6–8 m²/L", coats: "01" },
+      { layer: "Tạo vân", product: "Lotus Grain Stain S-10", rate: "12–15 m²/L", coats: "01" },
+      { layer: "Topcoat", product: "Lotus Clear Topcoat UV", rate: "10–12 m²/L", coats: "01" },
     ],
     projects: [
-      { image: catMetalWood, title: "Lam nhôm mặt tiền", meta: "Resort Phú Quốc" },
-      { image: project2, title: "Office Facade", meta: "Hệ giả gỗ trên nhôm" },
-      { image: project1, title: "Villa ven biển", meta: "Cửa thép vân tếch" },
+      { image: catMetalWood, title: "Lam nhôm mặt tiền resort", meta: "Vân teak, hệ ngoài trời" },
+      { image: project2, title: "Mặt tiền tòa nhà văn phòng", meta: "Giả gỗ trên nhôm anode" },
+      { image: project1, title: "Cửa thép villa ven biển", meta: "Vân walnut, hệ kháng UV" },
     ],
     faq: [
-      { q: "Bao lâu cần bảo dưỡng lại?", a: "Trung bình 7–10 năm tùy môi trường, có thể phục hồi tại chỗ bằng dòng Lotus Refinish." },
-      { q: "Có làm được vân walnut / teak / oak?", a: "Có. Thư viện hơn 40 mẫu vân và nhận làm mẫu theo yêu cầu." },
+      { q: "Chọn hệ thế nào để không bạc màu sau vài tháng?", a: "Vấn đề thường không nằm ở vân mà ở lớp topcoat và lớp lót chống gỉ. Gửi vị trí công trình (trong nhà, ban công, ngoài trời trực tiếp), Lotus đề xuất hệ đủ lớp để vân giữ tông lâu dài." },
+      { q: "Có làm được vân walnut, teak, oak?", a: "Có. Thư viện trên 40 mẫu vân, đồng thời nhận làm mẫu mới theo ảnh khách gửi. Lotus làm tấm sample đối chiếu trước khi triển khai diện tích lớn." },
+      { q: "Nếu thi công sai hệ, sửa được không?", a: "Sửa được nhưng tốn công hơn làm đúng từ đầu — thường phải xử lý cả mặt. Vì vậy nên gửi ảnh hiện trạng và vật liệu nền trước, Lotus tư vấn đúng hệ ngay từ bước báo giá." },
     ],
   },
   {
@@ -207,46 +209,48 @@ const CATEGORIES: Category[] = [
     index: "04",
     name: "Sơn giả gỗ trên tấm xi măng",
     nameEn: "Wood-grain on Cement",
-    tagline: "Tấm cement, chiều sâu của gỗ.",
-    manifesto: "Cement gánh tải trọng. Gỗ gánh cảm xúc. Lotus là cái bắt tay.",
+    tagline: "Chọn đúng hệ ngay từ đầu để đỡ sửa cả một bề mặt đã lên vân.",
+    manifesto:
+      "Tấm cement không tha thứ cho hệ sai. Một lỗi nhỏ ở lớp lót là cả mảng vân phải làm lại.",
     image: catCementWood,
     imageTone: "light",
     accent: "#7a6347",
     signature: "Oak Cement",
     description:
-      "Phủ vân gỗ tự nhiên trên tấm cement Smartboard, Duraflex hoặc cement composite — bền nước, không cong vênh, mang vẻ đẹp ấm áp của gỗ cho ốp tường, trần và sàn ngoại thất.",
+      "Hệ giả gỗ trên Smartboard, Duraflex và tấm cement composite — dành cho nhà thầu cần ra vân thẩm mỹ trên mặt tiền, hàng rào, lam và ốp ngoại thất, với độ bền nước và độ bám phù hợp nền kiềm.",
     applications: [
-      "Ốp tường & trần ngoại thất",
+      "Ốp tường, trần ngoại thất",
+      "Mặt tiền nhà phố vân gỗ",
+      "Lam trang trí, hàng rào cement",
       "Sàn ban công, hành lang khô",
-      "Hệ vách trang trí nhà phố",
-      "Mặt tiền nhà gỗ cao cấp",
     ],
     specs: [
-      { label: "Độ bám", value: "Cao trên nền cement" },
-      { label: "Chống thấm", value: "Đạt — không bong tróc" },
+      { label: "Độ bám trên cement", value: "Cao — qua lót kháng kiềm" },
+      { label: "Chống thấm", value: "Ngâm 240h không bong" },
       { label: "Gốc", value: "Acrylic Wood-grain" },
-      { label: "Bền màu", value: "5–8 năm ngoài trời" },
+      { label: "Phù hợp", value: "Hạng mục ngoại thất nhà thầu" },
     ],
     process: [
-      { step: "I", title: "Xử lý tấm cement", body: "Vệ sinh, mài phẳng các mối nối và sơn lót kháng kiềm chuyên dụng." },
-      { step: "II", title: "Lớp nền vân gỗ", body: "Phun base color đồng đều, làm nền cho thao tác vẽ vân." },
-      { step: "III", title: "Lăn vân thủ công", body: "Sử dụng con lăn chuyên dụng tạo đường vân gỗ chân thực." },
-      { step: "IV", title: "Phủ bảo vệ", body: "Topcoat acrylic UV bảo vệ vân và chống bám bẩn." },
+      { step: "I", title: "Xử lý tấm cement", body: "Vệ sinh, mài phẳng mối nối và lót kháng kiềm — bước bắt buộc để vân không bong sau vài tháng." },
+      { step: "II", title: "Nền màu gỗ", body: "Base color đồng đều, làm nền chuẩn cho thao tác vẽ vân." },
+      { step: "III", title: "Lăn vân", body: "Con lăn chuyên dụng tạo vân theo mẫu gỗ khách chọn, kiểm soát hướng và mật độ." },
+      { step: "IV", title: "Topcoat UV", body: "Acrylic UV khoá vân, chống bám bẩn và giữ tông ngoài trời." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Alkali Primer", rate: "8–10 m²/L", coats: "01" },
-      { layer: "Lớp nền", product: "Lotus Wood Base Acrylic", rate: "8–10 m²/L", coats: "01" },
-      { layer: "Vẽ vân", product: "Lotus Grain Roller Stain", rate: "10–14 m²/L", coats: "01" },
-      { layer: "Lớp phủ", product: "Lotus Acrylic Topcoat UV", rate: "10–12 m²/L", coats: "02" },
+      { layer: "Nền màu", product: "Lotus Wood Base Acrylic", rate: "8–10 m²/L", coats: "01" },
+      { layer: "Tạo vân", product: "Lotus Grain Roller Stain", rate: "10–14 m²/L", coats: "01" },
+      { layer: "Topcoat", product: "Lotus Acrylic Topcoat UV", rate: "10–12 m²/L", coats: "02" },
     ],
     projects: [
-      { image: catCementWood, title: "Ốp tường Smartboard", meta: "Villa Vũng Tàu" },
-      { image: project1, title: "Mặt tiền nhà gỗ", meta: "Cement vân teak" },
-      { image: project2, title: "Hệ lam trang trí", meta: "Cement vân walnut" },
+      { image: catCementWood, title: "Ốp tường Smartboard villa", meta: "Vân teak, hệ ngoại thất" },
+      { image: project1, title: "Mặt tiền nhà phố", meta: "Cement vân walnut" },
+      { image: project2, title: "Hệ lam trang trí", meta: "Cement composite vân oak" },
     ],
     faq: [
-      { q: "Có thi công được lên cement đã sơn cũ?", a: "Có, sau khi vệ sinh và kiểm tra độ bám của lớp sơn cũ." },
-      { q: "Khả năng chống thấm thế nào?", a: "Hệ Lotus được test ngâm nước 240h không bong tróc, không phồng rộp." },
+      { q: "Tấm cement đã sơn cũ có thi công được không?", a: "Được, sau khi kiểm tra độ bám lớp sơn cũ và xử lý các điểm bong. Gửi ảnh hiện trạng để Lotus đánh giá có cần cạo bỏ hay phủ trực tiếp." },
+      { q: "Vân giả gỗ giữ được bao lâu ngoài trời?", a: "Trung bình 5–8 năm khi thi công đủ hệ, có topcoat UV. Tuổi thọ phụ thuộc nhiều vào lớp lót kháng kiềm và độ ẩm nền lúc thi công — không phải vào vân." },
+      { q: "Báo giá tính theo gì?", a: "Theo diện tích, độ phức tạp của vân (1 tông, 2 tông, vân sâu) và vị trí công trình. Gửi ảnh hạng mục, vật liệu nền và m² để Lotus báo giá hệ phù hợp." },
     ],
   },
   {
@@ -254,44 +258,46 @@ const CATEGORIES: Category[] = [
     index: "05",
     name: "Sơn nhựa / composite",
     nameEn: "Plastic & Composite",
-    tagline: "Hoàn thiện nhựa kỹ thuật cấp công nghiệp.",
-    manifesto: "Trên một bề mặt khó bám nhất, chúng tôi tìm thấy hóa học của sự gắn kết.",
+    tagline: "Đẹp ở mẫu là chưa đủ. Nhà máy cần đẹp đồng đều trên cả dây chuyền.",
+    manifesto:
+      "Một lỗi coating trên dây chuyền không chỉ hỏng sản phẩm — nó ảnh hưởng cả đơn hàng xuất khẩu và uy tín với khách.",
     image: catComposite,
     imageTone: "light",
     accent: "#3d4a4a",
     signature: "Polymer",
     description:
-      "Hệ sơn cho ABS, PC, FRP, fiberglass và composite — độ bám tuyệt vời trên bề mặt nhựa nhẵn, bền màu, thân thiện cho ngành ô tô, thiết bị y tế và sản phẩm xuất khẩu.",
+      "Hệ phủ cho nhựa kỹ thuật và composite — dành cho nhà máy sản xuất hàng xuất khẩu cần bám dính ổn định trên nền khó, ngoại quan đồng đều và quy trình lặp lại được khi chạy số lượng.",
     applications: [
-      "Chi tiết nội thất ô tô & xe máy",
-      "Vỏ thiết bị y tế và điện tử",
-      "Đồ chơi, đồ gia dụng composite",
-      "Sản phẩm fiberglass và FRP",
+      "Sản phẩm nhựa kỹ thuật xuất khẩu",
+      "Linh kiện composite, FRP, fiberglass",
+      "Vỏ thiết bị y tế, điện tử",
+      "Chi tiết nội thất ô tô, xe máy",
     ],
     specs: [
       { label: "Độ bám", value: "Cấp 5B (cross-cut)" },
-      { label: "Độ bền", value: "Kháng dung môi nhẹ" },
+      { label: "Ngoại quan", value: "Đồng đều trên dây chuyền" },
       { label: "Gốc", value: "PU 2K / 1K Plastic" },
-      { label: "Hoàn thiện", value: "Soft-touch, matte, gloss" },
+      { label: "Phù hợp", value: "Sản xuất xuất khẩu theo tiêu chuẩn" },
     ],
     process: [
-      { step: "I", title: "Xử lý bề mặt", body: "Lau IPA, plasma hoặc flame treatment nếu cần để mở năng lượng bề mặt." },
-      { step: "II", title: "Lớp lót plastic", body: "Primer chuyên dụng cho từng loại nhựa PP / PE / ABS / PC." },
-      { step: "III", title: "Lớp phủ màu", body: "Phun PU 2K, sấy gia nhiệt 60°C trong 30 phút." },
-      { step: "IV", title: "Kiểm tra QC", body: "Test cross-cut, độ dày DFT và độ bóng theo tiêu chuẩn khách hàng." },
+      { step: "I", title: "Xử lý bề mặt nhựa", body: "Lau IPA, flame hoặc plasma tùy loại nhựa — quyết định độ bám của cả hệ phủ." },
+      { step: "II", title: "Lót chuyên dụng", body: "Primer chọn theo nền PP / PE / ABS / PC, đảm bảo cross-cut đạt khi QC khách kiểm." },
+      { step: "III", title: "Phủ màu", body: "PU 2K phun trên dây chuyền, sấy gia nhiệt cho độ đồng đều giữa các batch." },
+      { step: "IV", title: "QC ngoại quan", body: "Test cross-cut, DFT và độ bóng theo tiêu chuẩn khách hàng trước khi đóng gói." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Plastic Primer", rate: "10–12 m²/L", coats: "01" },
-      { layer: "Lớp phủ", product: "Lotus PU 2K Plastic", rate: "10–12 m²/L", coats: "02" },
+      { layer: "Phủ", product: "Lotus PU 2K Plastic", rate: "10–12 m²/L", coats: "02" },
     ],
     projects: [
-      { image: catComposite, title: "Vỏ thiết bị y tế", meta: "ABS sơn matte" },
-      { image: project2, title: "Linh kiện ô tô", meta: "PU 2K soft-touch" },
-      { image: project1, title: "Sản phẩm FRP", meta: "Composite ngoại thất" },
+      { image: catComposite, title: "Vỏ thiết bị y tế xuất khẩu", meta: "ABS, hoàn thiện matte đồng đều" },
+      { image: project2, title: "Linh kiện ô tô", meta: "PU 2K soft-touch theo spec khách" },
+      { image: project1, title: "Sản phẩm FRP", meta: "Composite ngoại thất, hệ kháng UV" },
     ],
     faq: [
-      { q: "Có cần xử lý plasma không?", a: "Tùy loại nhựa. PP / PE thường cần flame hoặc plasma; ABS / PC chỉ cần primer chuyên dụng." },
-      { q: "Thời gian sấy?", a: "Khô tự nhiên 24h hoặc sấy 60°C trong 30 phút." },
+      { q: "Loại nhựa nào cần xử lý plasma hoặc flame?", a: "PP và PE thường cần flame hoặc plasma để mở năng lượng bề mặt. ABS, PC, FRP, fiberglass chỉ cần primer chuyên dụng. Gửi loại nhựa cụ thể để Lotus tư vấn quy trình." },
+      { q: "Làm sao đảm bảo ngoại quan đồng đều giữa các batch?", a: "Lotus cố định công thức, lưu mẫu chuẩn theo từng mã sản phẩm và đồng hành QC tại nhà máy trong giai đoạn chạy thử để chuẩn hóa thông số phun và sấy." },
+      { q: "Có hỗ trợ test đạt tiêu chuẩn khách xuất khẩu?", a: "Có. Lotus cung cấp tấm test cross-cut, DFT, độ bóng và phối hợp với QC nhà máy để đạt tiêu chuẩn ngoại quan của khách đầu cuối trước khi sản xuất chính thức." },
     ],
   },
   {
@@ -299,46 +305,48 @@ const CATEGORIES: Category[] = [
     index: "06",
     name: "Sơn sàn",
     nameEn: "Industrial Flooring",
-    tagline: "Sàn công nghiệp — chịu tải và thẩm mỹ.",
-    manifesto: "Một mặt phẳng liền mạch — nơi mỗi bước chân là một thí nghiệm về độ bền.",
+    tagline: "Sàn công nghiệp bền hay không phụ thuộc vào hệ chọn từ đầu.",
+    manifesto:
+      "Chọn sai hệ sàn — giá rẻ lúc đầu, nhưng trả giá sau nghiệm thu khi sàn bong, xuống cấp, hoặc phải sửa cả khu vực vận hành.",
     image: catFloor,
     imageTone: "light",
     accent: "#525a55",
     signature: "Graphite",
     description:
-      "Hệ sơn sàn Epoxy và PU Lotus dành cho nhà máy thực phẩm, kho logistics, showroom và không gian thương mại — chịu mài mòn, kháng hoá chất, dễ vệ sinh và mang lại bề mặt liền mạch.",
+      "Hệ sơn sàn Epoxy và PU Lotus cho đơn vị thầu thi công sàn công nghiệp — chọn đúng hệ theo nền hiện trạng, tải trọng, hóa chất và độ ẩm để giảm rủi ro bong tróc sau bàn giao.",
     applications: [
-      "Nhà máy thực phẩm & dược phẩm",
-      "Kho logistics, parking, showroom",
-      "Phòng sạch & phòng thí nghiệm",
-      "Sàn thương mại cao cấp",
+      "Nhà xưởng sản xuất, kho logistics",
+      "Khu vực xe nâng, tải trọng nặng",
+      "Phòng sạch, phòng thí nghiệm",
+      "Showroom, khu vực kỹ thuật, parking",
     ],
     specs: [
-      { label: "Chịu tải", value: "Tải nặng — xe nâng" },
-      { label: "Kháng hoá chất", value: "Axit / kiềm trung bình" },
+      { label: "Chịu tải", value: "Đi bộ → Xe nâng nặng" },
+      { label: "Kháng hóa chất", value: "Axit / kiềm trung bình → cao" },
       { label: "Gốc", value: "Epoxy / PU self-levelling" },
-      { label: "Độ dày", value: "0.3 – 3.0 mm" },
+      { label: "Phù hợp", value: "Thầu thi công sàn công nghiệp" },
     ],
     process: [
-      { step: "I", title: "Mài sàn", body: "Mài kim cương để mở mao mạch bê tông, tạo độ nhám và độ bám." },
-      { step: "II", title: "Lớp lót thấm", body: "Primer epoxy thấm sâu, liên kết với nền bê tông." },
-      { step: "III", title: "Lớp trung gian", body: "Bả vá khuyết tật và cào đều tạo mặt phẳng thi công." },
-      { step: "IV", title: "Lớp phủ hoàn thiện", body: "Self-levelling hoặc lăn phủ tuỳ tải trọng và yêu cầu thẩm mỹ." },
+      { step: "I", title: "Khảo sát hiện trạng", body: "Kiểm tra cường độ bê tông, độ ẩm, tải trọng vận hành — quyết định hệ phủ phù hợp." },
+      { step: "II", title: "Mài và lót thấm", body: "Mài kim cương mở mao mạch, primer epoxy thấm sâu để liên kết với nền bê tông." },
+      { step: "III", title: "Trung gian / bả vá", body: "Bả khuyết tật và cào đều — tạo mặt phẳng cho lớp phủ đạt chiều dày thiết kế." },
+      { step: "IV", title: "Phủ hoàn thiện", body: "Self-levelling hoặc lăn phủ theo tải trọng, môi trường và yêu cầu thẩm mỹ." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Floor Primer EP", rate: "5–7 m²/L", coats: "01" },
-      { layer: "Lớp giữa", product: "Lotus Mortar Coat", rate: "tuỳ thiết kế", coats: "01" },
-      { layer: "Lớp phủ", product: "Lotus Self-Level Epoxy", rate: "1 mm = 1.5 kg/m²", coats: "01" },
+      { layer: "Trung gian", product: "Lotus Mortar Coat", rate: "tuỳ thiết kế", coats: "01" },
+      { layer: "Phủ", product: "Lotus Self-Level Epoxy", rate: "1 mm = 1.5 kg/m²", coats: "01" },
       { layer: "Topcoat", product: "Lotus PU Floor Matte", rate: "8–10 m²/L", coats: "01" },
     ],
     projects: [
-      { image: catFloor, title: "Showroom Gallery", meta: "Epoxy self-level 2 mm" },
-      { image: project3, title: "Lumiere Dining", meta: "PU matte thương mại" },
-      { image: project2, title: "Kho logistics", meta: "Epoxy chịu tải nặng" },
+      { image: catFloor, title: "Showroom thương mại", meta: "Epoxy self-level 2 mm" },
+      { image: project3, title: "Khu vực vận hành nhà máy", meta: "PU matte chịu hóa chất" },
+      { image: project2, title: "Kho logistics tải nặng", meta: "Epoxy chịu xe nâng" },
     ],
     faq: [
-      { q: "Bao lâu thì sử dụng được?", a: "24h cho người đi bộ, 72h cho xe nâng và tải nặng." },
-      { q: "Có thi công trên bê tông cũ?", a: "Có. Cần kiểm tra cường độ và độ ẩm bê tông trước khi mài và sơn." },
+      { q: "Nền bê tông yếu hoặc ẩm có thi công được không?", a: "Có, nhưng cần khảo sát trước. Lotus đo độ ẩm, cường độ kéo nhổ và đề xuất lớp xử lý nền phù hợp — thi công trên nền không đạt là nguyên nhân chính của bong tróc sớm." },
+      { q: "Khu vực xe nâng nặng nên chọn hệ nào?", a: "Tùy tải trọng và mật độ vận hành. Thường dùng Epoxy self-levelling 2–3 mm hoặc hệ mortar. Gửi tải trọng xe nâng, diện tích và môi trường hóa chất để Lotus thiết kế hệ đúng." },
+      { q: "Thời gian thi công và bàn giao?", a: "Thông thường: 24h cho đi bộ, 72h cho xe nâng và tải nặng. Tiến độ cụ thể phụ thuộc diện tích, số lớp và điều kiện môi trường — Lotus lên kế hoạch chi tiết theo từng dự án." },
     ],
   },
 ];
@@ -347,33 +355,33 @@ const CATEGORIES: Category[] = [
 const MOOD: Record<string, { crop: string; pause: string; pauseSub: string }> = {
   wood: {
     crop: "center 38%",
-    pause: "Vân gỗ, không phai.",
-    pauseSub: "Lớp phủ thấm vào thớ — bảo vệ từ chiều sâu.",
+    pause: "Đều màu khi chạy số lượng lớn.",
+    pauseSub: "Hệ ổn định cho xưởng nội thất và nhà máy gỗ xuất khẩu.",
   },
   metal: {
     crop: "center 28%",
-    pause: "Thép giữ hình.",
-    pauseSub: "Lớp epoxy giàu kẽm chống ăn mòn từ nền.",
+    pause: "Đúng hệ — đúng môi trường.",
+    pauseSub: "Chọn cấp chống ăn mòn theo công trình thật, không theo cảm tính.",
   },
   "metal-wood": {
     crop: "65% 55%",
-    pause: "Kim loại, học vân gỗ.",
-    pauseSub: "Vẻ ấm của gỗ trên nền nhôm và thép.",
+    pause: "Đẹp khi bàn giao. Bền sau một mùa nắng.",
+    pauseSub: "Hệ giả gỗ trên kim loại cho nhà thầu cần giảm rủi ro làm lại.",
   },
   "cement-wood": {
     crop: "center 68%",
-    pause: "Cement, mang chiều sâu của gỗ.",
-    pauseSub: "Bền nước, không cong vênh, vân thật.",
+    pause: "Chọn đúng hệ ngay từ đầu.",
+    pauseSub: "Tránh sửa cả một mặt cement đã lên vân.",
   },
   composite: {
     crop: "30% 50%",
-    pause: "Bám trên bề mặt khó nhất.",
-    pauseSub: "Hóa học của sự gắn kết trên nhựa kỹ thuật.",
+    pause: "Đồng đều trên cả dây chuyền.",
+    pauseSub: "Hệ phủ cho nhà máy sản xuất nhựa và composite xuất khẩu.",
   },
   floor: {
     crop: "center 78%",
-    pause: "Một mặt phẳng, liền mạch.",
-    pauseSub: "Chịu tải, kháng hóa chất, dễ vệ sinh.",
+    pause: "Bền hay không, quyết định từ đầu.",
+    pauseSub: "Hệ sàn chọn theo nền, tải trọng và môi trường vận hành.",
   },
 };
 
@@ -491,18 +499,18 @@ function Index() {
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
             <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-10 md:mb-12 flex items-center gap-4">
               <span className="inline-block h-px w-10 bg-onyx/45" />
-              <span>Nhà sản xuất sơn công nghiệp</span>
+              <span>Nhà sản xuất sơn công nghiệp · Việt Nam</span>
             </div>
             <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.92] tracking-[-0.025em] text-balance text-onyx">
-              <span className="block">Vật liệu,</span>
+              <span className="block">Đúng hệ sơn,</span>
               <span className="block italic font-light text-onyx/90">
-                được phủ bằng <span className="not-italic font-normal">ý đồ.</span>
+                cho <span className="not-italic font-normal">công trình thật.</span>
               </span>
             </h1>
 
             <p className="mt-12 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
-              Sáu hệ sơn chuyên biệt — pha chế tại Bình Dương,
-              điều chỉnh theo từng dự án.
+              Sáu hệ sơn cho xưởng, nhà thầu và nhà máy —
+              chọn đúng từ đầu để giảm làm lại và dễ bàn giao.
             </p>
 
             <div className="mt-12 md:mt-14 flex flex-wrap items-center gap-x-8 gap-y-3">
@@ -513,7 +521,7 @@ function Index() {
                 className="group inline-flex items-center gap-3 bg-onyx text-clay pl-5 pr-4 py-3 hover:bg-ash transition-colors"
               >
                 <span className="font-mono text-[11px] uppercase tracking-[0.32em]">
-                  Nhắn Zalo · Tư vấn dự án
+                  Nhắn Zalo · Tư vấn hệ sơn phù hợp
                 </span>
                 <span
                   className="inline-block h-px w-6 group-hover:w-10 transition-all"
@@ -521,7 +529,7 @@ function Index() {
                 />
               </a>
               <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                Phản hồi trong 24h
+                Kỹ thuật phản hồi trong 24h
               </span>
             </div>
           </div>
@@ -660,10 +668,10 @@ function Index() {
         <section className="border-y border-onyx/15 bg-paper">
           <div className="px-6 md:px-12 lg:px-16 py-6 md:py-7 grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-8">
             {[
-              { k: "Origin", v: "Sản xuất tại Việt Nam" },
-              { k: "Standard", v: "ISO 9001 · TDS / MSDS" },
-              { k: "On-site", v: "Hỗ trợ kỹ thuật tại công trình" },
-              { k: "Per project", v: "Hệ phủ điều chỉnh theo dự án" },
+              { k: "Sản xuất", v: "Nhà máy tại Việt Nam, công thức nội bộ" },
+              { k: "Hồ sơ", v: "ISO 9001 · TDS / MSDS đầy đủ" },
+              { k: "Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình" },
+              { k: "Theo dự án", v: "Hệ phủ tinh chỉnh theo từng đơn hàng" },
             ].map((t) => (
               <div key={t.k} className="flex items-start gap-3">
                 <span
@@ -745,7 +753,7 @@ function Index() {
           <div className="grid grid-cols-12 gap-8 md:gap-16">
             <div className="col-span-12 md:col-span-6 md:col-start-2">
               <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
-                Bản chất
+                Bài toán
               </span>
               <h3 className="font-serif text-3xl md:text-5xl mt-6 leading-[1.05] r-rise r-d1 text-balance">
                 {active.tagline}
@@ -792,9 +800,9 @@ function Index() {
         <section className="px-6 md:px-12 lg:px-16 py-24 md:py-36 border-t border-onyx/10">
           <div className="max-w-4xl mx-auto text-center r-rise">
             <p className="font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
-              Chúng tôi sản xuất <span className="not-italic">lớp bảo vệ</span> —
-              công thức nội bộ, thi công thực tế trên
-              <span className="not-italic" style={{ color: "var(--accent)" }}> sáu nhóm vật liệu</span>.
+              Lotus không bán <span className="not-italic">thùng sơn</span> —
+              Lotus đề xuất <span className="not-italic" style={{ color: "var(--accent)" }}>đúng hệ phủ</span>
+              theo vật liệu nền, môi trường và quy mô công việc.
             </p>
           </div>
         </section>
@@ -868,13 +876,13 @@ function Index() {
             <div className="col-span-12 md:col-span-4">
               <div className="md:sticky md:top-24">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
-                  Ứng dụng
+                  Phù hợp cho
                 </span>
                 <h3 className="font-serif text-4xl md:text-5xl mt-5 leading-[1.05] italic r-rise r-d1">
-                  Nơi <span className="not-italic">Lotus</span> được tin dùng.
+                  Ai đang dùng <span className="not-italic">hệ này.</span>
                 </h3>
                 <p className="mt-6 text-onyx/65 max-w-xs r-rise r-d2">
-                  Dành cho nhà thầu, xưởng sản xuất và dự án có yêu cầu kỹ thuật cao.
+                  Lotus xây hệ cho những đơn vị có áp lực tiến độ, nghiệm thu và bàn giao thực tế — không phải khách lẻ.
                 </p>
               </div>
             </div>
@@ -906,12 +914,12 @@ function Index() {
                   Quy trình
                 </span>
                 <h2 className="font-serif text-5xl md:text-6xl leading-[0.98] mt-5 r-rise r-d1">
-                  Bốn nhịp,<br/>
-                  <span className="italic font-light text-clay/80">một hệ thống.</span>
+                  Bốn bước,<br/>
+                  <span className="italic font-light text-clay/80">không bỏ qua bước nào.</span>
                 </h2>
                 <p className="mt-8 text-clay/55 max-w-xs leading-relaxed r-rise r-d2">
-                  Mọi hệ sơn Lotus đều tuân theo một quy trình thi công có kiểm soát — đảm bảo bám dính,
-                  độ bền và sự nhất quán cho toàn bộ dự án.
+                  Phần lớn lỗi bong tróc, lệch màu hay làm lại bắt nguồn từ một bước bị bỏ qua. Quy trình Lotus được viết
+                  để xưởng và nhà thầu kiểm soát từng nhịp.
                 </p>
 
                 <div className="mt-10 inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-clay/50 r-rise r-d3">
@@ -954,7 +962,7 @@ function Index() {
             <div className="flex items-end justify-between mb-14 md:mb-20 border-b border-onyx/25 pb-8">
               <div className="r-rise">
                 <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber mb-4">
-                  Hệ phủ đề xuất
+                  Hệ phủ Lotus đề xuất
                 </p>
                 <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
                   Lotus · {active.nameEn}
@@ -1000,7 +1008,7 @@ function Index() {
             </div>
 
             <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45 text-right">
-              Đội kỹ thuật Lotus sẽ điều chỉnh hệ theo công trình cụ thể.
+              Hệ trên là gợi ý chuẩn — Lotus điều chỉnh theo bề mặt, môi trường và quy mô thực tế của từng dự án.
             </p>
           </div>
         </section>
@@ -1011,16 +1019,16 @@ function Index() {
             <div className="grid grid-cols-12 gap-6 md:gap-8 items-end">
               <div className="col-span-12 md:col-span-7 r-rise">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber">
-                  Dự án
+                  Công trình thật
                 </span>
                 <h3 className="mt-5 font-serif text-4xl md:text-6xl italic leading-[1.03]">
-                  Đã được thi công <br/>
-                  <span className="not-italic">trên thực địa.</span>
+                  Đã chạy trên <br/>
+                  <span className="not-italic">xưởng và công trường.</span>
                 </h3>
               </div>
               <p className="col-span-12 md:col-span-4 md:col-start-9 text-onyx/60 max-w-sm r-rise r-d1">
-                Hình ảnh thực tế từ các công trình đã sử dụng hệ {active.name.toLowerCase()} Lotus —
-                không dàn dựng, không phối cảnh.
+                Hình ảnh từ các xưởng, nhà máy và công trình đang dùng hệ {active.name.toLowerCase()} Lotus —
+                không phối cảnh, không dàn dựng.
               </p>
             </div>
           </div>
@@ -1079,25 +1087,25 @@ function Index() {
             <div className="grid grid-cols-12 gap-8 md:gap-16 items-start">
               <div className="col-span-12 md:col-span-6 r-rise">
                 <h3 className="font-serif text-4xl md:text-[3.5rem] italic leading-[1.02] text-balance">
-                  Một nhà sản xuất, <br />
-                  <span className="not-italic">không phải đại lý.</span>
+                  Nhà sản xuất, <br />
+                  <span className="not-italic">không phải đại lý trung gian.</span>
                 </h3>
               </div>
 
               <div className="col-span-12 md:col-span-5 md:col-start-8 md:pt-4">
                 <p className="font-serif text-xl md:text-[1.4rem] leading-[1.6] text-onyx/70 text-pretty r-rise">
-                  Pha chế tại Bình Dương, kiểm nghiệm nội bộ,
-                  triển khai cùng đội kỹ thuật tại công trình.
+                  Công thức nội bộ, kiểm nghiệm tại nhà máy,
+                  triển khai trực tiếp với xưởng và công trình — không qua trung gian.
                 </p>
               </div>
             </div>
 
             <dl className="mt-24 md:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-12 border-t border-onyx/15 pt-14">
               {[
-                { k: "01", h: "Xuất xứ", v: "Sản xuất tại Việt Nam, công thức nội bộ." },
-                { k: "02", h: "Tiêu chuẩn", v: "ISO 9001, TDS & MSDS minh bạch." },
-                { k: "03", h: "Hiện trường", v: "Kỹ sư khảo sát tại công trình." },
-                { k: "04", h: "Theo dự án", v: "Hệ phủ tinh chỉnh từng đơn hàng." },
+                { k: "01", h: "Sản xuất", v: "Nhà máy tại Việt Nam, công thức kiểm soát nội bộ." },
+                { k: "02", h: "Hồ sơ", v: "ISO 9001, TDS & MSDS đầy đủ cho nghiệm thu." },
+                { k: "03", h: "Hiện trường", v: "Kỹ sư khảo sát, hỗ trợ xử lý tại công trình." },
+                { k: "04", h: "Theo dự án", v: "Hệ phủ tinh chỉnh theo bề mặt và quy mô thực tế." },
               ].map((t) => (
                 <div key={t.k} className="r-rise">
                   <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35">
@@ -1123,11 +1131,11 @@ function Index() {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 md:mb-24">
               <div className="r-rise">
                 <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
-                  Trước khi gửi dự án.
+                  Hỏi trước khi báo giá.
                 </h3>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 md:text-right r-rise r-d1">
-                Theo hệ phủ · {active.nameEn}
+                Câu hỏi thường gặp · {active.nameEn}
               </p>
             </div>
 
@@ -1182,7 +1190,7 @@ function Index() {
                       rel="noopener"
                       className="group inline-flex items-center gap-3 mt-14 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
                     >
-                      <span>Hỏi tiếp qua Zalo</span>
+                      <span>Hỏi tiếp về hệ {active.nameEn} qua Zalo</span>
                       <span
                         className="inline-block h-px w-8 group-hover:w-14 transition-all"
                         style={{ background: "var(--accent)" }}
@@ -1212,24 +1220,24 @@ function Index() {
 
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/60 mb-6 r-rise">
-              Bắt đầu một dự án
+              Gửi dự án cho Lotus
             </p>
             <h3 className="font-serif text-5xl md:text-7xl leading-[1.02] italic font-light r-rise r-d1 text-pretty">
-              Hệ sơn phù hợp <br />
-              <span className="not-italic font-normal">cho từng vật liệu của bạn.</span>
+              Gửi ảnh hạng mục. <br />
+              <span className="not-italic font-normal">Lotus đề xuất đúng hệ sơn.</span>
             </h3>
             <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-relaxed r-rise r-d2">
-              Gửi yêu cầu qua Zalo để đội kỹ thuật Lotus đề xuất hệ phủ, định mức và báo giá
-              theo dự án. Phản hồi trong 24 giờ.
+              Nhắn Zalo kèm ảnh bề mặt, vật liệu nền, yêu cầu hoàn thiện và quy mô công việc.
+              Lotus tư vấn hệ phù hợp và hướng xử lý rõ ràng — phản hồi trong 24 giờ làm việc.
             </p>
 
             {/* Project intake — what to send */}
             <ul className="mt-12 max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8 text-left r-rise r-d3">
               {[
-                { k: "01", v: "Ảnh công trình" },
+                { k: "01", v: "Ảnh hạng mục" },
                 { k: "02", v: "Vật liệu nền" },
-                { k: "03", v: "Hoàn thiện mong muốn" },
-                { k: "04", v: "Yêu cầu độ bền · môi trường" },
+                { k: "03", v: "Yêu cầu hoàn thiện" },
+                { k: "04", v: "Diện tích · điều kiện sử dụng" },
               ].map((t) => (
                 <li key={t.k} className="border-t border-clay/20 pt-4">
                   <div className="font-mono text-[10px] tracking-[0.32em] uppercase text-clay/45">
@@ -1265,7 +1273,7 @@ function Index() {
                   </defs>
                   <text fill="currentColor" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "9px", letterSpacing: "0.32em", textTransform: "uppercase" }}>
                     <textPath href="#ctaCircle">
-                      Lotus Coating Atelier · Tư vấn dự án qua Zalo · 
+                      Lotus · Tư vấn hệ sơn phù hợp qua Zalo · 
                     </textPath>
                   </text>
                 </svg>
@@ -1280,10 +1288,10 @@ function Index() {
                 </div>
               </div>
               <span className="mt-8 font-mono text-[11px] uppercase tracking-[0.4em] text-clay/90 flourish">
-                Nhắn Zalo · Tư vấn dự án
+                Nhắn Zalo · Tư vấn hệ sơn phù hợp
               </span>
               <span className="mt-3 font-serif italic text-clay/55 text-sm">
-                Gỗ · Kim loại · Xi măng · Composite · Sàn
+                Gỗ · Kim loại · Giả gỗ · Composite · Sàn công nghiệp
               </span>
             </a>
           </div>
