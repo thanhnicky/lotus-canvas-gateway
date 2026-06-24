@@ -827,27 +827,67 @@ function Index() {
           </div>
         </section>
 
-        {/* ── Large macro image · full bleed with caption ───────── */}
+        {/* ── Cinematic pause · the unforgettable moment ─────────── */}
         <section className="relative">
-          <div className="relative h-[70svh] min-h-[480px] overflow-hidden">
+          <div className="relative h-[92svh] min-h-[640px] overflow-hidden bg-onyx">
             <img
-              src={revealMacro}
-              alt="Macro detail of coating saturating wood grain"
+              key={active.id + "-pause"}
+              src={active.image}
+              alt={active.name}
               width={1920}
               height={1280}
               loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover r-scale"
+              className="absolute inset-0 w-full h-full object-cover drift-deep"
+              style={{ objectPosition: mood.crop }}
             />
-          </div>
-          <div className="px-6 md:px-12 lg:px-16 py-6 flex flex-col md:flex-row md:items-baseline md:justify-between gap-4 border-b border-onyx/10">
-            <p className="font-serif italic text-onyx/75 text-lg max-w-xl">
-              Phân tử sơn len lỏi vào từng thớ vật liệu — bảo vệ bắt đầu từ chiều sâu, không phải bề mặt.
-            </p>
-            <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-              Fig. {active.index}·A — Cross-section magnified 200×
-            </span>
+            {/* Quiet vignette for legibility — no chrome, just shadow */}
+            <div className="absolute inset-0 bg-gradient-to-t from-onyx/80 via-onyx/35 to-onyx/55" />
+            <div
+              className="absolute inset-0 mix-blend-multiply opacity-50"
+              style={{
+                background:
+                  "radial-gradient(70% 60% at 50% 70%, var(--accent), transparent 75%)",
+              }}
+            />
+
+            {/* Printed-catalog corners — keep editorial frame */}
+            <div className="pointer-events-none absolute inset-6 md:inset-10 z-10">
+              <span className="absolute top-0 left-0 size-4 border-t border-l border-clay/40" />
+              <span className="absolute top-0 right-0 size-4 border-t border-r border-clay/40" />
+              <span className="absolute bottom-0 left-0 size-4 border-b border-l border-clay/40" />
+              <span className="absolute bottom-0 right-0 size-4 border-b border-r border-clay/40" />
+            </div>
+
+            {/* Centered phrase — one line of attention */}
+            <div className="relative z-10 h-full flex flex-col justify-end px-6 md:px-12 lg:px-16 pb-16 md:pb-24 text-clay">
+              <div
+                key={active.id + "-pause-text"}
+                className="max-w-4xl soft-in"
+              >
+                <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.4em] text-clay/70 mb-6">
+                  <span
+                    className="inline-block size-1.5 rounded-full"
+                    style={{ background: "var(--accent)" }}
+                  />
+                  <span>Fig. {active.index} — {active.signature}</span>
+                </div>
+                <p className="font-serif italic font-light text-[clamp(2.25rem,6.5vw,5.75rem)] leading-[1.02] tracking-[-0.015em] text-clay text-pretty">
+                  {mood.pause}
+                </p>
+                <p className="mt-6 max-w-md font-serif italic text-lg md:text-xl text-clay/75">
+                  {mood.pauseSub}
+                </p>
+              </div>
+            </div>
+
+            {/* Top-right caption */}
+            <div className="absolute top-6 right-6 md:top-10 md:right-10 z-10 font-mono text-[9px] uppercase tracking-[0.32em] text-clay/55 text-right">
+              <div>Intermezzo</div>
+              <div>Lotus / {active.nameEn}</div>
+            </div>
           </div>
         </section>
+
 
         {/* ── Applications — numbered editorial list, asymmetric ─ */}
         <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40">
