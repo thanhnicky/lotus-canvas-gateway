@@ -1190,7 +1190,7 @@ function Index() {
                       rel="noopener"
                       className="group inline-flex items-center gap-3 mt-14 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
                     >
-                      <span>Hỏi tiếp qua Zalo</span>
+                      <span>Hỏi tiếp về hệ {active.nameEn} qua Zalo</span>
                       <span
                         className="inline-block h-px w-8 group-hover:w-14 transition-all"
                         style={{ background: "var(--accent)" }}
