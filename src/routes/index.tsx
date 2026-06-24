@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 import catWood from "@/assets/cat-wood.jpg";
 import catMetal from "@/assets/cat-metal.jpg";
