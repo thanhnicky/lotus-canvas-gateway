@@ -738,6 +738,7 @@ function Index() {
             height={1200}
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover r-scale"
+            style={{ objectPosition: mood.crop }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-onyx/55 via-onyx/10 to-transparent" />
           <div
