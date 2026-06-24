@@ -211,6 +211,8 @@ const CATEGORIES: Category[] = [
     manifesto: "Cement gánh tải trọng. Gỗ gánh cảm xúc. Lotus là cái bắt tay.",
     image: catCementWood,
     imageTone: "light",
+    accent: "#7a6347",
+    signature: "Oak Cement",
     description:
       "Phủ vân gỗ tự nhiên trên tấm cement Smartboard, Duraflex hoặc cement composite — bền nước, không cong vênh, mang vẻ đẹp ấm áp của gỗ cho ốp tường, trần và sàn ngoại thất.",
     applications: [
