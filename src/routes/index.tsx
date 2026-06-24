@@ -672,23 +672,12 @@ function Index() {
                         </span>
 
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-baseline gap-2">
-                            <span
-                              className="font-mono text-[10px] tracking-[0.25em] uppercase transition-colors"
-                              style={{ color: isActive ? c.accent : "rgba(22,20,18,0.4)" }}
-                            >
-                              {c.index}
-                            </span>
-                            <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-onyx/40">
-                              · {c.signature}
-                            </span>
-                          </div>
                           <h3
-                            className={`mt-1.5 font-serif text-base md:text-[1.05rem] leading-snug transition-colors ${
+                            className={`font-serif text-base md:text-[1.05rem] leading-snug transition-colors ${
                               isActive ? "text-onyx" : "text-onyx/65 group-hover:text-onyx"
                             }`}
                           >
-                            {c.name}
+                            {c.index}. {c.name}
                           </h3>
                           {/* Reveal tagline only on active — collapses gracefully */}
                           <div
