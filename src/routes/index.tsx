@@ -675,6 +675,13 @@ function Index() {
             className="absolute inset-0 w-full h-full object-cover r-scale"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-onyx/55 via-onyx/10 to-transparent" />
+          <div
+            className="absolute inset-0 mix-blend-multiply opacity-40"
+            style={{
+              background:
+                "linear-gradient(180deg, transparent 35%, var(--accent) 110%)",
+            }}
+          />
 
           <div className="relative h-full flex flex-col justify-between px-6 md:px-12 lg:px-16 py-10 md:py-14 text-clay">
             <div className="flex justify-between items-start font-mono text-[10px] uppercase tracking-[0.32em] text-clay/75 r-rise">
