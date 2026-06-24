@@ -383,6 +383,8 @@ const MOOD: Record<string, { crop: string; pause: string; pauseSub: string }> = 
 function Index() {
   const [activeId, setActiveId] = useState(CATEGORIES[0].id);
   const active = CATEGORIES.find((c) => c.id === activeId) ?? CATEGORIES[0];
+  const mood = MOOD[active.id];
+  const [openFaq, setOpenFaq] = useState(0);
 
   // Wheel-to-cycle inside hero (subtle premium kinetic interaction)
   const heroRef = useRef<HTMLDivElement | null>(null);
