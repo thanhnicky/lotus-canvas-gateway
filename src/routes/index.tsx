@@ -8,7 +8,7 @@ import catCementWood from "@/assets/cat-cementwood.jpg";
 import catComposite from "@/assets/cat-composite.jpg";
 import catFloor from "@/assets/cat-floor.jpg";
 import revealCraft from "@/assets/reveal-craft.jpg";
-import revealMacro from "@/assets/reveal-macro.jpg";
+
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
