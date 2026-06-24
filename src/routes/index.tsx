@@ -771,20 +771,21 @@ function Index() {
                 {active.description}
               </p>
 
-              <div className="mt-12 h-px bg-onyx/20 origin-left r-line" />
+              <div className="mt-16 h-px bg-onyx/20 origin-left r-line" />
 
-              <dl className="mt-8 grid grid-cols-2 gap-x-8 gap-y-5">
+              <dl className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
                 {active.specs.map((s, i) => (
                   <div key={s.label} className={`r-rise r-d${(i % 4) + 1}`}>
-                    <dt className="font-mono text-[10px] uppercase tracking-[0.25em] text-onyx/45">
+                    <dt className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
                       {s.label}
                     </dt>
-                    <dd className="mt-1.5 font-serif italic text-[1.1rem] text-onyx leading-tight">
+                    <dd className="mt-3 font-serif italic text-[1.35rem] md:text-[1.5rem] text-onyx leading-[1.15]">
                       {s.value}
                     </dd>
                   </div>
                 ))}
               </dl>
+
             </div>
 
             {/* Side numeral */}
