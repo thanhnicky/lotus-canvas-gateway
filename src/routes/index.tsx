@@ -1087,25 +1087,25 @@ function Index() {
             <div className="grid grid-cols-12 gap-8 md:gap-16 items-start">
               <div className="col-span-12 md:col-span-6 r-rise">
                 <h3 className="font-serif text-4xl md:text-[3.5rem] italic leading-[1.02] text-balance">
-                  Một nhà sản xuất, <br />
-                  <span className="not-italic">không phải đại lý.</span>
+                  Nhà sản xuất, <br />
+                  <span className="not-italic">không phải đại lý trung gian.</span>
                 </h3>
               </div>
 
               <div className="col-span-12 md:col-span-5 md:col-start-8 md:pt-4">
                 <p className="font-serif text-xl md:text-[1.4rem] leading-[1.6] text-onyx/70 text-pretty r-rise">
-                  Pha chế tại Bình Dương, kiểm nghiệm nội bộ,
-                  triển khai cùng đội kỹ thuật tại công trình.
+                  Công thức nội bộ, kiểm nghiệm tại nhà máy,
+                  triển khai trực tiếp với xưởng và công trình — không qua trung gian.
                 </p>
               </div>
             </div>
 
             <dl className="mt-24 md:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-12 border-t border-onyx/15 pt-14">
               {[
-                { k: "01", h: "Xuất xứ", v: "Sản xuất tại Việt Nam, công thức nội bộ." },
-                { k: "02", h: "Tiêu chuẩn", v: "ISO 9001, TDS & MSDS minh bạch." },
-                { k: "03", h: "Hiện trường", v: "Kỹ sư khảo sát tại công trình." },
-                { k: "04", h: "Theo dự án", v: "Hệ phủ tinh chỉnh từng đơn hàng." },
+                { k: "01", h: "Sản xuất", v: "Nhà máy tại Việt Nam, công thức kiểm soát nội bộ." },
+                { k: "02", h: "Hồ sơ", v: "ISO 9001, TDS & MSDS đầy đủ cho nghiệm thu." },
+                { k: "03", h: "Hiện trường", v: "Kỹ sư khảo sát, hỗ trợ xử lý tại công trình." },
+                { k: "04", h: "Theo dự án", v: "Hệ phủ tinh chỉnh theo bề mặt và quy mô thực tế." },
               ].map((t) => (
                 <div key={t.k} className="r-rise">
                   <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35">
