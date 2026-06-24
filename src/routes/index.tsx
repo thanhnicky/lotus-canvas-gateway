@@ -88,13 +88,13 @@ const CATEGORIES: Category[] = [
       { step: "I", title: "Chuẩn nền gỗ", body: "Chà nhám đúng độ mịn, kiểm độ ẩm dưới 12% — bước này quyết định màu lên đều hay không." },
       { step: "II", title: "Lót chặn nhựa", body: "Ngăn nhựa gỗ đẩy ngược, làm phẳng lỗ chân lông để lớp màu không bị loang." },
       { step: "III", title: "Phủ màu", body: "Pha theo công thức cố định cho từng đơn, đảm bảo sắc độ lặp lại giữa các đợt." },
-      { step: "IV", title: "Topcoat kiểm soát bóng", body: "Chọn đúng độ bóng theo yêu cầu khách cuối, hạn chế lệch tông khi giao hàng." },
+      { step: "IV", title: "Lớp phủ hoàn thiện", body: "Chọn đúng độ bóng theo yêu cầu khách cuối, hạn chế lệch tông khi giao hàng." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Wood Primer P80", rate: "8–10 m²/L", coats: "01" },
       { layer: "Lót 2", product: "Lotus Sanding Sealer", rate: "10–12 m²/L", coats: "02" },
       { layer: "Lớp màu", product: "Lotus Stain Color", rate: "12–15 m²/L", coats: "01" },
-      { layer: "Topcoat", product: "Lotus Topcoat Matte / Gloss", rate: "10–12 m²/L", coats: "02" },
+      { layer: "Lớp phủ hoàn thiện", product: "Lotus Topcoat Matte / Gloss", rate: "10–12 m²/L", coats: "02" },
     ],
     projects: [
       { image: project1, title: "Đơn hàng nội thất xuất khẩu", meta: "Hoàn thiện đồng đều cả lệnh sản xuất" },
@@ -178,20 +178,20 @@ const CATEGORIES: Category[] = [
     specs: [
       { label: "Vân ở khoảng nhìn thật", value: "Khó phân biệt với gỗ" },
       { label: "Kháng UV ngoài trời", value: "QUV 1500h" },
-      { label: "Gốc", value: "PU Wood-grain" },
+      { label: "Gốc", value: "PU giả gỗ" },
       { label: "Phù hợp", value: "Nhà thầu cần đúng hệ ngay từ đầu" },
     ],
     process: [
       { step: "I", title: "Xử lý nền kim loại", body: "Tẩy dầu, chuyển hóa bề mặt và sơn lót epoxy chống gỉ — bỏ qua bước này là phải sửa cả mặt." },
-      { step: "II", title: "Nền màu gỗ", body: "Base tone gỗ phun đều, làm cơ sở cho vân lên đúng sắc độ." },
+      { step: "II", title: "Nền màu gỗ", body: "Tông màu gỗ phun đều, làm cơ sở cho vân lên đúng sắc độ." },
       { step: "III", title: "Tạo vân", body: "Lăn vân chuyên dụng hoặc in chuyển nhiệt theo mẫu gỗ khách chọn." },
-      { step: "IV", title: "Topcoat khoá vân", body: "Phủ trong PU kháng UV, giữ vân không bạc tông khi ra ngoài trời." },
+      { step: "IV", title: "Lớp phủ hoàn thiện", body: "Phủ trong PU kháng UV, giữ vân không bạc tông khi ra ngoài trời." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Metal Primer G-200", rate: "8–10 m²/L", coats: "01" },
       { layer: "Nền màu", product: "Lotus Wood Base", rate: "6–8 m²/L", coats: "01" },
       { layer: "Tạo vân", product: "Lotus Grain Stain S-10", rate: "12–15 m²/L", coats: "01" },
-      { layer: "Topcoat", product: "Lotus Clear Topcoat UV", rate: "10–12 m²/L", coats: "01" },
+      { layer: "Lớp phủ hoàn thiện", product: "Lotus Clear Topcoat UV", rate: "10–12 m²/L", coats: "01" },
     ],
     projects: [
       { image: catMetalWood, title: "Lam nhôm mặt tiền resort", meta: "Vân teak, hệ ngoài trời" },
@@ -199,7 +199,7 @@ const CATEGORIES: Category[] = [
       { image: project1, title: "Cửa thép villa ven biển", meta: "Vân walnut, hệ kháng UV" },
     ],
     faq: [
-      { q: "Chọn hệ thế nào để không bạc màu sau vài tháng?", a: "Vấn đề thường không nằm ở vân mà ở lớp topcoat và lớp lót chống gỉ. Gửi vị trí công trình (trong nhà, ban công, ngoài trời trực tiếp), Lotus đề xuất hệ đủ lớp để vân giữ tông lâu dài." },
+      { q: "Chọn hệ thế nào để không bạc màu sau vài tháng?", a: "Vấn đề thường không nằm ở vân mà ở lớp phủ hoàn thiện và lớp lót chống gỉ. Gửi vị trí công trình (trong nhà, ban công, ngoài trời trực tiếp), Lotus đề xuất hệ đủ lớp để vân giữ tông lâu dài." },
       { q: "Có làm được vân walnut, teak, oak?", a: "Có. Thư viện trên 40 mẫu vân, đồng thời nhận làm mẫu mới theo ảnh khách gửi. Lotus làm tấm sample đối chiếu trước khi triển khai diện tích lớn." },
       { q: "Nếu thi công sai hệ, sửa được không?", a: "Sửa được nhưng tốn công hơn làm đúng từ đầu — thường phải xử lý cả mặt. Vì vậy nên gửi ảnh hiện trạng và vật liệu nền trước, Lotus tư vấn đúng hệ ngay từ bước báo giá." },
     ],
@@ -227,20 +227,20 @@ const CATEGORIES: Category[] = [
     specs: [
       { label: "Độ bám trên cement", value: "Cao — qua lót kháng kiềm" },
       { label: "Chống thấm", value: "Ngâm 240h không bong" },
-      { label: "Gốc", value: "Acrylic Wood-grain" },
+      { label: "Gốc", value: "Acrylic giả gỗ" },
       { label: "Phù hợp", value: "Hạng mục ngoại thất nhà thầu" },
     ],
     process: [
       { step: "I", title: "Xử lý tấm cement", body: "Vệ sinh, mài phẳng mối nối và lót kháng kiềm — bước bắt buộc để vân không bong sau vài tháng." },
-      { step: "II", title: "Nền màu gỗ", body: "Base color đồng đều, làm nền chuẩn cho thao tác vẽ vân." },
+      { step: "II", title: "Nền màu gỗ", body: "Màu nền đồng đều, làm nền chuẩn cho thao tác vẽ vân." },
       { step: "III", title: "Lăn vân", body: "Con lăn chuyên dụng tạo vân theo mẫu gỗ khách chọn, kiểm soát hướng và mật độ." },
-      { step: "IV", title: "Topcoat UV", body: "Acrylic UV khoá vân, chống bám bẩn và giữ tông ngoài trời." },
+      { step: "IV", title: "Lớp phủ hoàn thiện", body: "Acrylic UV khoá vân, chống bám bẩn và giữ tông ngoài trời." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Alkali Primer", rate: "8–10 m²/L", coats: "01" },
       { layer: "Nền màu", product: "Lotus Wood Base Acrylic", rate: "8–10 m²/L", coats: "01" },
       { layer: "Tạo vân", product: "Lotus Grain Roller Stain", rate: "10–14 m²/L", coats: "01" },
-      { layer: "Topcoat", product: "Lotus Acrylic Topcoat UV", rate: "10–12 m²/L", coats: "02" },
+      { layer: "Lớp phủ hoàn thiện", product: "Lotus Acrylic Topcoat UV", rate: "10–12 m²/L", coats: "02" },
     ],
     projects: [
       { image: catCementWood, title: "Ốp tường Smartboard villa", meta: "Vân teak, hệ ngoại thất" },
@@ -249,7 +249,7 @@ const CATEGORIES: Category[] = [
     ],
     faq: [
       { q: "Tấm cement đã sơn cũ có thi công được không?", a: "Được, sau khi kiểm tra độ bám lớp sơn cũ và xử lý các điểm bong. Gửi ảnh hiện trạng để Lotus đánh giá có cần cạo bỏ hay phủ trực tiếp." },
-      { q: "Vân giả gỗ giữ được bao lâu ngoài trời?", a: "Trung bình 5–8 năm khi thi công đủ hệ, có topcoat UV. Tuổi thọ phụ thuộc nhiều vào lớp lót kháng kiềm và độ ẩm nền lúc thi công — không phải vào vân." },
+      { q: "Vân giả gỗ giữ được bao lâu ngoài trời?", a: "Trung bình 5–8 năm khi thi công đủ hệ, có lớp phủ hoàn thiện UV. Tuổi thọ phụ thuộc nhiều vào lớp lót kháng kiềm và độ ẩm nền lúc thi công — không phải vào vân." },
       { q: "Báo giá tính theo gì?", a: "Theo diện tích, độ phức tạp của vân (1 tông, 2 tông, vân sâu) và vị trí công trình. Gửi ảnh hạng mục, vật liệu nền và m² để Lotus báo giá hệ phù hợp." },
     ],
   },
@@ -260,7 +260,7 @@ const CATEGORIES: Category[] = [
     nameEn: "Plastic & Composite",
     tagline: "Đẹp ở mẫu là chưa đủ. Nhà máy cần đẹp đồng đều trên cả dây chuyền.",
     manifesto:
-      "Một lỗi coating trên dây chuyền không chỉ hỏng sản phẩm — nó ảnh hưởng cả đơn hàng xuất khẩu và uy tín với khách.",
+      "Một lỗi hệ phủ trên dây chuyền không chỉ hỏng sản phẩm — nó ảnh hưởng cả đơn hàng xuất khẩu và uy tín với khách.",
     image: catComposite,
     imageTone: "light",
     accent: "#3d4a4a",
@@ -323,29 +323,29 @@ const CATEGORIES: Category[] = [
     specs: [
       { label: "Chịu tải", value: "Đi bộ → Xe nâng nặng" },
       { label: "Kháng hóa chất", value: "Axit / kiềm trung bình → cao" },
-      { label: "Gốc", value: "Epoxy / PU self-levelling" },
+      { label: "Gốc", value: "Epoxy / PU tự san phẳng" },
       { label: "Phù hợp", value: "Thầu thi công sàn công nghiệp" },
     ],
     process: [
       { step: "I", title: "Khảo sát hiện trạng", body: "Kiểm tra cường độ bê tông, độ ẩm, tải trọng vận hành — quyết định hệ phủ phù hợp." },
       { step: "II", title: "Mài và lót thấm", body: "Mài kim cương mở mao mạch, primer epoxy thấm sâu để liên kết với nền bê tông." },
       { step: "III", title: "Trung gian / bả vá", body: "Bả khuyết tật và cào đều — tạo mặt phẳng cho lớp phủ đạt chiều dày thiết kế." },
-      { step: "IV", title: "Phủ hoàn thiện", body: "Self-levelling hoặc lăn phủ theo tải trọng, môi trường và yêu cầu thẩm mỹ." },
+      { step: "IV", title: "Phủ hoàn thiện", body: "Tự san phẳng hoặc lăn phủ theo tải trọng, môi trường và yêu cầu thẩm mỹ." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Floor Primer EP", rate: "5–7 m²/L", coats: "01" },
       { layer: "Trung gian", product: "Lotus Mortar Coat", rate: "tuỳ thiết kế", coats: "01" },
       { layer: "Phủ", product: "Lotus Self-Level Epoxy", rate: "1 mm = 1.5 kg/m²", coats: "01" },
-      { layer: "Topcoat", product: "Lotus PU Floor Matte", rate: "8–10 m²/L", coats: "01" },
+      { layer: "Lớp phủ hoàn thiện", product: "Lotus PU Floor Matte", rate: "8–10 m²/L", coats: "01" },
     ],
     projects: [
-      { image: catFloor, title: "Showroom thương mại", meta: "Epoxy self-level 2 mm" },
+      { image: catFloor, title: "Showroom thương mại", meta: "Epoxy tự san phẳng 2 mm" },
       { image: project3, title: "Khu vực vận hành nhà máy", meta: "PU matte chịu hóa chất" },
       { image: project2, title: "Kho logistics tải nặng", meta: "Epoxy chịu xe nâng" },
     ],
     faq: [
       { q: "Nền bê tông yếu hoặc ẩm có thi công được không?", a: "Có, nhưng cần khảo sát trước. Lotus đo độ ẩm, cường độ kéo nhổ và đề xuất lớp xử lý nền phù hợp — thi công trên nền không đạt là nguyên nhân chính của bong tróc sớm." },
-      { q: "Khu vực xe nâng nặng nên chọn hệ nào?", a: "Tùy tải trọng và mật độ vận hành. Thường dùng Epoxy self-levelling 2–3 mm hoặc hệ mortar. Gửi tải trọng xe nâng, diện tích và môi trường hóa chất để Lotus thiết kế hệ đúng." },
+      { q: "Khu vực xe nâng nặng nên chọn hệ nào?", a: "Tùy tải trọng và mật độ vận hành. Thường dùng Epoxy tự san phẳng 2–3 mm hoặc hệ mortar. Gửi tải trọng xe nâng, diện tích và môi trường hóa chất để Lotus thiết kế hệ đúng." },
       { q: "Thời gian thi công và bàn giao?", a: "Thông thường: 24h cho đi bộ, 72h cho xe nâng và tải nặng. Tiến độ cụ thể phụ thuộc diện tích, số lớp và điều kiện môi trường — Lotus lên kế hoạch chi tiết theo từng dự án." },
     ],
   },
@@ -1078,7 +1078,7 @@ function Index() {
                 </h3>
               </div>
               <p className="col-span-12 md:col-span-4 md:col-start-9 text-onyx/65 leading-relaxed max-w-sm r-rise r-d1">
-                Ảnh thực tế tại xưởng và công trường đang vận hành hệ {active.name.toLowerCase()} Lotus. Không render. Không dựng cảnh.
+                Ảnh thực tế tại xưởng và công trường đang dùng hệ {active.name.toLowerCase()} Lotus. Không render. Không dựng cảnh.
               </p>
             </div>
           </div>
@@ -1278,7 +1278,7 @@ function Index() {
             </h3>
             <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-[1.85] r-rise r-d2">
               Gửi ảnh hạng mục, vật liệu nền, yêu cầu hoàn thiện và quy mô công việc.
-              Kỹ thuật Lotus phản hồi hệ phủ, định mức và hướng thi công trong vòng 24 giờ làm việc.
+              Kỹ thuật Lotus sẽ phản hồi hệ phủ, định mức và hướng thi công trong vòng 24 giờ làm việc.
             </p>
 
             {/* Project intake — what to send */}
@@ -1388,7 +1388,7 @@ function Index() {
 
         <div className="mt-20 pt-8 border-t border-onyx/10 flex flex-col md:flex-row md:items-center md:justify-between gap-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/30">
           <span>© {new Date().getFullYear()} Sơn Lotus</span>
-          <span>Made in Vietnam</span>
+          <span>Sản xuất tại Việt Nam</span>
         </div>
       </footer>
 
