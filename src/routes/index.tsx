@@ -753,7 +753,7 @@ function Index() {
           <div className="grid grid-cols-12 gap-8 md:gap-16">
             <div className="col-span-12 md:col-span-6 md:col-start-2">
               <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
-                Bản chất
+                Bài toán
               </span>
               <h3 className="font-serif text-3xl md:text-5xl mt-6 leading-[1.05] r-rise r-d1 text-balance">
                 {active.tagline}
