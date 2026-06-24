@@ -1225,8 +1225,8 @@ function Index() {
               <span className="not-italic font-normal">Lotus đề xuất đúng hệ sơn.</span>
             </h3>
             <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-relaxed r-rise r-d2">
-              Gửi ảnh, vật liệu nền, yêu cầu hoàn thiện và quy mô.
-              Kỹ thuật Lotus chốt hệ phủ và bước thi công trong 24 giờ làm việc.
+              Gửi ảnh hạng mục, vật liệu nền, yêu cầu hoàn thiện và quy mô.
+              Kỹ thuật Lotus đề xuất hệ phủ, định mức và hướng thi công — trong 24 giờ làm việc.
             </p>
 
             {/* Project intake — what to send */}
