@@ -723,20 +723,17 @@ function Index() {
             }}
           />
 
-          <div className="relative h-full flex flex-col justify-between px-6 md:px-12 lg:px-16 py-10 md:py-14 text-clay">
-            <div className="flex justify-between items-start font-mono text-[10px] uppercase tracking-[0.32em] text-clay/75 r-rise">
-              <span>Chapter · {active.index}</span>
+          <div className="relative h-full flex flex-col justify-between px-6 md:px-12 lg:px-16 py-12 md:py-16 text-clay">
+            <div className="flex justify-between items-start font-mono text-[10px] uppercase tracking-[0.32em] text-clay/70 r-rise">
+              <span>Chương · {active.index}</span>
               <span>{active.nameEn}</span>
             </div>
 
             <div className="max-w-4xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/70 mb-6 r-rise r-d1">
-                Lotus Material Library
-              </p>
               <h2 className="font-serif text-[clamp(2.5rem,7.5vw,7rem)] leading-[0.92] tracking-[-0.02em] italic font-light r-rise r-d2">
                 {active.name}.
               </h2>
-              <p className="mt-8 max-w-2xl font-serif italic text-xl md:text-3xl text-clay/85 leading-snug text-pretty r-rise r-d3">
+              <p className="mt-10 max-w-2xl font-serif italic text-xl md:text-3xl text-clay/85 leading-snug text-pretty r-rise r-d3">
                 “{active.manifesto}”
               </p>
             </div>
@@ -744,28 +741,31 @@ function Index() {
         </section>
 
         {/* ── Asymmetric intro · description vs. specs ──────────── */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40">
+        <section className="px-6 md:px-12 lg:px-16 py-32 md:py-48">
           <div className="grid grid-cols-12 gap-8 md:gap-16">
-            <div className="col-span-12 md:col-span-5 md:col-start-2">
+            <div className="col-span-12 md:col-span-6 md:col-start-2">
               <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
-                § Bản chất
+                Bản chất
               </span>
-              <h3 className="font-serif text-3xl md:text-5xl mt-5 leading-[1.05] r-rise r-d1 text-balance">
+              <h3 className="font-serif text-3xl md:text-5xl mt-6 leading-[1.05] r-rise r-d1 text-balance">
                 {active.tagline}
               </h3>
-              <p className="mt-8 text-onyx/75 leading-relaxed text-pretty r-rise r-d2 max-w-md">
+              <p className="mt-10 text-onyx/70 leading-[1.85] text-pretty r-rise r-d2 max-w-md">
                 {active.description}
               </p>
 
-              <div className="mt-16 h-px bg-onyx/20 origin-left r-line" />
+              <div className="mt-20 h-px bg-onyx/15 origin-left r-line" />
 
-              <dl className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
+              <dl className="mt-12 divide-y divide-onyx/10">
                 {active.specs.map((s, i) => (
-                  <div key={s.label} className={`r-rise r-d${(i % 4) + 1}`}>
-                    <dt className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
+                  <div
+                    key={s.label}
+                    className={`grid grid-cols-12 gap-6 py-7 items-baseline r-rise r-d${(i % 4) + 1}`}
+                  >
+                    <dt className="col-span-5 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
                       {s.label}
                     </dt>
-                    <dd className="mt-3 font-serif italic text-[1.35rem] md:text-[1.5rem] text-onyx leading-[1.15]">
+                    <dd className="col-span-7 font-serif italic text-[1.35rem] md:text-[1.55rem] text-onyx leading-[1.15]">
                       {s.value}
                     </dd>
                   </div>
@@ -775,13 +775,13 @@ function Index() {
             </div>
 
             {/* Side numeral */}
-            <div className="hidden md:block col-span-4 col-start-9 relative">
-              <div className="sticky top-24">
-                <div className="font-serif text-[14rem] leading-none italic text-onyx/[0.08] -mt-6 r-rise">
+            <div className="hidden md:block col-span-3 col-start-10 relative">
+              <div className="sticky top-24 text-right">
+                <div className="font-serif text-[14rem] leading-none italic text-onyx/[0.07] -mt-6 r-rise">
                   {active.index}
                 </div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 -mt-4 r-rise r-d2">
-                  Material no. {active.index} — {active.nameEn}
+                <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35 -mt-4 r-rise r-d2">
+                  {active.nameEn}
                 </p>
               </div>
             </div>
@@ -789,18 +789,16 @@ function Index() {
         </section>
 
         {/* ── Editorial pull quote, no chrome ─────────────────── */}
-        <section className="px-6 md:px-12 lg:px-16 py-20 md:py-32 border-t border-onyx/10">
-          <div className="max-w-5xl mx-auto text-center r-rise">
-            <span className="font-mono text-[10px] uppercase tracking-[0.4em]" style={{ color: "var(--accent)" }}>
-              § Triết lý sản xuất
-            </span>
-            <p className="mt-6 font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
+        <section className="px-6 md:px-12 lg:px-16 py-24 md:py-36 border-t border-onyx/10">
+          <div className="max-w-4xl mx-auto text-center r-rise">
+            <p className="font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
               Chúng tôi sản xuất <span className="not-italic">lớp bảo vệ</span> —
-              kết hợp công thức nội bộ và kinh nghiệm thi công thực tế trên
+              công thức nội bộ, thi công thực tế trên
               <span className="not-italic" style={{ color: "var(--accent)" }}> sáu nhóm vật liệu</span>.
             </p>
           </div>
         </section>
+
 
         {/* ── Cinematic pause · the unforgettable moment ─────────── */}
         <section className="relative">
