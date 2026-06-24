@@ -258,6 +258,8 @@ const CATEGORIES: Category[] = [
     manifesto: "Trên một bề mặt khó bám nhất, chúng tôi tìm thấy hóa học của sự gắn kết.",
     image: catComposite,
     imageTone: "light",
+    accent: "#3d4a4a",
+    signature: "Polymer",
     description:
       "Hệ sơn cho ABS, PC, FRP, fiberglass và composite — độ bám tuyệt vời trên bề mặt nhựa nhẵn, bền màu, thân thiện cho ngành ô tô, thiết bị y tế và sản phẩm xuất khẩu.",
     applications: [
