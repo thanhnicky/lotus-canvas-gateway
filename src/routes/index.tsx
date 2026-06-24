@@ -1254,11 +1254,29 @@ function Index() {
               Hệ sơn phù hợp <br />
               <span className="not-italic font-normal">cho từng vật liệu của bạn.</span>
             </h3>
-            <p className="mt-8 max-w-2xl mx-auto text-clay/75 leading-relaxed r-rise r-d2">
-              Gửi ảnh công trình, loại vật liệu nền và yêu cầu ứng dụng qua Zalo —
-              đội kỹ thuật Lotus sẽ đề xuất hệ phủ, định mức và báo giá theo dự án.
-              Phản hồi trong vòng 24 giờ.
+            <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-relaxed r-rise r-d2">
+              Gửi yêu cầu qua Zalo để đội kỹ thuật Lotus đề xuất hệ phủ, định mức và báo giá
+              theo dự án. Phản hồi trong 24 giờ.
             </p>
+
+            {/* Project intake — what to send */}
+            <ul className="mt-12 max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8 text-left r-rise r-d3">
+              {[
+                { k: "01", v: "Ảnh công trình" },
+                { k: "02", v: "Vật liệu nền" },
+                { k: "03", v: "Hoàn thiện mong muốn" },
+                { k: "04", v: "Yêu cầu độ bền · môi trường" },
+              ].map((t) => (
+                <li key={t.k} className="border-t border-clay/20 pt-4">
+                  <div className="font-mono text-[10px] tracking-[0.32em] uppercase text-clay/45">
+                    {t.k} — Gửi kèm
+                  </div>
+                  <div className="mt-1.5 font-serif italic text-base md:text-lg text-clay/90 leading-snug">
+                    {t.v}
+                  </div>
+                </li>
+              ))}
+            </ul>
 
             <a
               href={ZALO_URL}
