@@ -1273,7 +1273,7 @@ function Index() {
                   </defs>
                   <text fill="currentColor" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "9px", letterSpacing: "0.32em", textTransform: "uppercase" }}>
                     <textPath href="#ctaCircle">
-                      Lotus Coating Atelier · Tư vấn dự án qua Zalo · 
+                      Lotus · Tư vấn hệ sơn phù hợp qua Zalo · 
                     </textPath>
                   </text>
                 </svg>
@@ -1288,10 +1288,10 @@ function Index() {
                 </div>
               </div>
               <span className="mt-8 font-mono text-[11px] uppercase tracking-[0.4em] text-clay/90 flourish">
-                Nhắn Zalo · Tư vấn dự án
+                Nhắn Zalo · Tư vấn hệ sơn phù hợp
               </span>
               <span className="mt-3 font-serif italic text-clay/55 text-sm">
-                Gỗ · Kim loại · Xi măng · Composite · Sàn
+                Gỗ · Kim loại · Giả gỗ · Composite · Sàn công nghiệp
               </span>
             </a>
           </div>
