@@ -1026,8 +1026,7 @@ function Index() {
                 </h3>
               </div>
               <p className="col-span-12 md:col-span-4 md:col-start-9 text-onyx/60 max-w-sm r-rise r-d1">
-                Ảnh chụp tại xưởng và công trường đang chạy hệ {active.name.toLowerCase()} Lotus.
-                Không render. Không phối cảnh.
+                Ảnh chụp trực tiếp tại xưởng và công trường đang vận hành hệ {active.name.toLowerCase()} Lotus — không render, không dựng cảnh.
               </p>
             </div>
           </div>
