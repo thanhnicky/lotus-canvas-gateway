@@ -995,8 +995,51 @@ function Index() {
           </div>
         </section>
 
+        {/* ── Atelier note · printed colophon, trust signals woven in ── */}
+        <section className="px-6 md:px-12 lg:px-16 py-24 md:py-32 bg-paper border-t border-onyx/15">
+          <div className="max-w-6xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
+            <div className="col-span-12 md:col-span-4 r-rise">
+              <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
+                § Atelier note
+              </span>
+              <h3 className="font-serif text-3xl md:text-4xl italic leading-tight mt-5 text-balance">
+                Một nhà sản xuất, <br />
+                <span className="not-italic">không phải đại lý.</span>
+              </h3>
+            </div>
+
+            <div className="col-span-12 md:col-span-7 md:col-start-6">
+              <p className="font-serif text-xl md:text-2xl leading-relaxed text-onyx/80 text-pretty r-rise">
+                Sơn Lotus được pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
+                và đi cùng đội kỹ thuật tới tận công trình. Mỗi hệ phủ được điều chỉnh theo vật liệu
+                nền, môi trường thi công và yêu cầu thẩm mỹ của từng dự án — không bán theo
+                cảm tính, không bán theo lô có sẵn.
+              </p>
+
+              <dl className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-10 border-t border-onyx/15 pt-10">
+                {[
+                  { k: "01 — Xuất xứ", v: "Sản xuất tại Việt Nam, công thức nội bộ" },
+                  { k: "02 — Tiêu chuẩn", v: "ISO 9001 · TDS, MSDS minh bạch" },
+                  { k: "03 — Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình" },
+                  { k: "04 — Dự án", v: "Hệ phủ tinh chỉnh theo từng đơn hàng" },
+                ].map((t) => (
+                  <div key={t.k} className="r-rise">
+                    <dt className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
+                      {t.k}
+                    </dt>
+                    <dd className="mt-2 font-serif text-xl italic text-onyx/85 leading-snug">
+                      {t.v}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+        </section>
+
         {/* ── FAQ · minimal ─────────────────────────────────────── */}
         <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15">
+
           <div className="max-w-6xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
             <div className="col-span-12 md:col-span-4">
               <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
