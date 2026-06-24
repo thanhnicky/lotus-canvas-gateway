@@ -800,9 +800,9 @@ function Index() {
         <section className="px-6 md:px-12 lg:px-16 py-24 md:py-36 border-t border-onyx/10">
           <div className="max-w-4xl mx-auto text-center r-rise">
             <p className="font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
-              Chúng tôi sản xuất <span className="not-italic">lớp bảo vệ</span> —
-              công thức nội bộ, thi công thực tế trên
-              <span className="not-italic" style={{ color: "var(--accent)" }}> sáu nhóm vật liệu</span>.
+              Lotus không bán <span className="not-italic">thùng sơn</span> —
+              Lotus đề xuất <span className="not-italic" style={{ color: "var(--accent)" }}>đúng hệ phủ</span>
+              theo vật liệu nền, môi trường và quy mô công việc.
             </p>
           </div>
         </section>
