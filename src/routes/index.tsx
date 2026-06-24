@@ -882,7 +882,7 @@ function Index() {
                   Ai đang dùng <span className="not-italic">hệ này.</span>
                 </h3>
                 <p className="mt-6 text-onyx/65 max-w-xs r-rise r-d2">
-                  Lotus xây hệ cho những đơn vị có áp lực tiến độ, nghiệm thu và bàn giao thực tế — không phải khách lẻ.
+                  Xưởng chạy số lượng. Nhà thầu chịu nghiệm thu. Nhà máy phải giao đúng hạn. Không phải khách lẻ.
                 </p>
               </div>
             </div>
