@@ -1090,45 +1090,50 @@ function Index() {
         </section>
 
         {/* ── Atelier note · printed colophon, trust signals woven in ── */}
-        <section className="px-6 md:px-12 lg:px-16 py-24 md:py-32 bg-paper border-t border-onyx/15">
-          <div className="max-w-6xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
-            <div className="col-span-12 md:col-span-4 r-rise">
-              <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
-                § Atelier note
-              </span>
-              <h3 className="font-serif text-3xl md:text-4xl italic leading-tight mt-5 text-balance">
-                Một nhà sản xuất, <br />
-                <span className="not-italic">không phải đại lý.</span>
-              </h3>
+        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 bg-paper border-t border-onyx/15">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-12 gap-8 md:gap-16 items-start">
+              <div className="col-span-12 md:col-span-5 r-rise">
+                <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
+                  § Atelier note
+                </span>
+                <h3 className="font-serif text-4xl md:text-[3.25rem] italic leading-[1.02] mt-6 text-balance">
+                  Một nhà sản xuất, <br />
+                  <span className="not-italic">không phải đại lý.</span>
+                </h3>
+              </div>
+
+              <div className="col-span-12 md:col-span-6 md:col-start-7 md:pt-3">
+                <p className="font-serif text-xl md:text-[1.45rem] leading-[1.55] text-onyx/80 text-pretty r-rise max-w-xl">
+                  Pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
+                  triển khai cùng đội kỹ thuật tại công trình.
+                </p>
+              </div>
             </div>
 
-            <div className="col-span-12 md:col-span-7 md:col-start-6">
-              <p className="font-serif text-xl md:text-2xl leading-relaxed text-onyx/80 text-pretty r-rise">
-                Pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
-                triển khai cùng đội kỹ thuật tại công trình — mỗi hệ phủ điều chỉnh
-                theo vật liệu nền và yêu cầu của từng dự án.
-              </p>
-
-              <dl className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-10 border-t border-onyx/15 pt-10">
-                {[
-                  { k: "01 — Xuất xứ", v: "Sản xuất tại Việt Nam, công thức nội bộ" },
-                  { k: "02 — Tiêu chuẩn", v: "ISO 9001 · TDS, MSDS minh bạch" },
-                  { k: "03 — Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình" },
-                  { k: "04 — Dự án", v: "Hệ phủ tinh chỉnh theo từng đơn hàng" },
-                ].map((t) => (
-                  <div key={t.k} className="r-rise">
-                    <dt className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                      {t.k}
-                    </dt>
-                    <dd className="mt-2 font-serif text-xl italic text-onyx/85 leading-snug">
-                      {t.v}
-                    </dd>
+            <dl className="mt-20 md:mt-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-10 border-t border-onyx/20 pt-12">
+              {[
+                { k: "01", h: "Xuất xứ", v: "Sản xuất tại Việt Nam — công thức nội bộ." },
+                { k: "02", h: "Tiêu chuẩn", v: "ISO 9001, TDS và MSDS minh bạch." },
+                { k: "03", h: "Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình." },
+                { k: "04", h: "Theo dự án", v: "Hệ phủ tinh chỉnh cho từng đơn hàng." },
+              ].map((t) => (
+                <div key={t.k} className="r-rise">
+                  <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40">
+                    {t.k}
                   </div>
-                ))}
-              </dl>
-            </div>
+                  <div className="mt-3 font-mono text-[11px] uppercase tracking-[0.28em]" style={{ color: "var(--accent)" }}>
+                    {t.h}
+                  </div>
+                  <p className="mt-3 font-serif italic text-[1.15rem] md:text-[1.2rem] text-onyx/85 leading-snug max-w-[16rem]">
+                    {t.v}
+                  </p>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
+
 
         {/* ── FAQ · editorial index, single open panel ──────────── */}
         <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15 bg-paper">
