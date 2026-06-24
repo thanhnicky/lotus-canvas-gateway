@@ -719,10 +719,10 @@ function Index() {
         <section className="border-y border-onyx/15 bg-paper">
           <div className="px-6 md:px-12 lg:px-16 py-6 md:py-7 grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-8">
             {[
-              { k: "Sản xuất", v: "Nhà máy tại Việt Nam, công thức nội bộ" },
-              { k: "Hồ sơ", v: "ISO 9001 · TDS / MSDS đầy đủ" },
-              { k: "Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình" },
-              { k: "Theo dự án", v: "Hệ phủ tinh chỉnh theo từng đơn hàng" },
+              { k: "Sơn hệ nước", v: "Không pha xăng dầu, giảm mùi thi công, phù hợp xưởng và không gian yêu cầu an toàn" },
+              { k: "An toàn xuất khẩu", v: "Hướng tới các tiêu chuẩn phù hợp cho đơn hàng vào Mỹ, EU và các thị trường yêu cầu hồ sơ kỹ thuật rõ ràng" },
+              { k: "12 năm làm nghề", v: "Hiểu áp lực của xưởng, tiến độ của nhà máy và tiêu chuẩn bàn giao của nhà thầu" },
+              { k: "Đúng hệ theo hạng mục", v: "Không bán một công thức cho mọi bề mặt; Lotus tinh chỉnh theo từng yêu cầu thực tế" },
             ].map((t) => (
               <div key={t.k} className="flex items-start gap-3">
                 <span
