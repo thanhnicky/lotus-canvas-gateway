@@ -876,13 +876,13 @@ function Index() {
             <div className="col-span-12 md:col-span-4">
               <div className="md:sticky md:top-24">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
-                  Ứng dụng
+                  Phù hợp cho
                 </span>
                 <h3 className="font-serif text-4xl md:text-5xl mt-5 leading-[1.05] italic r-rise r-d1">
-                  Nơi <span className="not-italic">Lotus</span> được tin dùng.
+                  Ai đang dùng <span className="not-italic">hệ này.</span>
                 </h3>
                 <p className="mt-6 text-onyx/65 max-w-xs r-rise r-d2">
-                  Dành cho nhà thầu, xưởng sản xuất và dự án có yêu cầu kỹ thuật cao.
+                  Lotus xây hệ cho những đơn vị có áp lực tiến độ, nghiệm thu và bàn giao thực tế — không phải khách lẻ.
                 </p>
               </div>
             </div>
