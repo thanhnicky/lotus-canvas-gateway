@@ -462,8 +462,12 @@ function Index() {
           {/* Right side — active material data card */}
           <aside className="hidden md:flex col-span-3 self-end justify-end items-end pb-6">
             <div key={active.id + "-meta"} className="text-right space-y-3 soft-in">
-              <div className="font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/55">
-                {active.nameEn}
+              <div className="flex items-center justify-end gap-2 font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/55">
+                <span
+                  className="inline-block size-2 rounded-full"
+                  style={{ background: "var(--accent)" }}
+                />
+                <span>{active.signature}</span>
               </div>
               <div className="font-serif text-[5rem] leading-none italic text-onyx/90 tracking-tight">
                 {active.index}
@@ -471,8 +475,11 @@ function Index() {
               <div className="font-serif text-xl text-onyx/80 italic">
                 {active.name}
               </div>
-              <div className="ml-auto h-px w-16 bg-onyx/30" />
-              <div className="text-[11px] text-onyx/55 max-w-[14rem] leading-snug ml-auto">
+              <div className="ml-auto h-px w-16" style={{ background: "var(--accent)" }} />
+              <div className="text-[11px] text-onyx/60 max-w-[14rem] leading-snug ml-auto">
+                <span className="font-mono uppercase tracking-[0.25em] text-onyx/40 mr-1">
+                  {active.specs[0].label}
+                </span>
                 {active.specs[0].value}
               </div>
             </div>
