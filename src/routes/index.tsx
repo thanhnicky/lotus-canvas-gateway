@@ -617,22 +617,47 @@ function Index() {
 
       {/* ╔════════════════════ LOWER · CHAPTERS ════════════════════╗ */}
       <main key={active.id} className="relative">
-        {/* ── Marquee transition ────────────────────────────────── */}
-        <div className="border-y border-onyx/15 overflow-hidden bg-clay-soft">
-          <div className="flex whitespace-nowrap ticker-track py-3.5">
+        {/* ── Manufacturer credentials — printed colophon strip ─── */}
+        <section className="border-y border-onyx/15 bg-paper">
+          <div className="px-6 md:px-12 lg:px-16 py-6 md:py-7 grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-8">
+            {[
+              { k: "Origin", v: "Sản xuất tại Việt Nam" },
+              { k: "Standard", v: "ISO 9001 · TDS / MSDS" },
+              { k: "On-site", v: "Hỗ trợ kỹ thuật tại công trình" },
+              { k: "Per project", v: "Hệ phủ điều chỉnh theo dự án" },
+            ].map((t) => (
+              <div key={t.k} className="flex items-start gap-3">
+                <span
+                  className="mt-1.5 inline-block size-1.5 rounded-full shrink-0"
+                  style={{ background: "var(--accent)" }}
+                />
+                <div>
+                  <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/45">
+                    {t.k}
+                  </div>
+                  <div className="font-serif text-[15px] md:text-base italic text-onyx/85 leading-snug mt-0.5">
+                    {t.v}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── Subtle ticker — material signature in motion ──────── */}
+        <div className="border-b border-onyx/10 overflow-hidden bg-clay-soft">
+          <div className="flex whitespace-nowrap ticker-track py-3">
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex items-center gap-10 px-6 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                <span className="text-onyx/70">{active.index} · {active.nameEn}</span>
+                <span style={{ color: "var(--accent)" }}>{active.index} · {active.signature}</span>
                 <span>—</span>
-                <span>{active.name}</span>
+                <span className="text-onyx/70">{active.nameEn}</span>
                 <span>—</span>
                 <span>{active.specs[0].label}: {active.specs[0].value}</span>
                 <span>—</span>
                 <span>{active.specs[1].label}: {active.specs[1].value}</span>
                 <span>—</span>
-                <span>Sản xuất tại Việt Nam · ISO 9001</span>
-                <span>—</span>
-                <span>Hỗ trợ kỹ thuật tại công trình</span>
+                <span>Lotus Coating Atelier · Bình Dương</span>
                 <span>—</span>
               </div>
             ))}
