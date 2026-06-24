@@ -1114,20 +1114,25 @@ function Index() {
           <div className="absolute inset-0 bg-gradient-to-b from-onyx via-onyx/85 to-onyx" />
 
           <div className="relative z-10 max-w-4xl mx-auto text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/55 mb-6 r-rise">
-              ☟ Bắt đầu dự án của bạn
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/60 mb-6 r-rise">
+              § Bắt đầu một dự án
             </p>
             <h3 className="font-serif text-5xl md:text-7xl leading-[1.02] italic font-light r-rise r-d1 text-pretty">
-              Hệ sơn phù hợp <br/>
+              Hệ sơn phù hợp <br />
               <span className="not-italic font-normal">cho từng vật liệu của bạn.</span>
             </h3>
+            <p className="mt-8 max-w-2xl mx-auto text-clay/75 leading-relaxed r-rise r-d2">
+              Gửi ảnh công trình, loại vật liệu nền và yêu cầu ứng dụng qua Zalo —
+              đội kỹ thuật Lotus sẽ đề xuất hệ phủ, định mức và báo giá theo dự án.
+              Phản hồi trong vòng 24 giờ.
+            </p>
 
             <a
               href={ZALO_URL}
               target="_blank"
               rel="noopener"
-              className="group relative inline-flex flex-col items-center mt-16 r-rise r-d2"
-              aria-label="Nhắn Zalo tìm hiểu thêm"
+              className="group relative inline-flex flex-col items-center mt-14 r-rise r-d2"
+              aria-label="Nhắn Zalo tư vấn dự án"
             >
               {/* Wax seal */}
               <div className="relative size-44 md:size-52 flex items-center justify-center">
@@ -1145,7 +1150,7 @@ function Index() {
                   </defs>
                   <text fill="currentColor" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "9px", letterSpacing: "0.32em", textTransform: "uppercase" }}>
                     <textPath href="#ctaCircle">
-                      Nhắn Zalo · Tìm hiểu thêm · Sơn Lotus · Atelier · 
+                      Lotus Coating Atelier · Tư vấn dự án qua Zalo · 
                     </textPath>
                   </text>
                 </svg>
@@ -1159,8 +1164,11 @@ function Index() {
                   </span>
                 </div>
               </div>
-              <span className="mt-8 font-mono text-[11px] uppercase tracking-[0.4em] text-clay/85 flourish">
-                Nhắn Zalo tìm hiểu thêm
+              <span className="mt-8 font-mono text-[11px] uppercase tracking-[0.4em] text-clay/90 flourish">
+                Nhắn Zalo · Tư vấn dự án
+              </span>
+              <span className="mt-3 font-serif italic text-clay/55 text-sm">
+                Gỗ · Kim loại · Xi măng · Composite · Sàn
               </span>
             </a>
           </div>
