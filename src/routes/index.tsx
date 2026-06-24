@@ -343,6 +343,41 @@ const CATEGORIES: Category[] = [
   },
 ];
 
+/** Per-material atmosphere — distinct crop + cinematic phrase per category. */
+const MOOD: Record<string, { crop: string; pause: string; pauseSub: string }> = {
+  wood: {
+    crop: "center 38%",
+    pause: "Vân gỗ, không phai.",
+    pauseSub: "Lớp phủ thấm vào thớ — bảo vệ từ chiều sâu.",
+  },
+  metal: {
+    crop: "center 28%",
+    pause: "Thép giữ hình.",
+    pauseSub: "Lớp epoxy giàu kẽm chống ăn mòn từ nền.",
+  },
+  "metal-wood": {
+    crop: "65% 55%",
+    pause: "Kim loại, học vân gỗ.",
+    pauseSub: "Vẻ ấm của gỗ trên nền nhôm và thép.",
+  },
+  "cement-wood": {
+    crop: "center 68%",
+    pause: "Cement, mang chiều sâu của gỗ.",
+    pauseSub: "Bền nước, không cong vênh, vân thật.",
+  },
+  composite: {
+    crop: "30% 50%",
+    pause: "Bám trên bề mặt khó nhất.",
+    pauseSub: "Hóa học của sự gắn kết trên nhựa kỹ thuật.",
+  },
+  floor: {
+    crop: "center 78%",
+    pause: "Một mặt phẳng, liền mạch.",
+    pauseSub: "Chịu tải, kháng hóa chất, dễ vệ sinh.",
+  },
+};
+
+
 /* ────────────────────────────── COMPONENT ────────────────────────────── */
 
 function Index() {
