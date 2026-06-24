@@ -8,7 +8,7 @@ import catCementWood from "@/assets/cat-cementwood.jpg";
 import catComposite from "@/assets/cat-composite.jpg";
 import catFloor from "@/assets/cat-floor.jpg";
 import revealCraft from "@/assets/reveal-craft.jpg";
-import revealMacro from "@/assets/reveal-macro.jpg";
+
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
@@ -343,11 +343,49 @@ const CATEGORIES: Category[] = [
   },
 ];
 
+/** Per-material atmosphere — distinct crop + cinematic phrase per category. */
+const MOOD: Record<string, { crop: string; pause: string; pauseSub: string }> = {
+  wood: {
+    crop: "center 38%",
+    pause: "Vân gỗ, không phai.",
+    pauseSub: "Lớp phủ thấm vào thớ — bảo vệ từ chiều sâu.",
+  },
+  metal: {
+    crop: "center 28%",
+    pause: "Thép giữ hình.",
+    pauseSub: "Lớp epoxy giàu kẽm chống ăn mòn từ nền.",
+  },
+  "metal-wood": {
+    crop: "65% 55%",
+    pause: "Kim loại, học vân gỗ.",
+    pauseSub: "Vẻ ấm của gỗ trên nền nhôm và thép.",
+  },
+  "cement-wood": {
+    crop: "center 68%",
+    pause: "Cement, mang chiều sâu của gỗ.",
+    pauseSub: "Bền nước, không cong vênh, vân thật.",
+  },
+  composite: {
+    crop: "30% 50%",
+    pause: "Bám trên bề mặt khó nhất.",
+    pauseSub: "Hóa học của sự gắn kết trên nhựa kỹ thuật.",
+  },
+  floor: {
+    crop: "center 78%",
+    pause: "Một mặt phẳng, liền mạch.",
+    pauseSub: "Chịu tải, kháng hóa chất, dễ vệ sinh.",
+  },
+};
+
+
 /* ────────────────────────────── COMPONENT ────────────────────────────── */
 
 function Index() {
   const [activeId, setActiveId] = useState(CATEGORIES[0].id);
   const active = CATEGORIES.find((c) => c.id === activeId) ?? CATEGORIES[0];
+  const mood = MOOD[active.id];
+  const [openFaq, setOpenFaq] = useState(0);
+  useEffect(() => { setOpenFaq(0); }, [activeId]);
 
   // Wheel-to-cycle inside hero (subtle premium kinetic interaction)
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -395,6 +433,7 @@ function Index() {
             width={1920}
             height={1200}
             className="absolute inset-0 w-full h-full object-cover plate-in drift"
+            style={{ objectPosition: mood.crop }}
           />
           {/* Material wash — accent tint, gathered on the right */}
           <div
@@ -700,6 +739,7 @@ function Index() {
             height={1200}
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover r-scale"
+            style={{ objectPosition: mood.crop }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-onyx/55 via-onyx/10 to-transparent" />
           <div
@@ -788,27 +828,67 @@ function Index() {
           </div>
         </section>
 
-        {/* ── Large macro image · full bleed with caption ───────── */}
+        {/* ── Cinematic pause · the unforgettable moment ─────────── */}
         <section className="relative">
-          <div className="relative h-[70svh] min-h-[480px] overflow-hidden">
+          <div className="relative h-[92svh] min-h-[640px] overflow-hidden bg-onyx">
             <img
-              src={revealMacro}
-              alt="Macro detail of coating saturating wood grain"
+              key={active.id + "-pause"}
+              src={active.image}
+              alt={active.name}
               width={1920}
               height={1280}
               loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover r-scale"
+              className="absolute inset-0 w-full h-full object-cover drift-deep"
+              style={{ objectPosition: mood.crop }}
             />
-          </div>
-          <div className="px-6 md:px-12 lg:px-16 py-6 flex flex-col md:flex-row md:items-baseline md:justify-between gap-4 border-b border-onyx/10">
-            <p className="font-serif italic text-onyx/75 text-lg max-w-xl">
-              Phân tử sơn len lỏi vào từng thớ vật liệu — bảo vệ bắt đầu từ chiều sâu, không phải bề mặt.
-            </p>
-            <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-              Fig. {active.index}·A — Cross-section magnified 200×
-            </span>
+            {/* Quiet vignette for legibility — no chrome, just shadow */}
+            <div className="absolute inset-0 bg-gradient-to-t from-onyx/80 via-onyx/35 to-onyx/55" />
+            <div
+              className="absolute inset-0 mix-blend-multiply opacity-50"
+              style={{
+                background:
+                  "radial-gradient(70% 60% at 50% 70%, var(--accent), transparent 75%)",
+              }}
+            />
+
+            {/* Printed-catalog corners — keep editorial frame */}
+            <div className="pointer-events-none absolute inset-6 md:inset-10 z-10">
+              <span className="absolute top-0 left-0 size-4 border-t border-l border-clay/40" />
+              <span className="absolute top-0 right-0 size-4 border-t border-r border-clay/40" />
+              <span className="absolute bottom-0 left-0 size-4 border-b border-l border-clay/40" />
+              <span className="absolute bottom-0 right-0 size-4 border-b border-r border-clay/40" />
+            </div>
+
+            {/* Centered phrase — one line of attention */}
+            <div className="relative z-10 h-full flex flex-col justify-end px-6 md:px-12 lg:px-16 pb-16 md:pb-24 text-clay">
+              <div
+                key={active.id + "-pause-text"}
+                className="max-w-4xl soft-in"
+              >
+                <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.4em] text-clay/70 mb-6">
+                  <span
+                    className="inline-block size-1.5 rounded-full"
+                    style={{ background: "var(--accent)" }}
+                  />
+                  <span>Fig. {active.index} — {active.signature}</span>
+                </div>
+                <p className="font-serif italic font-light text-[clamp(2.25rem,6.5vw,5.75rem)] leading-[1.02] tracking-[-0.015em] text-clay text-pretty">
+                  {mood.pause}
+                </p>
+                <p className="mt-6 max-w-md font-serif italic text-lg md:text-xl text-clay/75">
+                  {mood.pauseSub}
+                </p>
+              </div>
+            </div>
+
+            {/* Top-right caption */}
+            <div className="absolute top-6 right-6 md:top-10 md:right-10 z-10 font-mono text-[9px] uppercase tracking-[0.32em] text-clay/55 text-right">
+              <div>Intermezzo</div>
+              <div>Lotus / {active.nameEn}</div>
+            </div>
           </div>
         </section>
+
 
         {/* ── Applications — numbered editorial list, asymmetric ─ */}
         <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40">
@@ -822,7 +902,7 @@ function Index() {
                   Nơi <span className="not-italic">Lotus</span> được tin dùng.
                 </h3>
                 <p className="mt-6 text-onyx/65 max-w-xs r-rise r-d2">
-                  Hệ {active.name.toLowerCase()} phù hợp cho các nhà thầu, xưởng sản xuất và dự án có yêu cầu kỹ thuật cao.
+                  Dành cho nhà thầu, xưởng sản xuất và dự án có yêu cầu kỹ thuật cao.
                 </p>
               </div>
             </div>
@@ -1036,10 +1116,9 @@ function Index() {
 
             <div className="col-span-12 md:col-span-7 md:col-start-6">
               <p className="font-serif text-xl md:text-2xl leading-relaxed text-onyx/80 text-pretty r-rise">
-                Sơn Lotus được pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
-                và đi cùng đội kỹ thuật tới tận công trình. Mỗi hệ phủ được điều chỉnh theo vật liệu
-                nền, môi trường thi công và yêu cầu thẩm mỹ của từng dự án — không bán theo
-                cảm tính, không bán theo lô có sẵn.
+                Pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
+                triển khai cùng đội kỹ thuật tại công trình — mỗi hệ phủ điều chỉnh
+                theo vật liệu nền và yêu cầu của từng dự án.
               </p>
 
               <dl className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-10 border-t border-onyx/15 pt-10">
@@ -1063,42 +1142,96 @@ function Index() {
           </div>
         </section>
 
-        {/* ── FAQ · minimal ─────────────────────────────────────── */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15">
-
-          <div className="max-w-6xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
-            <div className="col-span-12 md:col-span-4">
-              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
-                § Hỏi & Đáp
-              </span>
-              <h3 className="font-serif text-4xl md:text-5xl italic mt-5 leading-tight r-rise r-d1">
-                Cần một câu trả lời?
-              </h3>
-              <p className="mt-6 text-onyx/60 r-rise r-d2 max-w-xs">
-                Đội kỹ thuật Lotus sẵn sàng khảo sát và đề xuất hệ phù hợp cho dự án của bạn.
+        {/* ── FAQ · editorial index, single open panel ──────────── */}
+        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15 bg-paper">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 md:mb-20">
+              <div className="r-rise">
+                <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
+                  § Hỏi &amp; Đáp
+                </span>
+                <h3 className="font-serif text-4xl md:text-5xl italic mt-4 leading-tight">
+                  Trước khi gửi dự án.
+                </h3>
+              </div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45 md:text-right max-w-xs r-rise r-d1">
+                Cập nhật theo hệ phủ đang xem<br />
+                Lotus / {active.nameEn}
               </p>
             </div>
 
-            <div className="col-span-12 md:col-span-7 md:col-start-6 border-t border-onyx/25">
-              {active.faq.map((f, i) => (
-                <details key={f.q} className="group py-7 border-b border-onyx/15 r-rise" open={i === 0}>
-                  <summary className="flex items-start justify-between gap-6 cursor-pointer list-none">
-                    <span className="font-serif text-xl md:text-2xl leading-snug pr-6">
-                      <span className="font-mono text-[11px] tracking-widest text-umber mr-3">
-                        Q·{String(i + 1).padStart(2, "0")}
-                      </span>
-                      {f.q}
+            <div className="grid grid-cols-12 gap-x-8 gap-y-10 md:gap-x-16 border-t border-onyx/25 pt-10">
+              {/* Left rail — numbered index */}
+              <ol className="col-span-12 md:col-span-4">
+                {active.faq.map((f, i) => {
+                  const isOpen = openFaq === i;
+                  return (
+                    <li key={f.q}>
+                      <button
+                        onClick={() => setOpenFaq(i)}
+                        onMouseEnter={() => setOpenFaq(i)}
+                        className="group block w-full text-left py-4 border-b border-onyx/15 transition-colors"
+                        aria-pressed={isOpen}
+                      >
+                        <div className="flex items-baseline gap-4">
+                          <span
+                            className="font-mono text-[10px] tracking-[0.32em] uppercase shrink-0 transition-colors"
+                            style={{ color: isOpen ? "var(--accent)" : "rgba(22,20,18,0.4)" }}
+                          >
+                            Q·{String(i + 1).padStart(2, "0")}
+                          </span>
+                          <span
+                            className={`font-serif text-lg md:text-xl leading-snug transition-colors ${
+                              isOpen ? "text-onyx italic" : "text-onyx/55 group-hover:text-onyx"
+                            }`}
+                          >
+                            {f.q}
+                          </span>
+                        </div>
+                        <div
+                          className={`mt-2 h-px origin-left transition-transform duration-700 ${
+                            isOpen ? "scale-x-100" : "scale-x-0"
+                          }`}
+                          style={{ background: "var(--accent)" }}
+                        />
+                      </button>
+                    </li>
+                  );
+                })}
+              </ol>
+
+              {/* Right panel — editorial answer */}
+              <div className="col-span-12 md:col-span-7 md:col-start-6 md:border-l md:border-onyx/15 md:pl-12">
+                {active.faq[openFaq] && (
+                  <div key={active.id + "-faq-" + openFaq} className="soft-in">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
+                      Trả lời · Q·{String(openFaq + 1).padStart(2, "0")}
                     </span>
-                    <span className="font-serif text-2xl text-umber pt-1 group-open:rotate-45 transition-transform">
-                      +
-                    </span>
-                  </summary>
-                  <p className="mt-4 pl-[3.4rem] text-onyx/70 leading-relaxed max-w-2xl">{f.a}</p>
-                </details>
-              ))}
+                    <p className="mt-5 font-serif text-2xl md:text-[1.75rem] italic leading-snug text-onyx/90 text-pretty">
+                      {active.faq[openFaq].q}
+                    </p>
+                    <p className="mt-6 text-onyx/75 leading-relaxed max-w-xl text-[1.02rem]">
+                      {active.faq[openFaq].a}
+                    </p>
+                    <a
+                      href={ZALO_URL}
+                      target="_blank"
+                      rel="noopener"
+                      className="group inline-flex items-center gap-3 mt-10 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
+                    >
+                      <span>Còn câu hỏi khác — Nhắn Zalo</span>
+                      <span
+                        className="inline-block h-px w-8 group-hover:w-14 transition-all"
+                        style={{ background: "var(--accent)" }}
+                      />
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </section>
+
 
         {/* ── Final chapter · wax seal CTA ─────────────────────── */}
         <section className="relative px-6 md:px-12 lg:px-16 py-32 md:py-48 bg-onyx text-clay overflow-hidden">
@@ -1120,11 +1253,29 @@ function Index() {
               Hệ sơn phù hợp <br />
               <span className="not-italic font-normal">cho từng vật liệu của bạn.</span>
             </h3>
-            <p className="mt-8 max-w-2xl mx-auto text-clay/75 leading-relaxed r-rise r-d2">
-              Gửi ảnh công trình, loại vật liệu nền và yêu cầu ứng dụng qua Zalo —
-              đội kỹ thuật Lotus sẽ đề xuất hệ phủ, định mức và báo giá theo dự án.
-              Phản hồi trong vòng 24 giờ.
+            <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-relaxed r-rise r-d2">
+              Gửi yêu cầu qua Zalo để đội kỹ thuật Lotus đề xuất hệ phủ, định mức và báo giá
+              theo dự án. Phản hồi trong 24 giờ.
             </p>
+
+            {/* Project intake — what to send */}
+            <ul className="mt-12 max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8 text-left r-rise r-d3">
+              {[
+                { k: "01", v: "Ảnh công trình" },
+                { k: "02", v: "Vật liệu nền" },
+                { k: "03", v: "Hoàn thiện mong muốn" },
+                { k: "04", v: "Yêu cầu độ bền · môi trường" },
+              ].map((t) => (
+                <li key={t.k} className="border-t border-clay/20 pt-4">
+                  <div className="font-mono text-[10px] tracking-[0.32em] uppercase text-clay/45">
+                    {t.k} — Gửi kèm
+                  </div>
+                  <div className="mt-1.5 font-serif italic text-base md:text-lg text-clay/90 leading-snug">
+                    {t.v}
+                  </div>
+                </li>
+              ))}
+            </ul>
 
             <a
               href={ZALO_URL}
