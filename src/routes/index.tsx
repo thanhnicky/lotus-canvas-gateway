@@ -749,13 +749,13 @@ function Index() {
               <div key={i} className="flex items-center gap-10 px-6 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
                 <span style={{ color: "var(--accent)" }}>{active.index} · {active.signature}</span>
                 <span>—</span>
-                <span className="text-onyx/70">{active.nameEn}</span>
+                <span className="text-onyx/70">{active.signature}</span>
                 <span>—</span>
                 <span>{active.specs[0].label}: {active.specs[0].value}</span>
                 <span>—</span>
                 <span>{active.specs[1].label}: {active.specs[1].value}</span>
                 <span>—</span>
-                <span>Lotus Coating Atelier · Bình Dương</span>
+                <span>Xưởng sơn Lotus · Bình Dương</span>
                 <span>—</span>
               </div>
             ))}
@@ -785,7 +785,7 @@ function Index() {
           <div className="relative h-full flex flex-col justify-between px-6 md:px-12 lg:px-16 py-12 md:py-16 text-clay">
             <div className="flex justify-between items-start font-mono text-[10px] uppercase tracking-[0.32em] text-clay/70 r-rise">
               <span>Chương · {active.index}</span>
-              <span>{active.nameEn}</span>
+              <span>{active.signature}</span>
             </div>
 
             <div className="max-w-4xl">
@@ -840,7 +840,7 @@ function Index() {
                   {active.index}
                 </div>
                 <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35 -mt-4 r-rise r-d2">
-                  {active.nameEn}
+                  {active.signature}
                 </p>
               </div>
             </div>
@@ -901,7 +901,7 @@ function Index() {
                     className="inline-block size-1.5 rounded-full"
                     style={{ background: "var(--accent)" }}
                   />
-                  <span>Fig. {active.index} — {active.signature}</span>
+                  <span>Mục {active.index} — {active.signature}</span>
                 </div>
                 <p className="font-serif italic font-light text-[clamp(2.25rem,6.5vw,5.75rem)] leading-[1.02] tracking-[-0.015em] text-clay text-pretty">
                   {mood.pause}
@@ -914,7 +914,7 @@ function Index() {
 
             {/* Top-right caption */}
             <div className="absolute top-6 right-6 md:top-10 md:right-10 z-10 font-mono text-[9px] uppercase tracking-[0.32em] text-clay/45 text-right">
-              <div>Lotus · {active.nameEn}</div>
+              <div>Lotus · {active.signature}</div>
             </div>
 
           </div>
@@ -975,7 +975,7 @@ function Index() {
 
                 <div className="mt-10 inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-clay/50 r-rise r-d3">
                   <span className="inline-block h-px w-10 bg-clay/30" />
-                  <span>Atelier Protocol · {active.index}</span>
+                  <span>Quy trình chuẩn · {active.index}</span>
                 </div>
               </div>
             </div>
@@ -1016,7 +1016,7 @@ function Index() {
                   Hệ phủ Lotus đề xuất
                 </p>
                 <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
-                  Lotus · {active.nameEn}
+                  Lotus · {active.signature}
                 </h3>
               </div>
               <div className="hidden md:block text-right font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40">
@@ -1185,7 +1185,7 @@ function Index() {
                 </h3>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 md:text-right r-rise r-d1">
-                Câu hỏi thường gặp · {active.nameEn}
+                Câu hỏi thường gặp · {active.signature}
               </p>
             </div>
 
