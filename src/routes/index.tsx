@@ -572,7 +572,7 @@ function Index() {
 
 
 
-        {/* Bottom — editorial INDEX (the selector, type-specimen style) */}
+        {/* Bottom — editorial INDEX (the selector, type-specimen style) v2 */}
         <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-10 md:pb-12">
           <div className="flex items-end justify-between mb-5 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
             <div className="flex items-center gap-3">
