@@ -868,7 +868,7 @@ function Index() {
             <div className="col-span-12 md:col-span-4">
               <div className="md:sticky md:top-24">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
-                  § Ứng dụng
+                  Ứng dụng
                 </span>
                 <h3 className="font-serif text-4xl md:text-5xl mt-5 leading-[1.05] italic r-rise r-d1">
                   Nơi <span className="not-italic">Lotus</span> được tin dùng.
@@ -903,7 +903,7 @@ function Index() {
             <div className="col-span-12 md:col-span-4">
               <div className="md:sticky md:top-24">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
-                  § Quy trình
+                  Quy trình
                 </span>
                 <h2 className="font-serif text-5xl md:text-6xl leading-[0.98] mt-5 r-rise r-d1">
                   Bốn nhịp,<br/>
@@ -954,7 +954,7 @@ function Index() {
             <div className="flex items-end justify-between mb-10 md:mb-14 border-b border-onyx/30 pb-6">
               <div className="r-rise">
                 <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber mb-3">
-                  § Catalog · Hệ phủ đề xuất
+                  Hệ phủ đề xuất
                 </p>
                 <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
                   Lotus / {active.nameEn}
@@ -1011,7 +1011,7 @@ function Index() {
             <div className="grid grid-cols-12 gap-6 md:gap-8 items-end">
               <div className="col-span-12 md:col-span-7 r-rise">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber">
-                  § Dự án
+                  Dự án
                 </span>
                 <h3 className="mt-5 font-serif text-4xl md:text-6xl italic leading-[1.03]">
                   Đã được thi công <br/>
@@ -1079,7 +1079,7 @@ function Index() {
             <div className="grid grid-cols-12 gap-8 md:gap-16 items-start">
               <div className="col-span-12 md:col-span-5 r-rise">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
-                  § Atelier note
+                  Atelier
                 </span>
                 <h3 className="font-serif text-4xl md:text-[3.25rem] italic leading-[1.02] mt-6 text-balance">
                   Một nhà sản xuất, <br />
@@ -1125,7 +1125,7 @@ function Index() {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 md:mb-20">
               <div className="r-rise">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
-                  § Hỏi &amp; Đáp
+                  Hỏi &amp; Đáp
                 </span>
                 <h3 className="font-serif text-4xl md:text-5xl italic mt-4 leading-tight">
                   Trước khi gửi dự án.
@@ -1223,7 +1223,7 @@ function Index() {
 
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/60 mb-6 r-rise">
-              § Bắt đầu một dự án
+              Bắt đầu một dự án
             </p>
             <h3 className="font-serif text-5xl md:text-7xl leading-[1.02] italic font-light r-rise r-d1 text-pretty">
               Hệ sơn phù hợp <br />
