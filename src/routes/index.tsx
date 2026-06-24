@@ -1318,35 +1318,46 @@ function Index() {
       </main>
 
       {/* ── Footer ─────────────────────────────────────────────── */}
-      <footer className="px-6 md:px-12 lg:px-16 py-12 bg-clay">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-t border-onyx/15 pt-10">
-          <div>
-            <p className="font-serif italic text-2xl">Sơn&nbsp;Lotus</p>
-            <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-              Premium Coating Manufacturer · Vietnam
+      <footer className="px-6 md:px-12 lg:px-16 pt-16 pb-12 bg-clay">
+        <div className="grid grid-cols-12 gap-8 border-t border-onyx/15 pt-12">
+          <div className="col-span-12 md:col-span-5">
+            <p className="font-serif italic text-[1.75rem] leading-none">Sơn&nbsp;Lotus</p>
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+              Nhà sản xuất sơn công nghiệp · Việt Nam
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 font-mono text-[10px] uppercase tracking-[0.28em] text-onyx/55">
-            <div>
-              <div className="text-onyx/40 mb-2">Xưởng</div>
-              <div className="text-onyx/80 normal-case tracking-normal">Bình Dương, VN</div>
-            </div>
-            <div>
-              <div className="text-onyx/40 mb-2">Văn phòng</div>
-              <div className="text-onyx/80 normal-case tracking-normal">TP. Hồ Chí Minh</div>
-            </div>
-            <div>
-              <div className="text-onyx/40 mb-2">Liên hệ</div>
-              <a href={ZALO_URL} target="_blank" rel="noopener" className="text-umber hover:text-onyx normal-case tracking-normal transition-colors">
-                Nhắn Zalo →
-              </a>
-            </div>
+
+          <div className="col-span-6 md:col-span-2">
+            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 mb-3">Xưởng</div>
+            <div className="text-onyx/80 text-sm leading-relaxed">Bình Dương</div>
+          </div>
+          <div className="col-span-6 md:col-span-2">
+            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 mb-3">Văn phòng</div>
+            <div className="text-onyx/80 text-sm leading-relaxed">TP. Hồ Chí Minh</div>
+          </div>
+          <div className="col-span-12 md:col-span-3">
+            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 mb-3">Liên hệ</div>
+            <a
+              href={ZALO_URL}
+              target="_blank"
+              rel="noopener"
+              className="group inline-flex items-center gap-3 text-onyx hover:text-umber transition-colors"
+            >
+              <span className="font-serif italic text-base">Nhắn Zalo</span>
+              <span
+                className="inline-block h-px w-8 group-hover:w-12 transition-all"
+                style={{ background: "var(--accent)" }}
+              />
+            </a>
           </div>
         </div>
-        <p className="mt-10 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/35">
-          © {new Date().getFullYear()} Lotus Coating Systems · All material rights reserved.
-        </p>
+
+        <div className="mt-16 flex flex-col md:flex-row md:items-center md:justify-between gap-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/35">
+          <span>© {new Date().getFullYear()} Sơn Lotus</span>
+          <span>Lotus Coating Atelier · ISO 9001</span>
+        </div>
       </footer>
+
     </div>
   );
 }
