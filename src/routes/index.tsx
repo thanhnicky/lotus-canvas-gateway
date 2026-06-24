@@ -396,18 +396,35 @@ function Index() {
             height={1200}
             className="absolute inset-0 w-full h-full object-cover plate-in drift"
           />
-          {/* Material wash — vignette tinted by the active category's accent */}
-          <div className="absolute inset-0 bg-gradient-to-br from-clay/95 via-clay/55 to-onyx/30 mix-blend-multiply" />
+          {/* Material wash — accent tint, gathered on the right */}
           <div
             key={active.id + "-tint"}
-            className="absolute inset-0 mix-blend-multiply opacity-35 plate-in"
+            className="absolute inset-0 mix-blend-multiply opacity-30 plate-in"
             style={{
               background:
-                "radial-gradient(75% 60% at 80% 90%, var(--accent), transparent 70%)",
+                "radial-gradient(70% 55% at 85% 90%, var(--accent), transparent 70%)",
             }}
           />
-          <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_0%_0%,theme(colors.clay)/0.7,transparent_55%)]" />
+          {/* Readability veil — strong on the left, fades right.
+              Desktop: left→right.  Mobile: bottom→top so text reads cleanly. */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(239,234,226,0.92) 0%, rgba(239,234,226,0.78) 38%, rgba(239,234,226,0.45) 70%, rgba(22,20,18,0.35) 100%)",
+            }}
+          />
+          <div
+            className="absolute inset-0 hidden md:block"
+            style={{
+              background:
+                "linear-gradient(95deg, rgba(239,234,226,0.95) 0%, rgba(239,234,226,0.86) 32%, rgba(239,234,226,0.55) 55%, rgba(239,234,226,0.1) 78%, transparent 100%)",
+            }}
+          />
+          {/* Soft top vignette to anchor brand bar */}
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-clay/70 to-transparent" />
         </div>
+
 
 
         {/* Frame brackets — printed-catalog corners */}
@@ -439,45 +456,64 @@ function Index() {
         </header>
 
         {/* Center — editorial cover */}
-        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-10 md:pt-16">
+        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-10 md:pt-14">
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-6 flex items-center gap-4">
-              <span className="inline-block h-px w-10 bg-onyx/45" />
-              <span>Bộ sưu tập sáu hệ phủ vật liệu — MMXXIV</span>
+            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/70 mb-6 flex items-center gap-4">
+              <span className="inline-block h-px w-10 bg-onyx/55" />
+              <span>Nhà sản xuất sơn công nghiệp · Việt Nam</span>
             </div>
-            <h1 className="font-serif text-[clamp(3rem,9vw,9.5rem)] leading-[0.88] tracking-[-0.025em] text-balance">
-              <span className="block">Vật liệu</span>
-              <span className="block italic font-light text-onyx/85 -mt-1 md:-mt-2">
-                được&nbsp;phủ&nbsp;bằng <span className="not-italic font-normal">ý&nbsp;đồ.</span>
+            <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.9] tracking-[-0.025em] text-balance text-onyx">
+              <span className="block">Vật liệu,</span>
+              <span className="block italic font-light text-onyx/90 -mt-1 md:-mt-2">
+                được phủ bằng <span className="not-italic font-normal">ý đồ.</span>
               </span>
             </h1>
 
-            <p className="mt-8 md:mt-10 max-w-xl text-[0.95rem] md:text-base leading-relaxed text-onyx/75">
-              Sơn Lotus — nhà sản xuất sơn công nghiệp Việt Nam.
-              <br className="hidden md:block" />
-              Sáu hệ sơn, một triết lý: <em className="font-serif text-onyx">bảo vệ mà không che lấp</em>.
+            <p className="mt-7 md:mt-8 max-w-xl text-[0.98rem] md:text-[1.05rem] leading-relaxed text-onyx/85">
+              Sáu hệ sơn chuyên biệt cho gỗ, kim loại, xi măng, composite và sàn công nghiệp —
+              pha chế tại Bình Dương, điều chỉnh theo từng dự án.
             </p>
+
+            <div className="mt-8 md:mt-9 flex flex-wrap items-center gap-x-7 gap-y-3">
+              <a
+                href={ZALO_URL}
+                target="_blank"
+                rel="noopener"
+                className="group inline-flex items-center gap-3 bg-onyx text-clay pl-5 pr-4 py-3 hover:bg-ash transition-colors"
+              >
+                <span className="font-mono text-[11px] uppercase tracking-[0.32em]">
+                  Nhắn Zalo · Tư vấn dự án
+                </span>
+                <span
+                  className="inline-block h-px w-6 group-hover:w-10 transition-all"
+                  style={{ background: "var(--accent)" }}
+                />
+              </a>
+              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/60">
+                Phản hồi trong 24h
+              </span>
+            </div>
           </div>
 
           {/* Right side — active material data card */}
           <aside className="hidden md:flex col-span-3 self-end justify-end items-end pb-6">
             <div key={active.id + "-meta"} className="text-right space-y-3 soft-in">
-              <div className="flex items-center justify-end gap-2 font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/55">
+              <div className="flex items-center justify-end gap-2 font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/65">
                 <span
                   className="inline-block size-2 rounded-full"
                   style={{ background: "var(--accent)" }}
                 />
                 <span>{active.signature}</span>
               </div>
-              <div className="font-serif text-[5rem] leading-none italic text-onyx/90 tracking-tight">
+              <div className="font-serif text-[5rem] leading-none italic text-onyx tracking-tight">
                 {active.index}
               </div>
-              <div className="font-serif text-xl text-onyx/80 italic">
+              <div className="font-serif text-xl text-onyx/85 italic">
                 {active.name}
               </div>
               <div className="ml-auto h-px w-16" style={{ background: "var(--accent)" }} />
-              <div className="text-[11px] text-onyx/60 max-w-[14rem] leading-snug ml-auto">
-                <span className="font-mono uppercase tracking-[0.25em] text-onyx/40 mr-1">
+              <div className="text-[11px] text-onyx/70 max-w-[14rem] leading-snug ml-auto">
+                <span className="font-mono uppercase tracking-[0.25em] text-onyx/50 mr-1">
                   {active.specs[0].label}
                 </span>
                 {active.specs[0].value}
@@ -486,31 +522,22 @@ function Index() {
           </aside>
         </div>
 
+
         {/* Bottom — editorial INDEX (the selector, type-specimen style) */}
         <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-8 md:pb-10">
-          <div className="flex items-end justify-between mb-4 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+          <div className="flex items-end justify-between mb-4 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/65">
             <div className="flex items-center gap-3">
-              <span className="inline-block h-px w-8 bg-onyx/40" />
-              <span>Material Specimen — Vol. I / 06</span>
+              <span className="inline-block h-px w-8 bg-onyx/45" />
+              <span>Chọn hệ sơn để khám phá · 06 hệ phủ</span>
             </div>
-            <a
-              href={ZALO_URL}
-              target="_blank"
-              rel="noopener"
-              className="group hidden md:inline-flex items-center gap-3 text-onyx transition-colors"
-            >
+            <span className="hidden md:inline-flex items-center gap-2 text-onyx/55">
+              <span>Hệ đang xem</span>
               <span
                 className="inline-block size-1.5 rounded-full"
                 style={{ background: "var(--accent)" }}
               />
-              <span className="group-hover:tracking-[0.4em] transition-[letter-spacing] duration-500">
-                Nhắn Zalo · tìm hiểu thêm
-              </span>
-              <span
-                className="inline-block h-px w-8 group-hover:w-14 transition-all"
-                style={{ background: "var(--accent)" }}
-              />
-            </a>
+              <span className="text-onyx/85">{active.signature}</span>
+            </span>
           </div>
 
           <div className="border-t border-onyx/25 hide-scrollbar overflow-x-auto">
@@ -750,14 +777,13 @@ function Index() {
         {/* ── Editorial pull quote, no chrome ─────────────────── */}
         <section className="px-6 md:px-12 lg:px-16 py-20 md:py-32 border-t border-onyx/10">
           <div className="max-w-5xl mx-auto text-center r-rise">
-            <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-umber">
-              ☞ Triết lý sản xuất
+            <span className="font-mono text-[10px] uppercase tracking-[0.4em]" style={{ color: "var(--accent)" }}>
+              § Triết lý sản xuất
             </span>
             <p className="mt-6 font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
-              Chúng tôi không bán sơn — chúng tôi bán
-              <span className="not-italic"> lớp bảo vệ </span>
-              được hoá học hoá từ
-              <span className="text-umber"> bốn mươi năm</span> hiểu vật liệu.
+              Chúng tôi sản xuất <span className="not-italic">lớp bảo vệ</span> —
+              kết hợp công thức nội bộ và kinh nghiệm thi công thực tế trên
+              <span className="not-italic" style={{ color: "var(--accent)" }}> sáu nhóm vật liệu</span>.
             </p>
           </div>
         </section>
@@ -1087,20 +1113,25 @@ function Index() {
           <div className="absolute inset-0 bg-gradient-to-b from-onyx via-onyx/85 to-onyx" />
 
           <div className="relative z-10 max-w-4xl mx-auto text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/55 mb-6 r-rise">
-              ☟ Bắt đầu dự án của bạn
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/60 mb-6 r-rise">
+              § Bắt đầu một dự án
             </p>
             <h3 className="font-serif text-5xl md:text-7xl leading-[1.02] italic font-light r-rise r-d1 text-pretty">
-              Hệ sơn phù hợp <br/>
+              Hệ sơn phù hợp <br />
               <span className="not-italic font-normal">cho từng vật liệu của bạn.</span>
             </h3>
+            <p className="mt-8 max-w-2xl mx-auto text-clay/75 leading-relaxed r-rise r-d2">
+              Gửi ảnh công trình, loại vật liệu nền và yêu cầu ứng dụng qua Zalo —
+              đội kỹ thuật Lotus sẽ đề xuất hệ phủ, định mức và báo giá theo dự án.
+              Phản hồi trong vòng 24 giờ.
+            </p>
 
             <a
               href={ZALO_URL}
               target="_blank"
               rel="noopener"
-              className="group relative inline-flex flex-col items-center mt-16 r-rise r-d2"
-              aria-label="Nhắn Zalo tìm hiểu thêm"
+              className="group relative inline-flex flex-col items-center mt-14 r-rise r-d2"
+              aria-label="Nhắn Zalo tư vấn dự án"
             >
               {/* Wax seal */}
               <div className="relative size-44 md:size-52 flex items-center justify-center">
@@ -1118,7 +1149,7 @@ function Index() {
                   </defs>
                   <text fill="currentColor" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "9px", letterSpacing: "0.32em", textTransform: "uppercase" }}>
                     <textPath href="#ctaCircle">
-                      Nhắn Zalo · Tìm hiểu thêm · Sơn Lotus · Atelier · 
+                      Lotus Coating Atelier · Tư vấn dự án qua Zalo · 
                     </textPath>
                   </text>
                 </svg>
@@ -1132,8 +1163,11 @@ function Index() {
                   </span>
                 </div>
               </div>
-              <span className="mt-8 font-mono text-[11px] uppercase tracking-[0.4em] text-clay/85 flourish">
-                Nhắn Zalo tìm hiểu thêm
+              <span className="mt-8 font-mono text-[11px] uppercase tracking-[0.4em] text-clay/90 flourish">
+                Nhắn Zalo · Tư vấn dự án
+              </span>
+              <span className="mt-3 font-serif italic text-clay/55 text-sm">
+                Gỗ · Kim loại · Xi măng · Composite · Sàn
               </span>
             </a>
           </div>
