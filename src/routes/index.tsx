@@ -44,6 +44,10 @@ type Category = {
   manifesto: string;
   image: string;
   imageTone: "dark" | "light";
+  /** Material atmosphere — drives accent ink + chapter wash for this universe */
+  accent: string;
+  /** Short signature word for the printed index (e.g. "Walnut", "Steel") */
+  signature: string;
   description: string;
   applications: string[];
   specs: { label: string; value: string }[];
