@@ -499,18 +499,18 @@ function Index() {
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
             <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-10 md:mb-12 flex items-center gap-4">
               <span className="inline-block h-px w-10 bg-onyx/45" />
-              <span>Nhà sản xuất sơn công nghiệp</span>
+              <span>Nhà sản xuất sơn công nghiệp · Việt Nam</span>
             </div>
             <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.92] tracking-[-0.025em] text-balance text-onyx">
-              <span className="block">Vật liệu,</span>
+              <span className="block">Đúng hệ sơn,</span>
               <span className="block italic font-light text-onyx/90">
-                được phủ bằng <span className="not-italic font-normal">ý đồ.</span>
+                cho <span className="not-italic font-normal">công trình thật.</span>
               </span>
             </h1>
 
             <p className="mt-12 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
-              Sáu hệ sơn chuyên biệt — pha chế tại Bình Dương,
-              điều chỉnh theo từng dự án.
+              Sáu hệ sơn cho xưởng, nhà thầu và nhà máy —
+              chọn đúng từ đầu để giảm làm lại và dễ bàn giao.
             </p>
 
             <div className="mt-12 md:mt-14 flex flex-wrap items-center gap-x-8 gap-y-3">
