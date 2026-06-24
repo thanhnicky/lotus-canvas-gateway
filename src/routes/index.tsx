@@ -799,9 +799,9 @@ function Index() {
         <section className="px-6 md:px-12 lg:px-16 py-24 md:py-36 border-t border-onyx/10">
           <div className="max-w-4xl mx-auto text-center r-rise">
             <p className="font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
-              Lotus bán <span className="not-italic" style={{ color: "var(--accent)" }}>hệ phủ</span>,
-              <span className="not-italic"> không bán thùng sơn.</span>
-              Đúng nền. Đúng môi trường. Đúng quy mô.
+              Lotus không bán thùng sơn —
+              Lotus chịu trách nhiệm cho <span className="not-italic" style={{ color: "var(--accent)" }}>cả hệ phủ</span>,
+              từ lớp lót đến khi bàn giao.
             </p>
           </div>
         </section>
