@@ -430,8 +430,10 @@ function Index() {
             </span>
           </div>
           <div className="hidden md:flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-            <span>Volume Ⅰ</span>
-            <span className="h-px w-8 bg-onyx/30" />
+            <span>Made in Vietnam</span>
+            <span className="h-px w-6 bg-onyx/30" />
+            <span>ISO 9001</span>
+            <span className="h-px w-6 bg-onyx/30" />
             <span>Material Index 06</span>
           </div>
         </header>
