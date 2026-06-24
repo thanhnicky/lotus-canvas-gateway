@@ -854,10 +854,10 @@ function Index() {
             </div>
 
             {/* Top-right caption */}
-            <div className="absolute top-6 right-6 md:top-10 md:right-10 z-10 font-mono text-[9px] uppercase tracking-[0.32em] text-clay/55 text-right">
-              <div>Intermezzo</div>
-              <div>Lotus / {active.nameEn}</div>
+            <div className="absolute top-6 right-6 md:top-10 md:right-10 z-10 font-mono text-[9px] uppercase tracking-[0.32em] text-clay/45 text-right">
+              <div>Lotus · {active.nameEn}</div>
             </div>
+
           </div>
         </section>
 
