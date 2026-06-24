@@ -71,7 +71,7 @@ const CATEGORIES: Category[] = [
     accent: "#6f4a2a",
     signature: "Workshop",
     description:
-      "Hệ sơn gỗ Lotus được xây dựng cho xưởng nội thất và nhà máy gỗ xuất khẩu — ưu tiên độ ổn định màu giữa các đợt, dễ kiểm soát độ bóng / độ lì, và giảm tỉ lệ làm lại khi chạy số lượng lớn.",
+      "Hệ sơn gỗ cho xưởng nội thất và nhà máy xuất khẩu. Màu lặp lại giữa các đợt, kiểm soát bóng/lì, ít làm lại khi chạy số lượng.",
     applications: [
       "Xưởng thi công nội thất theo đơn",
       "Nhà máy nội thất xuất khẩu Mỹ / EU",
@@ -509,8 +509,8 @@ function Index() {
             </h1>
 
             <p className="mt-12 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
-              Sáu hệ sơn cho xưởng, nhà thầu và nhà máy —
-              chọn đúng từ đầu để giảm làm lại và dễ bàn giao.
+              Sáu hệ sơn — chọn đúng theo vật liệu nền và môi trường vận hành.
+              Ít làm lại. Đúng tiến độ. Dễ nghiệm thu.
             </p>
 
             <div className="mt-12 md:mt-14 flex flex-wrap items-center gap-x-8 gap-y-3">
@@ -800,9 +800,9 @@ function Index() {
         <section className="px-6 md:px-12 lg:px-16 py-24 md:py-36 border-t border-onyx/10">
           <div className="max-w-4xl mx-auto text-center r-rise">
             <p className="font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
-              Lotus không bán <span className="not-italic">thùng sơn</span> —
-              Lotus đề xuất <span className="not-italic" style={{ color: "var(--accent)" }}>đúng hệ phủ</span>
-              theo vật liệu nền, môi trường và quy mô công việc.
+              Lotus bán <span className="not-italic" style={{ color: "var(--accent)" }}>hệ phủ</span>,
+              <span className="not-italic"> không bán thùng sơn.</span>
+              Đúng nền. Đúng môi trường. Đúng quy mô.
             </p>
           </div>
         </section>
@@ -882,7 +882,7 @@ function Index() {
                   Ai đang dùng <span className="not-italic">hệ này.</span>
                 </h3>
                 <p className="mt-6 text-onyx/65 max-w-xs r-rise r-d2">
-                  Lotus xây hệ cho những đơn vị có áp lực tiến độ, nghiệm thu và bàn giao thực tế — không phải khách lẻ.
+                  Xưởng chạy số lượng. Nhà thầu chịu nghiệm thu. Nhà máy phải giao đúng hạn. Không phải khách lẻ.
                 </p>
               </div>
             </div>
@@ -918,8 +918,8 @@ function Index() {
                   <span className="italic font-light text-clay/80">không bỏ qua bước nào.</span>
                 </h2>
                 <p className="mt-8 text-clay/55 max-w-xs leading-relaxed r-rise r-d2">
-                  Phần lớn lỗi bong tróc, lệch màu hay làm lại bắt nguồn từ một bước bị bỏ qua. Quy trình Lotus được viết
-                  để xưởng và nhà thầu kiểm soát từng nhịp.
+                  90% lỗi bong, lệch màu và làm lại đến từ một bước bị cắt để chạy nhanh.
+                  Bốn bước dưới đây không có bước nào thừa.
                 </p>
 
                 <div className="mt-10 inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-clay/50 r-rise r-d3">
@@ -1027,8 +1027,8 @@ function Index() {
                 </h3>
               </div>
               <p className="col-span-12 md:col-span-4 md:col-start-9 text-onyx/60 max-w-sm r-rise r-d1">
-                Hình ảnh từ các xưởng, nhà máy và công trình đang dùng hệ {active.name.toLowerCase()} Lotus —
-                không phối cảnh, không dàn dựng.
+                Ảnh chụp tại xưởng và công trường đang chạy hệ {active.name.toLowerCase()} Lotus.
+                Không render. Không phối cảnh.
               </p>
             </div>
           </div>
@@ -1227,8 +1227,8 @@ function Index() {
               <span className="not-italic font-normal">Lotus đề xuất đúng hệ sơn.</span>
             </h3>
             <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-relaxed r-rise r-d2">
-              Nhắn Zalo kèm ảnh bề mặt, vật liệu nền, yêu cầu hoàn thiện và quy mô công việc.
-              Lotus tư vấn hệ phù hợp và hướng xử lý rõ ràng — phản hồi trong 24 giờ làm việc.
+              Gửi ảnh, vật liệu nền, yêu cầu hoàn thiện và quy mô.
+              Kỹ thuật Lotus chốt hệ phủ và bước thi công trong 24 giờ làm việc.
             </p>
 
             {/* Project intake — what to send */}
