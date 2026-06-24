@@ -1074,42 +1074,40 @@ function Index() {
         </section>
 
         {/* ── Atelier note · printed colophon, trust signals woven in ── */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 bg-paper border-t border-onyx/15">
+        <section className="px-6 md:px-12 lg:px-16 py-32 md:py-48 bg-paper border-t border-onyx/15">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-12 gap-8 md:gap-16 items-start">
-              <div className="col-span-12 md:col-span-5 r-rise">
-                <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
-                  Atelier
-                </span>
-                <h3 className="font-serif text-4xl md:text-[3.25rem] italic leading-[1.02] mt-6 text-balance">
+              <div className="col-span-12 md:col-span-6 r-rise">
+                <h3 className="font-serif text-4xl md:text-[3.5rem] italic leading-[1.02] text-balance">
                   Một nhà sản xuất, <br />
                   <span className="not-italic">không phải đại lý.</span>
                 </h3>
               </div>
 
-              <div className="col-span-12 md:col-span-6 md:col-start-7 md:pt-3">
-                <p className="font-serif text-xl md:text-[1.45rem] leading-[1.55] text-onyx/80 text-pretty r-rise max-w-xl">
-                  Pha chế tại xưởng Bình Dương, kiểm nghiệm tại phòng QC nội bộ,
+              <div className="col-span-12 md:col-span-5 md:col-start-8 md:pt-4">
+                <p className="font-serif text-xl md:text-[1.4rem] leading-[1.6] text-onyx/70 text-pretty r-rise">
+                  Pha chế tại Bình Dương, kiểm nghiệm nội bộ,
                   triển khai cùng đội kỹ thuật tại công trình.
                 </p>
               </div>
             </div>
 
-            <dl className="mt-20 md:mt-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-10 border-t border-onyx/20 pt-12">
+            <dl className="mt-24 md:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-12 border-t border-onyx/15 pt-14">
               {[
-                { k: "01", h: "Xuất xứ", v: "Sản xuất tại Việt Nam — công thức nội bộ." },
-                { k: "02", h: "Tiêu chuẩn", v: "ISO 9001, TDS và MSDS minh bạch." },
-                { k: "03", h: "Hiện trường", v: "Kỹ sư khảo sát và hỗ trợ tại công trình." },
-                { k: "04", h: "Theo dự án", v: "Hệ phủ tinh chỉnh cho từng đơn hàng." },
+                { k: "01", h: "Xuất xứ", v: "Sản xuất tại Việt Nam, công thức nội bộ." },
+                { k: "02", h: "Tiêu chuẩn", v: "ISO 9001, TDS & MSDS minh bạch." },
+                { k: "03", h: "Hiện trường", v: "Kỹ sư khảo sát tại công trình." },
+                { k: "04", h: "Theo dự án", v: "Hệ phủ tinh chỉnh từng đơn hàng." },
               ].map((t) => (
                 <div key={t.k} className="r-rise">
-                  <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40">
+                  <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35">
                     {t.k}
                   </div>
-                  <div className="mt-3 font-mono text-[11px] uppercase tracking-[0.28em]" style={{ color: "var(--accent)" }}>
+                  <div className="mt-4 font-serif italic text-[1.5rem] text-onyx leading-[1.1]">
                     {t.h}
                   </div>
-                  <p className="mt-3 font-serif italic text-[1.15rem] md:text-[1.2rem] text-onyx/85 leading-snug max-w-[16rem]">
+                  <div className="mt-5 h-px w-8" style={{ background: "var(--accent)" }} />
+                  <p className="mt-5 text-[0.95rem] text-onyx/65 leading-[1.65] max-w-[15rem]">
                     {t.v}
                   </p>
                 </div>
@@ -1119,27 +1117,23 @@ function Index() {
         </section>
 
 
-        {/* ── FAQ · editorial index, single open panel ──────────── */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15 bg-paper">
+        {/* ── FAQ · curated consultation index ─────────────────── */}
+        <section className="px-6 md:px-12 lg:px-16 py-32 md:py-48 border-t border-onyx/15 bg-paper">
           <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 md:mb-20">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 md:mb-24">
               <div className="r-rise">
-                <span className="font-mono text-[10px] uppercase tracking-[0.32em]" style={{ color: "var(--accent)" }}>
-                  Hỏi &amp; Đáp
-                </span>
-                <h3 className="font-serif text-4xl md:text-5xl italic mt-4 leading-tight">
+                <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
                   Trước khi gửi dự án.
                 </h3>
               </div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45 md:text-right max-w-xs r-rise r-d1">
-                Cập nhật theo hệ phủ đang xem<br />
-                Lotus / {active.nameEn}
+              <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 md:text-right r-rise r-d1">
+                Theo hệ phủ · {active.nameEn}
               </p>
             </div>
 
-            <div className="grid grid-cols-12 gap-x-8 gap-y-10 md:gap-x-20 border-t border-onyx/25 pt-12">
+            <div className="grid grid-cols-12 gap-x-8 gap-y-12 md:gap-x-24 pt-2">
               {/* Left rail — consultation notes index */}
-              <ol className="col-span-12 md:col-span-5">
+              <ol className="col-span-12 md:col-span-5 border-t border-onyx/15">
                 {active.faq.map((f, i) => {
                   const isOpen = openFaq === i;
                   return (
@@ -1147,15 +1141,15 @@ function Index() {
                       <button
                         onClick={() => setOpenFaq(i)}
                         onMouseEnter={() => setOpenFaq(i)}
-                        className="group block w-full text-left py-6 border-b border-onyx/12 transition-colors"
+                        className="group block w-full text-left py-7 border-b border-onyx/10 transition-colors"
                         aria-pressed={isOpen}
                       >
                         <div className="grid grid-cols-12 gap-4 items-baseline">
                           <span
                             className="col-span-2 font-mono text-[10px] tracking-[0.32em] uppercase shrink-0 transition-colors"
-                            style={{ color: isOpen ? "var(--accent)" : "rgba(22,20,18,0.35)" }}
+                            style={{ color: isOpen ? "var(--accent)" : "rgba(22,20,18,0.3)" }}
                           >
-                            {String(i + 1).padStart(2, "0")} /
+                            {String(i + 1).padStart(2, "0")}
                           </span>
                           <span
                             className={`col-span-10 font-serif text-lg md:text-[1.35rem] leading-snug transition-colors ${
@@ -1174,25 +1168,19 @@ function Index() {
               {/* Right panel — editorial answer */}
               <div className="col-span-12 md:col-span-6 md:col-start-7">
                 {active.faq[openFaq] && (
-                  <div key={active.id + "-faq-" + openFaq} className="soft-in md:sticky md:top-24">
-                    <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                      <span
-                        className="inline-block h-px w-8"
-                        style={{ background: "var(--accent)" }}
-                      />
-                      <span>Ghi chú tư vấn · {String(openFaq + 1).padStart(2, "0")}</span>
-                    </div>
-                    <p className="mt-7 font-serif text-2xl md:text-[2rem] italic leading-[1.15] text-onyx text-pretty">
+                  <div key={active.id + "-faq-" + openFaq} className="soft-in md:sticky md:top-28">
+                    <div className="h-px w-10" style={{ background: "var(--accent)" }} />
+                    <p className="mt-8 font-serif text-2xl md:text-[2rem] italic leading-[1.15] text-onyx text-pretty">
                       {active.faq[openFaq].q}
                     </p>
-                    <p className="mt-8 text-onyx/75 leading-[1.75] max-w-xl text-[1.02rem]">
+                    <p className="mt-10 text-onyx/70 leading-[1.85] max-w-xl text-[1.02rem]">
                       {active.faq[openFaq].a}
                     </p>
                     <a
                       href={ZALO_URL}
                       target="_blank"
                       rel="noopener"
-                      className="group inline-flex items-center gap-3 mt-12 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
+                      className="group inline-flex items-center gap-3 mt-14 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
                     >
                       <span>Hỏi tiếp qua Zalo</span>
                       <span
@@ -1207,6 +1195,7 @@ function Index() {
 
           </div>
         </section>
+
 
 
         {/* ── Final chapter · wax seal CTA ─────────────────────── */}
