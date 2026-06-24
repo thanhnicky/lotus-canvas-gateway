@@ -521,7 +521,7 @@ function Index() {
                 className="group inline-flex items-center gap-3 bg-onyx text-clay pl-5 pr-4 py-3 hover:bg-ash transition-colors"
               >
                 <span className="font-mono text-[11px] uppercase tracking-[0.32em]">
-                  Nhắn Zalo · Tư vấn dự án
+                  Nhắn Zalo · Tư vấn hệ sơn phù hợp
                 </span>
                 <span
                   className="inline-block h-px w-6 group-hover:w-10 transition-all"
@@ -529,7 +529,7 @@ function Index() {
                 />
               </a>
               <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                Phản hồi trong 24h
+                Kỹ thuật phản hồi trong 24h
               </span>
             </div>
           </div>
