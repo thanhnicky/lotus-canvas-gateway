@@ -396,18 +396,35 @@ function Index() {
             height={1200}
             className="absolute inset-0 w-full h-full object-cover plate-in drift"
           />
-          {/* Material wash — vignette tinted by the active category's accent */}
-          <div className="absolute inset-0 bg-gradient-to-br from-clay/95 via-clay/55 to-onyx/30 mix-blend-multiply" />
+          {/* Material wash — accent tint, gathered on the right */}
           <div
             key={active.id + "-tint"}
-            className="absolute inset-0 mix-blend-multiply opacity-35 plate-in"
+            className="absolute inset-0 mix-blend-multiply opacity-30 plate-in"
             style={{
               background:
-                "radial-gradient(75% 60% at 80% 90%, var(--accent), transparent 70%)",
+                "radial-gradient(70% 55% at 85% 90%, var(--accent), transparent 70%)",
             }}
           />
-          <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_0%_0%,theme(colors.clay)/0.7,transparent_55%)]" />
+          {/* Readability veil — strong on the left, fades right.
+              Desktop: left→right.  Mobile: bottom→top so text reads cleanly. */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(239,234,226,0.92) 0%, rgba(239,234,226,0.78) 38%, rgba(239,234,226,0.45) 70%, rgba(22,20,18,0.35) 100%)",
+            }}
+          />
+          <div
+            className="absolute inset-0 hidden md:block"
+            style={{
+              background:
+                "linear-gradient(95deg, rgba(239,234,226,0.95) 0%, rgba(239,234,226,0.86) 32%, rgba(239,234,226,0.55) 55%, rgba(239,234,226,0.1) 78%, transparent 100%)",
+            }}
+          />
+          {/* Soft top vignette to anchor brand bar */}
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-clay/70 to-transparent" />
         </div>
+
 
 
         {/* Frame brackets — printed-catalog corners */}
