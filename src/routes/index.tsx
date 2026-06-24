@@ -486,70 +486,113 @@ function Index() {
           </aside>
         </div>
 
-        {/* Bottom — editorial INDEX (the selector) */}
+        {/* Bottom — editorial INDEX (the selector, type-specimen style) */}
         <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-8 md:pb-10">
           <div className="flex items-end justify-between mb-4 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-            <span>Trượt — hoặc chọn để mở vật liệu</span>
+            <div className="flex items-center gap-3">
+              <span className="inline-block h-px w-8 bg-onyx/40" />
+              <span>Material Specimen — Vol. I / 06</span>
+            </div>
             <a
               href={ZALO_URL}
               target="_blank"
               rel="noopener"
-              className="group hidden md:inline-flex items-center gap-3 text-onyx hover:text-umber transition-colors"
+              className="group hidden md:inline-flex items-center gap-3 text-onyx transition-colors"
             >
-              <span className="inline-block size-1.5 rounded-full bg-umber group-hover:scale-150 transition-transform" />
-              <span>Nhắn Zalo · tìm hiểu thêm</span>
-              <span className="inline-block h-px w-8 bg-onyx/40 group-hover:w-12 transition-all" />
+              <span
+                className="inline-block size-1.5 rounded-full"
+                style={{ background: "var(--accent)" }}
+              />
+              <span className="group-hover:tracking-[0.4em] transition-[letter-spacing] duration-500">
+                Nhắn Zalo · tìm hiểu thêm
+              </span>
+              <span
+                className="inline-block h-px w-8 group-hover:w-14 transition-all"
+                style={{ background: "var(--accent)" }}
+              />
             </a>
           </div>
 
-          <div className="border-t border-onyx/25 pt-2 hide-scrollbar overflow-x-auto">
+          <div className="border-t border-onyx/25 hide-scrollbar overflow-x-auto">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
               {CATEGORIES.map((c) => {
                 const isActive = c.id === activeId;
                 return (
                   <li
                     key={c.id}
-                    className={`idx-row relative border-r border-onyx/15 last:border-r-0`}
+                    className="idx-row relative border-r border-onyx/10 last:border-r-0"
                   >
+                    {/* Top accent rule — printed register mark */}
+                    <span
+                      aria-hidden
+                      className="absolute top-0 left-0 right-0 h-[2px] origin-left transition-transform duration-700"
+                      style={{
+                        background: c.accent,
+                        transform: isActive ? "scaleX(1)" : "scaleX(0)",
+                      }}
+                    />
                     <button
                       onClick={() => setActiveId(c.id)}
-                      className={`group block w-[14rem] md:w-full text-left px-5 py-5 transition-colors duration-500 ${
-                        isActive ? "bg-onyx/[0.04]" : "hover:bg-onyx/[0.025]"
+                      onMouseEnter={() => setActiveId(c.id)}
+                      className={`group block w-[15rem] md:w-full text-left px-5 pt-5 pb-5 transition-colors duration-500 ${
+                        isActive ? "bg-paper/60" : "hover:bg-onyx/[0.025]"
                       }`}
                       aria-pressed={isActive}
                     >
                       <div className="flex items-start gap-4">
-                        {/* Material chip */}
-                        <span className="idx-chip relative inline-block size-12 md:size-14 overflow-hidden border border-onyx/20 shrink-0">
+                        {/* Material specimen — narrow strip, not a thumbnail */}
+                        <span
+                          className={`idx-chip relative inline-block w-3 overflow-hidden shrink-0 transition-all duration-700 ${
+                            isActive ? "h-20" : "h-14"
+                          }`}
+                          style={{
+                            outline: `1px solid ${isActive ? c.accent : "rgba(22,20,18,0.18)"}`,
+                            outlineOffset: "-1px",
+                          }}
+                        >
                           <img
                             src={c.image}
                             alt=""
-                            width={56}
-                            height={56}
+                            width={24}
+                            height={120}
                             loading={c.id === CATEGORIES[0].id ? "eager" : "lazy"}
                             className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
-                              isActive ? "scale-105" : "grayscale-[0.5] scale-100"
+                              isActive ? "scale-110" : "grayscale scale-100 opacity-70"
                             }`}
                           />
-                          {isActive && (
-                            <span className="absolute inset-0 ring-1 ring-onyx/40" />
-                          )}
                         </span>
 
                         <div className="flex-1 min-w-0">
                           <div className="flex items-baseline gap-2">
-                            <span className={`font-mono text-[10px] tracking-[0.25em] uppercase transition-colors ${isActive ? "text-umber" : "text-onyx/40"}`}>
+                            <span
+                              className="font-mono text-[10px] tracking-[0.25em] uppercase transition-colors"
+                              style={{ color: isActive ? c.accent : "rgba(22,20,18,0.4)" }}
+                            >
                               {c.index}
                             </span>
-                            {isActive && (
-                              <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-onyx/50 soft-in">
-                                · {c.nameEn}
-                              </span>
-                            )}
+                            <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-onyx/40">
+                              · {c.signature}
+                            </span>
                           </div>
-                          <h3 className={`mt-1 font-serif text-base md:text-[1.05rem] leading-snug transition-colors ${isActive ? "text-onyx" : "text-onyx/65 group-hover:text-onyx"}`}>
+                          <h3
+                            className={`mt-1.5 font-serif text-base md:text-[1.05rem] leading-snug transition-colors ${
+                              isActive ? "text-onyx" : "text-onyx/65 group-hover:text-onyx"
+                            }`}
+                          >
                             {c.name}
                           </h3>
+                          {/* Reveal tagline only on active — collapses gracefully */}
+                          <div
+                            className={`grid transition-[grid-template-rows,opacity] duration-500 ${
+                              isActive ? "grid-rows-[1fr] opacity-100 mt-2" : "grid-rows-[0fr] opacity-0"
+                            }`}
+                          >
+                            <div className="overflow-hidden">
+                              <p className="font-serif italic text-[12px] leading-snug text-onyx/65 max-w-[14rem]">
+                                {c.tagline}
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </button>
