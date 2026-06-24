@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Sơn Lotus — nhà sản xuất sơn công nghiệp tại Việt Nam. Hệ thống sơn gỗ, kim loại, giả gỗ, composite và sơn sàn cho nhà thầu, xưởng sản xuất và dự án cao cấp.",
+          "Sơn Lotus — nhà sản xuất sơn công nghiệp Việt Nam. Hệ sơn gỗ, kim loại, giả gỗ, composite và sơn sàn cho nhà thầu, xưởng và dự án cao cấp.",
       },
       { property: "og:title", content: "Sơn Lotus — Hệ thống sơn phủ cao cấp" },
       {
@@ -39,11 +39,12 @@ type Category = {
   id: string;
   index: string;
   name: string;
+  nameEn: string;
   tagline: string;
+  manifesto: string;
   image: string;
   imageTone: "dark" | "light";
   description: string;
-  hook: string;
   applications: string[];
   specs: { label: string; value: string }[];
   process: { step: string; title: string; body: string }[];
@@ -57,12 +58,14 @@ const CATEGORIES: Category[] = [
     id: "wood",
     index: "01",
     name: "Sơn gỗ",
+    nameEn: "Timber Coating",
     tagline: "Linh hồn của gỗ, được Lotus gìn giữ.",
+    manifesto:
+      "Mỗi đường vân là một câu chuyện đã được rừng viết. Chúng tôi chỉ giữ cho câu chuyện ấy không phai.",
     image: catWood,
     imageTone: "dark",
     description:
-      "Hệ thống sơn gỗ Lotus tôn vinh từng đường vân tự nhiên, đồng thời tạo lớp màng bảo vệ siêu bền trước độ ẩm, tia UV và va đập cơ học. Sự cân bằng giữa thẩm mỹ thủ công và công nghệ hóa học hiện đại.",
-    hook: "Chiều sâu vật liệu",
+      "Hệ sơn gỗ Lotus tôn vinh từng đường vân tự nhiên, đồng thời tạo lớp màng bảo vệ siêu bền trước độ ẩm, tia UV và va đập cơ học — sự cân bằng giữa thẩm mỹ thủ công và hóa học hiện đại.",
     applications: [
       "Nội thất gỗ cao cấp & resort nghỉ dưỡng",
       "Cửa sổ, cửa ra vào chịu nắng trực tiếp",
@@ -71,15 +74,15 @@ const CATEGORIES: Category[] = [
     ],
     specs: [
       { label: "Độ bóng", value: "Mờ 5% — Bóng gương" },
-      { label: "Độ bền", value: "Kháng UV & chống trầy" },
+      { label: "Độ bền", value: "Kháng UV, chống trầy 4H" },
       { label: "Gốc", value: "PU / NC / Water-based" },
-      { label: "VOC", value: "Thấp (<50g/L)" },
+      { label: "VOC", value: "Thấp — dưới 50 g/L" },
     ],
     process: [
-      { step: "01", title: "Xử lý bề mặt", body: "Chà nhám độ mịn P180–P240, vệ sinh bụi gỗ và kiểm tra độ ẩm dưới 12%." },
-      { step: "02", title: "Lớp lót Primer", body: "Ngăn nhựa gỗ, làm đầy lỗ li ti và tạo chân bám tối ưu cho lớp phủ." },
-      { step: "03", title: "Lớp phủ màu", body: "Phun đều tay để đạt sắc độ mong muốn mà vẫn giữ nguyên vân gỗ tự nhiên." },
-      { step: "04", title: "Lớp Topcoat", body: "Quyết định độ bóng cuối cùng và khả năng chống trầy xước, chống ố vàng." },
+      { step: "I", title: "Xử lý bề mặt", body: "Chà nhám độ mịn P180–P240, vệ sinh bụi gỗ và kiểm tra độ ẩm dưới 12%." },
+      { step: "II", title: "Lớp lót Primer", body: "Ngăn nhựa gỗ, làm đầy lỗ li ti và tạo chân bám tối ưu cho lớp phủ." },
+      { step: "III", title: "Lớp phủ màu", body: "Phun đều tay để đạt sắc độ mong muốn mà vẫn giữ nguyên vân gỗ tự nhiên." },
+      { step: "IV", title: "Lớp Topcoat", body: "Quyết định độ bóng cuối cùng và khả năng chống trầy xước, chống ố vàng." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Wood Primer P80", rate: "8–10 m²/L", coats: "01" },
@@ -89,7 +92,7 @@ const CATEGORIES: Category[] = [
     ],
     projects: [
       { image: project1, title: "Villa Đà Lạt", meta: "Hệ ngoại thất gỗ tếch" },
-      { image: revealCraft, title: "Atelier Bàn Walnut", meta: "Hoàn thiện thủ công" },
+      { image: revealCraft, title: "Atelier Walnut", meta: "Hoàn thiện thủ công" },
       { image: project3, title: "Lumiere Dining", meta: "Trần & vách gỗ nội thất" },
     ],
     faq: [
@@ -102,12 +105,14 @@ const CATEGORIES: Category[] = [
     id: "metal",
     index: "02",
     name: "Sơn kim loại",
+    nameEn: "Metal & Steel",
     tagline: "Phủ bền — chống ăn mòn cho kết cấu thép.",
+    manifesto:
+      "Thép không sợ thời gian, chỉ sợ ẩm. Lotus đứng giữa hai lực ấy.",
     image: catMetal,
     imageTone: "dark",
     description:
-      "Hệ sơn kim loại Lotus được thiết kế cho kết cấu thép, nhôm và hợp kim — kết hợp lớp chống gỉ epoxy cùng lớp phủ PU bền màu, đáp ứng yêu cầu khắt khe của các công trình công nghiệp và kiến trúc hiện đại.",
-    hook: "Kết cấu & bảo vệ",
+      "Hệ sơn kim loại Lotus cho kết cấu thép, nhôm và hợp kim — kết hợp lớp chống gỉ epoxy cùng lớp phủ PU bền màu, đáp ứng yêu cầu khắt khe của công trình công nghiệp và kiến trúc hiện đại.",
     applications: [
       "Kết cấu thép nhà xưởng, cầu cảng",
       "Mặt tiền nhôm kiến trúc & lam che nắng",
@@ -115,16 +120,16 @@ const CATEGORIES: Category[] = [
       "Đồ nội thất kim loại sơn tĩnh điện",
     ],
     specs: [
-      { label: "Chống ăn mòn", value: "ISO 12944 — C4/C5" },
+      { label: "Chống ăn mòn", value: "ISO 12944 — C4 / C5" },
       { label: "Độ bền màu", value: "QUV 1000h" },
       { label: "Gốc", value: "Epoxy / PU 2K" },
       { label: "Chống trầy", value: "Cấp 4H" },
     ],
     process: [
-      { step: "01", title: "Làm sạch bề mặt", body: "Phun bi Sa 2.5 hoặc tẩy rỉ hóa học, đạt tiêu chuẩn ISO 8501." },
-      { step: "02", title: "Lớp lót chống gỉ", body: "Epoxy giàu kẽm tạo lớp bảo vệ catot, ngăn ăn mòn từ nền thép." },
-      { step: "03", title: "Lớp trung gian", body: "Epoxy MIO tăng độ dày khô và khả năng chống thấm hơi nước." },
-      { step: "04", title: "Lớp phủ PU", body: "Bền màu, kháng UV và giữ sắc độ ngay cả khi tiếp xúc môi trường khắc nghiệt." },
+      { step: "I", title: "Làm sạch bề mặt", body: "Phun bi Sa 2.5 hoặc tẩy rỉ hóa học, đạt tiêu chuẩn ISO 8501." },
+      { step: "II", title: "Lớp lót chống gỉ", body: "Epoxy giàu kẽm tạo lớp bảo vệ catot, ngăn ăn mòn từ nền thép." },
+      { step: "III", title: "Lớp trung gian", body: "Epoxy MIO tăng độ dày khô và khả năng chống thấm hơi nước." },
+      { step: "IV", title: "Lớp phủ PU", body: "Bền màu, kháng UV và giữ sắc độ ngay cả trong môi trường khắc nghiệt." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Zinc-rich Epoxy", rate: "6–8 m²/L", coats: "01" },
@@ -139,19 +144,20 @@ const CATEGORIES: Category[] = [
     faq: [
       { q: "Có dùng được cho mạ kẽm nhúng nóng?", a: "Có. Sử dụng Lotus Etch Primer làm lớp chuyển tiếp trước khi sơn epoxy." },
       { q: "Định mức cho kết cấu C5?", a: "Tổng DFT tối thiểu 240–320 µm tùy môi trường, đội kỹ thuật sẽ thiết kế hệ phù hợp." },
-      { q: "Có chứng nhận chất lượng?", a: "Lotus có ISO 9001, đầy đủ TDS/MSDS và báo cáo kiểm nghiệm độc lập." },
+      { q: "Có chứng nhận chất lượng?", a: "Lotus có ISO 9001, đầy đủ TDS / MSDS và báo cáo kiểm nghiệm độc lập." },
     ],
   },
   {
     id: "metal-wood",
     index: "03",
     name: "Sơn giả gỗ trên kim loại",
+    nameEn: "Wood-grain on Metal",
     tagline: "Vẻ ấm của gỗ, sự kiên cố của thép.",
+    manifesto: "Khi kim loại học cách kể câu chuyện của khu rừng.",
     image: catMetalWood,
     imageTone: "light",
     description:
       "Giải pháp phủ vân gỗ chân thực trên nền nhôm, sắt hộp và lam che nắng — bền bỉ trước thời tiết nhiệt đới, mang vẻ ấm của gỗ tự nhiên cho kiến trúc kim loại hiện đại.",
-    hook: "Vân gỗ trên kim loại",
     applications: [
       "Lam nhôm mặt tiền và lan can",
       "Cửa thép vân gỗ ngoài trời",
@@ -165,10 +171,10 @@ const CATEGORIES: Category[] = [
       { label: "Bảo hành màu", value: "Lên đến 10 năm" },
     ],
     process: [
-      { step: "01", title: "Xử lý nền", body: "Tẩy dầu, xử lý hóa chuyển hóa và sơn lót epoxy chống gỉ." },
-      { step: "02", title: "Lớp nền màu gỗ", body: "Phun lớp base màu gỗ làm nền cho vân, sấy hoặc khô tự nhiên." },
-      { step: "03", title: "Vẽ vân gỗ", body: "Lăn vân chuyên dụng hoặc in chuyển nhiệt water-transfer." },
-      { step: "04", title: "Lớp phủ bóng", body: "Topcoat trong PU khoá vân và bảo vệ khỏi tia UV." },
+      { step: "I", title: "Xử lý nền", body: "Tẩy dầu, xử lý hóa chuyển hóa và sơn lót epoxy chống gỉ." },
+      { step: "II", title: "Lớp nền màu gỗ", body: "Phun lớp base màu gỗ làm nền cho vân, sấy hoặc khô tự nhiên." },
+      { step: "III", title: "Vẽ vân gỗ", body: "Lăn vân chuyên dụng hoặc in chuyển nhiệt water-transfer." },
+      { step: "IV", title: "Lớp phủ bóng", body: "Topcoat trong PU khoá vân và bảo vệ khỏi tia UV." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Metal Primer G-200", rate: "8–10 m²/L", coats: "01" },
@@ -183,19 +189,20 @@ const CATEGORIES: Category[] = [
     ],
     faq: [
       { q: "Bao lâu cần bảo dưỡng lại?", a: "Trung bình 7–10 năm tùy môi trường, có thể phục hồi tại chỗ bằng dòng Lotus Refinish." },
-      { q: "Có làm được vân walnut/teak/oak?", a: "Có. Chúng tôi có thư viện hơn 40 mẫu vân và nhận làm mẫu theo yêu cầu." },
+      { q: "Có làm được vân walnut / teak / oak?", a: "Có. Thư viện hơn 40 mẫu vân và nhận làm mẫu theo yêu cầu." },
     ],
   },
   {
     id: "cement-wood",
     index: "04",
     name: "Sơn giả gỗ trên tấm xi măng",
+    nameEn: "Wood-grain on Cement",
     tagline: "Tấm cement, chiều sâu của gỗ.",
+    manifesto: "Cement gánh tải trọng. Gỗ gánh cảm xúc. Lotus là cái bắt tay.",
     image: catCementWood,
     imageTone: "light",
     description:
       "Phủ vân gỗ tự nhiên trên tấm cement Smartboard, Duraflex hoặc cement composite — bền nước, không cong vênh, mang vẻ đẹp ấm áp của gỗ cho ốp tường, trần và sàn ngoại thất.",
-    hook: "Cement & vân gỗ",
     applications: [
       "Ốp tường & trần ngoại thất",
       "Sàn ban công, hành lang khô",
@@ -209,10 +216,10 @@ const CATEGORIES: Category[] = [
       { label: "Bền màu", value: "5–8 năm ngoài trời" },
     ],
     process: [
-      { step: "01", title: "Xử lý tấm cement", body: "Vệ sinh, mài phẳng các mối nối và sơn lót kháng kiềm chuyên dụng." },
-      { step: "02", title: "Lớp nền vân gỗ", body: "Phun base color đồng đều, làm nền cho thao tác vẽ vân." },
-      { step: "03", title: "Lăn vân thủ công", body: "Sử dụng con lăn chuyên dụng tạo đường vân gỗ chân thực." },
-      { step: "04", title: "Phủ bảo vệ", body: "Topcoat acrylic UV bảo vệ vân và chống bám bẩn." },
+      { step: "I", title: "Xử lý tấm cement", body: "Vệ sinh, mài phẳng các mối nối và sơn lót kháng kiềm chuyên dụng." },
+      { step: "II", title: "Lớp nền vân gỗ", body: "Phun base color đồng đều, làm nền cho thao tác vẽ vân." },
+      { step: "III", title: "Lăn vân thủ công", body: "Sử dụng con lăn chuyên dụng tạo đường vân gỗ chân thực." },
+      { step: "IV", title: "Phủ bảo vệ", body: "Topcoat acrylic UV bảo vệ vân và chống bám bẩn." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Alkali Primer", rate: "8–10 m²/L", coats: "01" },
@@ -234,12 +241,13 @@ const CATEGORIES: Category[] = [
     id: "composite",
     index: "05",
     name: "Sơn nhựa / composite",
+    nameEn: "Plastic & Composite",
     tagline: "Hoàn thiện nhựa kỹ thuật cấp công nghiệp.",
+    manifesto: "Trên một bề mặt khó bám nhất, chúng tôi tìm thấy hóa học của sự gắn kết.",
     image: catComposite,
     imageTone: "light",
     description:
       "Hệ sơn cho ABS, PC, FRP, fiberglass và composite — độ bám tuyệt vời trên bề mặt nhựa nhẵn, bền màu, thân thiện cho ngành ô tô, thiết bị y tế và sản phẩm xuất khẩu.",
-    hook: "Hoá học bám dính",
     applications: [
       "Chi tiết nội thất ô tô & xe máy",
       "Vỏ thiết bị y tế và điện tử",
@@ -253,10 +261,10 @@ const CATEGORIES: Category[] = [
       { label: "Hoàn thiện", value: "Soft-touch, matte, gloss" },
     ],
     process: [
-      { step: "01", title: "Xử lý bề mặt", body: "Lau IPA, plasma hoặc flame treatment nếu cần để mở năng lượng bề mặt." },
-      { step: "02", title: "Lớp lót plastic", body: "Primer chuyên dụng cho từng loại nhựa PP/PE/ABS/PC." },
-      { step: "03", title: "Lớp phủ màu", body: "Phun PU 2K, sấy gia nhiệt 60°C trong 30 phút." },
-      { step: "04", title: "Kiểm tra QC", body: "Test cross-cut, độ dày DFT và độ bóng theo tiêu chuẩn khách hàng." },
+      { step: "I", title: "Xử lý bề mặt", body: "Lau IPA, plasma hoặc flame treatment nếu cần để mở năng lượng bề mặt." },
+      { step: "II", title: "Lớp lót plastic", body: "Primer chuyên dụng cho từng loại nhựa PP / PE / ABS / PC." },
+      { step: "III", title: "Lớp phủ màu", body: "Phun PU 2K, sấy gia nhiệt 60°C trong 30 phút." },
+      { step: "IV", title: "Kiểm tra QC", body: "Test cross-cut, độ dày DFT và độ bóng theo tiêu chuẩn khách hàng." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Plastic Primer", rate: "10–12 m²/L", coats: "01" },
@@ -268,7 +276,7 @@ const CATEGORIES: Category[] = [
       { image: project1, title: "Sản phẩm FRP", meta: "Composite ngoại thất" },
     ],
     faq: [
-      { q: "Có cần xử lý plasma không?", a: "Tùy loại nhựa. PP/PE thường cần flame hoặc plasma; ABS/PC chỉ cần primer chuyên dụng." },
+      { q: "Có cần xử lý plasma không?", a: "Tùy loại nhựa. PP / PE thường cần flame hoặc plasma; ABS / PC chỉ cần primer chuyên dụng." },
       { q: "Thời gian sấy?", a: "Khô tự nhiên 24h hoặc sấy 60°C trong 30 phút." },
     ],
   },
@@ -276,12 +284,13 @@ const CATEGORIES: Category[] = [
     id: "floor",
     index: "06",
     name: "Sơn sàn",
+    nameEn: "Industrial Flooring",
     tagline: "Sàn công nghiệp — chịu tải và thẩm mỹ.",
+    manifesto: "Một mặt phẳng liền mạch — nơi mỗi bước chân là một thí nghiệm về độ bền.",
     image: catFloor,
     imageTone: "light",
     description:
       "Hệ sơn sàn Epoxy và PU Lotus dành cho nhà máy thực phẩm, kho logistics, showroom và không gian thương mại — chịu mài mòn, kháng hoá chất, dễ vệ sinh và mang lại bề mặt liền mạch.",
-    hook: "Sàn liền mạch",
     applications: [
       "Nhà máy thực phẩm & dược phẩm",
       "Kho logistics, parking, showroom",
@@ -295,10 +304,10 @@ const CATEGORIES: Category[] = [
       { label: "Độ dày", value: "0.3 – 3.0 mm" },
     ],
     process: [
-      { step: "01", title: "Mài sàn", body: "Mài kim cương để mở mao mạch bê tông, tạo độ nhám và độ bám." },
-      { step: "02", title: "Lớp lót thấm", body: "Primer epoxy thấm sâu, đóng vai trò liên kết với nền bê tông." },
-      { step: "03", title: "Lớp trung gian", body: "Bả vá khuyết tật và cào đều tạo mặt phẳng thi công." },
-      { step: "04", title: "Lớp phủ hoàn thiện", body: "Self-levelling hoặc lăn phủ tuỳ tải trọng và yêu cầu thẩm mỹ." },
+      { step: "I", title: "Mài sàn", body: "Mài kim cương để mở mao mạch bê tông, tạo độ nhám và độ bám." },
+      { step: "II", title: "Lớp lót thấm", body: "Primer epoxy thấm sâu, liên kết với nền bê tông." },
+      { step: "III", title: "Lớp trung gian", body: "Bả vá khuyết tật và cào đều tạo mặt phẳng thi công." },
+      { step: "IV", title: "Lớp phủ hoàn thiện", body: "Self-levelling hoặc lăn phủ tuỳ tải trọng và yêu cầu thẩm mỹ." },
     ],
     system: [
       { layer: "Lớp lót", product: "Lotus Floor Primer EP", rate: "5–7 m²/L", coats: "01" },
@@ -307,7 +316,7 @@ const CATEGORIES: Category[] = [
       { layer: "Topcoat", product: "Lotus PU Floor Matte", rate: "8–10 m²/L", coats: "01" },
     ],
     projects: [
-      { image: catFloor, title: "Showroom Gallery", meta: "Epoxy self-level 2mm" },
+      { image: catFloor, title: "Showroom Gallery", meta: "Epoxy self-level 2 mm" },
       { image: project3, title: "Lumiere Dining", meta: "PU matte thương mại" },
       { image: project2, title: "Kho logistics", meta: "Epoxy chịu tải nặng" },
     ],
@@ -318,336 +327,480 @@ const CATEGORIES: Category[] = [
   },
 ];
 
-function Index() {
-  const [activeId, setActiveId] = useState<string>(CATEGORIES[0].id);
-  const active = CATEGORIES.find((c) => c.id === activeId) ?? CATEGORIES[0];
-  const railRef = useRef<HTMLDivElement | null>(null);
+/* ────────────────────────────── COMPONENT ────────────────────────────── */
 
-  // When category changes, scroll the selected card into view inside the rail
+function Index() {
+  const [activeId, setActiveId] = useState(CATEGORIES[0].id);
+  const active = CATEGORIES.find((c) => c.id === activeId) ?? CATEGORIES[0];
+
+  // Wheel-to-cycle inside hero (subtle premium kinetic interaction)
+  const heroRef = useRef<HTMLDivElement | null>(null);
+  const lastSwapRef = useRef(0);
+
   useEffect(() => {
-    const el = document.querySelector<HTMLElement>(`[data-rail-id="${activeId}"]`);
-    if (el && railRef.current) {
-      el.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    }
-  }, [activeId]);
+    const el = heroRef.current;
+    if (!el) return;
+    const onWheel = (e: WheelEvent) => {
+      // Only intercept when fully inside hero viewport
+      if (window.scrollY > 40) return;
+      if (Math.abs(e.deltaX) < 30 && Math.abs(e.deltaY) < 30) return;
+      const now = performance.now();
+      if (now - lastSwapRef.current < 700) return;
+      const dir = (Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : 0) || 0;
+      if (!dir) return;
+      e.preventDefault();
+      lastSwapRef.current = now;
+      setActiveId((cur) => {
+        const i = CATEGORIES.findIndex((c) => c.id === cur);
+        const next = dir > 0 ? (i + 1) % CATEGORIES.length : (i - 1 + CATEGORIES.length) % CATEGORIES.length;
+        return CATEGORIES[next].id;
+      });
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+  }, []);
 
   return (
-    <div className="bg-clay text-onyx">
-      {/* ───────────── HERO ───────────── */}
-      <section className="relative min-h-screen flex flex-col justify-between px-6 md:px-12 lg:px-16 pt-8 pb-10 overflow-hidden">
-        {/* Brand & CTA */}
-        <header className="flex justify-between items-start z-20">
-          <div className="space-y-1.5">
-            <div className="flex items-baseline gap-3">
-              <span className="font-serif text-3xl md:text-4xl tracking-tight leading-none">Sơn Lotus</span>
-              <span className="hidden md:inline-block size-1 rounded-full bg-umber" />
-              <span className="hidden md:inline text-[10px] font-medium uppercase tracking-[0.3em] text-onyx/50">
-                Est. Vietnam
-              </span>
+    <div className="bg-clay text-onyx grain">
+      {/* ╔══════════════════════ HERO ══════════════════════╗ */}
+      <section
+        ref={heroRef}
+        className="relative min-h-[100svh] flex flex-col overflow-hidden bg-clay"
+      >
+        {/* Background plate — full-bleed active material with drift */}
+        <div className="absolute inset-0 z-0">
+          <img
+            key={active.id + "-bg"}
+            src={active.image}
+            alt=""
+            width={1920}
+            height={1200}
+            className="absolute inset-0 w-full h-full object-cover plate-in drift"
+          />
+          {/* Vignette + warm wash so type stays readable on any swatch */}
+          <div className="absolute inset-0 bg-gradient-to-br from-clay/95 via-clay/55 to-onyx/30 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_0%_0%,theme(colors.clay)/0.7,transparent_55%)]" />
+        </div>
+
+        {/* Frame brackets — printed-catalog corners */}
+        <div className="pointer-events-none absolute inset-4 md:inset-8 z-30">
+          <span className="absolute top-0 left-0 size-5 border-t border-l border-onyx/30" />
+          <span className="absolute top-0 right-0 size-5 border-t border-r border-onyx/30" />
+          <span className="absolute bottom-0 left-0 size-5 border-b border-l border-onyx/30" />
+          <span className="absolute bottom-0 right-0 size-5 border-b border-r border-onyx/30" />
+        </div>
+
+        {/* Top bar: brand + tiny meta */}
+        <header className="relative z-20 flex justify-between items-start px-6 md:px-12 lg:px-16 pt-8 md:pt-10">
+          <div className="flex items-center gap-4">
+            <span className="font-serif text-2xl md:text-[2rem] tracking-tight leading-none italic">
+              Sơn&nbsp;Lotus
+            </span>
+            <span className="hidden md:block h-3 w-px bg-onyx/30" />
+            <span className="hidden md:block font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
+              Vietnam · Est. Coating Atelier
+            </span>
+          </div>
+          <div className="hidden md:flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+            <span>Volume Ⅰ</span>
+            <span className="h-px w-8 bg-onyx/30" />
+            <span>Material Index 06</span>
+          </div>
+        </header>
+
+        {/* Center — editorial cover */}
+        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-10 md:pt-16">
+          <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
+            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-6 flex items-center gap-4">
+              <span className="inline-block h-px w-10 bg-onyx/45" />
+              <span>Bộ sưu tập sáu hệ phủ vật liệu — MMXXIV</span>
             </div>
-            <p className="text-[10px] tracking-[0.32em] uppercase text-onyx/55">
-              Premium Coating Manufacturer
+            <h1 className="font-serif text-[clamp(3rem,9vw,9.5rem)] leading-[0.88] tracking-[-0.025em] text-balance">
+              <span className="block">Vật liệu</span>
+              <span className="block italic font-light text-onyx/85 -mt-1 md:-mt-2">
+                được&nbsp;phủ&nbsp;bằng <span className="not-italic font-normal">ý&nbsp;đồ.</span>
+              </span>
+            </h1>
+
+            <p className="mt-8 md:mt-10 max-w-xl text-[0.95rem] md:text-base leading-relaxed text-onyx/75">
+              Sơn Lotus — nhà sản xuất sơn công nghiệp Việt Nam.
+              <br className="hidden md:block" />
+              Sáu hệ sơn, một triết lý: <em className="font-serif text-onyx">bảo vệ mà không che lấp</em>.
             </p>
           </div>
 
-          <a
-            href={ZALO_URL}
-            target="_blank"
-            rel="noopener"
-            className="group hidden sm:flex items-center gap-4 px-5 py-3 border border-onyx/15 rounded-full hover:bg-onyx hover:text-clay transition-colors duration-500"
-          >
-            <span className="size-1.5 rounded-full bg-umber group-hover:bg-clay transition-colors" />
-            <span className="text-[11px] font-medium uppercase tracking-[0.22em]">
-              Nhắn Zalo tìm hiểu thêm
-            </span>
-          </a>
-        </header>
-
-        {/* Editorial headline */}
-        <div className="max-w-5xl z-10 mt-12 md:mt-0">
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-umber mb-6 md:mb-8">
-            ⟶ Hệ sinh thái sơn phủ đa vật liệu
-          </p>
-          <h1 className="font-serif text-[2.6rem] sm:text-6xl md:text-7xl lg:text-[7.5rem] leading-[0.92] tracking-[-0.02em] text-balance">
-            Kỹ nghệ vật liệu, <br />
-            <span className="italic text-umber font-light">vượt thời gian.</span>
-          </h1>
-          <p className="max-w-xl text-base md:text-lg leading-relaxed text-onyx/75 mt-8 md:mt-10">
-            Sơn Lotus là nhà sản xuất sơn công nghiệp tại Việt Nam — kiến tạo những hệ thống bảo
-            vệ bề mặt cho gỗ, kim loại, xi măng, composite và sàn công nghiệp.
-          </p>
-        </div>
-
-        {/* Active category meta + index */}
-        <div className="z-10 flex flex-col md:flex-row md:items-end md:justify-between gap-6 mt-12 md:mt-0">
-          <div className="soft-in" key={`meta-${active.id}`}>
-            <div className="flex items-baseline gap-4">
-              <span className="font-mono text-xs tracking-widest text-onyx/40">
-                {active.index} / 06
-              </span>
-              <span className="h-px flex-1 bg-onyx/15 max-w-24" />
+          {/* Right side — active material data card */}
+          <aside className="hidden md:flex col-span-3 self-end justify-end items-end pb-6">
+            <div key={active.id + "-meta"} className="text-right space-y-3 soft-in">
+              <div className="font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/55">
+                {active.nameEn}
+              </div>
+              <div className="font-serif text-[5rem] leading-none italic text-onyx/90 tracking-tight">
+                {active.index}
+              </div>
+              <div className="font-serif text-xl text-onyx/80 italic">
+                {active.name}
+              </div>
+              <div className="ml-auto h-px w-16 bg-onyx/30" />
+              <div className="text-[11px] text-onyx/55 max-w-[14rem] leading-snug ml-auto">
+                {active.specs[0].value}
+              </div>
             </div>
-            <h2 className="font-serif text-3xl md:text-5xl italic text-onyx mt-3 leading-none">
-              {active.name}
-            </h2>
-            <p className="text-sm md:text-base text-onyx/60 mt-3 max-w-md">{active.tagline}</p>
-          </div>
-
-          <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-onyx/40">
-            <span>Kéo ngang để duyệt</span>
-            <span className="h-px w-10 bg-onyx/30" />
-            <span>← →</span>
-          </div>
+          </aside>
         </div>
 
-        {/* Tactile product rail — full bleed */}
-        <div className="relative z-20 -mx-6 md:-mx-12 lg:-mx-16 mt-10">
-          <div
-            ref={railRef}
-            className="flex overflow-x-auto hide-scrollbar px-6 md:px-12 lg:px-16 gap-5 md:gap-6 snap-x snap-mandatory pb-2"
-          >
-            {CATEGORIES.map((cat) => {
-              const isActive = cat.id === activeId;
-              return (
-                <button
-                  key={cat.id}
-                  data-rail-id={cat.id}
-                  onClick={() => setActiveId(cat.id)}
-                  className={`group relative flex-none snap-center text-left transition-all duration-700 ease-out ${
-                    isActive ? "w-[78vw] sm:w-96 md:w-[26rem]" : "w-56 md:w-64"
-                  }`}
-                  aria-pressed={isActive}
-                >
-                  <div
-                    className={`aspect-[4/5] relative overflow-hidden border transition-colors duration-700 ${
-                      isActive ? "border-onyx/30" : "border-onyx/10"
-                    }`}
+        {/* Bottom — editorial INDEX (the selector) */}
+        <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-8 md:pb-10">
+          <div className="flex items-end justify-between mb-4 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+            <span>Trượt — hoặc chọn để mở vật liệu</span>
+            <a
+              href={ZALO_URL}
+              target="_blank"
+              rel="noopener"
+              className="group hidden md:inline-flex items-center gap-3 text-onyx hover:text-umber transition-colors"
+            >
+              <span className="inline-block size-1.5 rounded-full bg-umber group-hover:scale-150 transition-transform" />
+              <span>Nhắn Zalo · tìm hiểu thêm</span>
+              <span className="inline-block h-px w-8 bg-onyx/40 group-hover:w-12 transition-all" />
+            </a>
+          </div>
+
+          <div className="border-t border-onyx/25 pt-2 hide-scrollbar overflow-x-auto">
+            <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
+              {CATEGORIES.map((c) => {
+                const isActive = c.id === activeId;
+                return (
+                  <li
+                    key={c.id}
+                    className={`idx-row relative border-r border-onyx/15 last:border-r-0`}
                   >
-                    <img
-                      src={cat.image}
-                      alt={cat.name}
-                      width={800}
-                      height={1000}
-                      loading={cat.id === CATEGORIES[0].id ? "eager" : "lazy"}
-                      className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ${
-                        isActive ? "scale-105 drift" : "scale-100 grayscale-[0.4]"
+                    <button
+                      onClick={() => setActiveId(c.id)}
+                      className={`group block w-[14rem] md:w-full text-left px-5 py-5 transition-colors duration-500 ${
+                        isActive ? "bg-onyx/[0.04]" : "hover:bg-onyx/[0.025]"
                       }`}
-                    />
-                    <div
-                      className={`absolute inset-0 transition-opacity duration-700 ${
-                        isActive
-                          ? "bg-gradient-to-t from-onyx/65 via-onyx/10 to-transparent"
-                          : "bg-clay/30"
-                      }`}
-                    />
-
-                    {/* Index numeral */}
-                    <span
-                      className={`absolute top-5 left-5 font-mono text-[11px] tracking-[0.25em] uppercase transition-colors duration-500 ${
-                        isActive
-                          ? "text-clay/80"
-                          : cat.imageTone === "dark"
-                            ? "text-clay/70"
-                            : "text-onyx/60"
-                      }`}
+                      aria-pressed={isActive}
                     >
-                      System {cat.index}
-                    </span>
-
-                    {/* Name */}
-                    <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
-                      <h3
-                        className={`font-serif text-xl md:text-2xl leading-tight transition-colors duration-500 ${
-                          isActive
-                            ? "text-clay"
-                            : cat.imageTone === "dark"
-                              ? "text-clay"
-                              : "text-onyx"
-                        }`}
-                      >
-                        {cat.name}
-                      </h3>
-                      {isActive && (
-                        <span className="text-[10px] uppercase tracking-[0.25em] text-clay/70 soft-in">
-                          ● Đang chọn
+                      <div className="flex items-start gap-4">
+                        {/* Material chip */}
+                        <span className="idx-chip relative inline-block size-12 md:size-14 overflow-hidden border border-onyx/20 shrink-0">
+                          <img
+                            src={c.image}
+                            alt=""
+                            width={56}
+                            height={56}
+                            loading={c.id === CATEGORIES[0].id ? "eager" : "lazy"}
+                            className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
+                              isActive ? "scale-105" : "grayscale-[0.5] scale-100"
+                            }`}
+                          />
+                          {isActive && (
+                            <span className="absolute inset-0 ring-1 ring-onyx/40" />
+                          )}
                         </span>
-                      )}
-                    </div>
-                  </div>
-                </button>
-              );
-            })}
-            <div className="flex-none w-6 md:w-12" aria-hidden />
+
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-baseline gap-2">
+                            <span className={`font-mono text-[10px] tracking-[0.25em] uppercase transition-colors ${isActive ? "text-umber" : "text-onyx/40"}`}>
+                              {c.index}
+                            </span>
+                            {isActive && (
+                              <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-onyx/50 soft-in">
+                                · {c.nameEn}
+                              </span>
+                            )}
+                          </div>
+                          <h3 className={`mt-1 font-serif text-base md:text-[1.05rem] leading-snug transition-colors ${isActive ? "text-onyx" : "text-onyx/65 group-hover:text-onyx"}`}>
+                            {c.name}
+                          </h3>
+                        </div>
+                      </div>
+                    </button>
+                  </li>
+                );
+              })}
+            </ol>
           </div>
         </div>
+
+        {/* Wax seal CTA (mobile shows simplified inline link, hidden on tiny screens) */}
+        <a
+          href={ZALO_URL}
+          target="_blank"
+          rel="noopener"
+          aria-label="Nhắn Zalo tìm hiểu thêm"
+          className="md:hidden absolute right-5 top-5 z-30 size-14 rounded-full bg-onyx text-clay flex items-center justify-center"
+        >
+          <span className="font-mono text-[9px] uppercase tracking-widest">Zalo</span>
+        </a>
       </section>
 
-      {/* ───────────── CATEGORY REVEAL ───────────── */}
+      {/* ╔════════════════════ LOWER · CHAPTERS ════════════════════╗ */}
       <main key={active.id} className="relative">
-        {/* Divider with marquee spec */}
-        <div className="border-y border-onyx/10 overflow-hidden bg-clay">
-          <div className="flex whitespace-nowrap ticker-track py-4">
+        {/* ── Marquee transition ────────────────────────────────── */}
+        <div className="border-y border-onyx/15 overflow-hidden bg-clay-soft">
+          <div className="flex whitespace-nowrap ticker-track py-3.5">
             {[...Array(2)].map((_, i) => (
-              <div key={i} className="flex items-center gap-12 px-6 text-[10px] uppercase tracking-[0.3em] text-onyx/40">
-                <span>Sản xuất tại Việt Nam</span>
-                <span>•</span>
+              <div key={i} className="flex items-center gap-10 px-6 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
+                <span className="text-onyx/70">{active.index} · {active.nameEn}</span>
+                <span>—</span>
                 <span>{active.name}</span>
-                <span>•</span>
+                <span>—</span>
                 <span>{active.specs[0].label}: {active.specs[0].value}</span>
-                <span>•</span>
+                <span>—</span>
                 <span>{active.specs[1].label}: {active.specs[1].value}</span>
-                <span>•</span>
-                <span>ISO 9001 — Hệ thống quản lý chất lượng</span>
-                <span>•</span>
+                <span>—</span>
+                <span>Sản xuất tại Việt Nam · ISO 9001</span>
+                <span>—</span>
                 <span>Hỗ trợ kỹ thuật tại công trình</span>
-                <span>•</span>
+                <span>—</span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Layer 1 — Editorial intro + applications */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
-            <div className="md:col-span-5">
-              <div className="md:sticky md:top-20">
-                <span className="text-umber font-medium uppercase tracking-[0.25em] text-[10px] mb-6 block reveal-rise">
-                  {active.hook}
-                </span>
-                <h3 className="font-serif text-4xl md:text-6xl leading-[1.02] mb-10 reveal-rise">
-                  {active.tagline}
-                </h3>
-                <p className="text-onyx/75 leading-relaxed mb-12 reveal-rise text-pretty">
-                  {active.description}
-                </p>
+        {/* ── Chapter cover — full bleed material plate ──────────── */}
+        <section className="relative h-[88svh] min-h-[600px] overflow-hidden">
+          <img
+            src={active.image}
+            alt={active.name}
+            width={1920}
+            height={1200}
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover r-scale"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-onyx/55 via-onyx/10 to-transparent" />
 
-                <div className="space-y-0 reveal-rise">
-                  {active.specs.map((s) => (
-                    <div
-                      key={s.label}
-                      className="flex justify-between py-4 border-b border-onyx/10 text-sm"
-                    >
-                      <span className="font-medium uppercase tracking-[0.15em] text-[11px]">
-                        {s.label}
-                      </span>
-                      <span className="text-onyx/60 italic font-serif text-base">{s.value}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+          <div className="relative h-full flex flex-col justify-between px-6 md:px-12 lg:px-16 py-10 md:py-14 text-clay">
+            <div className="flex justify-between items-start font-mono text-[10px] uppercase tracking-[0.32em] text-clay/75 r-rise">
+              <span>Chapter · {active.index}</span>
+              <span>{active.nameEn}</span>
             </div>
 
-            <div className="md:col-span-7 space-y-20 md:space-y-32">
-              <div className="reveal-wipe">
-                <div className="relative w-full aspect-[3/4] overflow-hidden bg-linen">
-                  <img
-                    src={active.image}
-                    alt={active.name}
-                    width={1200}
-                    height={1600}
-                    loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex justify-between items-baseline mt-5 text-[10px] uppercase tracking-[0.25em] text-onyx/45">
-                  <span className="italic font-serif text-base normal-case tracking-normal text-onyx/60">
-                    {active.name} — Lotus Material Library
-                  </span>
-                  <span>{active.index} / 06</span>
-                </div>
-              </div>
+            <div className="max-w-4xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/70 mb-6 r-rise r-d1">
+                Lotus Material Library
+              </p>
+              <h2 className="font-serif text-[clamp(2.5rem,7.5vw,7rem)] leading-[0.92] tracking-[-0.02em] italic font-light r-rise r-d2">
+                {active.name}.
+              </h2>
+              <p className="mt-8 max-w-2xl font-serif italic text-xl md:text-3xl text-clay/85 leading-snug text-pretty r-rise r-d3">
+                “{active.manifesto}”
+              </p>
+            </div>
+          </div>
+        </section>
 
-              <div className="reveal-rise">
-                <h4 className="font-serif text-3xl md:text-4xl mb-8 italic">Ứng dụng</h4>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10">
-                  {active.applications.map((a, i) => (
-                    <li
-                      key={a}
-                      className="flex items-start gap-4 py-5 border-t border-onyx/10 text-onyx/80"
-                    >
-                      <span className="font-mono text-xs text-umber pt-1">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                      <span className="text-base leading-snug">{a}</span>
-                    </li>
-                  ))}
-                </ul>
+        {/* ── Asymmetric intro · description vs. specs ──────────── */}
+        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40">
+          <div className="grid grid-cols-12 gap-8 md:gap-16">
+            <div className="col-span-12 md:col-span-5 md:col-start-2">
+              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
+                § Bản chất
+              </span>
+              <h3 className="font-serif text-3xl md:text-5xl mt-5 leading-[1.05] r-rise r-d1 text-balance">
+                {active.tagline}
+              </h3>
+              <p className="mt-8 text-onyx/75 leading-relaxed text-pretty r-rise r-d2 max-w-md">
+                {active.description}
+              </p>
+
+              <div className="mt-12 h-px bg-onyx/20 origin-left r-line" />
+
+              <dl className="mt-8 grid grid-cols-2 gap-x-8 gap-y-5">
+                {active.specs.map((s, i) => (
+                  <div key={s.label} className={`r-rise r-d${(i % 4) + 1}`}>
+                    <dt className="font-mono text-[10px] uppercase tracking-[0.25em] text-onyx/45">
+                      {s.label}
+                    </dt>
+                    <dd className="mt-1.5 font-serif italic text-[1.1rem] text-onyx leading-tight">
+                      {s.value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+
+            {/* Side numeral */}
+            <div className="hidden md:block col-span-4 col-start-9 relative">
+              <div className="sticky top-24">
+                <div className="font-serif text-[14rem] leading-none italic text-onyx/[0.08] -mt-6 r-rise">
+                  {active.index}
+                </div>
+                <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 -mt-4 r-rise r-d2">
+                  Material no. {active.index} — {active.nameEn}
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Layer 2 — Process (dark cinematic) */}
-        <section className="bg-ash text-clay py-32 md:py-40 px-6 md:px-12 lg:px-16 overflow-hidden">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-20 md:mb-28 items-end">
-              <div className="md:col-span-7 reveal-rise">
-                <span className="text-[10px] uppercase tracking-[0.35em] text-umber mb-6 block">
-                  Quy trình tiêu chuẩn
+        {/* ── Editorial pull quote, no chrome ─────────────────── */}
+        <section className="px-6 md:px-12 lg:px-16 py-20 md:py-32 border-t border-onyx/10">
+          <div className="max-w-5xl mx-auto text-center r-rise">
+            <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-umber">
+              ☞ Triết lý sản xuất
+            </span>
+            <p className="mt-6 font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
+              Chúng tôi không bán sơn — chúng tôi bán
+              <span className="not-italic"> lớp bảo vệ </span>
+              được hoá học hoá từ
+              <span className="text-umber"> bốn mươi năm</span> hiểu vật liệu.
+            </p>
+          </div>
+        </section>
+
+        {/* ── Large macro image · full bleed with caption ───────── */}
+        <section className="relative">
+          <div className="relative h-[70svh] min-h-[480px] overflow-hidden">
+            <img
+              src={revealMacro}
+              alt="Macro detail of coating saturating wood grain"
+              width={1920}
+              height={1280}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover r-scale"
+            />
+          </div>
+          <div className="px-6 md:px-12 lg:px-16 py-6 flex flex-col md:flex-row md:items-baseline md:justify-between gap-4 border-b border-onyx/10">
+            <p className="font-serif italic text-onyx/75 text-lg max-w-xl">
+              Phân tử sơn len lỏi vào từng thớ vật liệu — bảo vệ bắt đầu từ chiều sâu, không phải bề mặt.
+            </p>
+            <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+              Fig. {active.index}·A — Cross-section magnified 200×
+            </span>
+          </div>
+        </section>
+
+        {/* ── Applications — numbered editorial list, asymmetric ─ */}
+        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40">
+          <div className="grid grid-cols-12 gap-8 md:gap-16">
+            <div className="col-span-12 md:col-span-4">
+              <div className="md:sticky md:top-24">
+                <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
+                  § Ứng dụng
                 </span>
-                <h2 className="font-serif text-5xl md:text-7xl leading-[0.95]">
-                  Bốn bước, <span className="italic">một hệ thống.</span>
-                </h2>
-              </div>
-              <div className="md:col-span-5 reveal-rise">
-                <p className="text-clay/65 leading-relaxed max-w-md">
-                  Mọi hệ sơn Lotus đều tuân theo một quy trình thi công có kiểm soát — đảm bảo
-                  bám dính, độ bền và tính nhất quán cho toàn bộ dự án.
+                <h3 className="font-serif text-4xl md:text-5xl mt-5 leading-[1.05] italic r-rise r-d1">
+                  Nơi <span className="not-italic">Lotus</span> được tin dùng.
+                </h3>
+                <p className="mt-6 text-onyx/65 max-w-xs r-rise r-d2">
+                  Hệ {active.name.toLowerCase()} phù hợp cho các nhà thầu, xưởng sản xuất và dự án có yêu cầu kỹ thuật cao.
                 </p>
               </div>
             </div>
 
-            <ol className="grid grid-cols-1 md:grid-cols-4 gap-px bg-clay/10">
-              {active.process.map((p) => (
+            <ol className="col-span-12 md:col-span-7 md:col-start-6 border-t border-onyx/20">
+              {active.applications.map((a, i) => (
                 <li
-                  key={p.step}
-                  className="bg-ash p-8 md:p-10 reveal-rise flex flex-col gap-6 min-h-[18rem]"
+                  key={a}
+                  className="group grid grid-cols-12 items-baseline gap-6 py-6 md:py-8 border-b border-onyx/15 r-rise"
                 >
-                  <span className="font-serif text-5xl text-umber leading-none">{p.step}.</span>
-                  <h4 className="font-medium uppercase text-xs tracking-[0.25em]">{p.title}</h4>
-                  <p className="text-sm text-clay/55 leading-relaxed">{p.body}</p>
+                  <span className="col-span-2 font-mono text-[11px] text-umber tracking-widest">
+                    {String(i + 1).padStart(2, "0")} /
+                  </span>
+                  <span className="col-span-10 font-serif text-2xl md:text-3xl leading-snug text-onyx group-hover:italic transition-all">
+                    {a}
+                  </span>
                 </li>
               ))}
             </ol>
           </div>
         </section>
 
-        {/* Layer 3 — Coating system table */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex items-end justify-between mb-12 md:mb-16">
-              <div className="reveal-rise">
-                <span className="text-[10px] uppercase tracking-[0.35em] text-umber mb-4 block">
-                  Spec Sheet
+        {/* ── Process — dark cinematic, sticky vertical timeline ─ */}
+        <section className="bg-ash text-clay py-32 md:py-44 px-6 md:px-12 lg:px-16 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
+            <div className="col-span-12 md:col-span-4">
+              <div className="md:sticky md:top-24">
+                <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
+                  § Quy trình
                 </span>
-                <h3 className="font-serif text-4xl md:text-5xl italic">Hệ sơn đề xuất</h3>
+                <h2 className="font-serif text-5xl md:text-6xl leading-[0.98] mt-5 r-rise r-d1">
+                  Bốn nhịp,<br/>
+                  <span className="italic font-light text-clay/80">một hệ thống.</span>
+                </h2>
+                <p className="mt-8 text-clay/55 max-w-xs leading-relaxed r-rise r-d2">
+                  Mọi hệ sơn Lotus đều tuân theo một quy trình thi công có kiểm soát — đảm bảo bám dính,
+                  độ bền và sự nhất quán cho toàn bộ dự án.
+                </p>
+
+                <div className="mt-10 inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-clay/50 r-rise r-d3">
+                  <span className="inline-block h-px w-10 bg-clay/30" />
+                  <span>Atelier Protocol · {active.index}</span>
+                </div>
               </div>
-              <span className="hidden md:block font-mono text-xs tracking-widest text-onyx/40">
-                LOTUS / {active.id.toUpperCase()}
-              </span>
             </div>
 
-            <div className="reveal-wipe overflow-x-auto">
-              <table className="w-full text-left border-t border-onyx/20">
+            <ol className="col-span-12 md:col-span-8">
+              {active.process.map((p, i) => (
+                <li
+                  key={p.step}
+                  className="grid grid-cols-12 gap-6 py-10 md:py-14 border-t border-clay/15 first:border-t-0 r-rise"
+                  style={{ animationDelay: `${i * 90}ms` }}
+                >
+                  <div className="col-span-3 md:col-span-2">
+                    <div className="font-serif text-5xl md:text-6xl italic text-umber leading-none">
+                      {p.step}
+                    </div>
+                  </div>
+                  <div className="col-span-9 md:col-span-10 pt-1">
+                    <h4 className="font-mono text-[11px] uppercase tracking-[0.3em] text-clay">
+                      {p.title}
+                    </h4>
+                    <p className="mt-4 font-serif text-2xl md:text-3xl leading-snug text-clay/85 max-w-3xl">
+                      {p.body}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        {/* ── Spec sheet · catalog page ───────────────────────── */}
+        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 bg-paper">
+          <div className="max-w-6xl mx-auto">
+            {/* Header treated like a printed catalog spread */}
+            <div className="flex items-end justify-between mb-10 md:mb-14 border-b border-onyx/30 pb-6">
+              <div className="r-rise">
+                <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber mb-3">
+                  § Catalog · Hệ phủ đề xuất
+                </p>
+                <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
+                  Lotus / {active.nameEn}
+                </h3>
+              </div>
+              <div className="hidden md:block text-right font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
+                <div>Spec sheet</div>
+                <div>Rev. 24·11 / {active.id.toUpperCase()}</div>
+              </div>
+            </div>
+
+            <div className="r-wipe overflow-x-auto">
+              <table className="w-full text-left">
                 <thead>
-                  <tr className="text-[10px] uppercase tracking-[0.25em] text-onyx/50">
-                    <th className="py-5 font-medium w-1/4">Lớp</th>
-                    <th className="py-5 font-medium">Sản phẩm</th>
-                    <th className="py-5 font-medium text-right">Định mức</th>
-                    <th className="py-5 font-medium text-right w-20">Số lớp</th>
+                  <tr className="font-mono text-[10px] uppercase tracking-[0.25em] text-onyx/55">
+                    <th className="py-4 font-medium w-12">№</th>
+                    <th className="py-4 font-medium">Lớp</th>
+                    <th className="py-4 font-medium">Sản phẩm</th>
+                    <th className="py-4 font-medium text-right">Định mức</th>
+                    <th className="py-4 font-medium text-right w-20">Lớp</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-onyx/10">
-                  {active.system.map((row) => (
-                    <tr key={row.layer} className="group hover:bg-linen/60 transition-colors">
-                      <td className="py-6 text-onyx/60 text-sm uppercase tracking-[0.15em]">
+                <tbody className="divide-y divide-onyx/15">
+                  {active.system.map((row, i) => (
+                    <tr key={row.layer} className="group hover:bg-linen/40 transition-colors">
+                      <td className="py-7 font-serif italic text-2xl text-umber">
+                        {String(i + 1).padStart(2, "0")}
+                      </td>
+                      <td className="py-7 text-onyx/65 text-xs uppercase tracking-[0.18em]">
                         {row.layer}
                       </td>
-                      <td className="py-6 font-serif text-xl">{row.product}</td>
-                      <td className="py-6 text-right font-mono text-xs text-onyx/70">
+                      <td className="py-7 font-serif text-xl md:text-2xl">{row.product}</td>
+                      <td className="py-7 text-right font-mono text-xs text-onyx/65">
                         {row.rate}
                       </td>
-                      <td className="py-6 text-right font-serif text-lg italic text-umber">
+                      <td className="py-7 text-right font-serif text-xl italic text-onyx">
                         {row.coats}
                       </td>
                     </tr>
@@ -655,125 +808,174 @@ function Index() {
                 </tbody>
               </table>
             </div>
+
+            <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45 text-right">
+              Đội kỹ thuật Lotus sẽ điều chỉnh hệ theo công trình cụ thể.
+            </p>
           </div>
         </section>
 
-        {/* Layer 4 — Real photos / projects */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 bg-linen/40 border-y border-onyx/5">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16">
-              <div className="reveal-rise">
-                <span className="text-[10px] uppercase tracking-[0.35em] text-umber mb-4 block">
-                  Dự án tiêu biểu
+        {/* ── Real projects · cinematic strip + portrait pair ──── */}
+        <section className="bg-clay">
+          <div className="px-6 md:px-12 lg:px-16 pt-28 md:pt-40 pb-10">
+            <div className="grid grid-cols-12 gap-6 md:gap-8 items-end">
+              <div className="col-span-12 md:col-span-7 r-rise">
+                <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber">
+                  § Dự án
                 </span>
-                <h3 className="font-serif text-4xl md:text-5xl italic">Ứng dụng thực tế</h3>
+                <h3 className="mt-5 font-serif text-4xl md:text-6xl italic leading-[1.03]">
+                  Đã được thi công <br/>
+                  <span className="not-italic">trên thực địa.</span>
+                </h3>
               </div>
-              <p className="max-w-sm text-sm text-onyx/60 reveal-rise">
-                Hình ảnh thực tế từ các công trình và xưởng sản xuất đã sử dụng hệ {active.name.toLowerCase()} Lotus.
+              <p className="col-span-12 md:col-span-4 md:col-start-9 text-onyx/60 max-w-sm r-rise r-d1">
+                Hình ảnh thực tế từ các công trình đã sử dụng hệ {active.name.toLowerCase()} Lotus —
+                không dàn dựng, không phối cảnh.
               </p>
             </div>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-              <div className="md:col-span-8 reveal-wipe">
-                <div className="relative aspect-[4/3] overflow-hidden">
+          {/* Cinematic strip */}
+          <figure className="relative w-full h-[70svh] min-h-[460px] overflow-hidden r-scale">
+            <img
+              src={active.projects[0].image}
+              alt={active.projects[0].title}
+              width={1920}
+              height={1200}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <figcaption className="absolute bottom-0 left-0 right-0 p-6 md:p-10 flex items-end justify-between text-clay bg-gradient-to-t from-onyx/60 to-transparent">
+              <span className="font-serif italic text-2xl md:text-3xl">
+                {active.projects[0].title}
+              </span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-clay/80">
+                {active.projects[0].meta}
+              </span>
+            </figcaption>
+          </figure>
+
+          {/* Offset portrait pair */}
+          <div className="px-6 md:px-12 lg:px-16 pt-16 pb-28 md:pb-40 grid grid-cols-12 gap-6 md:gap-10">
+            {active.projects.slice(1).map((p, idx) => (
+              <figure
+                key={p.title}
+                className={`col-span-12 md:col-span-5 r-wipe ${idx === 0 ? "md:col-start-1" : "md:col-start-8 md:mt-24"}`}
+              >
+                <div className="relative aspect-[4/5] overflow-hidden bg-linen">
                   <img
-                    src={active.projects[0].image}
-                    alt={active.projects[0].title}
-                    width={1600}
-                    height={1200}
+                    src={p.image}
+                    alt={p.title}
+                    width={1000}
+                    height={1250}
                     loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
-                <p className="mt-4 flex justify-between text-[11px] uppercase tracking-[0.25em] text-onyx/50">
-                  <span className="font-serif normal-case tracking-normal text-base text-onyx italic">
-                    {active.projects[0].title}
+                <figcaption className="mt-4 flex items-baseline justify-between text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+                  <span className="font-serif italic text-base normal-case tracking-normal text-onyx">
+                    {p.title}
                   </span>
-                  <span>{active.projects[0].meta}</span>
-                </p>
-              </div>
-              <div className="md:col-span-4 space-y-6">
-                {active.projects.slice(1).map((p) => (
-                  <div key={p.title} className="reveal-wipe">
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <img
-                        src={p.image}
-                        alt={p.title}
-                        width={800}
-                        height={600}
-                        loading="lazy"
-                        className="absolute inset-0 w-full h-full object-cover"
-                      />
-                    </div>
-                    <p className="mt-3 flex justify-between text-[10px] uppercase tracking-[0.25em] text-onyx/50">
-                      <span className="font-serif normal-case tracking-normal text-sm text-onyx italic">
-                        {p.title}
-                      </span>
-                      <span>{p.meta}</span>
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+                  <span>{p.meta}</span>
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </section>
 
-        {/* Layer 5 — FAQ */}
-        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
-            <div className="md:col-span-4">
-              <span className="text-[10px] uppercase tracking-[0.35em] text-umber mb-4 block reveal-rise">
-                Câu hỏi thường gặp
+        {/* ── FAQ · minimal ─────────────────────────────────────── */}
+        <section className="px-6 md:px-12 lg:px-16 py-28 md:py-40 border-t border-onyx/15">
+          <div className="max-w-6xl mx-auto grid grid-cols-12 gap-8 md:gap-16">
+            <div className="col-span-12 md:col-span-4">
+              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber r-rise">
+                § Hỏi & Đáp
               </span>
-              <h3 className="font-serif text-4xl md:text-5xl italic leading-tight reveal-rise">
-                Cần tư vấn thêm?
+              <h3 className="font-serif text-4xl md:text-5xl italic mt-5 leading-tight r-rise r-d1">
+                Cần một câu trả lời?
               </h3>
-              <p className="text-onyx/60 mt-6 reveal-rise">
-                Đội kỹ thuật Lotus sẵn sàng hỗ trợ khảo sát công trình và đề xuất hệ phù hợp.
+              <p className="mt-6 text-onyx/60 r-rise r-d2 max-w-xs">
+                Đội kỹ thuật Lotus sẵn sàng khảo sát và đề xuất hệ phù hợp cho dự án của bạn.
               </p>
             </div>
-            <div className="md:col-span-8 divide-y divide-onyx/15 border-t border-onyx/15">
+
+            <div className="col-span-12 md:col-span-7 md:col-start-6 border-t border-onyx/25">
               {active.faq.map((f, i) => (
-                <details
-                  key={f.q}
-                  className="group py-6 reveal-rise"
-                  open={i === 0}
-                >
+                <details key={f.q} className="group py-7 border-b border-onyx/15 r-rise" open={i === 0}>
                   <summary className="flex items-start justify-between gap-6 cursor-pointer list-none">
                     <span className="font-serif text-xl md:text-2xl leading-snug pr-6">
+                      <span className="font-mono text-[11px] tracking-widest text-umber mr-3">
+                        Q·{String(i + 1).padStart(2, "0")}
+                      </span>
                       {f.q}
                     </span>
-                    <span className="font-mono text-xs text-umber pt-2 group-open:rotate-45 transition-transform">
+                    <span className="font-serif text-2xl text-umber pt-1 group-open:rotate-45 transition-transform">
                       +
                     </span>
                   </summary>
-                  <p className="mt-4 text-onyx/70 leading-relaxed max-w-2xl">{f.a}</p>
+                  <p className="mt-4 pl-[3.4rem] text-onyx/70 leading-relaxed max-w-2xl">{f.a}</p>
                 </details>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Final CTA */}
-        <section className="px-6 md:px-12 lg:px-16 py-32 md:py-48 text-center border-t border-onyx/10">
-          <div className="max-w-3xl mx-auto reveal-rise">
-            <span className="text-[10px] uppercase tracking-[0.35em] text-umber mb-6 block">
-              Bắt đầu dự án
-            </span>
-            <h3 className="font-serif text-5xl md:text-7xl leading-[1.02] mb-14">
-              Hệ sơn phù hợp <br />
-              <span className="italic text-umber font-light">cho từng vật liệu của bạn.</span>
+        {/* ── Final chapter · wax seal CTA ─────────────────────── */}
+        <section className="relative px-6 md:px-12 lg:px-16 py-32 md:py-48 bg-onyx text-clay overflow-hidden">
+          <img
+            src={active.image}
+            alt=""
+            width={1920}
+            height={1200}
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover opacity-25 drift"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-onyx via-onyx/85 to-onyx" />
+
+          <div className="relative z-10 max-w-4xl mx-auto text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/55 mb-6 r-rise">
+              ☟ Bắt đầu dự án của bạn
+            </p>
+            <h3 className="font-serif text-5xl md:text-7xl leading-[1.02] italic font-light r-rise r-d1 text-pretty">
+              Hệ sơn phù hợp <br/>
+              <span className="not-italic font-normal">cho từng vật liệu của bạn.</span>
             </h3>
+
             <a
               href={ZALO_URL}
               target="_blank"
               rel="noopener"
-              className="group inline-flex flex-col items-center"
+              className="group relative inline-flex flex-col items-center mt-16 r-rise r-d2"
+              aria-label="Nhắn Zalo tìm hiểu thêm"
             >
-              <span className="size-28 rounded-full border border-onyx/15 flex items-center justify-center group-hover:bg-umber group-hover:border-umber transition-all duration-700">
-                <span className="size-2 bg-onyx group-hover:bg-clay rounded-full transition-colors" />
-              </span>
-              <span className="mt-7 text-xs font-medium uppercase tracking-[0.32em]">
+              {/* Wax seal */}
+              <div className="relative size-44 md:size-52 flex items-center justify-center">
+                {/* Rotating microtext ring */}
+                <svg
+                  viewBox="0 0 200 200"
+                  className="absolute inset-0 spin-slow text-clay/60"
+                  aria-hidden
+                >
+                  <defs>
+                    <path
+                      id="ctaCircle"
+                      d="M 100,100 m -82,0 a 82,82 0 1,1 164,0 a 82,82 0 1,1 -164,0"
+                    />
+                  </defs>
+                  <text fill="currentColor" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "9px", letterSpacing: "0.32em", textTransform: "uppercase" }}>
+                    <textPath href="#ctaCircle">
+                      Nhắn Zalo · Tìm hiểu thêm · Sơn Lotus · Atelier · 
+                    </textPath>
+                  </text>
+                </svg>
+                {/* Inner mark */}
+                <div className="relative size-24 md:size-28 rounded-full border border-clay/30 flex flex-col items-center justify-center group-hover:bg-umber group-hover:border-umber transition-all duration-700">
+                  <span className="font-serif italic text-3xl text-clay leading-none">L</span>
+                  <span className="font-mono text-[8px] uppercase tracking-[0.32em] text-clay/60 mt-1">
+                    Zalo
+                  </span>
+                </div>
+              </div>
+              <span className="mt-8 font-mono text-[11px] uppercase tracking-[0.4em] text-clay/85 flourish">
                 Nhắn Zalo tìm hiểu thêm
               </span>
             </a>
@@ -781,23 +983,35 @@ function Index() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="px-6 md:px-12 lg:px-16 py-10 border-t border-onyx/10">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-[10px] uppercase tracking-[0.3em] text-onyx/45">
-          <div className="flex items-baseline gap-4">
-            <span className="font-serif normal-case text-lg italic text-onyx/70 tracking-normal">
-              Sơn Lotus
-            </span>
-            <span>© {new Date().getFullYear()} Coating Systems</span>
+      {/* ── Footer ─────────────────────────────────────────────── */}
+      <footer className="px-6 md:px-12 lg:px-16 py-12 bg-clay">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-t border-onyx/15 pt-10">
+          <div>
+            <p className="font-serif italic text-2xl">Sơn&nbsp;Lotus</p>
+            <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
+              Premium Coating Manufacturer · Vietnam
+            </p>
           </div>
-          <div className="flex flex-wrap gap-6">
-            <span>Xưởng: Bình Dương, VN</span>
-            <span>Văn phòng: TP. Hồ Chí Minh</span>
-            <a href={ZALO_URL} target="_blank" rel="noopener" className="hover:text-onyx transition-colors">
-              Liên hệ Zalo →
-            </a>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 font-mono text-[10px] uppercase tracking-[0.28em] text-onyx/55">
+            <div>
+              <div className="text-onyx/40 mb-2">Xưởng</div>
+              <div className="text-onyx/80 normal-case tracking-normal">Bình Dương, VN</div>
+            </div>
+            <div>
+              <div className="text-onyx/40 mb-2">Văn phòng</div>
+              <div className="text-onyx/80 normal-case tracking-normal">TP. Hồ Chí Minh</div>
+            </div>
+            <div>
+              <div className="text-onyx/40 mb-2">Liên hệ</div>
+              <a href={ZALO_URL} target="_blank" rel="noopener" className="text-umber hover:text-onyx normal-case tracking-normal transition-colors">
+                Nhắn Zalo →
+              </a>
+            </div>
           </div>
         </div>
+        <p className="mt-10 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/35">
+          © {new Date().getFullYear()} Lotus Coating Systems · All material rights reserved.
+        </p>
       </footer>
     </div>
   );
