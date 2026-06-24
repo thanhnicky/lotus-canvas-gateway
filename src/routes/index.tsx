@@ -411,12 +411,12 @@ function Index() {
     const container = scrollContainerRef.current;
     if (!container) return;
 
-    // More noticeable left-right nudge after a short delay
+    // Subtle one-time left-right nudge to hint swipeability
     const timer = setTimeout(() => {
-      container.scrollTo({ left: 100, behavior: 'smooth' });
+      container.scrollTo({ left: 60, behavior: 'smooth' });
       setTimeout(() => {
         container.scrollTo({ left: 0, behavior: 'smooth' });
-      }, 600);
+      }, 400);
     }, 800);
 
     return () => clearTimeout(timer);
