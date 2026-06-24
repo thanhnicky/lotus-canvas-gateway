@@ -1153,9 +1153,9 @@ function Index() {
               </p>
             </div>
 
-            <div className="grid grid-cols-12 gap-x-8 gap-y-10 md:gap-x-16 border-t border-onyx/25 pt-10">
-              {/* Left rail — numbered index */}
-              <ol className="col-span-12 md:col-span-4">
+            <div className="grid grid-cols-12 gap-x-8 gap-y-10 md:gap-x-20 border-t border-onyx/25 pt-12">
+              {/* Left rail — consultation notes index */}
+              <ol className="col-span-12 md:col-span-5">
                 {active.faq.map((f, i) => {
                   const isOpen = openFaq === i;
                   return (
@@ -1163,30 +1163,24 @@ function Index() {
                       <button
                         onClick={() => setOpenFaq(i)}
                         onMouseEnter={() => setOpenFaq(i)}
-                        className="group block w-full text-left py-4 border-b border-onyx/15 transition-colors"
+                        className="group block w-full text-left py-6 border-b border-onyx/12 transition-colors"
                         aria-pressed={isOpen}
                       >
-                        <div className="flex items-baseline gap-4">
+                        <div className="grid grid-cols-12 gap-4 items-baseline">
                           <span
-                            className="font-mono text-[10px] tracking-[0.32em] uppercase shrink-0 transition-colors"
-                            style={{ color: isOpen ? "var(--accent)" : "rgba(22,20,18,0.4)" }}
+                            className="col-span-2 font-mono text-[10px] tracking-[0.32em] uppercase shrink-0 transition-colors"
+                            style={{ color: isOpen ? "var(--accent)" : "rgba(22,20,18,0.35)" }}
                           >
-                            Q·{String(i + 1).padStart(2, "0")}
+                            {String(i + 1).padStart(2, "0")} /
                           </span>
                           <span
-                            className={`font-serif text-lg md:text-xl leading-snug transition-colors ${
+                            className={`col-span-10 font-serif text-lg md:text-[1.35rem] leading-snug transition-colors ${
                               isOpen ? "text-onyx italic" : "text-onyx/55 group-hover:text-onyx"
                             }`}
                           >
                             {f.q}
                           </span>
                         </div>
-                        <div
-                          className={`mt-2 h-px origin-left transition-transform duration-700 ${
-                            isOpen ? "scale-x-100" : "scale-x-0"
-                          }`}
-                          style={{ background: "var(--accent)" }}
-                        />
                       </button>
                     </li>
                   );
@@ -1194,25 +1188,29 @@ function Index() {
               </ol>
 
               {/* Right panel — editorial answer */}
-              <div className="col-span-12 md:col-span-7 md:col-start-6 md:border-l md:border-onyx/15 md:pl-12">
+              <div className="col-span-12 md:col-span-6 md:col-start-7">
                 {active.faq[openFaq] && (
-                  <div key={active.id + "-faq-" + openFaq} className="soft-in">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                      Trả lời · Q·{String(openFaq + 1).padStart(2, "0")}
-                    </span>
-                    <p className="mt-5 font-serif text-2xl md:text-[1.75rem] italic leading-snug text-onyx/90 text-pretty">
+                  <div key={active.id + "-faq-" + openFaq} className="soft-in md:sticky md:top-24">
+                    <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
+                      <span
+                        className="inline-block h-px w-8"
+                        style={{ background: "var(--accent)" }}
+                      />
+                      <span>Ghi chú tư vấn · {String(openFaq + 1).padStart(2, "0")}</span>
+                    </div>
+                    <p className="mt-7 font-serif text-2xl md:text-[2rem] italic leading-[1.15] text-onyx text-pretty">
                       {active.faq[openFaq].q}
                     </p>
-                    <p className="mt-6 text-onyx/75 leading-relaxed max-w-xl text-[1.02rem]">
+                    <p className="mt-8 text-onyx/75 leading-[1.75] max-w-xl text-[1.02rem]">
                       {active.faq[openFaq].a}
                     </p>
                     <a
                       href={ZALO_URL}
                       target="_blank"
                       rel="noopener"
-                      className="group inline-flex items-center gap-3 mt-10 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
+                      className="group inline-flex items-center gap-3 mt-12 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
                     >
-                      <span>Còn câu hỏi khác — Nhắn Zalo</span>
+                      <span>Hỏi tiếp qua Zalo</span>
                       <span
                         className="inline-block h-px w-8 group-hover:w-14 transition-all"
                         style={{ background: "var(--accent)" }}
@@ -1222,6 +1220,7 @@ function Index() {
                 )}
               </div>
             </div>
+
           </div>
         </section>
 
