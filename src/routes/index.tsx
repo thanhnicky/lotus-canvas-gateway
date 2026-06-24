@@ -68,6 +68,8 @@ const CATEGORIES: Category[] = [
       "Mỗi đường vân là một câu chuyện đã được rừng viết. Chúng tôi chỉ giữ cho câu chuyện ấy không phai.",
     image: catWood,
     imageTone: "dark",
+    accent: "#6f4a2a",
+    signature: "Walnut",
     description:
       "Hệ sơn gỗ Lotus tôn vinh từng đường vân tự nhiên, đồng thời tạo lớp màng bảo vệ siêu bền trước độ ẩm, tia UV và va đập cơ học — sự cân bằng giữa thẩm mỹ thủ công và hóa học hiện đại.",
     applications: [
