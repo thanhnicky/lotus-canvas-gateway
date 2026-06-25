@@ -568,7 +568,7 @@ function Index() {
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
             <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-4 md:mb-12 flex items-center gap-4">
               <span className="inline-block h-px w-10 bg-onyx/45" />
-              <span>Nhà sản xuất sơn công nghiệp hệ nước</span>
+              <span>SƠN CÔNG NGHIỆP HỆ NƯỚC</span>
             </div>
             <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.92] tracking-[-0.025em] text-balance text-onyx">
               <span className="block">Hệ nước đủ chuẩn</span>
@@ -578,10 +578,7 @@ function Index() {
             </h1>
 
             <p className="mt-6 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
-              Lotus giúp xưởng, nhà máy và nhà thầu chuyển sang hệ nước mà không phải đánh đổi chất lượng hoàn thiện và tiến độ bàn giao.
-            </p>
-            <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/40">
-              Sơn Hệ Nước là website giới thiệu các hệ sơn công nghiệp hệ nước của Sơn Lotus
+              Lotus giúp bạn chọn đúng hệ nước cho đúng hạng mục.
             </p>
 
             <div className="hidden md:flex mt-8 md:mt-14 flex-wrap items-center gap-x-8 gap-y-3">
@@ -657,11 +654,6 @@ function Index() {
               </div>
             </div>
           </div>
-
-          {/* Helper line - hidden on mobile to reduce text density */}
-          <p className="hidden md:block mb-5 max-w-lg text-[0.95rem] leading-relaxed text-onyx/70">
-            Mỗi hạng mục cần một hệ phủ riêng để bám nền đúng, lên mặt đẹp và đỡ làm lại.
-          </p>
 
           <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-12 md:pr-0">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
@@ -1217,6 +1209,9 @@ function Index() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-12 gap-8 md:gap-16 items-start">
               <div className="col-span-12 md:col-span-6 r-rise">
+                <p className="font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/40 mb-6">
+                  Sơn Hệ Nước là website giới thiệu các hệ sơn công nghiệp hệ nước của Sơn Lotus
+                </p>
                 <h3 className="font-serif text-4xl md:text-[3.5rem] italic leading-[1.02] text-balance">
                   Nhà sản xuất, <br />
                   <span className="not-italic">không phải đại lý trung gian.</span>
