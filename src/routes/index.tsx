@@ -787,35 +787,6 @@ function Index() {
           </div>
         </section>
 
-        {/* ── Trust strip — customer logo grid ──────── */}
-        <div className="border-b border-onyx/10 bg-clay-soft">
-          <div className="px-6 md:px-12 lg:px-16 py-3 md:py-8">
-            <p className="font-mono text-[12px] uppercase tracking-[0.2em] md:tracking-[0.32em] text-onyx/55 text-center mb-3 md:mb-6">
-              Đã triển khai cho xưởng, nhà máy và công trình thực tế.
-            </p>
-            <div className="flex md:grid md:grid-cols-4 lg:grid-cols-8 gap-8 md:gap-8 items-center overflow-x-auto hide-scrollbar px-2 md:px-0">
-              {[
-                { src: logoAlc, alt: "ALC", scale: "scale-90 md:scale-100" },
-                { src: logoMasteriseHome, alt: "Masterise Home", scale: "scale-110 md:scale-100" },
-                { src: logoNemFur, alt: "Nem Fur", scale: "scale-100 md:scale-100" },
-                { src: logoNovaland, alt: "Novaland", scale: "scale-85 md:scale-100" },
-                { src: logoPrime, alt: "Prime", scale: "scale-90 md:scale-100" },
-                { src: logoPullman, alt: "Pullman", scale: "scale-110 md:scale-100" },
-                { src: logoScg, alt: "SCG", scale: "scale-85 md:scale-100" },
-                { src: logoSofitels, alt: "Sofitels", scale: "scale-110 md:scale-100" },
-              ].map((logo) => (
-                <div key={logo.alt} className="flex items-center justify-center h-8 md:h-12 w-28 md:w-32 shrink-0">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className={`max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-opacity mix-blend-multiply ${logo.scale}`}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* ── Chapter cover — full bleed material plate ──────────── */}
         <section id="system-detail" className="relative h-[88svh] min-h-[600px] overflow-hidden">
           <img
@@ -1182,6 +1153,35 @@ function Index() {
             ))}
           </div>
         </section>
+
+        {/* ── Trust strip — customer logo grid ──────── */}
+        <div className="border-b border-onyx/10 bg-clay-soft">
+          <div className="px-6 md:px-12 lg:px-16 py-3 md:py-8">
+            <p className="font-mono text-[12px] uppercase tracking-[0.2em] md:tracking-[0.32em] text-onyx/55 text-center mb-3 md:mb-6">
+              Đã triển khai cho xưởng, nhà máy và công trình thực tế.
+            </p>
+            <div className="flex md:grid md:grid-cols-4 lg:grid-cols-8 gap-8 md:gap-8 items-center overflow-x-auto hide-scrollbar px-2 md:px-0">
+              {[
+                { src: logoAlc, alt: "ALC", scale: "scale-90 md:scale-100" },
+                { src: logoMasteriseHome, alt: "Masterise Home", scale: "scale-110 md:scale-100" },
+                { src: logoNemFur, alt: "Nem Fur", scale: "scale-100 md:scale-100" },
+                { src: logoNovaland, alt: "Novaland", scale: "scale-85 md:scale-100" },
+                { src: logoPrime, alt: "Prime", scale: "scale-90 md:scale-100" },
+                { src: logoPullman, alt: "Pullman", scale: "scale-110 md:scale-100" },
+                { src: logoScg, alt: "SCG", scale: "scale-85 md:scale-100" },
+                { src: logoSofitels, alt: "Sofitels", scale: "scale-110 md:scale-100" },
+              ].map((logo) => (
+                <div key={logo.alt} className="flex items-center justify-center h-8 md:h-12 w-28 md:w-32 shrink-0">
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className={`max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-opacity mix-blend-multiply ${logo.scale}`}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* ── Atelier note · printed colophon, trust signals woven in ── */}
         <section className="px-6 md:px-12 lg:px-16 py-32 md:py-48 bg-paper border-t border-onyx/15">
