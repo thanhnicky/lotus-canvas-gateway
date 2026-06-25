@@ -527,11 +527,6 @@ function Index() {
           <span className="font-serif text-2xl md:text-[2rem] tracking-tight leading-none italic">
             Sơn&nbsp;Lotus
           </span>
-          <span className="hidden md:inline-flex items-center gap-6 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/50">
-            <span>Việt Nam</span>
-            <span className="h-px w-5 bg-onyx/25" />
-            <span>ISO 9001</span>
-          </span>
         </header>
 
         {/* Center — editorial cover */}
@@ -539,7 +534,7 @@ function Index() {
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
             <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-4 md:mb-12 flex items-center gap-4">
               <span className="inline-block h-px w-10 bg-onyx/45" />
-              <span>Nhà sản xuất sơn công nghiệp Việt Nam</span>
+              <span>Nhà sản xuất sơn công nghiệp hệ nước</span>
             </div>
             <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.92] tracking-[-0.025em] text-balance text-onyx">
               <span className="block">Hệ nước đủ chuẩn</span>
