@@ -637,22 +637,6 @@ function Index() {
               <span className="inline-block h-px w-8 bg-onyx/35" />
               <h2 className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">Chọn đúng hệ sơn cho hạng mục của bạn</h2>
             </div>
-            {/* Mobile progress indicator with visual connection */}
-            <div className="mobile-only flex items-center gap-2">
-              <span className="font-mono text-[10px] tracking-[0.25em] text-onyx/50">
-                Hệ {CATEGORIES.findIndex((c) => c.id === activeId) + 1}/06
-              </span>
-              <div className="flex gap-1">
-                {CATEGORIES.map((c, i) => (
-                  <span
-                    key={c.id}
-                    className={`w-1 h-1 rounded-full transition-all duration-300 ${
-                      c.id === activeId ? 'bg-onyx/60' : 'bg-onyx/20'
-                    }`}
-                  />
-                ))}
-              </div>
-            </div>
           </div>
 
           <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-12 md:pr-0">
@@ -745,28 +729,20 @@ function Index() {
             </ol>
           </div>
 
-          {/* Mobile browsing hint with refined styling - moved below card rail */}
-          <div className="mobile-only mt-5">
-            <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-onyx/[0.03] border border-onyx/[0.08] rounded-full backdrop-blur-sm">
-              <svg
-                className="w-3.5 h-3 text-onyx/50"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
-              </svg>
-              <p className="font-sans text-[13px] font-medium text-onyx/70 tracking-wide">
-                Vuốt ngang để xem 6 hệ sơn
-              </p>
-              <svg
-                className="w-3.5 h-3 text-onyx/50"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-              </svg>
+          {/* Mobile progress indicator with horizontal segmented bar */}
+          <div className="mobile-only mt-5 flex flex-col items-center gap-3">
+            <span className="font-mono text-[10px] tracking-[0.25em] text-onyx/50">
+              Hệ {String(CATEGORIES.findIndex((c) => c.id === activeId) + 1).padStart(2, '0')}/06
+            </span>
+            <div className="flex gap-1.5">
+              {CATEGORIES.map((c, i) => (
+                <span
+                  key={c.id}
+                  className={`h-0.5 rounded-full transition-all duration-300 ${
+                    c.id === activeId ? 'w-4 bg-onyx/60' : 'w-2 bg-onyx/20'
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
