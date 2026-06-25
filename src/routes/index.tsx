@@ -63,7 +63,7 @@ const CATEGORIES: Category[] = [
     index: "01",
     name: "Sơn gỗ",
     nameEn: "Wood Coating",
-    tagline: "Màu lặp lại giữa các đợt, ít làm lại khi chạy số lượng lớn.",
+    tagline: "Màu lặp lại giữa các đợt, ít lỗi khi chạy số lượng lớn.",
     manifesto:
       "Không phải bề mặt nào cũng dùng chung một công thức. Lotus giúp bạn chọn đúng hệ phủ để bám nền tốt hơn, lên mặt đẹp hơn và giảm rủi ro làm lại.",
     image: catWood,
@@ -71,7 +71,7 @@ const CATEGORIES: Category[] = [
     accent: "#6f4a2a",
     signature: "Gỗ",
     description:
-      "Dành cho xưởng nội thất và nhà máy xuất khẩu cần màu đồng đều giữa các đợt sản xuất. Lotus tư vấn hệ theo loại gỗ, yêu cầu độ bóng và quy trình chạy xưởng để giảm lỗi hoàn thiện.",
+      "Dành cho xưởng và nhà máy cần màu ổn định giữa các đợt, ít lỗi khi chạy số lượng lớn. Lotus tư vấn theo loại gỗ, độ bóng và cách chạy xưởng.",
     applications: [
       "Xưởng thi công nội thất theo đơn",
       "Nhà máy nội thất xuất khẩu Mỹ / EU",
@@ -112,7 +112,7 @@ const CATEGORIES: Category[] = [
     index: "02",
     name: "Sơn kim loại",
     nameEn: "Metal & Steel",
-    tagline: "Chọn đúng cấp chống ăn mòn theo môi trường công trình.",
+    tagline: "Đúng cấp chống ăn mòn, đỡ xuống cấp sớm ngoài công trình.",
     manifesto:
       "Kết cấu thép hỏng vì chọn sai hệ, không phải vì sơn rẻ. Lotus đề xuất hệ theo môi trường thật để giảm rủi ro bảo hành sau bàn giao.",
     image: catMetal,
@@ -209,7 +209,7 @@ const CATEGORIES: Category[] = [
     index: "04",
     name: "Sơn giả gỗ trên tấm xi măng",
     nameEn: "Wood-grain on Cement",
-    tagline: "Chọn đúng hệ ngay từ đầu để đỡ sửa cả bề mặt đã lên vân.",
+    tagline: "Đúng hệ ngay từ đầu để đỡ sửa cả bề mặt đã lên vân.",
     manifesto:
       "Tấm cement không tha thứ cho hệ sai. Một lỗi nhỏ ở lớp lót là cả mảng vân phải làm lại. Lotus tư vấn hệ đủ lớp để vân không bong sau vài tháng.",
     image: catCementWood,
@@ -258,7 +258,7 @@ const CATEGORIES: Category[] = [
     index: "05",
     name: "Sơn nhựa / composite",
     nameEn: "Plastic & Composite",
-    tagline: "Ngoại quan đồng đều trên dây chuyền, đạt tiêu chuẩn xuất khẩu.",
+    tagline: "Bề mặt đồng đều hơn, dễ giữ chuẩn trên dây chuyền.",
     manifesto:
       "Một lỗi hệ phủ trên dây chuyền không chỉ hỏng sản phẩm — nó ảnh hưởng cả đơn hàng xuất khẩu và uy tín với khách. Lotus tư vấn hệ theo loại nhựa để đạt cross-cut và ngoại quan theo tiêu chuẩn khách.",
     image: catComposite,
@@ -305,7 +305,7 @@ const CATEGORIES: Category[] = [
     index: "06",
     name: "Sơn sàn",
     nameEn: "Industrial Flooring",
-    tagline: "Chọn đúng hệ theo nền hiện trạng, tải trọng và môi trường.",
+    tagline: "Đúng hệ ngay từ đầu để đỡ bong tróc khi đưa vào sử dụng.",
     manifesto:
       "Chọn sai hệ sàn — giá rẻ lúc đầu, nhưng trả giá sau nghiệm thu khi sàn bong, xuống cấp, hoặc phải sửa cả khu vực vận hành. Lotus khảo sát hiện trạng để chọn hệ giảm rủi ro bong tróc.",
     image: catFloor,
@@ -532,7 +532,7 @@ function Index() {
             </h1>
 
             <p className="mt-6 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
-              Lotus giúp công trình, xưởng và nhà máy chuyển đổi qua hệ nước mà vẫn giữ chuẩn bề mặt và bàn giao.
+              Lotus giúp công trình, xưởng và nhà máy chuyển sang hệ nước mà vẫn giữ chuẩn bề mặt và bàn giao.
             </p>
 
             <div className="hidden md:flex mt-8 md:mt-14 flex-wrap items-center gap-x-8 gap-y-3">
@@ -599,7 +599,7 @@ function Index() {
 
           {/* Helper line */}
           <p className="mb-5 max-w-lg text-[0.95rem] leading-relaxed text-onyx/70">
-            Mỗi hệ phủ phù hợp với một nền, một yêu cầu bề mặt và một cách thi công khác nhau.
+            Mỗi hạng mục cần một hệ phủ riêng để bám nền đúng, lên mặt đẹp và đỡ làm lại.
           </p>
 
           {/* Mobile browsing hint with refined styling */}
@@ -856,9 +856,7 @@ function Index() {
         <section className="px-6 md:px-12 lg:px-16 py-24 md:py-36 border-t border-onyx/10">
           <div className="max-w-4xl mx-auto text-center r-rise">
             <p className="font-serif text-3xl md:text-5xl italic leading-[1.18] text-pretty">
-              Chúng tôi không bán thùng sơn —
-              mà chịu trách nhiệm cho <span className="not-italic" style={{ color: "var(--accent)" }}>cả hệ phủ</span>,
-              từ lớp lót đầu tiên đến lúc bàn giao.
+              Lotus không chỉ bán sơn. Lotus cùng bạn chốt cả hệ phủ, từ lớp lót đầu tiên đến lúc bàn giao.
             </p>
           </div>
         </section>
@@ -1157,10 +1155,10 @@ function Index() {
 
             <dl className="mt-24 md:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-12 border-t border-onyx/15 pt-14">
               {[
-                { k: "01", h: "Sản xuất", v: "Nhà máy tại Việt Nam, công thức kiểm soát nội bộ." },
-                { k: "02", h: "Hồ sơ", v: "ISO 9001, TDS & MSDS đầy đủ cho nghiệm thu." },
-                { k: "03", h: "Hiện trường", v: "Kỹ sư khảo sát, hỗ trợ xử lý tại công trình." },
-                { k: "04", h: "Theo dự án", v: "Hệ phủ tinh chỉnh theo bề mặt và quy mô thực tế." },
+                { k: "01", h: "Nhà máy nội bộ", v: "Nhà máy tại Việt Nam, công thức kiểm soát nội bộ." },
+                { k: "02", h: "Hồ sơ nghiệm thu", v: "ISO 9001, TDS & MSDS đầy đủ cho nghiệm thu." },
+                { k: "03", h: "Kỹ sư hiện trường", v: "Kỹ sư khảo sát, hỗ trợ xử lý tại công trình." },
+                { k: "04", h: "Tinh chỉnh theo dự án", v: "Hệ phủ tinh chỉnh theo bề mặt và quy mô thực tế." },
               ].map((t) => (
                 <div key={t.k} className="r-rise">
                   <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35">
@@ -1245,7 +1243,7 @@ function Index() {
                       rel="noopener"
                       className="group inline-flex items-center gap-3 mt-14 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx"
                     >
-                      <span>Hỏi tiếp về hệ {active.nameEn} qua Zalo</span>
+                      <span>Hỏi tiếp về hệ {active.name} qua Zalo</span>
                       <span
                         className="inline-block h-px w-8 group-hover:w-14 transition-all"
                         style={{ background: "var(--accent)" }}
@@ -1327,7 +1325,7 @@ function Index() {
                   </defs>
                   <text fill="currentColor" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "9px", letterSpacing: "0.32em", textTransform: "uppercase" }}>
                     <textPath href="#ctaCircle">
-                      Lotus · Tư vấn hệ sơn phù hợp qua Zalo · 
+                      Lotus · Nhắn Zalo để được tư vấn đúng hệ · 
                     </textPath>
                   </text>
                 </svg>
@@ -1342,7 +1340,7 @@ function Index() {
                 </div>
               </div>
               <span className="mt-8 font-mono text-[11px] uppercase tracking-[0.4em] text-clay/90 flourish">
-                Nhắn Zalo · Tư vấn hệ sơn phù hợp
+                Nhắn Zalo để được tư vấn đúng hệ
               </span>
               <span className="mt-3 font-serif italic text-clay/55 text-sm">
                 Gỗ · Kim loại · Giả gỗ · Composite · Sàn công nghiệp
