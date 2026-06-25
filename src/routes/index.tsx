@@ -731,7 +731,7 @@ function Index() {
 
           {/* Mobile progress indicator with horizontal segmented bar */}
           <div className="mobile-only mt-5 flex flex-col items-center gap-3">
-            <span className="font-mono text-[10px] tracking-[0.25em] text-onyx/50">
+            <span className="font-mono text-[10px] tracking-[0.25em] text-white">
               Hệ {String(CATEGORIES.findIndex((c) => c.id === activeId) + 1).padStart(2, '0')}/06
             </span>
             <div className="flex gap-1.5">
