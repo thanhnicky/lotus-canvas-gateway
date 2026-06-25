@@ -612,35 +612,10 @@ function Index() {
             </div>
           </div>
 
-          {/* Helper line */}
-          <p className="mb-5 max-w-lg text-[0.95rem] leading-relaxed text-onyx/70">
+          {/* Helper line - hidden on mobile to reduce text density */}
+          <p className="hidden md:block mb-5 max-w-lg text-[0.95rem] leading-relaxed text-onyx/70">
             Mỗi hạng mục cần một hệ phủ riêng để bám nền đúng, lên mặt đẹp và đỡ làm lại.
           </p>
-
-          {/* Mobile browsing hint with refined styling */}
-          <div className="mobile-only mb-5">
-            <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-onyx/[0.03] border border-onyx/[0.08] rounded-full backdrop-blur-sm">
-              <svg
-                className="w-3.5 h-3 text-onyx/50"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
-              </svg>
-              <p className="font-sans text-[13px] font-medium text-onyx/70 tracking-wide">
-                Vuốt ngang để xem 6 hệ sơn
-              </p>
-              <svg
-                className="w-3.5 h-3 text-onyx/50"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          </div>
 
           <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-12 md:pr-0">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
@@ -718,6 +693,31 @@ function Index() {
                 );
               })}
             </ol>
+          </div>
+
+          {/* Mobile browsing hint with refined styling - moved below card rail */}
+          <div className="mobile-only mt-5">
+            <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-onyx/[0.03] border border-onyx/[0.08] rounded-full backdrop-blur-sm">
+              <svg
+                className="w-3.5 h-3 text-onyx/50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
+              </svg>
+              <p className="font-sans text-[13px] font-medium text-onyx/70 tracking-wide">
+                Vuốt ngang để xem 6 hệ sơn
+              </p>
+              <svg
+                className="w-3.5 h-3 text-onyx/50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
           </div>
         </div>
 
