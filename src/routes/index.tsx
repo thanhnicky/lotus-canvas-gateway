@@ -789,11 +789,11 @@ function Index() {
 
         {/* ── Trust strip — customer logo grid ──────── */}
         <div className="border-b border-onyx/10 bg-clay-soft">
-          <div className="px-6 md:px-12 lg:px-16 py-6 md:py-8">
-            <p className="font-mono text-[12px] uppercase tracking-[0.32em] text-onyx/55 text-center mb-6">
+          <div className="px-6 md:px-12 lg:px-16 py-4 md:py-8">
+            <p className="font-mono text-[12px] uppercase tracking-[0.32em] text-onyx/55 text-center mb-4 md:mb-6">
               Đã triển khai cho xưởng, nhà máy và công trình thực tế.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 md:gap-8 items-center justify-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 md:gap-8 items-center justify-items-center">
               {[
                 { src: logoAlc, alt: "ALC" },
                 { src: logoMasteriseHome, alt: "Masterise Home" },
@@ -804,11 +804,11 @@ function Index() {
                 { src: logoScg, alt: "SCG" },
                 { src: logoSofitels, alt: "Sofitels" },
               ].map((logo) => (
-                <div key={logo.alt} className="flex items-center justify-center h-10 md:h-12">
+                <div key={logo.alt} className="flex items-center justify-center h-8 md:h-12 w-24 md:w-32">
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className="max-h-full w-auto object-contain opacity-60 hover:opacity-100 transition-opacity mix-blend-multiply"
+                    className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-opacity mix-blend-multiply"
                   />
                 </div>
               ))}
