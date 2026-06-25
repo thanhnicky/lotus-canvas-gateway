@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 
+import logoLotusPaint from "@/assets/logo-lotus-paint.png";
 import catWood from "@/assets/cat-wood.jpg";
 import catMetal from "@/assets/cat-metal.jpg";
 import catMetalWood from "@/assets/cat-metalwood.jpg";
@@ -524,9 +525,11 @@ function Index() {
 
         {/* Top bar: brand + tiny meta */}
         <header className="relative z-20 flex justify-between items-center px-6 md:px-12 lg:px-16 pt-10 md:pt-12">
-          <span className="font-serif text-2xl md:text-[2rem] tracking-tight leading-none italic">
-            Sơn&nbsp;Lotus
-          </span>
+          <img
+            src={logoLotusPaint}
+            alt="Sơn Lotus"
+            className="h-10 md:h-12 w-auto"
+          />
         </header>
 
         {/* Center — editorial cover */}
@@ -1368,20 +1371,20 @@ function Index() {
           <div className="col-span-12 md:col-span-5">
             <p className="font-serif italic text-[2rem] leading-none">Sơn&nbsp;Lotus</p>
             <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-              Nhà sản xuất sơn công nghiệp
+              CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ BÍCH TRANG
             </p>
             <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-              Việt Nam · ISO 9001
+              MST: 0313351528
             </p>
           </div>
 
           <div className="col-span-6 md:col-span-2">
-            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35 mb-4">Xưởng</div>
-            <div className="text-onyx/75 text-[0.95rem] leading-relaxed">Bình Dương</div>
+            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35 mb-4">Địa chỉ</div>
+            <div className="text-onyx/75 text-[0.95rem] leading-relaxed">99/5 Đường XTT26-1, Ấp 2, Xã Bà Điểm, TP.HCM</div>
           </div>
           <div className="col-span-6 md:col-span-2">
-            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35 mb-4">Văn phòng</div>
-            <div className="text-onyx/75 text-[0.95rem] leading-relaxed">TP. Hồ Chí Minh</div>
+            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35 mb-4">Hotline</div>
+            <div className="text-onyx/75 text-[0.95rem] leading-relaxed">0943 966 662</div>
           </div>
           <div className="col-span-12 md:col-span-3">
             <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/35 mb-4">Liên hệ</div>
