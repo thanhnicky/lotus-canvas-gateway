@@ -586,6 +586,18 @@ function Index() {
 
             <div className="hidden md:flex mt-8 md:mt-14 flex-wrap items-center gap-x-8 gap-y-3">
               <a
+                href="#he-son-overview"
+                className="group inline-flex items-center gap-3 border border-onyx/20 px-5 py-3 hover:border-onyx/40 transition-colors"
+              >
+                <span className="font-mono text-[11px] uppercase tracking-[0.32em]">
+                  Xem chi tiết 6 hệ sơn
+                </span>
+                <span
+                  className="inline-block h-px w-6 group-hover:w-10 transition-all"
+                  style={{ background: "var(--accent)" }}
+                />
+              </a>
+              <a
                 href={ZALO_URL}
                 target="_blank"
                 rel="noopener"
@@ -622,7 +634,7 @@ function Index() {
 
 
         {/* Bottom — editorial INDEX (the selector, type-specimen style) v2 */}
-        <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-4 md:pb-12">
+        <div id="he-son-overview" className="relative z-20 px-6 md:px-12 lg:px-16 pb-4 md:pb-12">
           <div className="flex items-end justify-between mb-5 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
             <div className="flex items-center gap-3">
               <span className="inline-block h-px w-8 bg-onyx/35" />
@@ -718,12 +730,12 @@ function Index() {
                               <p className="font-serif italic text-[12px] leading-snug text-onyx/65 max-w-[14rem]">
                                 {c.tagline}
                               </p>
-                              <a
-                                href={`/${c.id}`}
+                              <button
+                                onClick={() => setActiveId(c.id)}
                                 className="inline-block mt-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/50 hover:text-onyx transition-colors"
                               >
                                 Xem chi tiết hệ {c.signature.toLowerCase()}
-                              </a>
+                              </button>
                             </div>
                           </div>
                         </div>
@@ -824,15 +836,6 @@ function Index() {
 
         {/* ── Chapter cover — full bleed material plate ──────────── */}
         <section className="relative h-[88svh] min-h-[600px] overflow-hidden">
-          <div className="absolute top-6 left-6 md:left-12 z-20">
-            <a
-              href={`/${active.id}`}
-              className="inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/50 hover:text-onyx transition-colors"
-            >
-              <span className="inline-block h-px w-8 bg-onyx/30" />
-              Xem toàn bộ landing page {active.name}
-            </a>
-          </div>
           <img
             src={active.image}
             alt={`Mẫu sơn ${active.name} hệ nước Lotus`}
