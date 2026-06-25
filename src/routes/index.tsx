@@ -674,12 +674,7 @@ function Index() {
                       }}
                     />
                     <button
-                      onClick={() => {
-                        setActiveId(c.id);
-                        setTimeout(() => {
-                          document.getElementById('system-detail')?.scrollIntoView({ behavior: 'smooth' });
-                        }, 100);
-                      }}
+                      onClick={() => setActiveId(c.id)}
                       onMouseEnter={() => setActiveId(c.id)}
                       className={`group block w-[15rem] md:w-full text-left px-5 pt-5 pb-5 transition-colors duration-500 ${
                         isActive ? "bg-paper/60" : "hover:bg-onyx/[0.025]"
