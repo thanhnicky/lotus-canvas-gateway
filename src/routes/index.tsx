@@ -566,7 +566,7 @@ function Index() {
         {/* Center — editorial cover */}
         <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-4 md:pt-28">
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-4 md:mb-12 flex items-center gap-4">
+            <div className="font-mono text-[12px] tracking-[0.4em] uppercase text-onyx/55 mb-4 md:mb-12 flex items-center gap-4">
               <span className="inline-block h-px w-10 bg-onyx/45" />
               <span>SƠN CÔNG NGHIỆP HỆ NƯỚC</span>
             </div>
@@ -586,7 +586,7 @@ function Index() {
                 href="#he-son-overview"
                 className="group inline-flex items-center gap-3 border border-onyx/20 px-5 py-3 hover:border-onyx/40 transition-colors"
               >
-                <span className="font-mono text-[11px] uppercase tracking-[0.32em]">
+                <span className="font-mono text-[13px] uppercase tracking-[0.32em]">
                   Xem chi tiết 6 hệ sơn
                 </span>
                 <span
@@ -600,7 +600,7 @@ function Index() {
                 rel="noopener"
                 className="group inline-flex items-center gap-3 bg-onyx text-clay pl-5 pr-4 py-3 hover:bg-ash transition-colors"
               >
-                <span className="font-mono text-[11px] uppercase tracking-[0.32em]">
+                <span className="font-mono text-[13px] uppercase tracking-[0.32em]">
                   Nhắn Zalo để được tư vấn đúng hệ
                 </span>
                 <span
@@ -618,7 +618,7 @@ function Index() {
                 {active.index}
               </div>
               <div className="ml-auto h-px w-10" style={{ background: "var(--accent)" }} />
-              <div className="font-mono text-[10px] tracking-[0.32em] uppercase text-onyx/55">
+              <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-onyx/55">
                 {active.signature}
               </div>
             </div>
@@ -693,7 +693,7 @@ function Index() {
                             }`}
                           >
                             <div className="overflow-hidden">
-                              <p className="font-serif italic text-[12px] leading-snug text-onyx/65 max-w-[14rem]">
+                              <p className="font-serif italic text-[14px] leading-snug text-onyx/65 max-w-[14rem]">
                                 {c.tagline}
                               </p>
                               <button
@@ -704,7 +704,7 @@ function Index() {
                                     document.getElementById('system-detail')?.scrollIntoView({ behavior: 'smooth' });
                                   }, 100);
                                 }}
-                                className="inline-block mt-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/50 hover:text-onyx transition-colors"
+                                className="inline-block mt-3 font-mono text-[11px] uppercase tracking-[0.32em] text-onyx/50 hover:text-onyx transition-colors"
                               >
                                 Xem chi tiết hệ {c.signature.toLowerCase()}
                               </button>
@@ -721,7 +721,7 @@ function Index() {
 
           {/* Mobile progress indicator with horizontal segmented bar */}
           <div className="mobile-only mt-5 flex flex-col items-center gap-3">
-            <span className="font-mono text-[10px] tracking-[0.25em] text-white">
+            <span className="font-mono text-[12px] tracking-[0.25em] text-white">
               Hệ {String(CATEGORIES.findIndex((c) => c.id === activeId) + 1).padStart(2, '0')}/06
             </span>
             <div className="flex gap-1.5">
@@ -745,7 +745,7 @@ function Index() {
           aria-label="Nhắn Zalo tìm hiểu thêm"
           className="md:hidden absolute right-5 top-5 z-30 size-14 rounded-full bg-onyx text-clay flex items-center justify-center"
         >
-          <span className="font-mono text-[9px] uppercase tracking-widest">Zalo</span>
+          <span className="font-mono text-[11px] uppercase tracking-widest">Zalo</span>
         </a>
       </header>
 
