@@ -1163,13 +1163,13 @@ function Index() {
             <div className="flex md:grid md:grid-cols-4 lg:grid-cols-8 gap-8 md:gap-8 items-center overflow-x-auto hide-scrollbar px-2 md:px-0">
               {[
                 { src: logoAlc, alt: "ALC", scale: "scale-90 md:scale-100" },
-                { src: logoMasteriseHome, alt: "Masterise Home", scale: "scale-110 md:scale-100" },
-                { src: logoNemFur, alt: "Nem Fur", scale: "scale-100 md:scale-100" },
+                { src: logoMasteriseHome, alt: "Masterise Home", scale: "scale-120 md:scale-100" },
+                { src: logoNemFur, alt: "Nem Fur", scale: "scale-120 md:scale-100" },
                 { src: logoNovaland, alt: "Novaland", scale: "scale-85 md:scale-100" },
                 { src: logoPrime, alt: "Prime", scale: "scale-90 md:scale-100" },
-                { src: logoPullman, alt: "Pullman", scale: "scale-110 md:scale-100" },
+                { src: logoPullman, alt: "Pullman", scale: "scale-117 md:scale-100" },
                 { src: logoScg, alt: "SCG", scale: "scale-85 md:scale-100" },
-                { src: logoSofitels, alt: "Sofitels", scale: "scale-110 md:scale-100" },
+                { src: logoSofitels, alt: "Sofitels", scale: "scale-117 md:scale-100" },
               ].map((logo) => (
                 <div key={logo.alt} className="flex items-center justify-center h-8 md:h-12 w-28 md:w-32 shrink-0">
                   <img
