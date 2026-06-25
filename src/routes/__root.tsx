@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Sơn Lotus | Sơn công nghiệp hệ nước cho gỗ, kim loại, sàn và composite" },
       { property: "og:description", content: "Sơn Lotus là nhà sản xuất sơn công nghiệp hệ nước cho gỗ, kim loại, sơn giả gỗ, nhựa/composite và sàn sàn. Chọn đúng hệ sơn cho hạng mục của bạn và nhận tư vấn nhanh qua Zalo." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://sonlotus.vn" },
+      { property: "og:url", content: "https://sonhenuoc.com" },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ddaf166-0a8c-495b-b137-82ec5b0da9e8/id-preview-1920aef3--be56709a-1fbd-4804-afec-6b759e01330f.lovable.app-1782283895852.png" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Sơn Lotus | Sơn công nghiệp hệ nước cho gỗ, kim loại, sàn và composite" },
@@ -92,7 +92,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ddaf166-0a8c-495b-b137-82ec5b0da9e8/id-preview-1920aef3--be56709a-1fbd-4804-afec-6b759e01330f.lovable.app-1782283895852.png" },
     ],
     links: [
-      { rel: "canonical", href: "https://sonlotus.vn" },
+      { rel: "canonical", href: "https://sonhenuoc.com" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
@@ -109,7 +109,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           "name": "Sơn Lotus",
           "alternateName": "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ BÍCH TRANG",
-          "url": "https://sonlotus.vn",
+          "url": "https://sonhenuoc.com",
           "logo": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ddaf166-0a8c-495b-b137-82ec5b0da9e8/id-preview-1920aef3--be56709a-1fbd-4804-afec-6b759e01330f.lovable.app-1782283895852.png",
           "description": "Nhà sản xuất sơn công nghiệp hệ nước cho gỗ, kim loại, sơn giả gỗ, nhựa/composite và sàn sàn",
           "contactPoint": {
@@ -128,7 +128,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "LocalBusiness",
           "name": "Sơn Lotus",
           "image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ddaf166-0a8c-495b-b137-82ec5b0da9e8/id-preview-1920aef3--be56709a-1fbd-4804-afec-6b759e01330f.lovable.app-1782283895852.png",
-          "url": "https://sonlotus.vn",
+          "url": "https://sonhenuoc.com",
           "telephone": "+84-943-966-662",
           "address": {
             "@type": "PostalAddress",
