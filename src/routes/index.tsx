@@ -789,26 +789,26 @@ function Index() {
 
         {/* ── Trust strip — customer logo grid ──────── */}
         <div className="border-b border-onyx/10 bg-clay-soft">
-          <div className="px-6 md:px-12 lg:px-16 py-4 md:py-8">
-            <p className="font-mono text-[12px] uppercase tracking-[0.32em] text-onyx/55 text-center mb-4 md:mb-6">
+          <div className="px-6 md:px-12 lg:px-16 py-3 md:py-8">
+            <p className="font-mono text-[12px] uppercase tracking-[0.25em] md:tracking-[0.32em] text-onyx/55 text-center mb-3 md:mb-6">
               Đã triển khai cho xưởng, nhà máy và công trình thực tế.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 md:gap-8 items-center justify-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 md:gap-8 items-center justify-items-center">
               {[
-                { src: logoAlc, alt: "ALC" },
-                { src: logoMasteriseHome, alt: "Masterise Home" },
-                { src: logoNemFur, alt: "Nem Fur" },
-                { src: logoNovaland, alt: "Novaland" },
-                { src: logoPrime, alt: "Prime" },
-                { src: logoPullman, alt: "Pullman" },
-                { src: logoScg, alt: "SCG" },
-                { src: logoSofitels, alt: "Sofitels" },
+                { src: logoAlc, alt: "ALC", scale: "scale-90 md:scale-100" },
+                { src: logoMasteriseHome, alt: "Masterise Home", scale: "scale-110 md:scale-100" },
+                { src: logoNemFur, alt: "Nem Fur", scale: "scale-100 md:scale-100" },
+                { src: logoNovaland, alt: "Novaland", scale: "scale-85 md:scale-100" },
+                { src: logoPrime, alt: "Prime", scale: "scale-90 md:scale-100" },
+                { src: logoPullman, alt: "Pullman", scale: "scale-110 md:scale-100" },
+                { src: logoScg, alt: "SCG", scale: "scale-85 md:scale-100" },
+                { src: logoSofitels, alt: "Sofitels", scale: "scale-110 md:scale-100" },
               ].map((logo) => (
-                <div key={logo.alt} className="flex items-center justify-center h-8 md:h-12 w-24 md:w-32">
+                <div key={logo.alt} className="flex items-center justify-center h-6 md:h-12 w-20 md:w-32">
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-opacity mix-blend-multiply"
+                    className={`max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-opacity mix-blend-multiply ${logo.scale}`}
                   />
                 </div>
               ))}
