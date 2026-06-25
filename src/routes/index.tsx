@@ -63,15 +63,15 @@ const CATEGORIES: Category[] = [
     index: "01",
     name: "Sơn gỗ",
     nameEn: "Wood Coating",
-    tagline: "Đẹp không chỉ ở mẫu test. Đẹp cả khi chạy số lượng lớn.",
+    tagline: "Màu lặp lại giữa các đợt, ít làm lại khi chạy số lượng lớn.",
     manifesto:
-      "Xưởng cần một hệ sơn chạy được ổn định mỗi ngày, không phải một mẫu màu đẹp riêng lẻ.",
+      "Không phải bề mặt nào cũng dùng chung một công thức. Lotus giúp bạn chọn đúng hệ phủ để bám nền tốt hơn, lên mặt đẹp hơn và giảm rủi ro làm lại.",
     image: catWood,
     imageTone: "dark",
     accent: "#6f4a2a",
     signature: "Gỗ",
     description:
-      "Hệ sơn gỗ cho xưởng nội thất và nhà máy xuất khẩu. Màu lặp lại giữa các đợt, kiểm soát bóng/lì, ít làm lại khi chạy số lượng.",
+      "Dành cho xưởng nội thất và nhà máy xuất khẩu cần màu đồng đều giữa các đợt sản xuất. Lotus tư vấn hệ theo loại gỗ, yêu cầu độ bóng và quy trình chạy xưởng để giảm lỗi hoàn thiện.",
     applications: [
       "Xưởng thi công nội thất theo đơn",
       "Nhà máy nội thất xuất khẩu Mỹ / EU",
@@ -102,9 +102,9 @@ const CATEGORIES: Category[] = [
       { image: project3, title: "Nội thất nhà hàng", meta: "Kiểm soát độ lì theo yêu cầu thiết kế" },
     ],
     faq: [
-      { q: "Làm sao giữ màu đều giữa các đợt sản xuất?", a: "Lotus cố định công thức pha và lưu mẫu chuẩn cho từng mã hàng. Mỗi đợt giao đều kiểm tra đối chiếu trước khi xuất xưởng để xưởng không phải chỉnh lại tay." },
-      { q: "Đặt độ bóng theo yêu cầu khách cuối được không?", a: "Có. Mờ 5 / 10 / 20 / 30 / bán bóng / bóng gương đều pha được theo mã. Gửi mẫu hoặc thông số khách yêu cầu, Lotus làm tấm sample đối chiếu trước khi chạy số lượng." },
-      { q: "Nếu xưởng đang gặp lỗi hoàn thiện thì xử lý thế nào?", a: "Gửi ảnh sản phẩm lỗi và mô tả quy trình hiện tại qua Zalo. Đội kỹ thuật Lotus phân tích nguyên nhân và đề xuất hệ phù hợp để giảm làm lại." },
+      { q: "Hệ nước có đủ bền để thay thế dung môi không?", a: "Có. Hệ nước Lotus đạt chuẩn độ bóng, độ bền và ngoại quan tương đương hệ dung môi. Gửi yêu cầu bề mặt và điều kiện vận hành, Lotus đề xuất hệ nước phù hợp." },
+      { q: "Lotus có tư vấn đúng hệ theo từng nền vật liệu không?", a: "Có. Lotus khảo sát loại gỗ, độ ẩm và yêu cầu hoàn thiện để chọn hệ phù hợp. Gửi ảnh hiện trạng và mô tả quy trình, Lotus tư vấn hệ giảm rủi ro làm lại." },
+      { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại, loại dung môi đang dùng và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để không ảnh hưởng tiến độ xưởng." },
     ],
   },
   {
@@ -112,15 +112,15 @@ const CATEGORIES: Category[] = [
     index: "02",
     name: "Sơn kim loại",
     nameEn: "Metal & Steel",
-    tagline: "Đúng hệ chống ăn mòn cho từng môi trường vận hành.",
+    tagline: "Chọn đúng cấp chống ăn mòn theo môi trường công trình.",
     manifesto:
-      "Kết cấu thép hỏng vì chọn sai hệ, không phải vì sơn rẻ. Lotus đề xuất hệ theo môi trường thật.",
+      "Kết cấu thép hỏng vì chọn sai hệ, không phải vì sơn rẻ. Lotus đề xuất hệ theo môi trường thật để giảm rủi ro bảo hành sau bàn giao.",
     image: catMetal,
     imageTone: "dark",
     accent: "#4a5560",
     signature: "Kim loại",
     description:
-      "Hệ sơn kim loại Lotus cho nhà thầu kết cấu thép, nhà máy cơ khí và công trình công nghiệp — chọn đúng cấp chống ăn mòn theo môi trường (C3 / C4 / C5) để giảm rủi ro bảo hành sau bàn giao.",
+      "Dành cho nhà thầu kết cấu thép và công trình công nghiệp cần chọn đúng cấp chống ăn mòn (C3 / C4 / C5) theo môi trường vận hành. Lotus tư vấn hệ theo vị trí công trình để giảm rủi ro bảo hành.",
     applications: [
       "Kết cấu thép nhà xưởng, kho",
       "Công trình ven biển, môi trường C5",
@@ -150,9 +150,9 @@ const CATEGORIES: Category[] = [
       { image: project3, title: "Trần kim loại thương mại", meta: "Hoàn thiện matte kiểm soát" },
     ],
     faq: [
-      { q: "Cách chọn đúng cấp C3 / C4 / C5?", a: "Phụ thuộc vị trí công trình: trong nhà khô, gần đường, ven biển hay nhà máy hóa chất. Gửi vị trí và mô tả môi trường, Lotus đề xuất hệ tương ứng và tổng DFT cần đạt." },
-      { q: "Có thi công lên mạ kẽm nhúng nóng không?", a: "Có. Dùng Lotus Etch Primer làm lớp chuyển tiếp trước khi sơn epoxy, đảm bảo độ bám trên bề mặt mạ." },
-      { q: "Có hồ sơ kỹ thuật để trình nghiệm thu?", a: "Có. TDS, MSDS, ISO 9001 và báo cáo kiểm nghiệm độc lập đầy đủ cho hồ sơ thầu và biên bản nghiệm thu." },
+      { q: "Hệ nước có đủ bền để thay thế dung môi không?", a: "Có. Hệ nước Lotus đạt chuẩn chống ăn mòn và độ bền tương đương hệ dung môi cho môi trường C3 / C4. Gửi vị trí công trình, Lotus đề xuất hệ nước phù hợp." },
+      { q: "Lotus có tư vấn đúng hệ theo từng nền vật liệu không?", a: "Có. Lotus khảo sát vị trí công trình và môi trường vận hành để chọn đúng cấp chống ăn mòn. Gửi mô tả môi trường, Lotus đề xuất hệ và tổng DFT cần đạt." },
+      { q: "Lotus có hỗ trợ quy trình, định mức và hồ sơ kỹ thuật không?", a: "Có. Lotus cung cấp quy trình thi công, định mức tiêu thụ, TDS, MSDS và báo cáo kiểm nghiệm cho hồ sơ thầu và biên bản nghiệm thu." },
     ],
   },
   {
@@ -160,15 +160,15 @@ const CATEGORIES: Category[] = [
     index: "03",
     name: "Sơn giả gỗ trên kim loại",
     nameEn: "Wood-grain on Metal",
-    tagline: "Đẹp khi bàn giao, bền khi đưa vào công trình.",
+    tagline: "Vân gỗ chân thực, hạn chế bạc màu khi ra nắng.",
     manifesto:
-      "Chủ đầu tư không quan tâm bạn dùng bao nhiêu công đoạn. Họ chỉ nhìn vân gỗ sau một mùa nắng.",
+      "Chủ đầu tư không quan tâm bạn dùng bao nhiêu công đoạn. Họ chỉ nhìn vân gỗ sau một mùa nắng. Lotus chọn hệ đủ lớp để vân giữ tông lâu dài.",
     image: catMetalWood,
     imageTone: "light",
     accent: "#8a5a36",
     signature: "Gỗ kim loại",
     description:
-      "Hệ giả gỗ trên sắt và nhôm cho nhà thầu cần ra thẩm mỹ thật, quy trình rõ ràng và giảm rủi ro bàn giao. Vân gỗ chân thực ở khoảng nhìn thực tế, hạn chế bạc màu khi ra nắng.",
+      "Dành cho nhà thầu cần ra vân gỗ thẩm mỹ trên sắt và nhôm. Lotus tư vấn hệ theo vị trí công trình (trong nhà, ban công, ngoài trời) để vân giữ tông lâu dài và giảm rủi ro bàn giao.",
     applications: [
       "Cổng sắt, hàng rào, lam che nắng",
       "Cửa thép vân gỗ mặt tiền",
@@ -199,9 +199,9 @@ const CATEGORIES: Category[] = [
       { image: project1, title: "Cửa thép villa ven biển", meta: "Vân walnut, hệ kháng UV" },
     ],
     faq: [
-      { q: "Chọn hệ thế nào để không bạc màu sau vài tháng?", a: "Vấn đề thường không nằm ở vân mà ở lớp phủ hoàn thiện và lớp lót chống gỉ. Gửi vị trí công trình (trong nhà, ban công, ngoài trời trực tiếp), Lotus đề xuất hệ đủ lớp để vân giữ tông lâu dài." },
-      { q: "Có làm được vân walnut, teak, oak?", a: "Có. Thư viện trên 40 mẫu vân, đồng thời nhận làm mẫu mới theo ảnh khách gửi. Lotus làm tấm sample đối chiếu trước khi triển khai diện tích lớn." },
-      { q: "Nếu thi công sai hệ, sửa được không?", a: "Sửa được nhưng tốn công hơn làm đúng từ đầu — thường phải xử lý cả mặt. Vì vậy nên gửi ảnh hiện trạng và vật liệu nền trước, Lotus tư vấn đúng hệ ngay từ bước báo giá." },
+      { q: "Hệ nước có đủ bền để thay thế dung môi không?", a: "Có. Hệ nước Lotus đạt chuẩn kháng UV và độ bền tương đương hệ dung môi cho vân gỗ ngoài trời. Gửi vị trí công trình, Lotus đề xuất hệ nước phù hợp." },
+      { q: "Lotus có tư vấn đúng hệ theo từng nền vật liệu không?", a: "Có. Lotus khảo sát loại kim loại và vị trí công trình để chọn hệ đủ lớp. Gửi ảnh hiện trạng, Lotus tư vấn hệ giảm rủi ro bạc màu." },
+      { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để vân giữ tông và không ảnh hưởng tiến độ." },
     ],
   },
   {
@@ -209,15 +209,15 @@ const CATEGORIES: Category[] = [
     index: "04",
     name: "Sơn giả gỗ trên tấm xi măng",
     nameEn: "Wood-grain on Cement",
-    tagline: "Chọn đúng hệ ngay từ đầu để đỡ sửa cả một bề mặt đã lên vân.",
+    tagline: "Chọn đúng hệ ngay từ đầu để đỡ sửa cả bề mặt đã lên vân.",
     manifesto:
-      "Tấm cement không tha thứ cho hệ sai. Một lỗi nhỏ ở lớp lót là cả mảng vân phải làm lại.",
+      "Tấm cement không tha thứ cho hệ sai. Một lỗi nhỏ ở lớp lót là cả mảng vân phải làm lại. Lotus tư vấn hệ đủ lớp để vân không bong sau vài tháng.",
     image: catCementWood,
     imageTone: "light",
     accent: "#7a6347",
     signature: "Xi măng",
     description:
-      "Hệ giả gỗ trên Smartboard, Duraflex và tấm cement composite — dành cho nhà thầu cần ra vân thẩm mỹ trên mặt tiền, hàng rào, lam và ốp ngoại thất, với độ bền nước và độ bám phù hợp nền kiềm.",
+      "Dành cho nhà thầu cần ra vân gỗ trên Smartboard, Duraflex và tấm cement composite. Lotus tư vấn hệ lót kháng kiềm và quy trình thi công để vân không bong sau vài tháng.",
     applications: [
       "Ốp tường, trần ngoại thất",
       "Mặt tiền nhà phố vân gỗ",
@@ -248,9 +248,9 @@ const CATEGORIES: Category[] = [
       { image: project2, title: "Hệ lam trang trí", meta: "Cement composite vân oak" },
     ],
     faq: [
-      { q: "Tấm cement đã sơn cũ có thi công được không?", a: "Được, sau khi kiểm tra độ bám lớp sơn cũ và xử lý các điểm bong. Gửi ảnh hiện trạng để Lotus đánh giá có cần cạo bỏ hay phủ trực tiếp." },
-      { q: "Vân giả gỗ giữ được bao lâu ngoài trời?", a: "Trung bình 5–8 năm khi thi công đủ hệ, có lớp phủ hoàn thiện UV. Tuổi thọ phụ thuộc nhiều vào lớp lót kháng kiềm và độ ẩm nền lúc thi công — không phải vào vân." },
-      { q: "Báo giá tính theo gì?", a: "Theo diện tích, độ phức tạp của vân (1 tông, 2 tông, vân sâu) và vị trí công trình. Gửi ảnh hạng mục, vật liệu nền và m² để Lotus báo giá hệ phù hợp." },
+      { q: "Hệ nước có đủ bền để thay thế dung môi không?", a: "Có. Hệ nước Lotus đạt chuẩn độ bám và kháng UV tương đương hệ dung môi cho tấm cement. Gửi vị trí công trình, Lotus đề xuất hệ nước phù hợp." },
+      { q: "Lotus có tư vấn đúng hệ theo từng nền vật liệu không?", a: "Có. Lotus khảo sát loại tấm cement và độ ẩm nền để chọn hệ lót kháng kiềm phù hợp. Gửi ảnh hiện trạng, Lotus tư vấn hệ giảm rủi ro bong." },
+      { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để vân không bong và không ảnh hưởng tiến độ." },
     ],
   },
   {
@@ -258,15 +258,15 @@ const CATEGORIES: Category[] = [
     index: "05",
     name: "Sơn nhựa / composite",
     nameEn: "Plastic & Composite",
-    tagline: "Đẹp ở mẫu là chưa đủ. Nhà máy cần đẹp đồng đều trên cả dây chuyền.",
+    tagline: "Ngoại quan đồng đều trên dây chuyền, đạt tiêu chuẩn xuất khẩu.",
     manifesto:
-      "Một lỗi hệ phủ trên dây chuyền không chỉ hỏng sản phẩm — nó ảnh hưởng cả đơn hàng xuất khẩu và uy tín với khách.",
+      "Một lỗi hệ phủ trên dây chuyền không chỉ hỏng sản phẩm — nó ảnh hưởng cả đơn hàng xuất khẩu và uy tín với khách. Lotus tư vấn hệ theo loại nhựa để đạt cross-cut và ngoại quan theo tiêu chuẩn khách.",
     image: catComposite,
     imageTone: "light",
     accent: "#3d4a4a",
     signature: "Nhựa",
     description:
-      "Hệ phủ cho nhựa kỹ thuật và composite — dành cho nhà máy sản xuất hàng xuất khẩu cần bám dính ổn định trên nền khó, ngoại quan đồng đều và quy trình lặp lại được khi chạy số lượng.",
+      "Dành cho nhà máy sản xuất nhựa kỹ thuật và composite xuất khẩu cần bám dính ổn định trên nền khó. Lotus tư vấn hệ theo loại nhựa (PP / PE / ABS / PC) và quy trình xử lý bề mặt để đạt tiêu chuẩn QC khách.",
     applications: [
       "Sản phẩm nhựa kỹ thuật xuất khẩu",
       "Linh kiện composite, FRP, fiberglass",
@@ -295,9 +295,9 @@ const CATEGORIES: Category[] = [
       { image: project1, title: "Sản phẩm FRP", meta: "Composite ngoại thất, hệ kháng UV" },
     ],
     faq: [
-      { q: "Loại nhựa nào cần xử lý plasma hoặc flame?", a: "PP và PE thường cần flame hoặc plasma để mở năng lượng bề mặt. ABS, PC, FRP, fiberglass chỉ cần primer chuyên dụng. Gửi loại nhựa cụ thể để Lotus tư vấn quy trình." },
-      { q: "Làm sao đảm bảo ngoại quan đồng đều giữa các batch?", a: "Lotus cố định công thức, lưu mẫu chuẩn theo từng mã sản phẩm và đồng hành QC tại nhà máy trong giai đoạn chạy thử để chuẩn hóa thông số phun và sấy." },
-      { q: "Có hỗ trợ test đạt tiêu chuẩn khách xuất khẩu?", a: "Có. Lotus cung cấp tấm test cross-cut, DFT, độ bóng và phối hợp với QC nhà máy để đạt tiêu chuẩn ngoại quan của khách đầu cuối trước khi sản xuất chính thức." },
+      { q: "Hệ nước có đủ bền để thay thế dung môi không?", a: "Có. Hệ nước Lotus đạt chuẩn độ bám và ngoại quan tương đương hệ dung môi cho nhựa kỹ thuật. Gửi loại nhựa và yêu cầu QC, Lotus đề xuất hệ nước phù hợp." },
+      { q: "Lotus có tư vấn đúng hệ theo từng nền vật liệu không?", a: "Có. Lotus khảo sát loại nhựa (PP / PE / ABS / PC) và quy trình xử lý bề mặt để chọn hệ đạt cross-cut. Gửi loại nhựa cụ thể, Lotus tư vấn quy trình." },
+      { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại, loại nhựa và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để đạt tiêu chuẩn QC và không ảnh hưởng tiến độ." },
     ],
   },
   {
@@ -305,15 +305,15 @@ const CATEGORIES: Category[] = [
     index: "06",
     name: "Sơn sàn",
     nameEn: "Industrial Flooring",
-    tagline: "Sàn công nghiệp bền hay không phụ thuộc vào hệ chọn từ đầu.",
+    tagline: "Chọn đúng hệ theo nền hiện trạng, tải trọng và môi trường.",
     manifesto:
-      "Chọn sai hệ sàn — giá rẻ lúc đầu, nhưng trả giá sau nghiệm thu khi sàn bong, xuống cấp, hoặc phải sửa cả khu vực vận hành.",
+      "Chọn sai hệ sàn — giá rẻ lúc đầu, nhưng trả giá sau nghiệm thu khi sàn bong, xuống cấp, hoặc phải sửa cả khu vực vận hành. Lotus khảo sát hiện trạng để chọn hệ giảm rủi ro bong tróc.",
     image: catFloor,
     imageTone: "light",
     accent: "#525a55",
     signature: "Sàn",
     description:
-      "Hệ sơn sàn Epoxy và PU Lotus cho đơn vị thầu thi công sàn công nghiệp — chọn đúng hệ theo nền hiện trạng, tải trọng, hóa chất và độ ẩm để giảm rủi ro bong tróc sau bàn giao.",
+      "Dành cho đơn vị thầu thi công sàn công nghiệp cần chọn đúng hệ theo nền hiện trạng, tải trọng, hóa chất và độ ẩm. Lotus khảo sát cường độ bê tông và độ ẩm để đề xuất hệ giảm rủi ro bong tróc sau bàn giao.",
     applications: [
       "Nhà xưởng sản xuất, kho logistics",
       "Khu vực xe nâng, tải trọng nặng",
@@ -344,9 +344,9 @@ const CATEGORIES: Category[] = [
       { image: project2, title: "Kho logistics tải nặng", meta: "Epoxy chịu xe nâng" },
     ],
     faq: [
-      { q: "Nền bê tông yếu hoặc ẩm có thi công được không?", a: "Có, nhưng cần khảo sát trước. Lotus đo độ ẩm, cường độ kéo nhổ và đề xuất lớp xử lý nền phù hợp — thi công trên nền không đạt là nguyên nhân chính của bong tróc sớm." },
-      { q: "Khu vực xe nâng nặng nên chọn hệ nào?", a: "Tùy tải trọng và mật độ vận hành. Thường dùng Epoxy tự san phẳng 2–3 mm hoặc hệ mortar. Gửi tải trọng xe nâng, diện tích và môi trường hóa chất để Lotus thiết kế hệ đúng." },
-      { q: "Thời gian thi công và bàn giao?", a: "Thông thường: 24h cho đi bộ, 72h cho xe nâng và tải nặng. Tiến độ cụ thể phụ thuộc diện tích, số lớp và điều kiện môi trường — Lotus lên kế hoạch chi tiết theo từng dự án." },
+      { q: "Hệ nước có đủ bền để thay thế dung môi không?", a: "Có. Hệ nước Lotus đạt chuẩn chịu tải và kháng hóa chất tương đương hệ dung môi cho sàn công nghiệp. Gửi tải trọng và môi trường vận hành, Lotus đề xuất hệ nước phù hợp." },
+      { q: "Lotus có tư vấn đúng hệ theo từng nền vật liệu không?", a: "Có. Lotus khảo sát cường độ bê tông, độ ẩm và tải trọng để chọn hệ phù hợp. Gửi thông tin hiện trạng, Lotus đề xuất hệ giảm rủi ro bong tróc." },
+      { q: "Nếu tôi làm công trình hoặc nhà máy, nên gửi thông tin gì để được tư vấn nhanh?", a: "Gửi ảnh hiện trạng, diện tích, tải trọng xe nâng, môi trường hóa chất và yêu cầu hoàn thiện. Lotus khảo sát và đề xuất hệ trong vòng 24 giờ làm việc." },
     ],
   },
 ];
@@ -522,7 +522,7 @@ function Index() {
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
             <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-4 md:mb-12 flex items-center gap-4">
               <span className="inline-block h-px w-10 bg-onyx/45" />
-              <span>Nhà sản xuất sơn công nghiệp · Việt Nam</span>
+              <span>Nhà sản xuất sơn công nghiệp Việt Nam</span>
             </div>
             <h1 className="font-serif text-[clamp(3rem,8.5vw,9rem)] leading-[0.92] tracking-[-0.025em] text-balance text-onyx">
               <span className="block">Hệ nước đủ chuẩn</span>
@@ -532,7 +532,7 @@ function Index() {
             </h1>
 
             <p className="mt-6 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
-              Hệ sơn cho công trình, xưởng và nhà máy đang cần chuyển từ dung môi sang hệ nước mà vẫn giữ tiến độ, bề mặt và tiêu chuẩn bàn giao.
+              Lotus giúp công trình, xưởng và nhà máy chuyển đổi qua hệ nước mà vẫn giữ chuẩn bề mặt và bàn giao.
             </p>
 
             <div className="hidden md:flex mt-8 md:mt-14 flex-wrap items-center gap-x-8 gap-y-3">
@@ -543,7 +543,7 @@ function Index() {
                 className="group inline-flex items-center gap-3 bg-onyx text-clay pl-5 pr-4 py-3 hover:bg-ash transition-colors"
               >
                 <span className="font-mono text-[11px] uppercase tracking-[0.32em]">
-                  Nhắn Zalo · Tư vấn hệ sơn phù hợp
+                  Nhắn Zalo để được tư vấn đúng hệ
                 </span>
                 <span
                   className="inline-block h-px w-6 group-hover:w-10 transition-all"
@@ -577,7 +577,7 @@ function Index() {
           <div className="flex items-end justify-between mb-5 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
             <div className="flex items-center gap-3">
               <span className="inline-block h-px w-8 bg-onyx/35" />
-              <span>06 hệ phủ</span>
+              <span>Chọn đúng hệ sơn cho hạng mục của bạn</span>
             </div>
             {/* Mobile progress indicator with visual connection */}
             <div className="mobile-only flex items-center gap-2">
@@ -596,6 +596,11 @@ function Index() {
               </div>
             </div>
           </div>
+
+          {/* Helper line */}
+          <p className="mb-5 max-w-lg text-[0.95rem] leading-relaxed text-onyx/70">
+            Mỗi hệ phủ phù hợp với một nền, một yêu cầu bề mặt và một cách thi công khác nhau.
+          </p>
 
           {/* Mobile browsing hint with refined styling */}
           <div className="mobile-only mb-5">
@@ -719,10 +724,10 @@ function Index() {
         <section className="border-y border-onyx/15 bg-paper">
           <div className="px-6 md:px-12 lg:px-16 py-6 md:py-7 grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-8">
             {[
-              { k: "Hệ nước an toàn", v: "Không pha dung môi, giảm mùi thi công." },
-              { k: "Phù hợp xuất khẩu", v: "Hướng tới chuẩn Mỹ, EU." },
-              { k: "12 năm thực chiến", v: "Làm cùng xưởng, nhà máy, nhà thầu." },
-              { k: "Đúng hệ, đúng nền", v: "Tinh chỉnh theo từng hạng mục." },
+              { k: "Sơn hệ nước", v: "Giảm mùi, giảm dung môi, an toàn hơn khi thi công." },
+              { k: "Phù hợp xuất khẩu", v: "Hướng tới các yêu cầu kỹ thuật của đơn hàng vào Mỹ, EU." },
+              { k: "12 năm thực chiến", v: "Đồng hành cùng xưởng, nhà máy và công trình thật." },
+              { k: "Đúng hệ theo nền", v: "Tư vấn theo vật liệu, bề mặt và yêu cầu hoàn thiện." },
             ].map((t) => (
               <div key={t.k} className="flex items-start gap-3">
                 <span
@@ -1277,8 +1282,7 @@ function Index() {
               <span className="not-italic font-normal">Lotus đề xuất đúng hệ sơn.</span>
             </h3>
             <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-[1.85] r-rise r-d2">
-              Gửi ảnh hạng mục, vật liệu nền, yêu cầu hoàn thiện và quy mô công việc.
-              Kỹ thuật Lotus sẽ phản hồi hệ phủ, định mức và hướng thi công trong vòng 24 giờ làm việc.
+              Gửi ảnh hạng mục hoặc vật liệu nền. Lotus tư vấn đúng hệ phủ trước khi báo giá.
             </p>
 
             {/* Project intake — what to send */}
