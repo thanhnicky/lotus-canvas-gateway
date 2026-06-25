@@ -564,7 +564,7 @@ function Index() {
         </header>
 
         {/* Center — editorial cover */}
-        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-8 md:pt-28">
+        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-4 md:pt-28">
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
             <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-4 md:mb-12 flex items-center gap-4">
               <span className="inline-block h-px w-10 bg-onyx/45" />
