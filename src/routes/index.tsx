@@ -422,6 +422,23 @@ function Index() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Smooth scroll to selected card on mobile
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container || window.innerWidth >= 768) return;
+
+    const activeIndex = CATEGORIES.findIndex((c) => c.id === activeId);
+    if (activeIndex === 0) {
+      // Scroll to start for first card
+      container.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      // Scroll selected card into view with offset to show next card
+      const cardWidth = 240; // w-[15rem] = 15 * 16 = 240px
+      const targetScroll = activeIndex * cardWidth - 24; // Offset to show previous card slightly
+      container.scrollTo({ left: targetScroll, behavior: 'smooth' });
+    }
+  }, [activeId]);
+
   useEffect(() => {
     const el = heroRef.current;
     if (!el) return;
