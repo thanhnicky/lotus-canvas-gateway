@@ -682,7 +682,12 @@ function Index() {
                       }}
                     />
                     <button
-                      onClick={() => setActiveId(c.id)}
+                      onClick={() => {
+                        setActiveId(c.id);
+                        setTimeout(() => {
+                          document.getElementById('system-detail')?.scrollIntoView({ behavior: 'smooth' });
+                        }, 100);
+                      }}
                       onMouseEnter={() => setActiveId(c.id)}
                       className={`group block w-[15rem] md:w-full text-left px-5 pt-5 pb-5 transition-colors duration-500 ${
                         isActive ? "bg-paper/60" : "hover:bg-onyx/[0.025]"
@@ -730,23 +735,18 @@ function Index() {
                               <p className="font-serif italic text-[12px] leading-snug text-onyx/65 max-w-[14rem]">
                                 {c.tagline}
                               </p>
-                              {c.id === "wood" ? (
-                                <a
-                                  href="#he-son-go"
-                                  className="inline-block mt-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/50 hover:text-onyx transition-colors"
-                                >
-                                  Xem chi tiết hệ {c.signature.toLowerCase()}
-                                </a>
-                              ) : (
-                                <a
-                                  href={ZALO_URL}
-                                  target="_blank"
-                                  rel="noopener"
-                                  className="inline-block mt-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/50 hover:text-onyx transition-colors"
-                                >
-                                  Nhắn Zalo tư vấn hệ {c.signature.toLowerCase()}
-                                </a>
-                              )}
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setActiveId(c.id);
+                                  setTimeout(() => {
+                                    document.getElementById('system-detail')?.scrollIntoView({ behavior: 'smooth' });
+                                  }, 100);
+                                }}
+                                className="inline-block mt-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/50 hover:text-onyx transition-colors"
+                              >
+                                Xem chi tiết hệ {c.signature.toLowerCase()}
+                              </button>
                             </div>
                           </div>
                         </div>
@@ -846,7 +846,7 @@ function Index() {
         </div>
 
         {/* ── Chapter cover — full bleed material plate ──────────── */}
-        <section id="he-son-go" className="relative h-[88svh] min-h-[600px] overflow-hidden">
+        <section id="system-detail" className="relative h-[88svh] min-h-[600px] overflow-hidden">
           <img
             src={active.image}
             alt={`Mẫu sơn ${active.name} hệ nước Lotus`}
