@@ -793,7 +793,7 @@ function Index() {
             <p className="font-mono text-[12px] uppercase tracking-[0.2em] md:tracking-[0.32em] text-onyx/55 text-center mb-3 md:mb-6">
               Đã triển khai cho xưởng, nhà máy và công trình thực tế.
             </p>
-            <div className="flex md:grid md:grid-cols-4 lg:grid-cols-8 gap-6 md:gap-8 items-center overflow-x-auto hide-scrollbar px-2 md:px-0">
+            <div className="flex md:grid md:grid-cols-4 lg:grid-cols-8 gap-8 md:gap-8 items-center overflow-x-auto hide-scrollbar px-2 md:px-0">
               {[
                 { src: logoAlc, alt: "ALC", scale: "scale-90 md:scale-100" },
                 { src: logoMasteriseHome, alt: "Masterise Home", scale: "scale-110 md:scale-100" },
@@ -804,7 +804,7 @@ function Index() {
                 { src: logoScg, alt: "SCG", scale: "scale-85 md:scale-100" },
                 { src: logoSofitels, alt: "Sofitels", scale: "scale-110 md:scale-100" },
               ].map((logo) => (
-                <div key={logo.alt} className="flex items-center justify-center h-6 md:h-12 w-20 md:w-32 shrink-0">
+                <div key={logo.alt} className="flex items-center justify-center h-8 md:h-12 w-28 md:w-32 shrink-0">
                   <img
                     src={logo.src}
                     alt={logo.alt}
