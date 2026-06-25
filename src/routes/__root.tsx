@@ -77,20 +77,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sơn Lotus — Hệ sơn công nghiệp cho xưởng, nhà thầu và nhà máy" },
-      { name: "description", content: "Nhà sản xuất sơn Việt Nam. Hệ sơn gỗ, kim loại, giả gỗ, composite và sàn công nghiệp — chọn đúng hệ ngay từ đầu, giảm làm lại, dễ bàn giao." },
+      { title: "Sơn Lotus | Sơn công nghiệp hệ nước cho gỗ, kim loại, sàn và composite" },
+      { name: "description", content: "Sơn Lotus là nhà sản xuất sơn công nghiệp hệ nước cho gỗ, kim loại, sơn giả gỗ, nhựa/composite và sàn sàn. Chọn đúng hệ sơn cho hạng mục của bạn và nhận tư vấn nhanh qua Zalo." },
+      { name: "robots", content: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" },
       { name: "author", content: "Lotus" },
-      { property: "og:title", content: "Sơn Lotus — Đúng hệ sơn cho công trình thật" },
-      { property: "og:description", content: "Lotus đề xuất hệ phủ theo vật liệu nền, môi trường và quy mô — cho xưởng nội thất, nhà thầu kết cấu, nhà máy xuất khẩu và đơn vị thi công sàn." },
+      { property: "og:title", content: "Sơn Lotus | Sơn công nghiệp hệ nước cho gỗ, kim loại, sàn và composite" },
+      { property: "og:description", content: "Sơn Lotus là nhà sản xuất sơn công nghiệp hệ nước cho gỗ, kim loại, sơn giả gỗ, nhựa/composite và sàn sàn. Chọn đúng hệ sơn cho hạng mục của bạn và nhận tư vấn nhanh qua Zalo." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@sonlotus" },
-      { name: "twitter:title", content: "Sơn Lotus — Đúng hệ sơn cho công trình thật" },
-      { name: "twitter:description", content: "Lotus đề xuất hệ phủ theo vật liệu nền, môi trường và quy mô — cho xưởng nội thất, nhà thầu kết cấu, nhà máy xuất khẩu và đơn vị thi công sàn." },
+      { property: "og:url", content: "https://sonlotus.vn" },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ddaf166-0a8c-495b-b137-82ec5b0da9e8/id-preview-1920aef3--be56709a-1fbd-4804-afec-6b759e01330f.lovable.app-1782283895852.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Sơn Lotus | Sơn công nghiệp hệ nước cho gỗ, kim loại, sàn và composite" },
+      { name: "twitter:description", content: "Sơn Lotus là nhà sản xuất sơn công nghiệp hệ nước cho gỗ, kim loại, sơn giả gỗ, nhựa/composite và sàn sàn. Chọn đúng hệ sơn cho hạng mục của bạn và nhận tư vấn nhanh qua Zalo." },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ddaf166-0a8c-495b-b137-82ec5b0da9e8/id-preview-1920aef3--be56709a-1fbd-4804-afec-6b759e01330f.lovable.app-1782283895852.png" },
     ],
     links: [
+      { rel: "canonical", href: "https://sonlotus.vn" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
@@ -99,6 +101,46 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap",
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Sơn Lotus",
+          "alternateName": "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ BÍCH TRANG",
+          "url": "https://sonlotus.vn",
+          "logo": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ddaf166-0a8c-495b-b137-82ec5b0da9e8/id-preview-1920aef3--be56709a-1fbd-4804-afec-6b759e01330f.lovable.app-1782283895852.png",
+          "description": "Nhà sản xuất sơn công nghiệp hệ nước cho gỗ, kim loại, sơn giả gỗ, nhựa/composite và sàn sàn",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+84-943-966-662",
+            "contactType": "customer service",
+            "areaServed": "VN",
+            "availableLanguage": "Vietnamese"
+          }
+        })
+      },
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Sơn Lotus",
+          "image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7ddaf166-0a8c-495b-b137-82ec5b0da9e8/id-preview-1920aef3--be56709a-1fbd-4804-afec-6b759e01330f.lovable.app-1782283895852.png",
+          "url": "https://sonlotus.vn",
+          "telephone": "+84-943-966-662",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "99/5 Đường XTT26-1, Ấp 2, Xã Bà Điểm",
+            "addressLocality": "TP. Hồ Chí Minh",
+            "addressCountry": "VN"
+          },
+          "areaServed": "VN",
+          "description": "Nhà sản xuất sơn công nghiệp hệ nước cho gỗ, kim loại, sơn giả gỗ, nhựa/composite và sàn sàn"
+        })
+      }
+    ]
   }),
   shellComponent: RootShell,
   component: RootComponent,

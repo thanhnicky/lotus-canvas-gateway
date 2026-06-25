@@ -476,12 +476,31 @@ function Index() {
   }, []);
 
   return (
-    <div
-      className="bg-clay text-onyx grain"
-      style={{ ["--accent" as string]: active.accent } as CSSProperties}
-    >
+    <>
+      {/* FAQPage JSON-LD Schema for active category */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": active.faq.map((f) => ({
+              "@type": "Question",
+              "name": f.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": f.a
+              }
+            }))
+          })
+        }}
+      />
+      <div
+        className="bg-clay text-onyx grain"
+        style={{ ["--accent" as string]: active.accent } as CSSProperties}
+      >
       {/* ╔══════════════════════ HERO ══════════════════════╗ */}
-      <section
+      <header
         ref={heroRef}
         className="relative min-h-[100svh] flex flex-col overflow-hidden bg-clay"
       >
@@ -490,7 +509,7 @@ function Index() {
           <img
             key={active.id + "-bg"}
             src={active.image}
-            alt=""
+            alt={`Mẫu sơn ${active.name} hệ nước Lotus`}
             width={1920}
             height={1200}
             className="absolute inset-0 w-full h-full object-cover plate-in drift"
@@ -604,7 +623,7 @@ function Index() {
           <div className="flex items-end justify-between mb-5 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
             <div className="flex items-center gap-3">
               <span className="inline-block h-px w-8 bg-onyx/35" />
-              <span>Chọn đúng hệ sơn cho hạng mục của bạn</span>
+              <h2 className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">Chọn đúng hệ sơn cho hạng mục của bạn</h2>
             </div>
             {/* Mobile progress indicator with visual connection */}
             <div className="mobile-only flex items-center gap-2">
@@ -668,7 +687,7 @@ function Index() {
                         >
                           <img
                             src={c.image}
-                            alt=""
+                            alt={`Mẫu sơn ${c.name} hệ nước Lotus`}
                             width={24}
                             height={120}
                             loading={c.id === CATEGORIES[0].id ? "eager" : "lazy"}
@@ -743,7 +762,7 @@ function Index() {
         >
           <span className="font-mono text-[9px] uppercase tracking-widest">Zalo</span>
         </a>
-      </section>
+      </header>
 
       {/* ╔════════════════════ LOWER · CHAPTERS ════════════════════╗ */}
       <main key={active.id} className="relative">
@@ -798,7 +817,7 @@ function Index() {
         <section className="relative h-[88svh] min-h-[600px] overflow-hidden">
           <img
             src={active.image}
-            alt={active.name}
+            alt={`Mẫu sơn ${active.name} hệ nước Lotus`}
             width={1920}
             height={1200}
             loading="lazy"
@@ -895,7 +914,7 @@ function Index() {
             <img
               key={active.id + "-pause"}
               src={active.image}
-              alt={active.name}
+              alt={`Mẫu sơn ${active.name} hệ nước Lotus`}
               width={1920}
               height={1280}
               loading="lazy"
@@ -1117,7 +1136,7 @@ function Index() {
           <figure className="relative w-full h-[70svh] min-h-[460px] overflow-hidden r-scale">
             <img
               src={active.projects[0].image}
-              alt={active.projects[0].title}
+              alt={`Dự án ${active.projects[0].title} - ${active.projects[0].meta}`}
               width={1920}
               height={1200}
               loading="lazy"
@@ -1143,7 +1162,7 @@ function Index() {
                 <div className="relative aspect-[4/5] overflow-hidden bg-linen">
                   <img
                     src={p.image}
-                    alt={p.title}
+                    alt={`Dự án ${p.title} - ${p.meta}`}
                     width={1000}
                     height={1250}
                     loading="lazy"
@@ -1210,9 +1229,9 @@ function Index() {
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 md:mb-24">
               <div className="r-rise">
-                <h3 className="font-serif text-4xl md:text-5xl italic leading-tight">
+                <h2 className="font-serif text-4xl md:text-5xl italic leading-tight">
                   Hỏi trước khi báo giá.
-                </h3>
+                </h2>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/40 md:text-right r-rise r-d1">
                 Câu hỏi thường gặp · {active.signature}
@@ -1290,7 +1309,7 @@ function Index() {
         <section className="relative px-6 md:px-12 lg:px-16 py-32 md:py-48 bg-onyx text-clay overflow-hidden">
           <img
             src={active.image}
-            alt=""
+            alt={`Mẫu sơn ${active.name} hệ nước Lotus`}
             width={1920}
             height={1200}
             loading="lazy"
@@ -1302,10 +1321,10 @@ function Index() {
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-clay/60 mb-6 r-rise">
               Gửi dự án cho Lotus
             </p>
-            <h3 className="font-serif text-5xl md:text-7xl leading-[1.02] italic font-light r-rise r-d1 text-pretty">
+            <h2 className="font-serif text-5xl md:text-7xl leading-[1.02] italic font-light r-rise r-d1 text-pretty">
               Gửi hạng mục cho Lotus <br />
               <span className="not-italic font-normal">trước khi bạn quyết định hệ sơn.</span>
-            </h3>
+            </h2>
             <p className="mt-8 max-w-2xl mx-auto text-clay/80 leading-[1.85] r-rise r-d2">
               Chỉ cần gửi ảnh bề mặt, vật liệu nền hoặc yêu cầu hoàn thiện. Lotus sẽ đề xuất hệ phủ phù hợp để bạn đỡ chọn sai ngay từ đầu.
             </p>
@@ -1422,5 +1441,6 @@ function Index() {
 
 
     </div>
+    </>
   );
 }
