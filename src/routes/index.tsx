@@ -580,6 +580,9 @@ function Index() {
             <p className="mt-6 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
               Lotus giúp xưởng, nhà máy và nhà thầu chuyển sang hệ nước mà không phải đánh đổi chất lượng hoàn thiện và tiến độ bàn giao.
             </p>
+            <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/40">
+              Sơn Hệ Nước là website giới thiệu các hệ sơn công nghiệp hệ nước của Sơn Lotus
+            </p>
 
             <div className="hidden md:flex mt-8 md:mt-14 flex-wrap items-center gap-x-8 gap-y-3">
               <a
@@ -715,6 +718,12 @@ function Index() {
                               <p className="font-serif italic text-[12px] leading-snug text-onyx/65 max-w-[14rem]">
                                 {c.tagline}
                               </p>
+                              <a
+                                href={`/${c.id}`}
+                                className="inline-block mt-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/50 hover:text-onyx transition-colors"
+                              >
+                                Xem chi tiết hệ {c.signature.toLowerCase()}
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -815,6 +824,15 @@ function Index() {
 
         {/* ── Chapter cover — full bleed material plate ──────────── */}
         <section className="relative h-[88svh] min-h-[600px] overflow-hidden">
+          <div className="absolute top-6 left-6 md:left-12 z-20">
+            <a
+              href={`/${active.id}`}
+              className="inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/50 hover:text-onyx transition-colors"
+            >
+              <span className="inline-block h-px w-8 bg-onyx/30" />
+              Xem toàn bộ landing page {active.name}
+            </a>
+          </div>
           <img
             src={active.image}
             alt={`Mẫu sơn ${active.name} hệ nước Lotus`}
@@ -1346,6 +1364,10 @@ function Index() {
                 </li>
               ))}
             </ul>
+
+            <p className="mt-10 font-mono text-[9px] uppercase tracking-[0.32em] text-clay/50 r-rise r-d2">
+              Gửi: ảnh bề mặt · nền vật liệu · yêu cầu hoàn thiện
+            </p>
 
             <a
               href={ZALO_URL}
