@@ -66,7 +66,7 @@ const CATEGORIES: Category[] = [
     nameEn: "Wood Coating",
     tagline: "Giữ màu ổn định giữa các đợt, giảm lỗi hoàn thiện khi chạy số lượng lớn.",
     manifesto:
-      "Không phải bề mặt nào cũng dùng chung một công thức. Lotus giúp bạn chọn đúng hệ phủ, đúng quy trình và đúng mức hoàn thiện cho từng hạng mục.",
+      "Không phải bề mặt nào cũng dùng chung một công thức. Lotus giúp bạn chọn đúng hệ phủ cho đúng hạng mục.",
     image: catWood,
     imageTone: "dark",
     accent: "#6f4a2a",
@@ -103,7 +103,7 @@ const CATEGORIES: Category[] = [
       { image: project3, title: "Nội thất nhà hàng", meta: "Kiểm soát độ lì theo yêu cầu thiết kế" },
     ],
     faq: [
-      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đáp ứng độ bóng, độ bền và ngoại quan phù hợp cho yêu cầu hoàn thiện và bàn giao thực tế." },
+      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đủ cho yêu cầu độ bóng, độ bền và ngoại quan trong thi công và bàn giao thực tế." },
       { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại, loại dung môi đang dùng và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để không ảnh hưởng tiến độ xưởng." },
       { q: "Lotus có tư vấn đúng hệ theo từng loại nền và yêu cầu hoàn thiện không?", a: "Có. Lotus khảo sát loại gỗ, độ ẩm và yêu cầu hoàn thiện để chọn hệ phù hợp. Gửi ảnh hiện trạng và mô tả quy trình, Lotus tư vấn hệ giảm rủi ro làm lại." },
       { q: "Nếu tôi làm công trình hoặc chạy sản xuất, Lotus có hỗ trợ quy trình và hồ sơ kỹ thuật không?", a: "Có. Lotus cung cấp quy trình thi công, định mức tiêu thụ, TDS, MSDS và báo cáo kiểm nghiệm cho hồ sơ thầu và biên bản nghiệm thu." },
@@ -153,7 +153,7 @@ const CATEGORIES: Category[] = [
       { image: project3, title: "Trần kim loại thương mại", meta: "Hoàn thiện matte kiểm soát" },
     ],
     faq: [
-      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đáp ứng độ bóng, độ bền và ngoại quan phù hợp cho yêu cầu hoàn thiện và bàn giao thực tế." },
+      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đủ cho yêu cầu độ bóng, độ bền và ngoại quan trong thi công và bàn giao thực tế." },
       { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại, loại dung môi đang dùng và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để không ảnh hưởng tiến độ công trình." },
       { q: "Lotus có tư vấn đúng hệ theo từng loại nền và yêu cầu hoàn thiện không?", a: "Có. Lotus khảo sát vị trí công trình và môi trường vận hành để chọn đúng cấp chống ăn mòn. Gửi mô tả môi trường, Lotus đề xuất hệ và tổng DFT cần đạt." },
       { q: "Nếu tôi làm công trình hoặc chạy sản xuất, Lotus có hỗ trợ quy trình và hồ sơ kỹ thuật không?", a: "Có. Lotus cung cấp quy trình thi công, định mức tiêu thụ, TDS, MSDS và báo cáo kiểm nghiệm cho hồ sơ thầu và biên bản nghiệm thu." },
@@ -204,7 +204,7 @@ const CATEGORIES: Category[] = [
       { image: project1, title: "Cửa thép villa ven biển", meta: "Vân walnut, hệ kháng UV" },
     ],
     faq: [
-      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đáp ứng độ bóng, độ bền và ngoại quan phù hợp cho yêu cầu hoàn thiện và bàn giao thực tế." },
+      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đủ cho yêu cầu độ bóng, độ bền và ngoại quan trong thi công và bàn giao thực tế." },
       { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại, loại dung môi đang dùng và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để vân giữ tông và không ảnh hưởng tiến độ." },
       { q: "Lotus có tư vấn đúng hệ theo từng loại nền và yêu cầu hoàn thiện không?", a: "Có. Lotus khảo sát loại kim loại và vị trí công trình để chọn hệ đủ lớp. Gửi ảnh hiện trạng, Lotus tư vấn hệ giảm rủi ro bạc màu." },
       { q: "Nếu tôi làm công trình hoặc chạy sản xuất, Lotus có hỗ trợ quy trình và hồ sơ kỹ thuật không?", a: "Có. Lotus cung cấp quy trình thi công, định mức tiêu thụ, TDS, MSDS và báo cáo kiểm nghiệm cho hồ sơ thầu và biên bản nghiệm thu." },
@@ -255,7 +255,7 @@ const CATEGORIES: Category[] = [
       { image: project2, title: "Hệ lam trang trí", meta: "Cement composite vân oak" },
     ],
     faq: [
-      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đáp ứng độ bóng, độ bền và ngoại quan phù hợp cho yêu cầu hoàn thiện và bàn giao thực tế." },
+      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đủ cho yêu cầu độ bóng, độ bền và ngoại quan trong thi công và bàn giao thực tế." },
       { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại, loại dung môi đang dùng và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để vân không bong và không ảnh hưởng tiến độ." },
       { q: "Lotus có tư vấn đúng hệ theo từng loại nền và yêu cầu hoàn thiện không?", a: "Có. Lotus khảo sát loại tấm cement và độ ẩm nền để chọn hệ lót kháng kiềm phù hợp. Gửi ảnh hiện trạng, Lotus tư vấn hệ giảm rủi ro bong." },
       { q: "Nếu tôi làm công trình hoặc chạy sản xuất, Lotus có hỗ trợ quy trình và hồ sơ kỹ thuật không?", a: "Có. Lotus cung cấp quy trình thi công, định mức tiêu thụ, TDS, MSDS và báo cáo kiểm nghiệm cho hồ sơ thầu và biên bản nghiệm thu." },
@@ -304,7 +304,7 @@ const CATEGORIES: Category[] = [
       { image: project1, title: "Sản phẩm FRP", meta: "Composite ngoại thất, hệ kháng UV" },
     ],
     faq: [
-      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đáp ứng độ bóng, độ bền và ngoại quan phù hợp cho yêu cầu hoàn thiện và bàn giao thực tế." },
+      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đủ cho yêu cầu độ bóng, độ bền và ngoại quan trong thi công và bàn giao thực tế." },
       { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại, loại nhựa và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để đạt tiêu chuẩn QC và không ảnh hưởng tiến độ." },
       { q: "Lotus có tư vấn đúng hệ theo từng loại nền và yêu cầu hoàn thiện không?", a: "Có. Lotus khảo sát loại nhựa (PP / PE / ABS / PC) và quy trình xử lý bề mặt để chọn hệ đạt cross-cut. Gửi loại nhựa cụ thể, Lotus tư vấn quy trình." },
       { q: "Nếu tôi làm công trình hoặc chạy sản xuất, Lotus có hỗ trợ quy trình và hồ sơ kỹ thuật không?", a: "Có. Lotus cung cấp quy trình thi công, định mức tiêu thụ, TDS, MSDS và báo cáo kiểm nghiệm cho hồ sơ thầu và biên bản nghiệm thu." },
@@ -355,7 +355,7 @@ const CATEGORIES: Category[] = [
       { image: project2, title: "Kho logistics tải nặng", meta: "Epoxy chịu xe nâng" },
     ],
     faq: [
-      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đáp ứng độ bóng, độ bền và ngoại quan phù hợp cho yêu cầu hoàn thiện và bàn giao thực tế." },
+      { q: "Hệ nước có đủ cứng và đủ bền để thay hệ dung môi không?", a: "Có. Với đúng hệ phủ và đúng quy trình, hệ nước Lotus đủ cho yêu cầu độ bóng, độ bền và ngoại quan trong thi công và bàn giao thực tế." },
       { q: "Tôi đang dùng hệ dung môi, muốn chuyển sang hệ nước thì bắt đầu từ đâu?", a: "Gửi thông tin về quy trình hiện tại, loại dung môi đang dùng và yêu cầu chuyển đổi. Lotus đề xuất lộ trình chuyển đổi từng bước để không ảnh hưởng tiến độ thi công." },
       { q: "Lotus có tư vấn đúng hệ theo từng loại nền và yêu cầu hoàn thiện không?", a: "Có. Lotus khảo sát cường độ bê tông, độ ẩm và tải trọng để chọn hệ phù hợp. Gửi thông tin hiện trạng, Lotus đề xuất hệ giảm rủi ro bong tróc." },
       { q: "Nếu tôi làm công trình hoặc chạy sản xuất, Lotus có hỗ trợ quy trình và hồ sơ kỹ thuật không?", a: "Có. Lotus cung cấp quy trình thi công, định mức tiêu thụ, TDS, MSDS và báo cáo kiểm nghiệm cho hồ sơ thầu và biên bản nghiệm thu." },
@@ -578,7 +578,7 @@ function Index() {
                 />
               </a>
               <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                Kỹ thuật phản hồi trong 24h
+                Gửi ảnh hạng mục, Lotus phản hồi hướng hệ phù hợp
               </span>
             </div>
           </div>
