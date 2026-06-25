@@ -78,6 +78,7 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   ::selection { background-color: var(--color-onyx); color: var(--color-clay); }
 }

@@ -638,7 +638,7 @@ function Index() {
 
         {/* Bottom — editorial INDEX (the selector, type-specimen style) v2 */}
         <div id="he-son-overview" className="relative z-20 px-6 md:px-12 lg:px-16 pb-4 md:pb-12">
-          <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-12 md:pr-0">
+          <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-12 md:pr-0 max-w-full">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
               {CATEGORIES.map((c) => {
                 const isActive = c.id === activeId;
@@ -1048,7 +1048,7 @@ function Index() {
             </div>
 
 
-            <div className="r-wipe overflow-x-auto">
+            <div className="r-wipe overflow-x-auto max-w-full">
               <table className="w-full text-left">
                 <thead>
                   <tr className="font-mono text-[10px] uppercase tracking-[0.25em] text-onyx/55">
@@ -1160,7 +1160,7 @@ function Index() {
             <p className="font-mono text-[12px] uppercase tracking-[0.2em] md:tracking-[0.32em] text-onyx/55 text-center mb-3 md:mb-6">
               Đã triển khai cho xưởng, nhà máy và công trình thực tế.
             </p>
-            <div className="flex md:grid md:grid-cols-4 lg:grid-cols-8 gap-8 md:gap-8 items-center overflow-x-auto hide-scrollbar px-2 md:px-0">
+            <div className="flex md:grid md:grid-cols-4 lg:grid-cols-8 gap-8 md:gap-8 items-center overflow-x-auto hide-scrollbar px-2 md:px-0 max-w-full">
               {[
                 { src: logoAlc, alt: "ALC", scale: "scale-90 md:scale-100" },
                 { src: logoMasteriseHome, alt: "Masterise Home", scale: "scale-120 md:scale-100" },
