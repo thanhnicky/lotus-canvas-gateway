@@ -14,6 +14,15 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 
+import logoAlc from "@/assets/logo-alc.webp";
+import logoMasteriseHome from "@/assets/logo-masterise-home.webp";
+import logoNemFur from "@/assets/logo-nem-fur.webp";
+import logoNovaland from "@/assets/logo-novaland.webp";
+import logoPrime from "@/assets/logo-prime.webp";
+import logoPullman from "@/assets/logo-pullman.webp";
+import logoScg from "@/assets/logo-scg.webp";
+import logoSofitels from "@/assets/logo-Sofitels.webp";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -778,12 +787,32 @@ function Index() {
           </div>
         </section>
 
-        {/* ── Trust strip — static trust row ──────── */}
+        {/* ── Trust strip — customer logo grid ──────── */}
         <div className="border-b border-onyx/10 bg-clay-soft">
           <div className="px-6 md:px-12 lg:px-16 py-6 md:py-8">
-            <p className="font-mono text-[12px] uppercase tracking-[0.32em] text-onyx/55 text-center">
+            <p className="font-mono text-[12px] uppercase tracking-[0.32em] text-onyx/55 text-center mb-6">
               Đã triển khai cho xưởng, nhà máy và công trình thực tế.
             </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 md:gap-8 items-center justify-items-center">
+              {[
+                { src: logoAlc, alt: "ALC" },
+                { src: logoMasteriseHome, alt: "Masterise Home" },
+                { src: logoNemFur, alt: "Nem Fur" },
+                { src: logoNovaland, alt: "Novaland" },
+                { src: logoPrime, alt: "Prime" },
+                { src: logoPullman, alt: "Pullman" },
+                { src: logoScg, alt: "SCG" },
+                { src: logoSofitels, alt: "Sofitels" },
+              ].map((logo) => (
+                <div key={logo.alt} className="flex items-center justify-center h-10 md:h-12">
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="max-h-full w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
