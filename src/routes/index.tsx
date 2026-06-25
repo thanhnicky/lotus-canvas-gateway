@@ -518,9 +518,9 @@ function Index() {
         </header>
 
         {/* Center — editorial cover */}
-        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-12 md:pt-28">
+        <div className="relative z-10 flex-1 grid grid-cols-12 gap-6 px-6 md:px-12 lg:px-16 pt-8 md:pt-28">
           <div className="col-span-12 md:col-span-9 self-center max-w-[1100px]">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-6 md:mb-12 flex items-center gap-4">
+            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-onyx/55 mb-4 md:mb-12 flex items-center gap-4">
               <span className="inline-block h-px w-10 bg-onyx/45" />
               <span>Nhà sản xuất sơn công nghiệp · Việt Nam</span>
             </div>
@@ -531,11 +531,11 @@ function Index() {
               </span>
             </h1>
 
-            <p className="mt-8 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
+            <p className="mt-6 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
               Hệ sơn cho công trình, xưởng và nhà máy đang cần chuyển từ dung môi sang hệ nước mà vẫn giữ tiến độ, bề mặt và tiêu chuẩn bàn giao.
             </p>
 
-            <div className="mt-8 md:mt-14 flex flex-wrap items-center gap-x-8 gap-y-3">
+            <div className="hidden md:flex mt-8 md:mt-14 flex-wrap items-center gap-x-8 gap-y-3">
               <a
                 href={ZALO_URL}
                 target="_blank"
@@ -573,7 +573,7 @@ function Index() {
 
 
         {/* Bottom — editorial INDEX (the selector, type-specimen style) v2 */}
-        <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-6 md:pb-12">
+        <div className="relative z-20 px-6 md:px-12 lg:px-16 pb-4 md:pb-12">
           <div className="flex items-end justify-between mb-5 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
             <div className="flex items-center gap-3">
               <span className="inline-block h-px w-8 bg-onyx/35" />
