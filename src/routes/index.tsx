@@ -608,9 +608,6 @@ function Index() {
                   style={{ background: "var(--accent)" }}
                 />
               </a>
-              <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                Gửi ảnh hạng mục, Lotus phản hồi hướng hệ phù hợp
-              </span>
             </div>
           </div>
 
@@ -632,13 +629,6 @@ function Index() {
 
         {/* Bottom — editorial INDEX (the selector, type-specimen style) v2 */}
         <div id="he-son-overview" className="relative z-20 px-6 md:px-12 lg:px-16 pb-4 md:pb-12">
-          <div className="flex items-end justify-between mb-5 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">
-            <div className="flex items-center gap-3">
-              <span className="inline-block h-px w-8 bg-onyx/35" />
-              <h2 className="font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/55">Chọn đúng hệ sơn cho hạng mục của bạn</h2>
-            </div>
-          </div>
-
           <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-12 md:pr-0">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
               {CATEGORIES.map((c) => {
