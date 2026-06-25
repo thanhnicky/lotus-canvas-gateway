@@ -778,23 +778,12 @@ function Index() {
           </div>
         </section>
 
-        {/* ── Subtle ticker — material signature in motion ──────── */}
-        <div className="border-b border-onyx/10 overflow-hidden bg-clay-soft">
-          <div className="flex whitespace-nowrap ticker-track py-3">
-            {[...Array(2)].map((_, i) => (
-              <div key={i} className="flex items-center gap-10 px-6 font-mono text-[10px] uppercase tracking-[0.32em] text-onyx/45">
-                <span style={{ color: "var(--accent)" }}>{active.index} · {active.signature}</span>
-                <span>—</span>
-                <span className="text-onyx/70">{active.signature}</span>
-                <span>—</span>
-                <span>{active.specs[0].label}: {active.specs[0].value}</span>
-                <span>—</span>
-                <span>{active.specs[1].label}: {active.specs[1].value}</span>
-                <span>—</span>
-                <span>Xưởng sơn Lotus · Bình Dương</span>
-                <span>—</span>
-              </div>
-            ))}
+        {/* ── Trust strip — static trust row ──────── */}
+        <div className="border-b border-onyx/10 bg-clay-soft">
+          <div className="px-6 md:px-12 lg:px-16 py-6 md:py-8">
+            <p className="font-mono text-[12px] uppercase tracking-[0.32em] text-onyx/55 text-center">
+              Đã triển khai cho xưởng, nhà máy và công trình thực tế.
+            </p>
           </div>
         </div>
 
