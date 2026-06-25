@@ -790,10 +790,10 @@ function Index() {
         {/* ── Trust strip — customer logo grid ──────── */}
         <div className="border-b border-onyx/10 bg-clay-soft">
           <div className="px-6 md:px-12 lg:px-16 py-3 md:py-8">
-            <p className="font-mono text-[12px] uppercase tracking-[0.25em] md:tracking-[0.32em] text-onyx/55 text-center mb-3 md:mb-6">
+            <p className="font-mono text-[12px] uppercase tracking-[0.2em] md:tracking-[0.32em] text-onyx/55 text-center mb-3 md:mb-6">
               Đã triển khai cho xưởng, nhà máy và công trình thực tế.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 md:gap-8 items-center justify-items-center">
+            <div className="flex md:grid md:grid-cols-4 lg:grid-cols-8 gap-6 md:gap-8 items-center overflow-x-auto hide-scrollbar px-2 md:px-0">
               {[
                 { src: logoAlc, alt: "ALC", scale: "scale-90 md:scale-100" },
                 { src: logoMasteriseHome, alt: "Masterise Home", scale: "scale-110 md:scale-100" },
@@ -804,7 +804,7 @@ function Index() {
                 { src: logoScg, alt: "SCG", scale: "scale-85 md:scale-100" },
                 { src: logoSofitels, alt: "Sofitels", scale: "scale-110 md:scale-100" },
               ].map((logo) => (
-                <div key={logo.alt} className="flex items-center justify-center h-6 md:h-12 w-20 md:w-32">
+                <div key={logo.alt} className="flex items-center justify-center h-6 md:h-12 w-20 md:w-32 shrink-0">
                   <img
                     src={logo.src}
                     alt={logo.alt}
