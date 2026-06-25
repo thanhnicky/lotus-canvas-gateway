@@ -808,7 +808,7 @@ function Index() {
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className="max-h-full w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                    className="max-h-full w-auto object-contain opacity-60 hover:opacity-100 transition-opacity mix-blend-multiply"
                   />
                 </div>
               ))}
