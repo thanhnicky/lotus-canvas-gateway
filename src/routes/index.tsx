@@ -762,7 +762,7 @@ function Index() {
       <main key={active.id} className="relative">
         {/* ── Manufacturer credentials — printed colophon strip ─── */}
         <section className="border-y border-onyx/15 bg-paper">
-          <div className="px-6 md:px-12 lg:px-16 py-6 md:py-7 grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-8">
+          <div className="px-6 md:px-12 lg:px-16 py-10 md:py-12 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8">
             {[
               { k: "Sơn hệ nước", v: "Giảm mùi, giảm dung môi, an toàn hơn khi thi công." },
               { k: "Phù hợp xuất khẩu", v: "Hướng tới các yêu cầu kỹ thuật của đơn hàng vào Mỹ, EU." },
@@ -775,10 +775,10 @@ function Index() {
                   style={{ background: "var(--accent)" }}
                 />
                 <div>
-                  <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/45">
+                  <div className="font-mono text-[10px] md:text-[11px] uppercase tracking-[0.32em] text-onyx/45">
                     {t.k}
                   </div>
-                  <div className="font-serif text-[15px] md:text-base italic text-onyx/85 leading-snug mt-0.5">
+                  <div className="font-serif text-[17px] md:text-xl italic text-onyx/85 leading-snug mt-0.5">
                     {t.v}
                   </div>
                 </div>
