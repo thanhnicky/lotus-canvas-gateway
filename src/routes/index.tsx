@@ -43,7 +43,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const ZALO_URL = "https://zalo.me/";
+const ZALO_URL = "https://zalo.me/0943966662";
 
 type Category = {
   id: string;
