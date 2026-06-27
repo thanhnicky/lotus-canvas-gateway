@@ -1449,7 +1449,7 @@ function Index() {
                 d="M 50,50 m -42,0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0"
               />
             </defs>
-            <text fill="currentColor" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "6px", letterSpacing: "0.2em", textTransform: "uppercase" }}>
+            <text fill="currentColor" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "7px", letterSpacing: "0.2em", textTransform: "uppercase" }}>
               <textPath href="#floatingCircle">
                 Zalo · Lotus ·
               </textPath>
@@ -1457,7 +1457,7 @@ function Index() {
           </svg>
           {/* Inner button */}
           <div className="relative size-10 rounded-full border-2 border-onyx/60 bg-clay flex items-center justify-center transition-all duration-500 group-hover:[background:var(--accent)] group-hover:[border-color:var(--accent)] group-hover:scale-110">
-            <span className="font-serif italic text-xl text-onyx leading-none">L</span>
+            <span className="font-serif italic text-xl leading-none" style={{ color: "#0068FF" }}>Z</span>
           </div>
         </div>
       </a>
