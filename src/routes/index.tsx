@@ -425,6 +425,28 @@ function Index() {
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const hasCuedRef = useRef(false);
 
+  // Hover delay for desktop - prevent rapid content changes
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleHover = (id: string) => {
+    // Clear any existing timeout
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+    }
+    // Set new timeout for 1s delay
+    hoverTimeoutRef.current = setTimeout(() => {
+      setActiveId(id);
+    }, 1000);
+  };
+
+  const handleHoverLeave = () => {
+    // Clear timeout when mouse leaves
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
+  };
+
   useEffect(() => {
     // Only on mobile, once per session
     if (window.innerWidth >= 768 || hasCuedRef.current) return;
@@ -658,7 +680,8 @@ function Index() {
                     />
                     <button
                       onClick={() => setActiveId(c.id)}
-                      onMouseEnter={() => setActiveId(c.id)}
+                      onMouseEnter={() => handleHover(c.id)}
+                      onMouseLeave={handleHoverLeave}
                       className={`group block w-[15rem] md:w-full text-left px-5 pt-5 pb-5 transition-colors duration-500 ${
                         isActive ? "bg-paper/60" : "hover:bg-onyx/[0.025]"
                       }`}
