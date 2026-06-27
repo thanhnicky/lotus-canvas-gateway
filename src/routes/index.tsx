@@ -1409,10 +1409,10 @@ function Index() {
                 </svg>
                 {/* Inner mark */}
                 <div
-                  className="relative size-24 md:size-28 rounded-full border border-clay/30 flex flex-col items-center justify-center transition-all duration-700 group-hover:[background:var(--accent)] group-hover:[border-color:var(--accent)]"
+                  className="relative size-24 md:size-28 rounded-full border-2 border-clay/60 flex flex-col items-center justify-center transition-all duration-700 group-hover:[background:var(--accent)] group-hover:[border-color:var(--accent)] bg-onyx/50"
                 >
                   <span className="font-serif italic text-3xl text-clay leading-none">L</span>
-                  <span className="font-mono text-[8px] uppercase tracking-[0.32em] text-clay/60 mt-1">
+                  <span className="font-mono text-[8px] uppercase tracking-[0.32em] text-clay/80 mt-1">
                     Zalo
                   </span>
                 </div>
