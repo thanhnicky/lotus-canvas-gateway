@@ -1428,6 +1428,40 @@ function Index() {
         </section>
       </main>
 
+      {/* ── Floating Zalo CTA (mobile only) ───────────────────────── */}
+      <a
+        href={ZALO_URL}
+        target="_blank"
+        rel="noopener"
+        className="md:hidden fixed bottom-6 right-6 z-50 group"
+        aria-label="Nhắn Zalo tư vấn"
+      >
+        <div className="relative size-14 flex items-center justify-center">
+          {/* Rotating microtext ring */}
+          <svg
+            viewBox="0 0 100 100"
+            className="absolute inset-0 spin-slow text-onyx/60"
+            aria-hidden
+          >
+            <defs>
+              <path
+                id="floatingCircle"
+                d="M 50,50 m -42,0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0"
+              />
+            </defs>
+            <text fill="currentColor" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "6px", letterSpacing: "0.2em", textTransform: "uppercase" }}>
+              <textPath href="#floatingCircle">
+                Zalo · Lotus ·
+              </textPath>
+            </text>
+          </svg>
+          {/* Inner button */}
+          <div className="relative size-10 rounded-full border-2 border-onyx/60 bg-clay flex items-center justify-center transition-all duration-500 group-hover:[background:var(--accent)] group-hover:[border-color:var(--accent)] group-hover:scale-110">
+            <span className="font-serif italic text-xl text-onyx leading-none">L</span>
+          </div>
+        </div>
+      </a>
+
       {/* ── Footer ─────────────────────────────────────────────── */}
       <footer className="px-6 md:px-12 lg:px-16 pt-20 pb-14 bg-clay">
         <div className="grid grid-cols-12 gap-10 md:gap-8 border-t border-onyx/15 pt-16">
