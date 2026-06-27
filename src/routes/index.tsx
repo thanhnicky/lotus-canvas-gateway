@@ -1436,7 +1436,7 @@ function Index() {
         className="md:hidden fixed bottom-6 right-6 z-50 group"
         aria-label="Nhắn Zalo tư vấn"
       >
-        <div className="relative size-14 flex items-center justify-center">
+        <div className="relative size-[3.875rem] flex items-center justify-center">
           {/* Rotating microtext ring */}
           <svg
             viewBox="0 0 100 100"
@@ -1456,8 +1456,8 @@ function Index() {
             </text>
           </svg>
           {/* Inner button */}
-          <div className="relative size-10 rounded-full border-2 border-onyx/60 bg-clay flex items-center justify-center transition-all duration-500 group-hover:[background:var(--accent)] group-hover:[border-color:var(--accent)] group-hover:scale-110">
-            <span className="font-serif italic text-xl leading-none" style={{ color: "#0068FF" }}>Z</span>
+          <div className="relative size-11 rounded-full border-2 border-onyx/60 bg-clay flex items-center justify-center transition-all duration-500 group-hover:[background:var(--accent)] group-hover:[border-color:var(--accent)] group-hover:scale-110">
+            <span className="font-serif italic text-2xl leading-none" style={{ color: "#0068FF" }}>Z</span>
           </div>
         </div>
       </a>
