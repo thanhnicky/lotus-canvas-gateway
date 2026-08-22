@@ -39,3 +39,6 @@ Tài liệu chiến lược nội dung SEO + AIO + GEO toàn diện và các bà
 | **18** | So Sánh Sơn Sàn Epoxy Nước vs Gốc Dầu | `/so-sanh/son-san-epoxy-he-nuoc-vs-goc-dau/` | ✅ Hoàn thành | [Xem bài viết](./articles/18-so-sanh-son-san-epoxy-he-nuoc-vs-goc-dau.md) |
 | **19** | Lỗi Phồng Rộp Sơn Sàn Do Ẩm Ngược | `/loi-thi-cong/phong-rop-son-san-am/` | ✅ Hoàn thành | [Xem bài viết](./articles/19-loi-phong-rop-son-san-am.md) |
 | **20** | Cân Chỉnh Súng Phun & Cải Tạo Phòng Sấy Gió | `/chuyen-doi-he-nuoc/chinh-sung-phun-phong-say/` | ✅ Hoàn thành | [Xem bài viết](./articles/20-chinh-sung-phun-phong-say-he-nuoc.md) |
+| **21** | Đào Tạo Thợ Sơn & Chuyển Đổi Kỹ Thuật | `/chuyen-doi-he-nuoc/dao-tao-tho-son/` | ✅ Hoàn thành | [Xem bài viết](./articles/21-dao-tao-tho-son-he-nuoc.md) |
+| **22** | Bài Toán TCO Chi Phí 1m2 Sơn Hệ Nước vs PU | `/chuyen-doi-he-nuoc/tco-chi-phi-son-he-nuoc/` | ✅ Hoàn thành | [Xem bài viết](./articles/22-tco-chi-phi-son-he-nuoc.md) |
+| **23** | Sub-Pillar Sơn Composite Hệ Nước (FRP/Carbon) | `/son-composite-he-nuoc/` | ✅ Hoàn thành | [Xem bài viết](./articles/23-son-composite-he-nuoc.md) |

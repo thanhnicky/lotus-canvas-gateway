@@ -1053,4 +1053,140 @@ export const ARTICLES: Record<string, ArticleData> = {
     ],
     relatedSlugs: ["chuyen-doi-he-nuoc", "loi-thi-cong/xu-long-go", "so-sanh/son-go-he-nuoc-vs-son-pu"],
   },
+
+  "chuyen-doi-he-nuoc/dao-tao-tho-son": {
+    slug: "chuyen-doi-he-nuoc/dao-tao-tho-son",
+    category: "Cẩm Nang Chuyển Đổi",
+    categorySlug: "chuyen-doi-he-nuoc",
+    title: "Đào Tạo Thợ Sơn Hệ Nước: 5 Thay Đổi Kỹ Thuật Cốt Lõi Cho Thợ PU | Lotus",
+    metaDescription:
+      "Hướng dẫn đào tạo thợ sơn chuyển đổi từ sơn PU sang sơn hệ nước: Thay đổi thói quen ép màng dày, kỹ thuật xả nhám tơi mịn sau 45 phút, chỉnh súng không chảy sệ.",
+    h1: "Giáo Trình Huấn Luyện Thợ Sơn Chuyển Đổi Từ Sơn PU Sang Sơn Hệ Nước Trong 3 Ngày",
+    publishedAt: "22/08/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Rào cản lớn nhất khi chuyển sang sơn hệ nước là thói quen của thợ sơn. Do quen ép lớp dày và pha xăng thơm, thợ sơn thường làm sơn nước bị chảy sệ và lâu khô. Giáo trình huấn luyện 3 ngày của Lotus tập trung vào 5 thay đổi cốt lõi: pha loãng nước tối đa 10%, phun lớp mỏng tận dụng tính năng tự dàn phẳng, xả nhám P320 tơi mịn sau 45 phút và rửa súng bằng nước sạch.",
+    whenToChoose: [
+      "Áp dụng khi nhà máy hoặc xưởng mộc bắt đầu đưa dòng sơn hệ nước vào sản xuất thử nghiệm.",
+    ],
+    whenNotToChoose: [],
+    lotusRecommendation:
+      "Hãy để thợ sơn chính tự tay phun thử 2 mẫu cánh tủ: một mẫu dùng PU và một mẫu dùng Lotus. Khi thấy màng sơn không cay mắt, giữ vân sáng trong vắt và xả nhám nhẹ tay, thợ sẽ tự tin chuyển đổi ngay.",
+    sections: [
+      {
+        id: "thao-tac-tay-nghe",
+        heading: "1. Bảng đối chiếu thao tác tay nghề PU vs Sơn Nước",
+        table: {
+          headers: ["Thao tác", "Thói quen cũ với Sơn PU", "Thao tác chuẩn Sơn Nước Lotus"],
+          rows: [
+            ["Pha loãng", "30% - 50% xăng thơm độc hại", "5% - 10% nước sạch tinh khiết"],
+            ["Khoảng cách súng", "12 - 15 cm (Gần)", "18 - 22 cm (Xa hơn để tơi hạt)"],
+            ["Tốc độ đưa tay", "Chậm và đè vạt", "Nhanh và đều nhịp hơn 25%"],
+            ["Độ chồng mí", "70% (Dày cộm)", "50% - 60% (Vừa đủ)"],
+            ["Giấy nhám xả", "P240 (Chà mạnh)", "P320 - P400 (Lướt nhẹ)"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Rửa súng phun bằng nước sạch có sạch hết sơn không?",
+        answer:
+          "Nước sạch rửa trôi 100% sơn hệ nước khi màng sơn còn ướt. Chỉ cần tráng cốc và xịt thông béc 10 giây là súng sạch hoàn toàn mà không tốn 1 đồng tiền xăng rửa.",
+      },
+    ],
+    relatedSlugs: ["chuyen-doi-he-nuoc", "chuyen-doi-he-nuoc/chinh-sung-phun-phong-say", "chuyen-doi-he-nuoc/tco-chi-phi-son-he-nuoc"],
+  },
+
+  "chuyen-doi-he-nuoc/tco-chi-phi-son-he-nuoc": {
+    slug: "chuyen-doi-he-nuoc/tco-chi-phi-son-he-nuoc",
+    category: "Cẩm Nang Chuyển Đổi",
+    categorySlug: "chuyen-doi-he-nuoc",
+    title: "Bài Toán TCO: Chi Phí Thực Tế 1m2 Sơn Hệ Nước vs Sơn PU | Lotus",
+    metaDescription:
+      "Phân tích chi phí sở hữu toàn diện (TCO): Sơn hệ nước tiết kiệm 15-20% chi phí thực tế trên 1m2 so với sơn PU nhờ 0đ tiền xăng thơm, hàm lượng rắn cao và giảm phí PCCC.",
+    h1: "Bài Toán TCO (Total Cost of Ownership): Chi Phí Thực Tế Trên 1m2 Sơn Hệ Nước Liệu Có Đắt Hơn Sơn PU?",
+    publishedAt: "22/08/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Mặc dù giá mua 1kg sơn nước cao hơn sơn PU từ 15% - 25%, nhưng tính trên tổng chi phí m2 hoàn thiện (TCO), sơn hệ nước giúp tiết kiệm từ 10.000 đ đến 18.000 đ/m2. Lý do: chi phí dung môi pha loãng bằng 0đ (dùng nước thay cho xăng thơm), hàm lượng chất rắn hữu dụng cao (38-45%), tỷ lệ hao hụt bay hơi thấp và cắt giảm chi phí bảo hiểm cháy nổ PCCC.",
+    whenToChoose: [
+      "Ban giám đốc và phòng mua hàng cần đánh giá bài toán kinh tế trước khi ký kết hợp đồng cung ứng chuyển đổi nhà máy.",
+    ],
+    whenNotToChoose: [],
+    lotusRecommendation:
+      "Tính toán dự toán theo công thức: Tổng chi phí = (Khối lượng sơn x Giá sơn) + (Khối lượng dung môi x Giá dung môi) + Chi phí hao hụt để thấy rõ mức tiết kiệm thực tế của hệ nước.",
+    sections: [
+      {
+        id: "bang-tco-1m2",
+        heading: "1. Bảng bóc tách 8 cấu phần chi phí hoàn thiện 1m2 gỗ",
+        table: {
+          headers: ["Cấu phần", "Sơn PU Truyền Thống", "Sơn Nước Lotus", "Chênh lệch"],
+          rows: [
+            ["Đơn giá sơn gốc", "80.000 đ / kg", "105.000 đ / kg", "+ 25.000 đ"],
+            ["Dung môi pha", "Xăng thơm (8.500 đ/m2)", "Nước sạch (0 đ)", "- 8.500 đ"],
+            ["Chất cứng", "9.500 đ / m2", "0 đ (1K) / 4.000 đ (2K)", "- 5.500 đ"],
+            ["Xăng rửa súng", "3.000 đ / m2", "Nước sạch (0 đ)", "- 3.000 đ"],
+            ["Phí PCCC / Khí thải", "5.000 đ / m2", "1.000 đ / m2", "- 4.000 đ"],
+            ["TỔNG CHI PHÍ TCO/M2", "46.000 đ / m2", "36.600 đ / m2", "TIẾT KIỆM -20.4%"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Nhà máy sơn 10.000 m2/tháng chuyển đổi sang sơn nước tiết kiệm được bao nhiêu?",
+        answer:
+          "Mức tiết kiệm vật tư trực tiếp và xăng thơm là khoảng 94.000.000 đ/tháng (hơn 1.1 tỷ đồng mỗi năm), chưa kể tiết kiệm chi phí bảo hiểm cháy nổ và than hoạt tính lọc khí.",
+      },
+    ],
+    relatedSlugs: ["chuyen-doi-he-nuoc", "so-sanh/son-go-he-nuoc-vs-son-pu", "chuyen-doi-he-nuoc/dao-tao-tho-son"],
+  },
+
+  "son-composite-he-nuoc": {
+    slug: "son-composite-he-nuoc",
+    category: "Sơn Composite Hệ Nước",
+    categorySlug: "son-composite-he-nuoc",
+    title: "Sơn Composite Hệ Nước (FRP, Carbon): Bám Dính 5B, Kháng UV Vượt Trội | Lotus",
+    metaDescription:
+      "Sơn phủ composite hệ nước Lotus bám dính trực tiếp trên nhựa FRP, sợi Carbon, bề mặt Gelcoat. Chống nứt chân chim, kháng hóa chất, chịu thời tiết biển, không ố vàng.",
+    h1: "Sơn Composite Hệ Nước Chuyên Dụng: Giải Pháp Phủ Bảo Vệ Vật Liệu FRP, Carbon & Gelcoat",
+    publishedAt: "22/08/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn composite hệ nước Lotus là hệ sơn phủ polymer phân tán nước công nghệ cao, giải quyết triệt để thách thức bám dính trên các bề mặt vật liệu trơn nhẵn như nhựa sợi thủy tinh (FRP), sợi Carbon (CFRP) và lớp Gelcoat. Sơn đạt độ bám dính 5B (ASTM D3359), dẻo dai chống nứt vỡ khi uốn cong, kháng sương muối biển 1000h và bền màu ngoài trời trên 5 năm.",
+    whenToChoose: [
+      "Vỏ cano, du thuyền, phao cứu sinh, chi tiết ô tô làm từ sợi Carbon hoặc nhựa FRP.",
+      "Bồn bể composite chứa hóa chất công nghiệp, tượng mỹ thuật công viên chủ đề.",
+    ],
+    whenNotToChoose: [
+      "Bề mặt composite mới tháo khuôn chưa lau sạch lớp sáp chống dính khuôn (Mould Release Wax).",
+    ],
+    lotusRecommendation:
+      "Dùng khăn sạch tẩm dung dịch tẩy sáp chuyên dụng Lotus Wax Remover lau kỹ theo 1 chiều, sau đó dùng nhám xốp P320 chà mờ đều bề mặt Gelcoat trước khi phun sơn lót.",
+    sections: [
+      {
+        id: "chi-tieu-composite",
+        heading: "1. Bảng chỉ tiêu cơ lý tính của Sơn Composite Lotus",
+        table: {
+          headers: ["Chỉ tiêu", "Phương pháp", "Tiêu chuẩn", "Kết quả Sơn Lotus", "Đánh giá"],
+          rows: [
+            ["Bám dính ô cờ FRP/Carbon", "ASTM D3359", "5B (Không tróc)", "Điểm 5B (Tuyệt đối)", "ĐẠT CHUẨN CAO NHẤT"],
+            ["Độ bền uốn cong", "ASTM D522 (Trục 3mm)", "Không nứt", "Không nứt gãy", "DẺO DAI THEO PHÔI"],
+            ["Kháng sương muối biển", "ASTM B117", "1000 giờ", "Không phồng rộp", "CHỊU MÔI TRƯỜNG BIỂN"],
+            ["Kháng UV thời tiết", "ASTM G154 (1500h)", "ΔE < 2.0", "ΔE < 1.2 (Không phai)", "BỀN MÀU 5 NĂM"],
+            ["Hàm lượng VOCs", "EPA Method 24", "< 150 g/L", "< 40 g/L", "AN TOÀN XƯỞNG SƠN"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Sơn composite Lotus có chịu được việc ngâm liên tục trong nước biển không?",
+        answer:
+          "Có. Dòng sơn 2K Composite Lotus tạo mạng lưới liên kết ngang polyurethane chịu ngâm nước biển mặn liên tục mà không bị thủy phân hay phồng rộp.",
+      },
+    ],
+    relatedSlugs: ["son-kim-loai-he-nuoc", "chuyen-doi-he-nuoc"],
+  },
 };
