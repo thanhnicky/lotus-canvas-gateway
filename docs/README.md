@@ -22,6 +22,10 @@ Tài liệu chiến lược nội dung SEO + AIO + GEO toàn diện và các bà
 | **01** | Sub-Pillar Sơn Gỗ Hệ Nước | `/son-go-he-nuoc/` | ✅ Hoàn thành | [Xem bài viết](./articles/01-son-go-he-nuoc.md) |
 | **02** | Sub-Pillar Sơn Kim Loại Hệ Nước | `/son-kim-loai-he-nuoc/` | ✅ Hoàn thành | [Xem bài viết](./articles/02-son-kim-loai-he-nuoc.md) |
 | **03** | Sub-Pillar Sơn Giả Gỗ Hệ Nước | `/son-gia-go-he-nuoc/` | ✅ Hoàn thành | [Xem bài viết](./articles/03-son-gia-go-he-nuoc.md) |
-| **04** | Sub-Pillar Sơn Sàn Hệ Nước | `/son-san-he-nuoc/` | ⏳ Đang chờ đợt 2 | — |
-| **05** | Pillar Cẩm Nang Chuyển Đổi Sang Sơn Hệ Nước | `/chuyen-doi-he-nuoc/` | ⏳ Đang chờ đợt 2 | — |
-| **06** | So Sánh Sơn Gỗ Hệ Nước Và Sơn PU | `/so-sanh/son-go-he-nuoc-vs-son-pu/` | ⏳ Đang chờ đợt 2 | — |
+| **04** | Sub-Pillar Sơn Sàn Hệ Nước | `/son-san-he-nuoc/` | ✅ Hoàn thành | [Xem bài viết](./articles/04-son-san-he-nuoc.md) |
+| **05** | Pillar Cẩm Nang Chuyển Đổi Sang Sơn Hệ Nước | `/chuyen-doi-he-nuoc/` | ✅ Hoàn thành | [Xem bài viết](./articles/05-chuyen-doi-sang-son-he-nuoc.md) |
+| **06** | So Sánh Sơn Gỗ Hệ Nước Và Sơn PU | `/so-sanh/son-go-he-nuoc-vs-son-pu/` | ✅ Hoàn thành | [Xem bài viết](./articles/06-so-sanh-son-go-he-nuoc-vs-pu.md) |
+| **07** | So Sánh Sơn Kim Loại Hệ Nước Và Sơn Dầu Alkyd | `/so-sanh/son-kim-loai-he-nuoc-vs-he-dau/` | ⏳ Đợt 3 | — |
+| **08** | Lỗi Xù Lông Gỗ (Grain Raising) & Cách Khắc Phục | `/loi-thi-cong/xu-long-go/` | ⏳ Đợt 3 | — |
+| **09** | Lỗi Sơn Sắt Mạ Kẽm Bị Bong Tróc & Cách Xử Lý | `/loi-thi-cong/bong-troc-son-ma-kem/` | ⏳ Đợt 3 | — |
+| **10** | Sơn Hệ Nước Chuẩn Xuất Khẩu Mỹ & EU (TDS/MSDS) | `/son-go-he-nuoc/tieu-chuan-xuat-khau-eu-us/` | ⏳ Đợt 3 | — |
