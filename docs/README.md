@@ -29,3 +29,6 @@ Tài liệu chiến lược nội dung SEO + AIO + GEO toàn diện và các bà
 | **08** | Lỗi Xù Lông Gỗ (Grain Raising) & Cách Khắc Phục | `/loi-thi-cong/xu-long-go/` | ✅ Hoàn thành | [Xem bài viết](./articles/08-loi-xu-long-go.md) |
 | **09** | Lỗi Sơn Sắt Mạ Kẽm Bị Bong Tróc & Cách Xử Lý | `/loi-thi-cong/bong-troc-son-ma-kem/` | ✅ Hoàn thành | [Xem bài viết](./articles/09-loi-bong-troc-son-ma-kem.md) |
 | **10** | Sơn Hệ Nước Chuẩn Xuất Khẩu Mỹ & EU (TDS/MSDS) | `/son-go-he-nuoc/tieu-chuan-xuat-khau-eu-us/` | ✅ Hoàn thành | [Xem bài viết](./articles/10-tieu-chuan-xuat-khau-eu-us-tds-msds.md) |
+| **11** | Sơn Kết Cấu Thép Hệ Nước (ISO 12944) | `/son-kim-loai-he-nuoc/ket-cau-thep/` | ✅ Hoàn thành | [Xem bài viết](./articles/11-son-ket-cau-thep-he-nuoc.md) |
+| **12** | Sơn Nhôm & Inox Hệ Nước Bám Dính 5B | `/son-kim-loai-he-nuoc/nhom-inox/` | ✅ Hoàn thành | [Xem bài viết](./articles/12-son-nhom-inox-he-nuoc.md) |
+| **13** | Sơn Giả Gỗ Trên Tấm Cemboard Smartwood | `/son-gia-go-he-nuoc/tam-cemboard/` | ✅ Hoàn thành | [Xem bài viết](./articles/13-son-gia-go-tren-tam-cemboard.md) |
