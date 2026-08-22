@@ -744,4 +744,138 @@ export const ARTICLES: Record<string, ArticleData> = {
     ],
     relatedSlugs: ["son-kim-loai-he-nuoc", "so-sanh/son-kim-loai-he-nuoc-vs-he-dau"],
   },
+
+  "son-gia-go-he-nuoc/sat-hop": {
+    slug: "son-gia-go-he-nuoc/sat-hop",
+    category: "Sơn Giả Gỗ Hệ Nước",
+    categorySlug: "son-gia-go-he-nuoc",
+    title: "Cách Sơn Giả Gỗ Trên Sắt Mạ Kẽm Ngoài Trời Bám Dính 5B Bền 5 Năm | Lotus",
+    metaDescription:
+      "Hướng dẫn quy trình 4 bước sơn giả gỗ trên sắt hộp mạ kẽm, cửa cổng, lan can ban công. Bám dính trực tiếp điểm 5B, vân gỗ tự nhiên 3D, kháng tia UV 5 năm không phai màu.",
+    h1: "Kỹ Thuật Sơn Giả Gỗ Trên Sắt Hộp Mạ Kẽm Ngoài Trời: Vân Gỗ Tự Nhiên, Không Bong Tróc",
+    publishedAt: "22/08/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn giả gỗ trên sắt hộp mạ kẽm là kỹ thuật tạo hiệu ứng vân gỗ tự nhiên trên bề mặt kim loại mạ kẽm (cửa cổng, hàng rào, lan can ban công) bằng hệ sơn nước Pure Acrylic của Lotus. Giải pháp khắc phục 100% tình trạng bong tróc của sơn dầu cũ nhờ lớp lót bám dính DTM đạt chuẩn 5B (ASTM D3359), giữ màu ngoài trời trên 5 năm.",
+    whenToChoose: [
+      "Cửa cổng sắt hộp mạ kẽm, hàng rào biệt thự, lan can ban công, giàn lam che nắng ngoài trời.",
+    ],
+    whenNotToChoose: [
+      "Bề mặt sắt hộp chưa lau sạch lớp dầu nhờn bảo vệ chống mốc kẽm của nhà máy cán thép.",
+    ],
+    lotusRecommendation:
+      "Tại các mối hàn góc, lớp mạ kẽm đã bị cháy xém. Bắt buộc phải mài nhẵn xỉ hàn và quét dặm 1 lớp Sơn Lót Giàu Kẽm Lotus Zinc Rich Primer trước khi lên màu giả gỗ để chống rỉ sét từ tim mối hàn.",
+    sections: [
+      {
+        id: "quy-trinh-sat-hop",
+        heading: "1. Quy trình 4 bước thi công sơn giả gỗ sắt hộp ngoài trời",
+        steps: [
+          { step: "Bước 1", title: "Lót bám dính kẽm DTM", desc: "Phun 1 lớp sơn lót Lotus Metal Primer bám dính trực tiếp điểm 5B lên bề mặt thép mạ kẽm đã lau sạch dầu mỡ." },
+          { step: "Bước 2", title: "Sơn nền màu thịt gỗ (Basecoat)", desc: "Phun 1 lớp sơn nền Lotus Basecoat theo tông màu gỗ (vàng chanh, cam gõ hoặc nâu vàng)." },
+          { step: "Bước 3", title: "Kéo màu tạo tim vân 3D", desc: "Quét sơn Lotus Wood Stain và dùng cọ kéo dứt khoát 1 đường dọc theo thanh sắt tạo tim vân gỗ sống động." },
+          { step: "Bước 4", title: "Phủ bảo vệ kháng UV (Topcoat)", desc: "Phun 2 lớp Lotus Clear Topcoat bảo vệ bề mặt chống trầy xước và kháng tia cực tím 5 năm không phai." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Sơn giả gỗ trên sắt hộp sau bao lâu thì khô để lắp đặt?",
+        answer:
+          "Sau 24 giờ ở nhiệt độ phòng, màng sơn đạt 80% độ cứng để bọc màng PE vận chuyển đi lắp đặt mà không sợ trầy xước.",
+      },
+    ],
+    relatedSlugs: ["son-gia-go-he-nuoc", "son-gia-go-he-nuoc/bang-mau", "son-kim-loai-he-nuoc"],
+  },
+
+  "son-gia-go-he-nuoc/bang-mau": {
+    slug: "son-gia-go-he-nuoc/bang-mau",
+    category: "Sơn Giả Gỗ Hệ Nước",
+    categorySlug: "son-gia-go-he-nuoc",
+    title: "Bảng Màu Sơn Giả Gỗ Hệ Nước Cao Cấp (12 Tông Gỗ Tự Nhiên) | Lotus",
+    metaDescription:
+      "Khám phá bảng 12 mã màu sơn giả gỗ hệ nước Lotus: Gỗ Sồi (Oak), Gỗ Teak, Gõ Đỏ, Óc Chó (Walnut), Mun Đen. Sử dụng hạt màu oxit sắt vô cơ kháng UV 5 năm, chuẩn màu 100%.",
+    h1: "Bảng Màu Sơn Giả Gỗ Hệ Nước Lotus: 12 Tông Gỗ Tự Nhiên Chuẩn Phong Cách Kiến Trúc",
+    publishedAt: "22/08/2026",
+    readTime: "6 phút đọc",
+    quickSummary:
+      "Bảng màu sơn giả gỗ hệ nước Lotus bao gồm 12 tông màu gỗ tự nhiên được chế tạo từ 100% hạt màu oxit sắt vô cơ siêu mịn, có khả năng kháng bức xạ tử ngoại UV vượt trội với độ sai lệch màu cực thấp (ΔE < 1.0), cam kết không phai màu và không ngả vàng sau 5 năm nắng mưa nhiệt đới.",
+    whenToChoose: [
+      "Ứng dụng cho cả tấm Cemboard, Smartwood, bê tông và sắt hộp mạ kẽm.",
+    ],
+    whenNotToChoose: [],
+    lotusRecommendation:
+      "Độ đậm nhạt của màu vân gỗ phụ thuộc vào số lượt kéo cọ và tỷ lệ pha loãng nước của lớp sơn Lotus Wood Stain. Pha thêm 10% nước sạch nếu muốn màu sáng thanh thoát.",
+    sections: [
+      {
+        id: "bang-12-ma-mau",
+        heading: "1. Danh mục 12 mã màu gỗ tự nhiên Lotus Wood Effect",
+        table: {
+          headers: ["Mã màu", "Tên tông màu", "Sắc độ", "Phong cách ứng dụng"],
+          rows: [
+            ["WS-01", "White Oak (Sồi Trắng)", "Vàng sáng nhẹ", "Scandinavian, Japandi"],
+            ["WS-02", "Natural Teak (Teak Tự Nhiên)", "Vàng mật ong ấm", "Resort ven biển, hồ bơi"],
+            ["WS-03", "Pine Wood (Gỗ Thông)", "Vàng tươi trẻ trung", "Quán cà phê sân vườn"],
+            ["WS-05", "Red Wood (Gõ Đỏ)", "Đỏ nâu quyền quý", "Biệt thự tân cổ điển"],
+            ["WS-06", "Padouk (Gỗ Hương)", "Đỏ cánh gián đậm đà", "Nhà hàng truyền thống"],
+            ["WS-07", "Pyinkado (Căm Xe)", "Nâu đỏ trầm", "Mặt tiền nhà phố cao cấp"],
+            ["WS-09", "American Walnut (Óc Chó)", "Nâu socola sang trọng", "Modern Luxury"],
+            ["WS-12", "Ebony (Mun Đen)", "Đen ánh nâu khói", "Wabi Sabi, Dark Luxury"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Lotus có nhận pha màu giả gỗ theo mẫu thực tế không?",
+        answer:
+          "Có. Phòng R&D Lotus nhận tinh chỉnh và phối màu chính xác 100% theo mẫu gỗ thật của chủ đầu tư cho các dự án từ 200m2 trở lên.",
+      },
+    ],
+    relatedSlugs: ["son-gia-go-he-nuoc", "son-gia-go-he-nuoc/tam-cemboard", "son-gia-go-he-nuoc/sat-hop"],
+  },
+
+  "son-san-he-nuoc/phong-sach-gmp": {
+    slug: "son-san-he-nuoc/phong-sach-gmp",
+    category: "Sơn Sàn Hệ Nước",
+    categorySlug: "son-san-he-nuoc",
+    title: "Sơn Sàn Phòng Sạch GMP Hệ Nước: Kháng Khuẩn 99.9%, Chuẩn WHO | Lotus",
+    metaDescription:
+      "Sơn sàn epoxy hệ nước phòng sạch Lotus đạt chuẩn GMP-WHO, ISO 14644, HACCP. Không mùi độc hại, kháng vi khuẩn nấm mốc, liền mạch chống bám bụi, thi công không gián đoạn sản xuất.",
+    h1: "Sơn Sàn Epoxy Hệ Nước Cho Phòng Sạch Dược Phẩm & Y Tế: Chuẩn GMP-WHO, Kháng Khuẩn Tuyệt Đối",
+    publishedAt: "22/08/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn sàn phòng sạch GMP hệ nước Lotus đáp ứng trọn vẹn các yêu cầu nghiêm ngặt của tiêu chuẩn GMP-WHO, ISO 14644-1 và HACCP. Màng sơn kháng khuẩn > 99.99% (JIS Z 2801), kháng cồn y tế khử trùng 70°/90°, không mùi dung môi hữu cơ và cho phép thi công cuốn chiếu mà không cần dừng dây chuyền sản xuất thuốc.",
+    whenToChoose: [
+      "Nhà máy dược phẩm, thực phẩm chức năng, vắc xin chuẩn GMP-WHO.",
+      "Phòng mổ vô trùng, phòng pha chế thuốc bệnh viện, phòng thí nghiệm vi sinh.",
+      "Nhà máy chế biến thực phẩm, sữa, nước giải khát chuẩn HACCP.",
+    ],
+    whenNotToChoose: [],
+    lotusRecommendation:
+      "Bắt buộc thi công bo góc chân tường cong R50 bằng vữa Epoxy hệ nước Lotus để tránh góc chết tích tụ vi khuẩn và bụi bẩn.",
+    sections: [
+      {
+        id: "chi-tieu-gmp",
+        heading: "1. Bảng chỉ tiêu kiểm nghiệm phòng thí nghiệm (QUATEST 3 & Viện Pasteur)",
+        table: {
+          headers: ["Chỉ tiêu", "Phương pháp", "Giới hạn GMP", "Kết quả Sơn Lotus", "Đánh giá"],
+          rows: [
+            ["Hoạt tính kháng khuẩn", "JIS Z 2801", "> 99%", "> 99.99% diệt khuẩn", "ĐẠT CHUẨN VÔ TRÙNG"],
+            ["Kháng nấm mốc", "ASTM G21", "Cấp 0", "Cấp độ 0 (Không nấm)", "ĐẠT CHUẨN GMP"],
+            ["Kháng cồn y tế 70°/90°", "ASTM D5402", "Không mờ", "Không phai màu", "ĐẠT TIÊU CHUẨN"],
+            ["Hàm lượng VOCs", "ISO 11890-2", "< 100 g/L", "< 10 g/L (Không mùi)", "KHÔNG NHIỄM MÙI"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Thi công sơn sàn Lotus trong nhà máy thuốc có cần dừng sản xuất không?",
+        answer:
+          "Không cần dừng. Nhờ không chứa dung môi bay hơi và không mùi hắc, đội thi công có thể quây bạt làm từng phòng sạch trong khi các phòng khác vẫn vận hành.",
+      },
+    ],
+    relatedSlugs: ["son-san-he-nuoc", "chuyen-doi-he-nuoc"],
+  },
 };
