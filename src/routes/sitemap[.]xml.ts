@@ -1,16 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
-import type {} from "@tanstack/react-start";
+import { ARTICLES } from "@/data/articles";
 
-const BASE_URL = "";
+const BASE_URL = "https://sonhenuoc.com";
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
+        const articleUrls = Object.keys(ARTICLES).map(
+          (slug) =>
+            `  <url><loc>${BASE_URL}/${slug}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`
+        );
+
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
           `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
-          `  <url><loc>${BASE_URL}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
+          `  <url><loc>${BASE_URL}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>`,
+          ...articleUrls,
           `</urlset>`,
         ].join("\n");
         return new Response(xml, {
