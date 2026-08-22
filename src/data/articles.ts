@@ -878,4 +878,179 @@ export const ARTICLES: Record<string, ArticleData> = {
     ],
     relatedSlugs: ["son-san-he-nuoc", "chuyen-doi-he-nuoc"],
   },
+
+  "son-san-he-nuoc/be-tong-am": {
+    slug: "son-san-he-nuoc/be-tong-am",
+    category: "Sơn Sàn Hệ Nước",
+    categorySlug: "son-san-he-nuoc",
+    title: "Sơn Sàn Bê Tông Ẩm Hệ Nước: Chịu Ẩm 12%, Chống Phồng Rộp | Lotus",
+    metaDescription:
+      "Sơn sàn bê tông ẩm Lotus chịu độ ẩm nền lên tới 12%. Thi công ngay trên bê tông mới đổ 7-10 ngày, tầng hầm không có màng chống thấm ngược. Không phồng rộp, bám dính > 2.5 MPa.",
+    h1: "Sơn Sàn Bê Tông Ẩm Hệ Nước: Giải Pháp Chống Phồng Rộp Cho Nền Bê Tông Độ Ẩm Cao",
+    publishedAt: "22/08/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn sàn bê tông ẩm hệ nước Lotus chuyên dụng cho sàn bê tông có độ ẩm nền cao từ 8% đến 12%. Màng sơn hoạt động theo cơ chế màng thở vi mao dẫn, cho phép thi công sớm ngay trên sàn bê tông mới đổ 7-10 ngày tuổi, rút ngắn tiến độ bàn giao từ 3-4 tuần mà không lo phồng rộp bọng nước.",
+    whenToChoose: [
+      "Sàn tầng hầm, bãi đỗ xe ngầm tiếp giáp mạch nước ngầm không có màng nilon chống ẩm ngược.",
+      "Nhà xưởng bê tông mới đổ cần hoàn thiện gấp kịp tiến độ.",
+      "Khu vực ẩm ướt như xưởng chế biến thủy sản, kho đồ uống, khu vực rửa xe.",
+    ],
+    whenNotToChoose: [
+      "Bề mặt bê tông có vũng đọng nước chưa được hút khô và tạo nhám.",
+    ],
+    lotusRecommendation:
+      "Dùng phương pháp dán tấm nilon thử nghiệm (ASTM D4263) trong 24 giờ để kiểm tra độ ẩm thực tế trước khi thi công lớp lót thẩm thấu chịu ẩm Lotus WB Primer.",
+    sections: [
+      {
+        id: "quy-trinh-be-tong-am",
+        heading: "1. Quy trình 4 bước thi công sơn sàn bê tông ẩm",
+        steps: [
+          { step: "Bước 1", title: "Mài sàn & Hút ẩm", desc: "Mài tạo nhám CSP 2-3 và hút sạch bụi ẩm chân không." },
+          { step: "Bước 2", title: "Lót thẩm thấu chịu ẩm", desc: "Lăn 1 lớp lót Lotus WB Moisture Primer ngấm sâu 3mm khóa ẩm." },
+          { step: "Bước 3", title: "Bả phẳng nền", desc: "Dùng vữa Epoxy hệ nước Lotus dặm vá các vết nứt và rỗ li ti." },
+          { step: "Bước 4", title: "Phủ 2 lớp hoàn thiện", desc: "Lăn 2 lớp sơn phủ màu Lotus WB Topcoat đạt độ cứng 80 Shore D." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Bê tông mới đổ bao nhiêu ngày thì sơn sàn hệ nước được?",
+        answer:
+          "Chỉ cần sau 7 - 10 ngày khi bê tông đạt 70% cường độ nén và không còn đọng nước là có thể thi công lớp lót chịu ẩm Lotus.",
+      },
+    ],
+    relatedSlugs: ["son-san-he-nuoc", "loi-thi-cong/phong-rop-son-san-am", "so-sanh/son-san-epoxy-he-nuoc-vs-goc-dau"],
+  },
+
+  "so-sanh/son-san-epoxy-he-nuoc-vs-goc-dau": {
+    slug: "so-sanh/son-san-epoxy-he-nuoc-vs-goc-dau",
+    category: "So Sánh Kỹ Thuật",
+    categorySlug: "so-sanh",
+    title: "So Sánh Sơn Sàn Epoxy Hệ Nước Và Gốc Dầu: 10 Tiêu Chí Chọn Đúng | Lotus",
+    metaDescription:
+      "So sánh chi tiết sơn sàn epoxy hệ nước vs sơn epoxy gốc dung môi: Khả năng chịu ẩm, độ cứng chịu tải xe nâng, mùi độc hại, độ bền màu và giá thành thi công thực tế 1m2.",
+    h1: "So Sánh Trực Diện Sơn Sàn Epoxy Hệ Nước Và Sơn Epoxy Gốc Dầu Cho Nhà Xưởng",
+    publishedAt: "22/08/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn sàn Epoxy hệ nước chiếm ưu thế vượt trội về khả năng chịu ẩm (10-12% không phồng rộp), không mùi dung môi hữu cơ (đạt chuẩn GMP/HACCP) và an toàn PCCC. Cả hai hệ sơn đều đạt độ cứng > 80 Shore D chịu tải xe nâng 3-5 tấn như nhau. Sơn gốc dầu chỉ có ưu thế duy nhất là độ bóng gương ban đầu cao hơn.",
+    whenToChoose: [
+      "Sàn tầng trệt, tầng hầm có độ ẩm cao hoặc tiếp giáp nền đất.",
+      "Nhà máy thực phẩm, dược phẩm, bệnh viện, xưởng kín đang hoạt động.",
+    ],
+    whenNotToChoose: [
+      "Khu vực sàn từ tầng 2 trở lên hoàn toàn khô ráo không có yêu cầu về mùi dung môi.",
+    ],
+    lotusRecommendation:
+      "Đối với tầng trệt tại Việt Nam, độ ẩm ngầm luôn bốc lên làm hỏng 70% sàn sơn dầu sau 1 năm. Bắt buộc nên chọn sơn sàn Epoxy hệ nước.",
+    sections: [
+      {
+        id: "so-sanh-10-tieu-chi",
+        heading: "1. Bảng đối chiếu 10 tiêu chí kỹ thuật",
+        table: {
+          headers: ["Tiêu chí", "Sơn Sàn Nước Lotus", "Sơn Epoxy Gốc Dầu", "Ưu thế"],
+          rows: [
+            ["Độ ẩm sàn cho phép", "8% - 12% (Chịu ẩm)", "< 4% (Bắt buộc khô)", "Hệ nước vượt trội"],
+            ["Chống phồng rộp ẩm", "Triệt tiêu 100%", "Nguy cơ rất cao ở tầng trệt", "Hệ nước bền bỉ"],
+            ["Độ cứng chịu tải", "78 - 82 Shore D", "80 - 85 Shore D", "Tương đương"],
+            ["Mùi độc hại", "Không mùi (Zero VOCs)", "Mùi nồng nặc, cay mắt", "Hệ nước an toàn"],
+            ["Thi công cuốn chiếu", "Rất dễ dàng", "Khó (Phải dừng cả xưởng)", "Hệ nước thuận tiện"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Sơn sàn hệ nước có chịu được xe nâng 3 tấn không?",
+        answer:
+          "Hoàn toàn chịu được. Sau khi đóng rắn hoàn toàn, màng sơn đạt độ cứng trên 80 Shore D chịu tải trọng nặng rất tốt.",
+      },
+    ],
+    relatedSlugs: ["son-san-he-nuoc", "son-san-he-nuoc/be-tong-am", "loi-thi-cong/phong-rop-son-san-am"],
+  },
+
+  "loi-thi-cong/phong-rop-son-san-am": {
+    slug: "loi-thi-cong/phong-rop-son-san-am",
+    category: "Xử Lý Sự Cố",
+    categorySlug: "loi-thi-cong",
+    title: "Cách Xử Lý Sàn Epoxy Bị Phồng Rộp Bọng Nước Do Ẩm Ngược | Kỹ Thuật Lotus",
+    metaDescription:
+      "Tìm hiểu nguyên nhân sàn bê tông bị nổi bọng nước, phồng rộp màng sơn sau mùa mưa và quy trình 4 bước cạo xả, xử lý ẩm ngược dứt điểm bằng hệ sơn nước Lotus.",
+    h1: "Khắc Phục Triệt Để Hiện Tượng Sàn Epoxy Bị Phồng Rộp, Nổi Bọng Nước Do Ẩm Ngược",
+    publishedAt: "22/08/2026",
+    readTime: "6 phút đọc",
+    quickSummary:
+      "Phồng rộp bọng nước (Osmotic Blistering) là do thi công sơn epoxy gốc dầu kín khí trên nền bê tông có độ ẩm cao (> 4%) hoặc không có màng chống thấm đáy. Giải pháp triệt để là cắt bóc toàn bộ bọng rộp, mài lộ cốt bê tông và chuyển sang hệ sơn lót chịu ẩm màng thở Lotus WB Moisture Primer.",
+    whenToChoose: [
+      "Áp dụng ngay khi sàn nhà xưởng tầng trệt hoặc tầng hầm xuất hiện bọng rộp chứa nước kiềm.",
+    ],
+    whenNotToChoose: [
+      "Tuyệt đối không sơn dặm vá đè sơn dầu lên bọng rộp cũ vì sẽ phồng lại sau 1-2 tháng.",
+    ],
+    lotusRecommendation:
+      "Cắt mở rộng mép bọng rộp thêm 10-15cm vào vùng bê tông còn dính chắc trước khi quét lót hệ nước.",
+    sections: [
+      {
+        id: "quy-trinh-sua-chua",
+        heading: "1. Quy trình 4 bước sửa chữa sàn bị phồng rộp",
+        steps: [
+          { step: "Bước 1", title: "Bóc bỏ bọng rộp", desc: "Dùng máy mài bóc sạch 100% bọng rộp và cắt rộng mép 15cm." },
+          { step: "Bước 2", title: "Hút bụi & Sấy ráo", desc: "Hút sạch bụi bẩn và sấy ráo bề mặt bê tông." },
+          { step: "Bước 3", title: "Lăn lót chịu ẩm Lotus", desc: "Lăn 1 lớp lót Lotus WB Moisture Primer thẩm thấu sâu." },
+          { step: "Bước 4", title: "Bả phẳng & Sơn phủ", desc: "Bả phẳng bằng vữa Lotus Mortar và lăn 2 lớp sơn phủ hoàn thiện Lotus WB." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Sửa bằng sơn hệ nước Lotus có bị phồng rộp lại không?",
+        answer:
+          "Không. Cấu trúc vi mao dẫn của sơn Lotus cho phép hơi ẩm thoát ra ngoài tự do, triệt tiêu hoàn toàn áp suất thẩm thấu gây phồng rộp.",
+      },
+    ],
+    relatedSlugs: ["son-san-he-nuoc", "son-san-he-nuoc/be-tong-am"],
+  },
+
+  "chuyen-doi-he-nuoc/chinh-sung-phun-phong-say": {
+    slug: "chuyen-doi-he-nuoc/chinh-sung-phun-phong-say",
+    category: "Cẩm Nang Chuyển Đổi",
+    categorySlug: "chuyen-doi-he-nuoc",
+    title: "Cách Chỉnh Súng Phun & Cải Tạo Phòng Sấy Sơn Hệ Nước Chuẩn Xưởng | Lotus",
+    metaDescription:
+      "Hướng dẫn kỹ thuật chỉnh súng phun HVLP/Airless cho sơn hệ nước: Cỡ béc 1.4-1.8mm, áp suất khí 2.0-2.5 Bar, chống lỗi sần da cam và thiết kế phòng phơi sấy gió tối ưu chi phí.",
+    h1: "Hướng Dẫn Kỹ Thuật Cân Chỉnh Súng Phun & Cải Tạo Phòng Phơi Sấy Cho Sơn Hệ Nước",
+    publishedAt: "22/08/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Kỹ thuật thi công sơn hệ nước chuẩn xưởng: Sử dụng béc phun Inox 316 kích thước 1.4mm - 1.8mm, cài đặt áp suất khí nén 2.0 - 2.5 Bar (hoặc 1.8 - 2.2 Bar với súng HVLP), khoảng cách phun 15 - 20cm và thiết kế phòng sấy gió đối lưu với vận tốc gió bề mặt 0.8 - 1.2 m/s giúp sơn khô xả nhám trong 45 - 60 phút.",
+    whenToChoose: [
+      "Áp dụng cho mọi xưởng nội thất và nhà máy đang chuyển đổi từ sơn PU sang sơn hệ nước.",
+    ],
+    whenNotToChoose: [],
+    lotusRecommendation:
+      "Không cần phun đẫm ướt sũng như sơn PU. Sơn hệ nước tự dàn phẳng trong 3-5 phút sau khi phun với độ chồng mí vạt sơn 50-60%.",
+    sections: [
+      {
+        id: "thong-so-chinh-sung",
+        heading: "1. Bảng thông số cân chỉnh súng phun sơn hệ nước",
+        table: {
+          headers: ["Công đoạn phun", "Cỡ béc Inox", "Áp suất khí", "Độ dày màng ướt WFT"],
+          rows: [
+            ["Sơn lót xả nhám (Sealer)", "1.5 - 1.8 mm", "2.2 - 2.5 Bar", "80 - 100 µm"],
+            ["Sơn màu tôn vân (Stain)", "1.3 - 1.4 mm", "1.8 - 2.0 Bar", "40 - 60 µm"],
+            ["Sơn phủ bóng/mờ (Topcoat)", "1.4 - 1.5 mm", "2.0 - 2.2 Bar", "70 - 90 µm"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Có cần lắp bóng đèn sấy hồng ngoại trong phòng phơi sơn nước không?",
+        answer:
+          "Không bắt buộc. Yếu tố cốt lõi là quạt gió lưu thông không khí bề mặt. Đèn sấy chỉ cần vào những ngày mùa đông mưa phùn rét buốt.",
+      },
+    ],
+    relatedSlugs: ["chuyen-doi-he-nuoc", "loi-thi-cong/xu-long-go", "so-sanh/son-go-he-nuoc-vs-son-pu"],
+  },
 };

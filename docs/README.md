@@ -35,3 +35,7 @@ Tài liệu chiến lược nội dung SEO + AIO + GEO toàn diện và các bà
 | **14** | Sơn Giả Gỗ Trên Sắt Hộp Mạ Kẽm | `/son-gia-go-he-nuoc/sat-hop/` | ✅ Hoàn thành | [Xem bài viết](./articles/14-son-gia-go-tren-sat-hop.md) |
 | **15** | Bảng Màu Sơn Giả Gỗ Hệ Nước (12 Tông) | `/son-gia-go-he-nuoc/bang-mau/` | ✅ Hoàn thành | [Xem bài viết](./articles/15-bang-mau-son-gia-go-he-nuoc.md) |
 | **16** | Sơn Sàn Epoxy Hệ Nước Phòng Sạch GMP | `/son-san-he-nuoc/phong-sach-gmp/` | ✅ Hoàn thành | [Xem bài viết](./articles/16-son-san-phong-sach-gmp.md) |
+| **17** | Sơn Sàn Bê Tông Ẩm Hệ Nước (Chịu Ẩm 12%) | `/son-san-he-nuoc/be-tong-am/` | ✅ Hoàn thành | [Xem bài viết](./articles/17-son-san-be-tong-am.md) |
+| **18** | So Sánh Sơn Sàn Epoxy Nước vs Gốc Dầu | `/so-sanh/son-san-epoxy-he-nuoc-vs-goc-dau/` | ✅ Hoàn thành | [Xem bài viết](./articles/18-so-sanh-son-san-epoxy-he-nuoc-vs-goc-dau.md) |
+| **19** | Lỗi Phồng Rộp Sơn Sàn Do Ẩm Ngược | `/loi-thi-cong/phong-rop-son-san-am/` | ✅ Hoàn thành | [Xem bài viết](./articles/19-loi-phong-rop-son-san-am.md) |
+| **20** | Cân Chỉnh Súng Phun & Cải Tạo Phòng Sấy Gió | `/chuyen-doi-he-nuoc/chinh-sung-phun-phong-say/` | ✅ Hoàn thành | [Xem bài viết](./articles/20-chinh-sung-phun-phong-say-he-nuoc.md) |
