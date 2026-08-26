@@ -42,3 +42,6 @@ Tài liệu chiến lược nội dung SEO + AIO + GEO toàn diện và các bà
 | **21** | Đào Tạo Thợ Sơn & Chuyển Đổi Kỹ Thuật | `/chuyen-doi-he-nuoc/dao-tao-tho-son/` | ✅ Hoàn thành | [Xem bài viết](./articles/21-dao-tao-tho-son-he-nuoc.md) |
 | **22** | Bài Toán TCO Chi Phí 1m2 Sơn Hệ Nước vs PU | `/chuyen-doi-he-nuoc/tco-chi-phi-son-he-nuoc/` | ✅ Hoàn thành | [Xem bài viết](./articles/22-tco-chi-phi-son-he-nuoc.md) |
 | **23** | Sub-Pillar Sơn Composite Hệ Nước (FRP/Carbon) | `/son-composite-he-nuoc/` | ✅ Hoàn thành | [Xem bài viết](./articles/23-son-composite-he-nuoc.md) |
+| **24** | Lỗi Sơn Bị Mắt Cá & Rỗ Kim (Fish-Eyes) | `/loi-thi-cong/mat-ca-ro-kim/` | ✅ Hoàn thành | [Xem bài viết](./articles/24-loi-mat-ca-ro-kim.md) |
+| **25** | Lỗi Sơn Bị Da Cam & Chảy Sệ Màng Sơn | `/loi-thi-cong/da-cam-chay-son/` | ✅ Hoàn thành | [Xem bài viết](./articles/25-loi-da-cam-chay-son.md) |
+| **26** | Lỗi Sơn Hệ Nước Lâu Khô & Dính Mặt Khi Đóng Gói | `/loi-thi-cong/son-lau-kho-dinh-mat/` | ✅ Hoàn thành | [Xem bài viết](./articles/26-son-lau-kho-dinh-mat-blocking.md) |

@@ -1189,4 +1189,130 @@ export const ARTICLES: Record<string, ArticleData> = {
     ],
     relatedSlugs: ["son-kim-loai-he-nuoc", "chuyen-doi-he-nuoc"],
   },
+  "loi-thi-cong/mat-ca-ro-kim": {
+    slug: "loi-thi-cong/mat-ca-ro-kim",
+    category: "Xử Lý Sự Cố",
+    categorySlug: "loi-thi-cong",
+    title: "Khắc Phục Lỗi Sơn Hệ Nước Bị Mắt Cá & Rỗ Kim (Fish-Eyes) | Kỹ Thuật Lotus",
+    metaDescription:
+      "Tìm hiểu nguyên nhân màng sơn nước bị lõm mắt cá, rỗ lỗ kim do nhiễm hơi dầu khí nén, sáp silicon và quy trình 4 bước xử lý dứt điểm từ chuyên gia Lotus.",
+    h1: "Khắc Phục Triệt Để Lỗi Sơn Hệ Nước Bị Mắt Cá & Rỗ Lỗ Kim (Fish-Eyes & Cratering)",
+    publishedAt: "22/08/2026",
+    readTime: "6 phút đọc",
+    quickSummary:
+      "Lỗi mắt cá (Fish-eyes) là hiện tượng màng sơn xuất hiện hố tròn lõm do chênh lệch sức căng bề mặt giữa nước và các điểm nhiễm bẩn như hơi dầu máy nén khí, sáp khuôn Silicone hoặc mồ hôi tay. Biện pháp triệt để: Lắp cụm lọc khí nén 3 cấp (tách nước, lọc vi sợi 0.01µm, than hoạt tính) và lau phôi bằng dung dịch tẩy nhờn chuyên dụng Lotus Degreaser.",
+    whenToChoose: [
+      "Áp dụng khi bề mặt màng sơn vừa phun xuất hiện các miệng hố tròn trũng lõm co cụm màng sơn.",
+    ],
+    whenNotToChoose: [
+      "Tuyệt đối không phun đè lớp sơn mới lên vết mắt cá ướt vì sẽ làm lõm sâu hơn.",
+    ],
+    lotusRecommendation:
+      "Dừng chuyền ngay lập tức, để màng sơn khô hoàn toàn trong 60 phút, xả nhám P320 phẳng miệng hố, vệ sinh đường ống khí nén và lau lại phôi bằng cồn 90° trước khi sơn dặm.",
+    sections: [
+      {
+        id: "so-do-loc-khi",
+        heading: "1. Sơ đồ lắp đặt bộ lọc khí nén 3 cấp chuẩn cho sơn hệ nước",
+        steps: [
+          { step: "Cấp 1", title: "Lọc thô 5 µm", desc: "Tách sạch bụi thô và nước ngưng tụ từ bình tích khí." },
+          { step: "Cấp 2", title: "Lọc vi sợi 0.01 µm", desc: "Tách 99.9% hơi dầu nhớt rò rỉ từ piston máy nén khí." },
+          { step: "Cấp 3", title: "Lọc than hoạt tính 0.003 ppm", desc: "Khử sạch mùi và các phân tử sáp hữu cơ siêu mịn trước khi vào súng phun." },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Có nên dùng cồn xịt trực tiếp lên mắt cá khi sơn đang ướt không?",
+        answer:
+          "Tuyệt đối không. Xịt cồn lên màng sơn ướt gây sốc dung môi làm đục trắng và biến dạng bề mặt. Cần chờ khô và xả nhám phẳng trước khi sơn dặm.",
+      },
+    ],
+    relatedSlugs: ["chuyen-doi-he-nuoc/chinh-sung-phun-phong-say", "loi-thi-cong/da-cam-chay-son"],
+  },
+
+  "loi-thi-cong/da-cam-chay-son": {
+    slug: "loi-thi-cong/da-cam-chay-son",
+    category: "Xử Lý Sự Cố",
+    categorySlug: "loi-thi-cong",
+    title: "Khắc Phục Lỗi Sơn Hệ Nước Bị Da Cam & Chảy Sệ Màng Sơn | Lotus",
+    metaDescription:
+      "Hướng dẫn căn chỉnh độ nhớt cốc Ford #4 (18-22s), áp suất khí 2.0-2.5 bar và kỹ thuật phun di chuyển tay dứt khoát triệt tiêu 100% lỗi da cam và chảy sệ sơn hệ nước.",
+    h1: "Khắc Phục Triệt Để Hiện Tượng Sơn Hệ Nước Bị Sần Da Cam (Orange Peel) & Chảy Sệ (Sagging)",
+    publishedAt: "22/08/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Lỗi sần da cam (sơn quá đặc, áp suất khí yếu) và chảy sệ (sơn quá loãng, phun quá dày một lượt) được triệt tiêu 100% khi kiểm soát đúng 3 thông số: Độ nhớt chuẩn 18 - 22 giây (Cốc Ford #4), áp suất khí nén 2.0 - 2.5 Bar, và duy trì độ dày màng ướt WFT từ 80 - 100 µm/lớp.",
+    whenToChoose: [
+      "Kiểm tra định kỳ trước mỗi ca làm việc bằng Cốc Ford #4 và đồng hồ bấm giờ.",
+    ],
+    whenNotToChoose: [],
+    lotusRecommendation:
+      "Khi thời tiết nắng nóng trên 35°C, pha thêm 2-3% dung môi làm chậm khô Lotus Retarder để kéo dài thời gian tự dàn phẳng màng sơn.",
+    sections: [
+      {
+        id: "bang-can-chinh",
+        heading: "1. Bảng ma trận cân chỉnh thông số súng phun chống da cam & chảy sệ",
+        table: {
+          headers: ["Dòng sơn", "Cỡ béc Inox", "Độ nhớt Cốc Ford #4", "Áp suất khí", "Màng ướt WFT"],
+          rows: [
+            ["Lót xả nhám (Sealer)", "1.6 - 1.8 mm", "20 - 24 giây", "2.2 - 2.5 Bar", "90 - 110 µm"],
+            ["Nền tôn vân (Basecoat)", "1.3 - 1.4 mm", "17 - 19 giây", "1.8 - 2.0 Bar", "50 - 70 µm"],
+            ["Phủ bóng (Gloss Topcoat)", "1.4 - 1.5 mm", "18 - 20 giây", "2.0 - 2.3 Bar", "80 - 100 µm"],
+            ["Phủ mờ (Matt Topcoat)", "1.4 - 1.5 mm", "19 - 21 giây", "2.0 - 2.2 Bar", "80 - 90 µm"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Bề mặt đã bị da cam có cách nào xử lý mà không cần cạo bỏ toàn bộ không?",
+        answer:
+          "Chờ màng sơn khô cứng sau 2 tiếng, dùng nhám nước P600-P800 xả phẳng đỉnh sần da cam, lau sạch bụi và phun dặm lại 1 lớp mỏng đúng độ nhớt 18 giây.",
+      },
+    ],
+    relatedSlugs: ["chuyen-doi-he-nuoc/chinh-sung-phun-phong-say", "loi-thi-cong/mat-ca-ro-kim"],
+  },
+
+  "loi-thi-cong/son-lau-kho-dinh-mat": {
+    slug: "loi-thi-cong/son-lau-kho-dinh-mat",
+    category: "Xử Lý Sự Cố",
+    categorySlug: "loi-thi-cong",
+    title: "Khắc Phục Lỗi Sơn Hệ Nước Lâu Khô & Dính Mặt Khi Đóng Gói (Blocking) | Lotus",
+    metaDescription:
+      "Tìm hiểu nguyên nhân sơn hệ nước lâu khô, dính màng khi xếp chồng đóng gói và giải pháp sấy đối lưu gió, phụ gia tăng cứng đạt chuẩn kháng dính mặt ASTM D2793.",
+    h1: "Xử Lý Triệt Để Hiện Tượng Sơn Hệ Nước Lâu Khô & Dính Mặt Khi Xếp Chồng Đóng Gói (Blocking)",
+    publishedAt: "22/08/2026",
+    readTime: "6 phút đọc",
+    quickSummary:
+      "Lỗi dính mặt khi đóng gói (Blocking) xảy ra khi thiếu lưu thông gió bề mặt hoặc đóng gói khi màng sơn mới chỉ khô mặt chứ chưa khô thấu hoàn toàn, đặc biệt khi độ ẩm không khí > 85%. Giải pháp chuẩn: Áp dụng thông gió đối lưu cưỡng bức (vận tốc gió 0.8 - 1.2 m/s) và dòng sơn kháng dính mặt đạt chuẩn ASTM D2793 sau 3-4 giờ phơi sấy.",
+    whenToChoose: [
+      "Quy chuẩn bắt buộc cho mọi nhà máy sản xuất đồ gỗ nội thất xuất khẩu và đóng gói pallet.",
+    ],
+    whenNotToChoose: [],
+    lotusRecommendation:
+      "Luôn dùng móng tay bấm thử vào góc khuất sản phẩm trong 10 giây; nếu không để lại vết hằn lún mới cho phép bọc màng xốp đóng thùng carton.",
+    sections: [
+      {
+        id: "thoi-gian-dong-goi",
+        heading: "1. Bảng thời gian đóng gói an toàn theo điều kiện phòng phơi",
+        table: {
+          headers: ["Điều kiện phòng sấy", "Nhiệt độ", "Độ ẩm RH", "Thời gian trước đóng gói", "Đánh giá"],
+          rows: [
+            ["Phòng phơi tự nhiên (Mùa hè)", "30 - 35°C", "55 - 65%", "2.5 - 3 giờ", "An toàn"],
+            ["Phòng phơi có quạt gió cưỡng bức", "28 - 32°C", "60 - 70%", "1.5 - 2 giờ", "Tối ưu năng suất"],
+            ["Phòng sấy gió ấm đối lưu", "40 - 45°C", "< 50%", "40 - 50 phút", "Xuất xưởng cấp tốc"],
+            ["Thời tiết nồm ẩm (Không quạt)", "20 - 24°C", "> 85%", "> 12 giờ (Nguy cơ dính)", "Cần máy hút ẩm"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Sản phẩm bị dính mờ dấu vân xốp nhẹ khi bóc màng nilon thì xử lý thế nào?",
+        answer:
+          "Dùng khăn microfiber sạch tẩm sáp đánh bóng cana lau xoáy tròn nhẹ nhàng trong 1 phút, màng sơn sẽ sáng bóng phẳng lại như mới mà không cần sơn lại.",
+      },
+    ],
+    relatedSlugs: ["chuyen-doi-he-nuoc/chinh-sung-phun-phong-say", "chuyen-doi-he-nuoc/dao-tao-tho-son"],
+  },
 };
