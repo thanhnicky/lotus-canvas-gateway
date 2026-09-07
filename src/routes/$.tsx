@@ -34,7 +34,7 @@ export const Route = createFileRoute("/$")({
         meta: [{ title: "404 - Không tìm thấy trang | Sơn Lotus" }],
       };
     }
-    const fullUrl = `https://sonhenuoc.com/${article.slug}`;
+    const fullUrl = `https://www.sonhenuoc.com/${article.slug}`;
     const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -55,14 +55,14 @@ export const Route = createFileRoute("/$")({
       author: {
         "@type": "Organization",
         name: "Sơn Lotus R&D Team",
-        url: "https://sonhenuoc.com",
+        url: "https://www.sonhenuoc.com",
       },
       publisher: {
         "@type": "Organization",
         name: "Sơn Lotus",
         logo: {
           "@type": "ImageObject",
-          url: "https://sonhenuoc.com/logo-lotus-paint.png",
+          url: "https://www.sonhenuoc.com/logo-lotus-paint.png",
         },
       },
       mainEntityOfPage: fullUrl,
@@ -524,7 +524,7 @@ function ArticleView() {
       <footer className="mt-16 border-t border-stone-200 bg-stone-900 py-12 text-stone-400">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-xs">
           <p>© 2026 Sơn Lotus — Nhà sản xuất sơn công nghiệp hệ nước hàng đầu Việt Nam.</p>
-          <p className="mt-1">Website chính thức: https://sonhenuoc.com | Hotline: 0943.966.662</p>
+          <p className="mt-1">Website chính thức: https://www.sonhenuoc.com | Hotline: 0943.966.662</p>
         </div>
       </footer>
     </div>

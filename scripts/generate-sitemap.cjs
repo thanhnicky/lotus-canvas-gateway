@@ -10,7 +10,7 @@ while ((match = regex.exec(articlesFile)) !== null) {
 }
 
 const today = new Date().toISOString().split('T')[0];
-const BASE_URL = 'https://sonhenuoc.com';
+const BASE_URL = 'https://www.sonhenuoc.com';
 
 const xmlUrls = [
   `  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`

@@ -39,6 +39,9 @@ export const Route = createFileRoute("/")({
           "Lotus đề xuất hệ phủ theo vật liệu nền, môi trường và quy mô — cho xưởng nội thất, nhà thầu kết cấu, nhà máy xuất khẩu và đơn vị thi công sàn.",
       },
     ],
+    links: [
+      { rel: "canonical", href: "https://www.sonhenuoc.com" },
+    ],
   }),
   component: Index,
 });

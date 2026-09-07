@@ -22,7 +22,7 @@ Tài liệu hướng dẫn thiết lập **Google Cloud Service Account** để 
 
 1. Mở file `service_account.json`, copy địa chỉ email trong trường `"client_email"` (ví dụ: `google-indexing-bot@lotus-indexing.iam.gserviceaccount.com`).
 2. Truy cập [Google Search Console](https://search.google.com/search-console).
-3. Chọn tài sản website `https://sonhenuoc.com` (hoặc domain property).
+3. Chọn tài sản website `https://www.sonhenuoc.com` (hoặc domain property).
 4. Vào **Cài đặt (Settings)** $\rightarrow$ **Người dùng và quyền (Users and permissions)** $\rightarrow$ Nhấn **Thêm người dùng (Add User)**.
 5. Dán địa chỉ email của Service Account vào, chọn quyền **Chủ sở hữu (Owner)** và nhấn **Thêm (Add)**.
 

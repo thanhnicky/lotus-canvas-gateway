@@ -3,7 +3,7 @@ const path = require('path');
 const https = require('https');
 
 const API_KEY = "c4b9d0e1f3a2489ba1b2c3d4e5f6a7b8";
-const HOST = "sonhenuoc.com";
+const HOST = "www.sonhenuoc.com";
 const KEY_LOCATION = `https://${HOST}/${API_KEY}.txt`;
 
 // Ensure verification file exists in public/

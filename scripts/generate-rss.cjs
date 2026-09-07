@@ -7,7 +7,7 @@ const regex = /"([a-z0-9\/-]+)":\s*{\s*slug:\s*"([^"]+)",\s*category:\s*"([^"]+)
 
 const items = [];
 let match;
-const BASE_URL = 'https://sonhenuoc.com';
+const BASE_URL = 'https://www.sonhenuoc.com';
 const now = new Date().toUTCString();
 
 while ((match = regex.exec(articlesFile)) !== null) {
