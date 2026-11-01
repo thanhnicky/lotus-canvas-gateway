@@ -1,4 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { SITE_URL } from "@/lib/site";
+import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 import logoLotusPaint from "@/assets/logo-lotus-paint.png";
@@ -32,6 +34,8 @@ export const Route = createFileRoute("/")({
         content:
           "Nhà sản xuất sơn Việt Nam. Hệ sơn gỗ, kim loại, giả gỗ, composite và sàn công nghiệp — chọn đúng hệ ngay từ đầu, giảm làm lại, dễ bàn giao.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:title", content: "Sơn Lotus — Đúng hệ sơn cho công trình thật" },
       {
         property: "og:description",
@@ -40,7 +44,7 @@ export const Route = createFileRoute("/")({
       },
     ],
     links: [
-      { rel: "canonical", href: "https://www.sonhenuoc.com" },
+      { rel: "canonical", href: SITE_URL },
     ],
   }),
   component: Index,
@@ -681,14 +685,13 @@ function Index() {
                         transform: isActive ? "scaleX(1)" : "scaleX(0)",
                       }}
                     />
-                    <button
+                    <div
                       onClick={() => setActiveId(c.id)}
                       onMouseEnter={() => handleHover(c.id)}
                       onMouseLeave={handleHoverLeave}
                       className={`group block w-[15rem] md:w-full text-left px-5 pt-5 pb-5 transition-colors duration-500 ${
                         isActive ? "bg-paper/60" : "hover:bg-onyx/[0.025]"
                       }`}
-                      aria-pressed={isActive}
                     >
                       <div className="flex items-start gap-4">
                         {/* Material specimen — narrow strip, not a thumbnail */}
@@ -719,7 +722,9 @@ function Index() {
                               isActive ? "text-onyx" : "text-onyx/65 group-hover:text-onyx"
                             }`}
                           >
-                            {c.index}. {c.name}
+                            <Button variant="ghost" aria-pressed={isActive} onClick={() => setActiveId(c.id)} className="h-auto whitespace-normal rounded-none p-0 text-left font-serif text-base font-normal leading-snug hover:bg-transparent md:text-[1.05rem]">
+                              {c.index}. {c.name}
+                            </Button>
                           </h3>
                           {/* Reveal tagline only on active — collapses gracefully */}
                           <div
@@ -747,7 +752,7 @@ function Index() {
                           </div>
                         </div>
                       </div>
-                    </button>
+                    </div>
                   </li>
                 );
               })}
@@ -1505,6 +1510,7 @@ function Index() {
 
         <div className="mt-20 pt-8 border-t border-onyx/10 flex flex-col md:flex-row md:items-center md:justify-between gap-3 font-mono text-[9px] uppercase tracking-[0.32em] text-onyx/30">
           <span>© {new Date().getFullYear()} Sơn Lotus</span>
+          <Link to="/blog" className="text-onyx/70 hover:text-onyx">Cẩm nang kỹ thuật ↗</Link>
           <span>Sản xuất tại Việt Nam</span>
         </div>
       </footer>

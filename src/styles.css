@@ -193,3 +193,16 @@
 /* ── Mobile-only utility to prevent Tailwind purge ─────────────────── */
 .mobile-only { display: block; }
 @media (min-width: 768px) { .mobile-only { display: none; } }
+
+/* The knowledge library uses the same material palette and editorial type. */
+.blog-kicker { font-family: var(--font-mono); font-size: 10px; line-height: 1.8; color: var(--muted-foreground); }
+.blog-topic { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; font-size: 13px; line-height: 1.6; border-bottom: 1px solid var(--border); }
+.blog-topic span { font-family: var(--font-mono); font-size: 10px; }
+.blog-topic:hover { color: var(--foreground); }
+.blog-list { list-style: disc; padding-left: 18px; color: var(--muted-foreground); font-size: 14px; line-height: 1.9; }
+.blog-list li + li { margin-top: 12px; }
+.blog-prose p { color: var(--muted-foreground); font-size: 15px; line-height: 1.9; }
+.blog-prose p + p { margin-top: 18px; }
+@media (prefers-reduced-motion: reduce) {
+  html, body { scroll-behavior: auto; }
+}

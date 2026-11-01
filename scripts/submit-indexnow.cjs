@@ -3,7 +3,8 @@ const path = require('path');
 const https = require('https');
 
 const API_KEY = "c4b9d0e1f3a2489ba1b2c3d4e5f6a7b8";
-const HOST = "www.sonhenuoc.com";
+const siteFile = fs.readFileSync(path.join(__dirname, '../src/lib/site.ts'), 'utf-8');
+const HOST = new URL(siteFile.match(/SITE_URL = "([^"]+)"/)[1]).hostname;
 const KEY_LOCATION = `https://${HOST}/${API_KEY}.txt`;
 
 // Ensure verification file exists in public/
