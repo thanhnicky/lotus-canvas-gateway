@@ -15,8 +15,8 @@ while ((match = regex.exec(articlesFile)) !== null) {
   const [, slug, , category, title, desc] = match;
   items.push(`    <item>
       <title><![CDATA[${title}]]></title>
-      <link>${BASE_URL}/${slug}</link>
-      <guid>${BASE_URL}/${slug}</guid>
+      <link>${BASE_URL}/blog/${slug}</link>
+      <guid>${BASE_URL}/blog/${slug}</guid>
       <category><![CDATA[${category}]]></category>
       <description><![CDATA[${desc}]]></description>
     </item>`);

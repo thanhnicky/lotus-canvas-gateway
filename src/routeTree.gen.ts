@@ -14,6 +14,7 @@ import { Route as SplatRouteImport } from './routes/$'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as BlogSplatRouteImport } from './routes/blog.$'
 import { Route as BlogChuDeCategoryRouteImport } from './routes/blog.chu-de.$category'
 
 const IndexRoute = IndexRouteImport.update({
@@ -41,6 +42,11 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   path: '/',
   getParentRoute: () => BlogRoute,
 } as any)
+const BlogSplatRoute = BlogSplatRouteImport.update({
+  id: '/$',
+  path: '/$',
+  getParentRoute: () => BlogRoute,
+} as any)
 const BlogChuDeCategoryRoute = BlogChuDeCategoryRouteImport.update({
   id: '/chu-de/$category',
   path: '/chu-de/$category',
@@ -52,6 +58,7 @@ export interface FileRoutesByFullPath {
   '/$': typeof SplatRoute
   '/blog': typeof BlogRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/$': typeof BlogSplatRoute
   '/blog/': typeof BlogIndexRoute
   '/blog/chu-de/$category': typeof BlogChuDeCategoryRoute
 }
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$': typeof SplatRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/$': typeof BlogSplatRoute
   '/blog': typeof BlogIndexRoute
   '/blog/chu-de/$category': typeof BlogChuDeCategoryRoute
 }
@@ -68,21 +76,30 @@ export interface FileRoutesById {
   '/$': typeof SplatRoute
   '/blog': typeof BlogRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/$': typeof BlogSplatRoute
   '/blog/': typeof BlogIndexRoute
   '/blog/chu-de/$category': typeof BlogChuDeCategoryRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/$' | '/blog' | '/sitemap.xml' | '/blog/' | '/blog/chu-de/$category'
+    | '/'
+    | '/$'
+    | '/blog'
+    | '/sitemap.xml'
+    | '/blog/$'
+    | '/blog/'
+    | '/blog/chu-de/$category'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/$' | '/sitemap.xml' | '/blog' | '/blog/chu-de/$category'
+  to:
+    '/' | '/$' | '/sitemap.xml' | '/blog/$' | '/blog' | '/blog/chu-de/$category'
   id:
     | '__root__'
     | '/'
     | '/$'
     | '/blog'
     | '/sitemap.xml'
+    | '/blog/$'
     | '/blog/'
     | '/blog/chu-de/$category'
   fileRoutesById: FileRoutesById
@@ -131,6 +148,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/blog/$': {
+      id: '/blog/$'
+      path: '/$'
+      fullPath: '/blog/$'
+      preLoaderRoute: typeof BlogSplatRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/blog/chu-de/$category': {
       id: '/blog/chu-de/$category'
       path: '/chu-de/$category'
@@ -142,11 +166,13 @@ declare module '@tanstack/react-router' {
 }
 
 interface BlogRouteChildren {
+  BlogSplatRoute: typeof BlogSplatRoute
   BlogIndexRoute: typeof BlogIndexRoute
   BlogChuDeCategoryRoute: typeof BlogChuDeCategoryRoute
 }
 
 const BlogRouteChildren: BlogRouteChildren = {
+  BlogSplatRoute: BlogSplatRoute,
   BlogIndexRoute: BlogIndexRoute,
   BlogChuDeCategoryRoute: BlogChuDeCategoryRoute,
 }

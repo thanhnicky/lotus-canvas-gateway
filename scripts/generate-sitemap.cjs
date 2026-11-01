@@ -22,7 +22,7 @@ const xmlUrls = [
 
 slugs.forEach(slug => {
   xmlUrls.push(
-    `  <url>\n    <loc>${BASE_URL}/${slug}</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>`
+    `  <url>\n    <loc>${BASE_URL}/blog/${slug}</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>`
   );
 });
 

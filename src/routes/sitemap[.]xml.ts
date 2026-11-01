@@ -11,7 +11,7 @@ export const Route = createFileRoute("/sitemap.xml")({
       GET: async () => {
         const articleUrls = Object.keys(ARTICLES).map(
           (slug) =>
-            `  <url><loc>${BASE_URL}/${slug}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`
+            `  <url><loc>${BASE_URL}/blog/${slug}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`
         );
 
         const xml = [

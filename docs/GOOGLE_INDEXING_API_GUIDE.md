@@ -9,7 +9,7 @@ Google Indexing API chỉ dành cho nội dung JobPosting hoặc BroadcastEvent 
 3. Dùng Kiểm tra URL để kiểm tra một bài viết, xem trang trực tiếp và yêu cầu lập chỉ mục nếu đủ điều kiện.
 4. Theo dõi lý do loại trừ trong báo cáo Lập chỉ mục trang. Google tự quyết định bài nào được lập chỉ mục.
 
-Website giữ các đường dẫn bài viết hiện có. Trang `/blog` và các chuyên đề giúp người đọc, Google tìm đến toàn bộ bài viết.
+Toàn bộ bài viết chạy tại `/blog/` theo sau bởi đường dẫn bài cũ. Các URL cũ chuyển hướng vĩnh viễn (301) đến bài tương ứng, không còn trang đọc riêng. Trang `/blog` và các chuyên đề giúp người đọc, Google tìm đến toàn bộ bài viết.
 
 Khi kết nối tên miền riêng, cập nhật địa chỉ chuẩn trong `src/lib/site.ts`, tạo lại sitemap/RSS, cập nhật robots.txt và xác minh tên miền mới trước khi gửi sitemap. Không dùng địa chỉ xem trước làm địa chỉ chuẩn.
 
