@@ -1327,7 +1327,7 @@ export const ARTICLES: Record<string, ArticleData> = {
     publishedAt: "01/11/2026",
     readTime: "8 phút đọc",
     quickSummary:
-      "Sơn loa hệ nước là hệ sơn phủ gốc nước chuyên dụng cho thùng loa gỗ công nghiệp (MDF, HDF, gỗ dán), gồm 3 tầng: lót chặn xơ MDF chống phồng cạnh, lớp sơn sần / sơn mâm tạo texture và lớp phủ bảo vệ chống trầy. Hệ sơn khô ráo mặt 15 - 20 phút, xả nhám sau 45 - 60 phút, độ bám dính trên MDF đạt 5B (ASTM D3359), VOC < 45 g/L và hoàn toàn không mùi dung môi.",
+      "Sơn loa hệ nước là hệ sơn phủ gốc nước chuyên dụng cho thùng loa gỗ công nghiệp (MDF, HDF, gỗ dán), dùng cặp đôi Lotus Speaker Primer (lót chặn xơ, làm mịn nền) và Lotus Speaker Paint (sơn sần texture điều chỉnh được, pha màu theo yêu cầu). Hệ sơn khô ráo mặt 30 - 60 phút, độ bám dính trên MDF đạt 5B (ASTM D3359), chống trầy - chống ẩm - chống nước, VOC < 45 g/L và không mùi dung môi.",
     whenToChoose: [
       "Xưởng sản xuất loa kéo, loa thùng karaoke, loa line array, subwoofer làm bằng MDF / HDF / gỗ dán số lượng lớn, cần nhịp chuyền khô nhanh.",
       "Xưởng đặt trong khu công nghiệp mật độ cao hoặc gần khu dân cư, bị giới hạn phát thải mùi dung môi và yêu cầu PCCC khắt khe.",
@@ -1339,7 +1339,7 @@ export const ARTICLES: Record<string, ArticleData> = {
       "Đơn hàng yêu cầu bề mặt bóng gương piano-finish dày trên 400 - 500 µm (nên dùng hệ sơn riêng hoặc quy trình đa lớp có sấy cưỡng bức).",
     ],
     lotusRecommendation:
-      "Cạnh cắt và mặt khoan lỗ của tấm MDF hút nước gấp 3 - 5 lần mặt phẳng, là nguyên nhân số 1 gây phồng cạnh và xù xơ sau sơn. Bắt buộc thi công 1 lớp sơn lót chặn xơ Lotus MDF Sealer (pha đặc, lăn hoặc chà riêng vào cạnh) trước khi phun lót tổng thể.",
+      "Cạnh cắt và mặt khoan lỗ của tấm MDF hút nước gấp 3 - 5 lần mặt phẳng, là nguyên nhân số 1 gây phồng cạnh và xù xơ sau sơn. Bắt buộc dùng Sơn Lót Loa Lotus Speaker Primer nguyên chất lăn hoặc chà riêng vào cạnh cắt trước khi phun lót tổng thể.",
     sections: [
       {
         id: "son-loa-he-nuoc-la-gi",
@@ -1354,8 +1354,23 @@ export const ARTICLES: Record<string, ArticleData> = {
         ],
       },
       {
+        id: "he-san-pham-son-loa",
+        heading: "2. Hệ sản phẩm sơn loa chuyên dụng của Lotus",
+        paragraphs: [
+          "Lotus cung cấp hệ sơn loa gốc nước đồng bộ cho toàn bộ quy trình hoàn thiện thùng loa, đóng gói thùng 20 kg cho nhịp sản xuất xưởng:",
+        ],
+        table: {
+          headers: ["Sản phẩm", "Vai trò trong hệ sơn", "Đặc tính nổi bật"],
+          rows: [
+            ["Sơn Lót Loa — Lotus Speaker Primer", "Lót chặn xơ cạnh cắt & lót tổng thể", "Bám dính cao trên gỗ tự nhiên & gỗ công nghiệp, làm mịn bề mặt, che khuyết điểm nhỏ, độ phủ cao tiêu hao thấp"],
+            ["Sơn Sần Loa — Lotus Speaker Paint", "Lớp texture sần / màu hoàn thiện", "Điều chỉnh độ sần theo nhu cầu, chống trầy - chống ẩm - chống nước, ít mùi, hạn chế bám bụi dễ vệ sinh, pha màu theo yêu cầu"],
+            ["Phủ mờ chống trầy (tùy chọn)", "Lớp bảo vệ ngoài cho loa di động", "Độ cứng 2H, kháng nước bề mặt — đặt theo yêu cầu đơn hàng"],
+          ],
+        },
+      },
+      {
         id: "bang-thong-so-ky-thuat",
-        heading: "2. Bảng thông số cơ lý tính tiêu chuẩn",
+        heading: "3. Bảng thông số cơ lý tính tiêu chuẩn",
         paragraphs: [
           "Kiểm nghiệm tại Phòng Thí nghiệm R&D Lotus và QUATEST 3 trên mẫu phôi MDF 17mm tiêu chuẩn:",
         ],
@@ -1364,7 +1379,7 @@ export const ARTICLES: Record<string, ArticleData> = {
           rows: [
             ["Độ bám dính trên MDF", "ASTM D3359", "5B (100% không tróc)", "Không bong khi lắp vit, bản lề"],
             ["Độ cứng màng sơn", "ASTM D3363", "H - 2H", "Chống trầy khi xếp chồng, vận chuyển"],
-            ["Thời gian khô ráo mặt", "30°C, RH 70% có gió", "15 - 20 phút", "Kịp nhịp chuyền xếp dỡ"],
+            ["Thời gian khô ráo mặt", "30°C, RH 70% có gió", "30 - 60 phút", "Kịp nhịp chuyền xếp dỡ"],
             ["Thời gian khô xả nhám", "30°C, có quạt lưu thông", "45 - 60 phút", "Xả nhám trong ca, không bết ráp"],
             ["Thời gian đóng gói", "Sau lớp phủ cuối", "4 - 6 giờ", "Đóng thùng trong ngày"],
             ["Kháng nước bề mặt (24h)", "ISO 2812-2", "Không phồng, không trắng hóa", "Loa kéo dùng ngoài trời an toàn"],
@@ -1374,22 +1389,22 @@ export const ARTICLES: Record<string, ArticleData> = {
       },
       {
         id: "quy-trinh-thi-cong",
-        heading: "3. Quy trình thi công chuẩn 4 bước cho thùng loa MDF",
+        heading: "4. Quy trình thi công chuẩn 4 bước cho thùng loa MDF",
         steps: [
           {
             step: "Bước 1",
             title: "Lót chặn xơ cạnh cắt & lỗ khoan",
-            desc: "Dùng Lotus MDF Sealer nguyên chất lăn/chà kỹ vào cạnh cắt, lỗ loa, rãnh âm. Khô 30 - 45 phút, xả nhám nhẹ P320 phá xơ dựng.",
+            desc: "Dùng Sơn Lót Loa Lotus Speaker Primer nguyên chất lăn/chà kỹ vào cạnh cắt, lỗ loa, rãnh âm. Khô 30 - 45 phút, xả nhám nhẹ P320 phá xơ dựng.",
           },
           {
             step: "Bước 2",
-            title: "Phun lót tổng thể (Sanding Sealer)",
-            desc: "Phun 1 - 2 lớp lót (WFT 90 - 120 µm/lớp, béc 1.5 - 1.8mm). Sau 45 - 60 phút xả nhám tơi P320 - P400 cho bề mặt phẳng đều.",
+            title: "Phun lót tổng thể (Lotus Speaker Primer)",
+            desc: "Phun 1 - 2 lớp lót bằng cọ, con lăn hoặc súng phun (WFT 90 - 120 µm/lớp, béc 1.5 - 1.8mm). Sau 45 - 60 phút xả nhám tơi P320 - P400 cho bề mặt phẳng đều.",
           },
           {
             step: "Bước 3",
-            title: "Sơn sần hoặc sơn màu hoàn thiện",
-            desc: "Sơn sần: súng sần béc 2.5 - 3.5mm áp 1.0 - 1.5 Bar. Sơn mâm: HVLP béc 1.4 - 1.6mm, 2 lớp mỏng giao nhau cho màu đều không vệt.",
+            title: "Sơn sần hoặc sơn màu (Lotus Speaker Paint)",
+            desc: "Sơn sần: súng sần béc 2.5 - 3.5mm áp 1.0 - 1.5 Bar. Sơn mâm/phủ màu: HVLP béc 1.4 - 1.6mm hoặc cọ lăn, 2 lớp mỏng giao nhau. Sơn hỗ trợ pha màu theo yêu cầu.",
           },
           {
             step: "Bước 4",
@@ -1400,7 +1415,7 @@ export const ARTICLES: Record<string, ArticleData> = {
       },
       {
         id: "ky-thuat-phun-son-san",
-        heading: "4. Bảng thông số phun sơn sần theo cỡ hạt",
+        heading: "5. Bảng thông số phun sơn sần theo cỡ hạt",
         paragraphs: [
           "Ba thông số quyết định kích thước hạt sần — chốt một bộ thông số duy nhất cho toàn đơn hàng, phun tấm mẫu đầu ca làm chuẩn so màu & cỡ hạt cho tất cả thợ:",
         ],
@@ -1415,7 +1430,7 @@ export const ARTICLES: Record<string, ArticleData> = {
       },
       {
         id: "chong-am-phong-canh",
-        heading: "5. Chống ẩm phồng cạnh MDF & độ bền khi đóng gói",
+        heading: "6. Chống ẩm phồng cạnh MDF & độ bền khi đóng gói",
         paragraphs: [
           "Cạnh MDF hút nước làm xơ trương nở vĩnh viễn, phồng thành đường bầu. Ba lớp phòng thủ: lót chặn xơ cạnh bắt buộc, không phun ướt quá mức ở cạnh, và với đơn cao cấp thì trám cạnh bằng bột trét gốc nước trước khi sơn.",
           "Màng sơn đạt 90% cơ lý sau 24 giờ; đóng gói sớm 4 - 6 giờ chỉ nên dùng xốp định hình, không để màng ép trực tiếp vào PE/carton. Đơn container đường biển nên lót giấy hoặc nilon mỏng chống lỗi blocking khi xếp chồng.",
@@ -1423,7 +1438,7 @@ export const ARTICLES: Record<string, ArticleData> = {
       },
       {
         id: "so-sanh-phuong-an",
-        heading: "6. So sánh với sơn sần dung môi và dán nỉ vinyl",
+        heading: "7. So sánh với sơn sần dung môi và dán nỉ vinyl",
         table: {
           headers: ["Tiêu chí", "Sơn sần hệ nước Lotus", "Sơn sần dung môi", "Dán nỉ / vinyl"],
           rows: [
@@ -1438,17 +1453,17 @@ export const ARTICLES: Record<string, ArticleData> = {
       },
       {
         id: "dinh-muc-tieu-hao",
-        heading: "7. Định mức tiêu hao cho 1 thùng loa",
+        heading: "8. Định mức tiêu hao cho 1 thùng loa",
         paragraphs: [
-          "Tham chiếu thùng loa kéo 4 tấc (~ 1.8 - 2.2 m2 bề mặt sơn toàn phần gồm cạnh):",
+          "Tham chiếu thùng loa kéo 4 tấc (~ 1.8 - 2.2 m2 bề mặt sơn toàn phần gồm cạnh). Cả Speaker Primer và Speaker Paint đều đóng gói thùng 20 kg — đủ cho khoảng 60 - 80 thùng loa/hệ hoàn thiện:",
         ],
         table: {
           headers: ["Hạng mục sơn", "Định mức lý thuyết", "Tiêu hao / thùng", "Thời gian chờ"],
           rows: [
-            ["Lót chặn xơ cạnh", "15 - 20 m2/kg", "40 - 60 g", "30 - 45 phút"],
-            ["Sơn lót xả nhám", "8 - 10 m2/kg", "180 - 250 g", "45 - 60 phút"],
-            ["Sơn sần / sơn màu", "4 - 6 m2/kg", "300 - 450 g", "45 - 60 phút"],
-            ["Phủ mờ chống trầy", "8 - 10 m2/kg", "180 - 250 g", "4 - 6 giờ trước đóng gói"],
+            ["Lót chặn xơ cạnh (Speaker Primer)", "15 - 20 m2/kg", "40 - 60 g", "30 - 45 phút"],
+            ["Lót tổng thể (Speaker Primer)", "8 - 10 m2/kg", "180 - 250 g", "45 - 60 phút"],
+            ["Sơn sần / màu (Speaker Paint)", "4 - 6 m2/kg", "300 - 450 g", "1 - 2 giờ ráo mặt"],
+            ["Phủ mờ chống trầy", "8 - 10 m2/kg", "180 - 250 g", "Đóng gói sau 4 - 6 giờ"],
           ],
         },
       },
@@ -1473,6 +1488,11 @@ export const ARTICLES: Record<string, ArticleData> = {
         question: "Súng phun sơn dung môi cũ có phun được sơn loa hệ nước không?",
         answer:
           "Được, không cần đổi súng. Chỉ cần vệ sinh sạch dung môi cũ bằng nước rửa chuyên dụng, nên dùng súng có kim béc inox 304/316. Súng sần hopper hiện có vẫn dùng trực tiếp cho sơn sần hệ nước.",
+      },
+      {
+        question: "Sơn sần loa có những màu nào ngoài màu đen truyền thống không?",
+        answer:
+          "Sơn Sần Loa Lotus Speaker Paint hỗ trợ pha màu theo yêu cầu — ngoài đen sần tiêu chuẩn có thể đặt ghi xám, xanh navy hoặc màu riêng theo đơn hàng, giữ nguyên hiệu ứng texture và độ bền màng sơn.",
       },
       {
         question: "Lớp sơn hệ nước có làm thay đổi chất âm của thùng loa không?",
