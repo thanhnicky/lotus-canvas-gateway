@@ -15,6 +15,9 @@ export const TOPICS = [
   { slug: "chuyen-doi-he-nuoc", name: "Chuyển đổi hệ nước", image: craft, description: "Thiết bị, tay nghề và chi phí khi chuyển đổi dây chuyền sơn." },
   { slug: "so-sanh", name: "So sánh hệ sơn", image: wood, description: "Đối chiếu hệ sơn theo hiệu quả vận hành và yêu cầu của công việc." },
   { slug: "loi-thi-cong", name: "Xử lý lỗi", image: metal, description: "Tìm nguyên nhân và hướng xử lý các lỗi màng sơn thường gặp." },
+  { slug: "son-loa-he-nuoc", name: "Sơn loa", image: wood, description: "Hoàn thiện thùng loa MDF & gỗ dán: lót chặn xơ, sơn sần texture, phủ chống trầy cho dây chuyền xưởng." },
+  { slug: "son-ngoi-he-nuoc", name: "Sơn ngói", image: grain, description: "Đổi màu mái ngói xi măng, đất nung: kháng kiềm, chống rêu mốc, bền màu nắng mưa." },
+  { slug: "son-say-cong-nghiep-he-nuoc", name: "Sơn sấy công nghiệp", image: metal, description: "Sơn sấy gốc nước cho vỏ máy & linh kiện: chế độ sấy, lỗi bọt khí và cải tạo lò hiện có." },
 ];
 export const ALL_ARTICLES = Object.values(ARTICLES);
 export function topicFor(slug: string) { return TOPICS.find((topic) => topic.slug === slug) ?? TOPICS[0]; }
