@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SITE_URL } from "@/lib/site";
+import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 import logoLotusPaint from "@/assets/logo-lotus-paint.png";
@@ -684,14 +685,13 @@ function Index() {
                         transform: isActive ? "scaleX(1)" : "scaleX(0)",
                       }}
                     />
-                    <button
+                    <div
                       onClick={() => setActiveId(c.id)}
                       onMouseEnter={() => handleHover(c.id)}
                       onMouseLeave={handleHoverLeave}
                       className={`group block w-[15rem] md:w-full text-left px-5 pt-5 pb-5 transition-colors duration-500 ${
                         isActive ? "bg-paper/60" : "hover:bg-onyx/[0.025]"
                       }`}
-                      aria-pressed={isActive}
                     >
                       <div className="flex items-start gap-4">
                         {/* Material specimen — narrow strip, not a thumbnail */}
@@ -722,7 +722,9 @@ function Index() {
                               isActive ? "text-onyx" : "text-onyx/65 group-hover:text-onyx"
                             }`}
                           >
-                            {c.index}. {c.name}
+                            <Button variant="ghost" aria-pressed={isActive} onClick={() => setActiveId(c.id)} className="h-auto whitespace-normal rounded-none p-0 text-left font-serif text-base font-normal leading-snug hover:bg-transparent md:text-[1.05rem]">
+                              {c.index}. {c.name}
+                            </Button>
                           </h3>
                           {/* Reveal tagline only on active — collapses gracefully */}
                           <div
@@ -750,7 +752,7 @@ function Index() {
                           </div>
                         </div>
                       </div>
-                    </button>
+                    </div>
                   </li>
                 );
               })}

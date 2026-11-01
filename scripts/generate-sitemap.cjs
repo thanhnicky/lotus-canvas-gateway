@@ -33,4 +33,4 @@ ${xmlUrls.join('\n')}
 `;
 
 fs.writeFileSync(path.join(__dirname, '../public/sitemap.xml'), sitemapContent, 'utf-8');
-console.log(`✅ Generated public/sitemap.xml with ${slugs.length + 1} URLs!`);
+console.log(`✅ Generated public/sitemap.xml with ${xmlUrls.length} URLs!`);
