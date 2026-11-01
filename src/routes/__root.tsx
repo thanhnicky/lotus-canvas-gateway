@@ -10,6 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import { SITE_URL } from "@/lib/site";
+import siteIcon from "@/assets/lotus-site-icon.png";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
@@ -91,6 +92,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:description", content: "Sơn Lotus là nhà sản xuất sơn công nghiệp hệ nước cho gỗ, kim loại, sơn giả gỗ, nhựa/composite và sàn. Chọn đúng hệ sơn cho hạng mục của bạn và nhận tư vấn nhanh qua Zalo." },
     ],
     links: [
+      { rel: "icon", type: "image/png", sizes: "192x192", href: siteIcon },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
