@@ -10,7 +10,7 @@
 <!-- LOVABLE:END -->
 
 ## Content architecture
-- Keep existing article paths in the article registry and resolve them through the typed splat route; this preserves incoming links while `/blog` and its topic pages provide discovery.
+- Keep article registry slugs stable and render all articles under `/blog/$`; the root splat only permanently redirects known legacy paths to prevent duplicate blogs and preserve incoming links.
 - Use `src/lib/site.ts` for the canonical public origin and Zalo destination; keep crawler files and generators aligned with that origin.
 - Blog views reuse the global material palette, editorial fonts and bundled material imagery; the product gateway remains a separate unchanged experience.
 - Keep sitemap dates absent unless sourced from a verified page-specific content timestamp; generation time is not a content update.
