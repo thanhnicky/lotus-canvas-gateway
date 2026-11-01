@@ -1810,4 +1810,395 @@ export const ARTICLES: Record<string, ArticleData> = {
     ],
     relatedSlugs: ["chuyen-doi-he-nuoc/chinh-sung-phun-phong-say", "chuyen-doi-he-nuoc/tco-chi-phi-son-he-nuoc", "son-kim-loai-he-nuoc"],
   },
+
+  "son-nhua-he-nuoc": {
+    slug: "son-nhua-he-nuoc",
+    category: "Sơn Nhựa & Nền Khó Bám",
+    categorySlug: "son-nhua-he-nuoc",
+    title: "Sơn Nhựa Hệ Nước: Bám Dính Trên ABS, PVC, PP Không Bong Tróc | Sơn Lotus",
+    metaDescription:
+      "Sơn nhựa hệ nước Lotus cho nền nhựa ABS, PVC, PP, PC: hệ lót tăng bám chuyên dụng cho bề mặt năng lượng thấp, độ bám dính ô cờ 4B-5B, không mùi dung môi, không ăn mòn nhựa. Nhận tư vấn hệ sơn theo từng loại nhựa.",
+    h1: "Sơn Nhựa Hệ Nước: Giải Pháp Bám Dính Bền Vững Trên Nền ABS, PVC, PP & PC",
+    publishedAt: "01/11/2026",
+    readTime: "8 phút đọc",
+    quickSummary:
+      "Sơn nhựa hệ nước là hệ sơn phủ gốc nước dùng nhựa PUD / Acrylic có khả năng thấm ướt cao kết hợp lớp lót tăng bám (adhesion promoter) chuyên cho bề mặt nhựa năng lượng thấp. ABS, PVC, PC sơn trực tiếp sau lót tăng bám; PP, PE bắt buộc xử lý bề mặt bằng lửa, corona hoặc lót CPO chuyên dụng. Hệ sơn đạt độ bám dính ô cờ 4B - 5B (ASTM D3359), không mùi dung môi và không gây nứt hóa chất (stress cracking) trên nhựa như sơn dung môi.",
+    whenToChoose: [
+      "Xưởng sản xuất linh kiện nhựa, đồ gia dụng, đồ chơi, phụ kiện cần phủ màu mà không chịu được mùi dung môi.",
+      "Bề mặt nhựa kỹ thuật ABS, PVC, uPVC, PC, PS cần đổi màu hoặc phủ bảo vệ chống tia UV.",
+      "Chi tiết nhựa không chịu nhiệt sấy, yêu cầu hệ sơn đóng rắn nhiệt độ phòng.",
+      "Đơn hàng xuất khẩu yêu cầu màng phủ VOC thấp, không hơi dung môi tồn dư trong chi tiết đóng gói kín.",
+    ],
+    whenNotToChoose: [
+      "Nền nhựa còn dính dầu tách khuôn (silicone) chưa vệ sinh kỹ — bất kỳ hệ sơn nào cũng bong.",
+      "Nhựa siêu khó bám dạng PTFE, silicone, nhựa hóa dẻo mạnh chưa được tư vấn hệ xử lý riêng.",
+    ],
+    lotusRecommendation:
+      "Đừng bỏ qua bước test năng lượng bề mặt trước khi báo giá: nhỏ nước cất lên bề mặt nhựa — nước loang màng đều là nền đủ ướt để sơn, nước co giọt tròn là phải xử lý (nhám hóa, lửa hoặc lót CPO). Test 5 giây này quyết định 90% khả năng thành công của màng sơn trên nhựa.",
+    sections: [
+      {
+        id: "vi-sao-nhua-kho-bam-dinh",
+        heading: "1. Vì sao nhựa là bề mặt khó bám dính — góc nhìn năng lượng bề mặt",
+        paragraphs: [
+          "Màng sơn chỉ bám được khi nó thấm ướt được bề mặt — sơn loang thành màng thay vì co lại thành giọt. Kim loại, gỗ, bê tông có năng lượng cao (> 40 dyne/cm) nên sơn dễ bám; nhựa có năng lượng thấp từ 29 dyne/cm (PP, PE) đến ~45 dyne/cm nên sơn co giọt, khô xong chỉ dính cơ học yếu và bong mảng.",
+          "Cộng thêm chất tách khuôn silicone còn sót từ khâu ép và chất dẻo di cư trên PVC mềm — hai nguyên nhân thầm lặng làm màng sơn bong sau vài tuần. Ưu điểm riêng của hệ nước: không chứa dung môi mạnh nên không gây stress cracking — lỗi nứt tơ chân gà mà sơn dung môi thường gây trên ABS, PC.",
+        ],
+      },
+      {
+        id: "phan-loai-theo-nhua",
+        heading: "2. Bảng phân loại mức độ khó bám theo từng loại nhựa",
+        table: {
+          headers: ["Loại nhựa", "Năng lượng bề mặt", "Mức độ khó bám", "Hệ sơn khuyến nghị"],
+          rows: [
+            ["ABS (vỏ đồ điện tử)", "~ 42 dyne/cm", "Dễ", "Lót tăng bám nhẹ + màu + phủ"],
+            ["PVC cứng / uPVC", "~ 39 dyne/cm", "Vừa", "Lót tăng bám bắt buộc"],
+            ["PC polycarbonate", "~ 42 dyne/cm", "Vừa", "Lót tăng bám; cảnh giác nứt ứng suất"],
+            ["PS cứng (phào chỉ, hộp)", "~ 38 dyne/cm", "Vừa", "Lót tăng bám bắt buộc"],
+            ["PP (ghế, hộp, linh kiện)", "~ 29 - 30 dyne/cm", "Khó", "Xử lý lửa/corona HOẶC lót CPO"],
+            ["PE / HDPE", "~ 30 - 31 dyne/cm", "Khó", "Như PP — xử lý bề mặt bắt buộc"],
+            ["Nylon (PA6/66)", "~ 46 dyne/cm", "Vừa", "Lót tăng bám; lưu ý hút ẩm"],
+          ],
+        },
+      },
+      {
+        id: "quy-trinh-thi-cong",
+        heading: "3. Quy trình thi công chuẩn 5 bước trên nền nhựa",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Vệ sinh nền — loại bỏ dầu mỡ & tách khuôn",
+            desc: "Lau giẻ tẩm cồn IPA hoặc dung dịch tẩy gốc nước, đổi mặt giẻ liên tục. Không dùng xăng/thinner mạnh lên ABS, PC — gây nứt hóa chất.",
+          },
+          {
+            step: "Bước 2",
+            title: "Xử lý bề mặt (bắt buộc PP/PE)",
+            desc: "Chà nhám nhẹ P400 - P600, xử lý lửa 1 - 2 giây/bề mặt hoặc corona trên dây chuyền. Kiểm chứng bằng test giọt nước loang màng đều.",
+          },
+          {
+            step: "Bước 3",
+            title: "Phun lót tăng bám",
+            desc: "1 lớp mỏng 15 - 25 µm Lotus Adhesion Primer (hoặc lót CPO cho PP/PE), flash-off 15 - 20 phút. Hiệu quả theo hóa học, không theo độ dày.",
+          },
+          {
+            step: "Bước 4",
+            title: "Phun màu 1 - 2 lớp",
+            desc: "Phun mỏng giao nhau, mỗi lớp cách 20 - 30 phút có quạt. Phun dày trên nền trơn dễ chảy tụ và lâu khô thấu.",
+          },
+          {
+            step: "Bước 5",
+            title: "Phủ bảo vệ & đóng rắn",
+            desc: "Phủ mờ/bóng chống trầy khi cần. Test bám dính sau 24 giờ, đóng gói sau 48 - 72 giờ.",
+          },
+        ],
+      },
+      {
+        id: "loi-thuong-gap",
+        heading: "4. Lỗi thường gặp khi sơn trên nhựa & cách khắc phục",
+        table: {
+          headers: ["Lỗi", "Nguyên nhân", "Khắc phục"],
+          rows: [
+            ["Bong tróc mảng sau khô", "Năng lượng bề mặt thấp, không lót tăng bám", "Xử lý nền + lót tăng bám/CPO"],
+            ["Mắt cá, rọ cá", "Dầu tách khuôn, silicone, dầu tay", "Vệ sinh IPA kỹ, thay giẻ sạch"],
+            ["Bong sau vài tuần", "Chất dẻo di cư (PVC mềm, TPE)", "Lót khóa hóa dẻo hoặc tư vấn Lotus"],
+            ["Nứt tơ chân gà ABS/PC", "Sơn/rửa súng dung môi mạnh", "Chỉ dùng hệ nước + nước rửa chuyên dụng"],
+            ["Màng nhão, lâu khô", "Phun dày, trời ẩm không gió", "Phun mỏng nhiều lớp, tăng gió"],
+          ],
+        },
+      },
+      {
+        id: "so-sanh-dung-moi",
+        heading: "5. So sánh với sơn nhựa dung môi truyền thống",
+        paragraphs: [
+          "Trên nền nhựa, bản chất khó bám không thay đổi giữa hệ nước và hệ dầu — cả hai đều phải xử lý nền và lót tăng bám. Điểm khác biệt thực sự: hệ nước không gây stress cracking trên ABS/PC, không mùi dung môi trong xưởng, không hơi dung môi tồn dư trong chi tiết đóng gói kín và loại bỏ rủi ro cháy nổ kho sơn.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Sơn trực tiếp lên nhựa không qua lót có được không?",
+        answer:
+          "Với ABS, PC, uPVC sạch có thể bám tạm nhưng độ bền không đảm bảo — khuyến nghị luôn dùng lót tăng bám. Với PP/PE gần như chắc chắn bong mảng nếu không xử lý bề mặt và lót CPO chuyên dụng.",
+      },
+      {
+        question: "Nhựa PP có sơn được thật không?",
+        answer:
+          "Được, nhưng bắt buộc 1 trong 2 điều kiện: xử lý lửa/corona nâng năng lượng bề mặt, hoặc lót CPO gốc nước thiết kế riêng cho polyolefin. Test giọt nước loang màng đều là điều kiện tiên quyết.",
+      },
+      {
+        question: "Chi tiết nhựa còn dính dầu tách khuôn thì xử lý thế nào?",
+        answer:
+          "Lau kỹ bằng cồn IPA hoặc dung dịch tẩy tách khuôn chuyên dụng, đổi mặt giẻ liên tục. Silicone tách khuôn nặng cần dung dịch khử silicone riêng — là nguyên nhân số 1 gây mắt cá và bong tróc.",
+      },
+      {
+        question: "Sơn nhựa hệ nước có bền ngoài trời không?",
+        answer:
+          "Có, nếu dùng hệ có phủ kháng UV. Đồ nhựa ngoài trời nên dùng màu + topcoat chống tia cực tím — nhựa giòn hóa dưới nắng sẽ kéo màng sơn phấn theo nếu nền không ổn định UV.",
+      },
+      {
+        question: "Sơn trên nhựa có cần sấy không?",
+        answer:
+          "Không cần — hệ nước đóng rắn nhiệt độ phòng, phù hợp nhựa vốn mềm ở 60 - 80°C. Có thể sấy nhẹ 40 - 50°C để nhanh nhịp chuyền nhưng cần kiểm tra giới hạn nhiệt biến dạng của từng loại nhựa.",
+      },
+    ],
+    relatedSlugs: ["son-nhua-he-nuoc/cua-nhua-upvc", "son-nhua-he-nuoc/xop-eps", "son-composite-he-nuoc"],
+  },
+
+  "son-nhua-he-nuoc/cua-nhua-upvc": {
+    slug: "son-nhua-he-nuoc/cua-nhua-upvc",
+    category: "Sơn Nhựa & Nền Khó Bám",
+    categorySlug: "son-nhua-he-nuoc",
+    title: "Sơn Cửa Nhựa Hệ Nước: Đổi Màu & Giả Gỗ Cho Cửa uPVC, Tấm Nano | Sơn Lotus",
+    metaDescription:
+      "Sơn cửa nhựa hệ nước Lotus cho cửa nhựa uPVC lõi thép, tấm ốp nano: lót tăng bám chuyên nền PVC, đổi màu hoặc vân gỗ, khô nhiệt độ phòng không cong vênh, không mùi. Tư vấn hệ sơn theo dòng cửa.",
+    h1: "Sơn Cửa Nhựa Hệ Nước: Giải Pháp Đổi Màu & Vân Gỗ Cho Cửa uPVC Lõi Thép, Tấm Ốp Nano",
+    publishedAt: "01/11/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn cửa nhựa hệ nước là hệ sơn phủ gốc nước dùng lót tăng bám chuyên cho nền nhựa uPVC lõi thép và tấm ốp PVC, phục vụ 2 nhu cầu chính: đổi màu cửa nhựa và hoàn thiện vân gỗ giả gỗ. Hệ sơn đóng rắn nhiệt độ phòng — không cần sấy nên tuyệt đối không làm mềm biến dạng thanh nhựa uPVC (vốn nhũn hóa từ ~70°C), độ bám dính 4B - 5B, kháng UV và không mùi khi thi công tại nhà đang ở.",
+    whenToChoose: [
+      "Nhà máy sản xuất cửa nhựa muốn mở rộng bảng màu/vân gỗ mà không đầu tư thanh profile ép màu sẵn.",
+      "Cửa nhựa cũ bạc màu, ố vàng cần phục hồi hoặc đổi màu theo kiến trúc mới.",
+      "Công trình đang ở/vận hành yêu cầu thi công sơn không mùi, không sấy nhiệt.",
+      "Tấm ốp nhựa nano, cửa nhựa Đài Loan, cửa gỗ nhựa composite cần sơn đổi màu hoặc giả gỗ.",
+    ],
+    whenNotToChoose: [
+      "Cửa nhựa phủ film laminate/PVC skin sẵn — lớp film chống dính cần hệ xử lý riêng.",
+      "Đổi màu tối cho cửa hướng nắng gắt phía Tây mà không dùng hệ màu phản xạ nhiệt — nguy cơ cong vênh.",
+      "Thanh nhựa nứt vỡ, giòn hóa nặng do lão hóa — sơn không cứu được nền đã suy yếu.",
+    ],
+    lotusRecommendation:
+      "Với cửa nhựa đổi sang màu tối (đen, xám đậm, nâu socola) lắp vị trí nắng trực tiếp, bắt buộc dùng hệ bột màu phản xạ tia hồng ngoại (IR-reflective). Màu tối thường đẩy bề mặt uPVC vượt 65 - 75°C — điểm bắt đầu cong vênh; màu phản xạ nhiệt giữ bề mặt mát hơn 10 - 15°C.",
+    sections: [
+      {
+        id: "dac-thu-upvc",
+        heading: "1. Ba đặc thù khiến cửa nhựa cần hệ sơn chuyên dụng",
+        list: [
+          "Năng lượng bề mặt thấp (~ 39 dyne/cm): sơn thường co giọt, khô xong bong mảng — bắt buộc lót tăng bám cho nền nhựa.",
+          "Nhạy nhiệt: uPVC nhũn biến dạng từ 65 - 80°C, mọi hệ sơn sấy đều bị loại — chỉ hệ đóng rắn nhiệt độ phòng dùng được.",
+          "Bề mặt profile nhiều rãnh & góc cạnh: sơn phải phun được vào hệ rãnh kỹ thuật, gioăng, bản lề để đạt thẩm mỹ đồng đều.",
+        ],
+      },
+      {
+        id: "quy-trinh-thi-cong",
+        heading: "2. Quy trình thi công chuẩn trên cửa nhựa uPVC",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Vệ sinh — tẩy wax, silicone, dầu mỡ",
+            desc: "Lau giẻ tẩm cồn IPA toàn bộ thanh profile. Thanh uPVC trắng thường có lớp wax bảo quản từ nhà sản xuất phải tẩy sạch.",
+          },
+          {
+            step: "Bước 2",
+            title: "Nhám hóa nhẹ",
+            desc: "Chà nhám P400 - P600 phá bóng tạo neo cơ học, thổi sạch bụi.",
+          },
+          {
+            step: "Bước 3",
+            title: "Phun lót tăng bám 1 lớp mỏng",
+            desc: "Lotus Adhesion Primer cho nền PVC, màng mỏng 15 - 25 µm, flash-off 20 - 30 phút.",
+          },
+          {
+            step: "Bước 4",
+            title: "Phun sơn màu 1 - 2 lớp",
+            desc: "Mỗi lớp cách 30 - 60 phút có quạt. Phun rãnh khó trước, mặt phẳng sau; không phun dày tránh chảy mép rãnh.",
+          },
+          {
+            step: "Bước 5",
+            title: "Phủ kháng UV (ngoài trời)",
+            desc: "1 lớp phủ bảo vệ cho cửa ngoài trời. Đóng rắn 24 - 72 giờ trước khi vận hành.",
+          },
+        ],
+      },
+      {
+        id: "mau-toi-cong-venh",
+        heading: "3. Đổi màu tối trên cửa nhựa nắng gắt: vấn đề cong vênh nhiệt",
+        paragraphs: [
+          "Lỗi nghiêm trọng nhất khi sơn cửa nhựa là màu tối hấp thụ nhiệt đẩy bề mặt uPVC quá ngưỡng mềm — thanh nhựa cong vênh vĩnh viễn chỉ sau vài tuần nắng.",
+        ],
+        table: {
+          headers: ["Tình huống", "Nhiệt bề mặt nắng trưa", "Đánh giá"],
+          rows: [
+            ["Cửa trắng nguyên bản", "45 - 55°C", "An toàn"],
+            ["Sơn màu tối thường", "70 - 80°C", "Nguy cơ cong vênh thanh nhựa"],
+            ["Màu tối hạt phản xạ IR", "55 - 65°C", "An toàn — mát hơn 10 - 15°C"],
+          ],
+        },
+      },
+      {
+        id: "ung-dung-tam-op",
+        heading: "4. Ứng dụng trên tấm ốp nano & cửa nhựa các loại",
+        table: {
+          headers: ["Vật liệu", "Đặc điểm nền", "Ghi chú hệ sơn"],
+          rows: [
+            ["Cửa uPVC lõi thép", "Năng lượng thấp, nhạy nhiệt, có wax", "Lót tăng bám + màu + phủ UV"],
+            ["Cửa nhựa Đài Loan (ABS)", "Dễ bám hơn, bề mặt da cam", "Lót tăng bám nhẹ vẫn khuyến nghị"],
+            ["Tấm ốp nano / tấm PVC", "PVC cứng, đôi khi có film sẵn", "Sơn được trên nền PVC trơn; nền film cần test"],
+            ["Cửa gỗ nhựa WPC", "Nền mao dẫn + nhựa", "Bám tốt hơn PVC trơn, vẫn cần lót"],
+            ["Cửa phủ film laminate", "Film có lớp chống dính", "Không khuyến nghị — liên hệ kỹ thuật"],
+          ],
+        },
+      },
+      {
+        id: "dinh-muc",
+        heading: "5. Định mức tiêu hao cho 1 bộ cửa",
+        paragraphs: [
+          "Bộ cửa nhựa 1 cánh 900 × 2200mm (~ 4 - 4.5 m2 sơn 2 mặt gồm khuôn): lót tăng bám ~ 300 - 370 g, sơn màu 2 lớp ~ 900 g - 1.1 kg, phủ UV ~ 400 - 450 g. Một bộ cửa hoàn thiện trong nửa ngày làm việc, đóng rắn đủ sau 48 - 72 giờ mới vận hành đóng mở mạnh.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Cửa nhựa cũ bị ố vàng, bạc màu có sơn phủ được không?",
+        answer:
+          "Được. Sau vệ sinh sạch và nhám nhẹ P400 - P600, lót tăng bám + sơn màu sẽ che hoàn toàn màu ố cũ — miễn nền nhựa còn nguyên vẹn, chưa giòn nứt vì lão hóa.",
+      },
+      {
+        question: "Sơn cửa nhựa màu tối ngoài nắng có bị cong vênh không?",
+        answer:
+          "Có nguy cơ với màu tối thường — bề mặt có thể nóng 70 - 80°C vượt ngưỡng mềm uPVC. Giải pháp: hệ bột màu phản xạ nhiệt IR, hoặc chỉ sơn màu sáng - trung bình cho cửa hướng nắng.",
+      },
+      {
+        question: "Sơn cửa nhựa có phải sấy không?",
+        answer:
+          "Không — và tuyệt đối không nên. uPVC mềm ở 65 - 80°C, mọi hệ sơn sấy đều gây biến dạng. Sơn hệ nước đóng rắn nhiệt độ phòng, khô ráo mặt 30 - 60 phút có gió lưu thông.",
+      },
+      {
+        question: "Có phải tháo cửa ra để sơn không?",
+        answer:
+          "Không bắt buộc. Cửa đang lắp sơn tại chỗ được sau khi che chắn kính, gioăng, bản lề. Tháo cánh phun trên giá cho màng đồng đều hơn — phù hợp khi sơn số lượng nhiều.",
+      },
+      {
+        question: "Tấm ốp nhựa nano trong nhà có sơn đổi màu được không?",
+        answer:
+          "Được, quy trình giống cửa nhựa: vệ sinh, nhám nhẹ, lót tăng bám, sơn màu. Tấm trong nhà không cần phủ UV — chỉ cần phủ chống trầy nếu vị trí dễ va chạm.",
+      },
+    ],
+    relatedSlugs: ["son-nhua-he-nuoc", "son-gia-go-he-nuoc", "son-gia-go-he-nuoc/sat-hop"],
+  },
+
+  "son-nhua-he-nuoc/xop-eps": {
+    slug: "son-nhua-he-nuoc/xop-eps",
+    category: "Sơn Nhựa & Nền Khó Bám",
+    categorySlug: "son-nhua-he-nuoc",
+    title: "Sơn Xốp Hệ Nước: Sơn Phào Chỉ, Mô Hình, Đạo Cụ Không Chảy Xốp | Sơn Lotus",
+    metaDescription:
+      "Sơn xốp hệ nước Lotus — lựa chọn duy nhất cho nền xốp EPS, phào chỉ PS, mô hình, đạo cụ: sơn dung môi làm chảy tan xốp. Lót bít mao dẫn, sơn màu, sơn cứng bảo vệ, thi công cọ/lăn/phun. Tư vấn hệ sơn theo loại xốp.",
+    h1: "Sơn Xốp Hệ Nước: Giải Pháp Duy Nhất Cho Phào Chỉ, Mô Hình & Đạo Cụ Xốp Không Bị Chảy",
+    publishedAt: "01/11/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn xốp hệ nước là hệ sơn gốc nước chuyên cho nền xốp — và là lựa chọn gần như duy nhất, vì mọi sơn dung môi đều hòa tan polystyrene làm xốp chảy sùi mất hình ngay khi tiếp xúc. Hệ sơn gồm lót bít mao dẫn (xốp hút sơn cực mạnh), sơn màu acrylic và tùy chọn sơn cứng bảo vệ cho mô hình/đạo cụ chịu va chạm.",
+    whenToChoose: [
+      "Phào chỉ, cổ trần, phù điêu làm từ xốp PS ép đặc cần sơn màu hoặc giả xi măng/giả đá.",
+      "Mô hình kiến trúc, sa bàn, mô hình sản phẩm cắt CNC từ xốp EPS cần phủ màu.",
+      "Đạo cụ sân khấu, phim trường, booth triển lãm, biển quảng cáo xốp cần sơn hoặc sơn cứng bảo vệ.",
+      "Xưởng sản xuất phào chỉ xốp số lượng lớn cần hệ sơn phun không mùi trên dây chuyền.",
+    ],
+    whenNotToChoose: [
+      "Muốn dùng sơn dung môi/phun xịt lên xốp — chảy tan ngay, không có ngoại lệ.",
+      "Xốp cần phủ để ngâm nước lâu dài (bè, phao) — cần hệ chống thấm chuyên biệt khác.",
+    ],
+    lotusRecommendation:
+      "Xốp EPS hạt rời hút sơn gấp 4 - 6 lần bề mặt đặc — phun màu trực tiếp sẽ tốn gấp đôi vật tư mà màng vẫn loang. Bắt buộc 1 lớp lót bít mao dẫn (sealer) hệ nước trước; với mô hình cần độ cứng va chạm dùng sơn cứng PU hệ nước 2K làm lớp áo giáp.",
+    sections: [
+      {
+        id: "vi-sao-chi-he-nuoc",
+        heading: "1. Vì sao chỉ có sơn hệ nước sơn được xốp",
+        paragraphs: [
+          "Xốp EPS, xốp PS cấu tạo từ 98% không khí trong các hạt polystyrene nở — polystyrene tan hoàn toàn trong dung môi hữu cơ (xăng thơm, toluene, acetone). Chấm một giọt thinner lên mặt xốp: bề mặt sùi bọt, lõm sâu ngay lập tức.",
+          "Sơn hệ nước là ngoại lệ duy nhất: môi trường phân tán là nước, không hòa tan polystyrene — màng chỉ bám trên bề mặt, không ăn vào hạt. Xốp cũng không chịu nhiệt (co ~70 - 80°C) nên mọi hệ sơn sấy cũng bị loại.",
+        ],
+      },
+      {
+        id: "phan-loai-nen-xop",
+        heading: "2. Phân loại nền xốp & mức độ xử lý",
+        table: {
+          headers: ["Loại xốp", "Đặc điểm bề mặt", "Mức hút sơn", "Hệ xử lý"],
+          rows: [
+            ["Xốp EPS hạt (mô hình)", "Hạt rời, dễ bong", "Rất cao", "Lót sealer 1 - 2 lớp bắt buộc"],
+            ["Xốp XPS (cách nhiệt)", "Mịn hơn, kín hơi", "Vừa", "Lót 1 lớp"],
+            ["Phào chỉ PS ép đặc", "Đặc mịn gần như nhựa", "Thấp", "Lót tăng bám nhẹ hoặc lót chuẩn"],
+            ["Xốp PU cứng", "Bọt cứng, hút vừa", "Vừa", "Lót sealer 1 lớp"],
+            ["Xốp mềm/mút xốp", "Đàn hồi, xốp mở", "Cao", "Sơn mềm chuyên, không lót cứng"],
+          ],
+        },
+      },
+      {
+        id: "quy-trinh-thi-cong",
+        heading: "3. Quy trình thi công chuẩn trên nền xốp",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Chuẩn bị bề mặt xốp",
+            desc: "Cắt gọt hoàn thiện hình dáng trước khi sơn. Phủi sạch bụi và hạt rời — xốp tích tĩnh điện mạnh. Không chà nhám mạnh trên EPS hạt.",
+          },
+          {
+            step: "Bước 2",
+            title: "Lót bít mao dẫn (Sealer)",
+            desc: "Phun hoặc quét 1 - 2 lớp sealer hệ nước, bít mao dẫn và liên kết hạt xốp rời. Khô 30 - 60 phút, kiểm tra kín không còn lỗ thấu.",
+          },
+          {
+            step: "Bước 3",
+            title: "Sơn màu acrylic",
+            desc: "Súng béc 1.4 - 1.8mm hoặc quét/cọ cho chi tiết nhỏ, 1 - 2 lớp mỏng. Hiệu ứng giả xi măng, giả đá, mạ vàng tùy yêu cầu.",
+          },
+          {
+            step: "Bước 4",
+            title: "Phủ bảo vệ / sơn cứng",
+            desc: "Trong nhà có thể bỏ qua hoặc phủ mờ nhẹ. Ngoài trời: phủ kháng UV. Chịu va chạm: sơn cứng PU hệ nước 2K.",
+          },
+        ],
+      },
+      {
+        id: "son-cung-bao-ve",
+        heading: "4. Sơn cứng bảo vệ cho mô hình & đạo cụ chịu va chạm",
+        paragraphs: [
+          "Vấn đề lớn nhất của đồ xốp là bề mặt mềm, dễ móp nứt khi di chuyển. Giải pháp của xưởng đạo cụ chuyên nghiệp là sơn cứng (hard coat): hệ sơn cứng PU hệ nước 2K phủ lớp 0.5 - 1mm tạo vỏ cứng như nhựa — mô hình cầm nắm, xếp chồng, vận chuyển không sợ móp.",
+          "Thi công phun súng sần béc lớn hoặc quét, đóng rắn nhiệt độ phòng — không sấy vì xốp co nhiệt. Rẻ hơn nhiều so với đổ khuôn nhựa hoặc phủ epoxy dung môi (vốn ăn xốp).",
+        ],
+      },
+      {
+        id: "ung-dung-nganh",
+        heading: "5. Ứng dụng theo ngành",
+        table: {
+          headers: ["Ngành", "Sản phẩm xốp", "Hệ sơn đề xuất"],
+          rows: [
+            ["Nội thất - xây dựng", "Phào chỉ PS, cổ trần, phù điêu", "Sealer + màu + giả đá/mạ tùy chọn"],
+            ["Kiến trúc - quy hoạch", "Mô hình sa bàn, khối cảnh EPS", "Sealer + màu + sơn cứng nếu di chuyển"],
+            ["Quảng cáo - sự kiện", "Biển xốp, chữ nổi, booth, prop", "Sealer + màu + phủ UV ngoài trời"],
+            ["Sân khấu - điện ảnh", "Đạo cụ, bối cảnh, tượng xốp lớn", "Sealer + sơn cứng 2K + màu hiệu ứng"],
+            ["Sân vườn - tiểu cảnh", "Non bộ, tảng đá giả xốp", "Lót + màu giả đá + phủ UV chống rêu"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Sơn dầu, sơn xịt có sơn được lên xốp không?",
+        answer:
+          "Tuyệt đối không. Dung môi hữu cơ hòa tan polystyrene — xốp sùi bọt và chảy mất hình trong vài giây. Chỉ có sơn gốc nước an toàn trên mọi loại xốp.",
+      },
+      {
+        question: "Phào chỉ nhựa PS đã lắp sẵn có sơn lại đổi màu được không?",
+        answer:
+          "Được. Phào chỉ PS đặc chỉ cần vệ sinh sạch, nhám rất nhẹ (hoặc bỏ qua), lót tăng bám nhẹ rồi sơn màu. Hệ nước không mùi nên thi công được ngay trong nhà đang ở.",
+      },
+      {
+        question: "Sơn trên xốp có cần sơn lót không?",
+        answer:
+          "Rất nên — đặc biệt trên EPS hạt. Xốp hút sơn cực mạnh, sơn màu trực tiếp sẽ loang và tốn vật tư gấp đôi. Lớp sealer bít mao dẫn tiết kiệm tổng vật tư và cho màu đều hơn hẳn.",
+      },
+      {
+        question: "Mô hình xốp sơn xong có chịu được va chạm không?",
+        answer:
+          "Sơn màu thường chỉ tạo màng mỏng — mô hình vẫn mềm dễ móp. Nếu cần di chuyển, trưng bày va chạm nhiều, dùng thêm lớp sơn cứng PU hệ nước 2K phủ dày tạo vỏ cứng bảo vệ.",
+      },
+      {
+        question: "Sơn xốp ngoài trời có bị phai màu, hư hỏng không?",
+        answer:
+          "Xốp EPS/XPS tự suy yếu dưới tia UV — lớp sơn giúp bảo vệ xốp khỏi nắng. Dùng màu + phủ kháng UV cho đồ ngoài trời; dùng lâu dài nên cân nhắc sơn cứng cho cả bảo vệ cơ học lẫn UV.",
+      },
+    ],
+    relatedSlugs: ["son-nhua-he-nuoc", "son-composite-he-nuoc", "son-loa-he-nuoc"],
+  },
 };

@@ -17,6 +17,7 @@
   <url><loc>https://lotus-canvas-gateway.lovable.app/blog/chu-de/son-loa-he-nuoc</loc></url>
   <url><loc>https://lotus-canvas-gateway.lovable.app/blog/chu-de/son-ngoi-he-nuoc</loc></url>
   <url><loc>https://lotus-canvas-gateway.lovable.app/blog/chu-de/son-say-cong-nghiep-he-nuoc</loc></url>
+  <url><loc>https://lotus-canvas-gateway.lovable.app/blog/chu-de/son-nhua-he-nuoc</loc></url>
   <url>
     <loc>https://lotus-canvas-gateway.lovable.app/blog/son-go-he-nuoc/tieu-chuan-xuat-khau-eu-us</loc>
     <changefreq>daily</changefreq>
@@ -154,6 +155,21 @@
   </url>
   <url>
     <loc>https://lotus-canvas-gateway.lovable.app/blog/son-say-cong-nghiep-he-nuoc</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lotus-canvas-gateway.lovable.app/blog/son-nhua-he-nuoc</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lotus-canvas-gateway.lovable.app/blog/son-nhua-he-nuoc/cua-nhua-upvc</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lotus-canvas-gateway.lovable.app/blog/son-nhua-he-nuoc/xop-eps</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>

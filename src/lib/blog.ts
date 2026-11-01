@@ -18,6 +18,7 @@ export const TOPICS = [
   { slug: "son-loa-he-nuoc", name: "Sơn loa", image: wood, description: "Hoàn thiện thùng loa MDF & gỗ dán: lót chặn xơ, sơn sần texture, phủ chống trầy cho dây chuyền xưởng." },
   { slug: "son-ngoi-he-nuoc", name: "Sơn ngói", image: grain, description: "Đổi màu mái ngói xi măng, đất nung: kháng kiềm, chống rêu mốc, bền màu nắng mưa." },
   { slug: "son-say-cong-nghiep-he-nuoc", name: "Sơn sấy công nghiệp", image: metal, description: "Sơn sấy gốc nước cho vỏ máy & linh kiện: chế độ sấy, lỗi bọt khí và cải tạo lò hiện có." },
+  { slug: "son-nhua-he-nuoc", name: "Sơn nhựa & nền khó bám", image: composite, description: "Bám dính trên nhựa ABS/PVC/PP, cửa nhựa uPVC và xốp EPS: xử lý nền năng lượng thấp và lót tăng bám." },
 ];
 export const ALL_ARTICLES = Object.values(ARTICLES);
 export function topicFor(slug: string) { return TOPICS.find((topic) => topic.slug === slug) ?? TOPICS[0]; }
