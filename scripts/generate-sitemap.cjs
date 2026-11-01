@@ -9,16 +9,20 @@ while ((match = regex.exec(articlesFile)) !== null) {
   slugs.push(match[1]);
 }
 
-const today = new Date().toISOString().split('T')[0];
-const BASE_URL = 'https://www.sonhenuoc.com';
+const siteFile = fs.readFileSync(path.join(__dirname, '../src/lib/site.ts'), 'utf-8');
+const BASE_URL = siteFile.match(/SITE_URL = "([^"]+)"/)[1];
+const topicFile = fs.readFileSync(path.join(__dirname, '../src/lib/blog.ts'), 'utf-8');
+const topics = [...topicFile.matchAll(/\{ slug: "([^"]+)"/g)].map(match => match[1]);
 
 const xmlUrls = [
-  `  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`
+  `  <url>\n    <loc>${BASE_URL}/</loc>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+  `  <url><loc>${BASE_URL}/blog</loc></url>`,
+  ...topics.map(slug => `  <url><loc>${BASE_URL}/blog/chu-de/${slug}</loc></url>`),
 ];
 
 slugs.forEach(slug => {
   xmlUrls.push(
-    `  <url>\n    <loc>${BASE_URL}/${slug}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>`
+    `  <url>\n    <loc>${BASE_URL}/${slug}</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>`
   );
 });
 

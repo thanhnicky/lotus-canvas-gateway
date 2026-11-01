@@ -7,7 +7,8 @@ const regex = /"([a-z0-9\/-]+)":\s*{\s*slug:\s*"([^"]+)",\s*category:\s*"([^"]+)
 
 const items = [];
 let match;
-const BASE_URL = 'https://www.sonhenuoc.com';
+const siteFile = fs.readFileSync(path.join(__dirname, '../src/lib/site.ts'), 'utf-8');
+const BASE_URL = siteFile.match(/SITE_URL = "([^"]+)"/)[1];
 const now = new Date().toUTCString();
 
 while ((match = regex.exec(articlesFile)) !== null) {
@@ -18,7 +19,6 @@ while ((match = regex.exec(articlesFile)) !== null) {
       <guid>${BASE_URL}/${slug}</guid>
       <category><![CDATA[${category}]]></category>
       <description><![CDATA[${desc}]]></description>
-      <pubDate>${now}</pubDate>
     </item>`);
 }
 
