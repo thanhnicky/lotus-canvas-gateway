@@ -54,7 +54,7 @@ export const ARTICLES: Record<string, ArticleData> = {
     publishedAt: "22/08/2026",
     readTime: "8 phút đọc",
     quickSummary:
-      "Sơn hệ nước Lotus đáp ứng toàn bộ các bộ tiêu chuẩn kiểm định an toàn màng phủ quốc tế khắt khe nhất dành cho đồ gỗ nội ngoại thất và thủ công mỹ nghệ xuất khẩu sang thị trường Châu Âu (EU), Mỹ (US) và Nhật Bản. Sản phẩm đạt chứng chỉ an toàn đồ chơi trẻ em EN 71-3, giới hạn chất độc hại RoHS, danh mục chất có mối quan ngại rất cao REACH (SVHC 240+ chất), đạo luật không khí sạch California Proposition 65 và hàm lượng VOCs < 45 g/L (chuẩn EPA Method 24). Lotus cung cấp đầy đủ hồ sơ đệ trình thầu gồm: TDS, MSDS và Test Report gốc từ SGS / Intertek / QUATEST 3.",
+      "Sơn hệ nước Lotus đáp ứng toàn bộ các bộ tiêu chuẩn kiểm định an toàn màng phủ quốc tế khắt khe nhất dành cho đồ gỗ nội ngoại thất và thủ công mỹ nghệ xuất khẩu sang thị trường Châu Âu (EU), Mỹ (US) và Nhật Bản. Sản phẩm đạt chứng chỉ an toàn đồ chơi trẻ em EN 71-3, giới hạn chất độc hại RoHS, danh mục chất có mối quan ngại rất cao REACH (SVHC 240+ chất), đạo luật không khí sạch California Proposition 65 và hàm lượng VOCs < 45 g/L (chuẩn EPA Method 24). Lotus cung cấp đầy đủ hồ sơ đệ trình thầu gồm: TDS, MSDS và Test Report gốc từ SGS / Intertek.",
     whenToChoose: [
       "Nội thất trẻ em, đồ chơi gỗ mầm non, đồ dùng nhà bếp xuất khẩu sang thị trường Mỹ (US) và Châu Âu (EU).",
       "Đơn hàng đồ gỗ xuất khẩu vào các chuỗi bán lẻ quốc tế lớn (IKEA, Walmart, Target, Home Depot) đòi hỏi chứng minh nguồn gốc nguyên liệu xanh.",
@@ -97,7 +97,7 @@ export const ARTICLES: Record<string, ArticleData> = {
       },
       {
         id: "bang-ket-qua-kiem-nghiem",
-        heading: "3. Bảng kết quả thử nghiệm thực tế từ SGS & QUATEST 3",
+        heading: "3. Bảng kết quả thử nghiệm thực tế từ SGS & Intertek",
         paragraphs: [
           "Dưới đây là bảng trích xuất các chỉ số kiểm nghiệm thực tế từ các chứng thư thử nghiệm của phòng Lab độc lập:",
         ],
@@ -139,7 +139,7 @@ export const ARTICLES: Record<string, ArticleData> = {
           {
             step: "Bước 3",
             title: "Gửi mẫu kiểm định Lab độc lập",
-            desc: "Lotus đồng hành cùng nhà máy gửi mẫu phôi đã sơn hoàn thiện đến SGS/Intertek/QUATEST 3.",
+            desc: "Lotus đồng hành cùng nhà máy gửi mẫu phôi đã sơn hoàn thiện đến SGS/Intertek.",
           },
           {
             step: "Bước 4",
@@ -153,7 +153,7 @@ export const ARTICLES: Record<string, ArticleData> = {
       {
         question: "Hồ sơ kiểm định của Sơn Lotus có được các Buyer khó tính tại Mỹ và Châu Âu chấp nhận không?",
         answer:
-          "Hoàn toàn được chấp nhận. Các chứng nhận thử nghiệm của Lotus được thực hiện bởi các tập đoàn kiểm định toàn cầu như SGS, Intertek và trung tâm kiểm định nhà nước QUATEST 3, có giá trị pháp lý quốc tế.",
+          "Hoàn toàn được chấp nhận. Các chứng nhận thử nghiệm của Lotus được thực hiện bởi các tập đoàn kiểm định toàn cầu như SGS và Intertek, có giá trị pháp lý quốc tế.",
       },
       {
         question: "Sơn hệ nước Lotus có chứa Formaldehyde hoặc kim loại nặng độc hại không?",
