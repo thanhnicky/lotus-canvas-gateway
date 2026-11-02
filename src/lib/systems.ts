@@ -49,7 +49,7 @@ export const CATEGORIES: Category[] = [
     nameEn: "Wood Coating",
     tagline: "Giữ màu ổn định giữa các đợt, giảm lỗi hoàn thiện khi chạy số lượng lớn.",
     manifesto:
-      "Không phải bề mặt nào cũng dùng chung một công thức. Lotus giúp bạn chọn đúng hệ phủ cho đúng hạng mục.",
+      "Không phải bề mặt nào cũng chịu được cùng một công thức. Lotus đề xuất hệ theo loài gỗ, độ ẩm phôi và nhịp chuyền thực tế của xưởng.",
     image: catWood,
     imageTone: "dark",
     accent: "#6f4a2a",
@@ -252,7 +252,7 @@ export const CATEGORIES: Category[] = [
     nameEn: "Plastic & Composite",
     tagline: "Bề mặt đồng đều hơn, dễ giữ chuẩn ngoại quan trên dây chuyền sản xuất.",
     manifesto:
-      "Một lỗi hệ phủ trên dây chuyền không chỉ hỏng sản phẩm — nó ảnh hưởng cả đơn hàng xuất khẩu và uy tín với khách. Lotus tư vấn hệ theo loại nhựa để đạt cross-cut và ngoại quan theo tiêu chuẩn khách.",
+      "Một mẻ sơn trượt bám dính trên dây chuyền có thể làm hỏng cả lô xuất khẩu. Lotus đề xuất hệ theo đúng loại nhựa để đạt cross-cut 4B-5B và ngoại quan đồng đều theo tiêu chuẩn Buyer.",
     image: catComposite,
     imageTone: "light",
     accent: "#3d4a4a",

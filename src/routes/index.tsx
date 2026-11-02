@@ -63,8 +63,8 @@ const MOOD: Record<string, { crop: string; pause: string; pauseSub: string }> = 
   },
   "cement-wood": {
     crop: "center 68%",
-    pause: "Chọn đúng hệ ngay từ đầu.",
-    pauseSub: "Tránh sửa cả một mặt cement đã lên vân.",
+    pause: "Lót sai một lớp, làm lại cả mảng vân.",
+    pauseSub: "Kiềm trong xi măng là nguyên nhân số 1 khiến vân bong — lót kháng kiềm không được thiếu.",
   },
   composite: {
     crop: "30% 50%",
@@ -73,8 +73,8 @@ const MOOD: Record<string, { crop: string; pause: string; pauseSub: string }> = 
   },
   floor: {
     crop: "center 78%",
-    pause: "Bền hay không, quyết định từ đầu.",
-    pauseSub: "Hệ sàn chọn theo nền, tải trọng và môi trường vận hành.",
+    pause: "Sàn bong thường không do sơn — do chọn sai hệ.",
+    pauseSub: "Hệ sàn chọn theo cường độ nền, độ ẩm và tải trọng vận hành.",
   },
 };
 
@@ -290,7 +290,7 @@ function Index() {
             </h1>
 
             <p className="mt-6 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
-              Lotus giúp bạn chọn đúng hệ nước cho đúng hạng mục.
+              Lotus đề xuất hệ sơn nước theo vật liệu nền và điều kiện công trình thật.
             </p>
           </div>
 
@@ -644,7 +644,7 @@ function Index() {
                   Phù hợp cho
                 </span>
                 <h3 className="font-serif text-4xl md:text-5xl mt-5 leading-[1.05] italic r-rise r-d1">
-                  Ai đang dùng <span className="not-italic">hệ này.</span>
+                  Hệ này phù hợp <span className="not-italic">với ai.</span>
                 </h3>
                 <p className="mt-6 text-onyx/65 leading-relaxed max-w-xs r-rise r-d2">
                   Dành cho xưởng chạy sản lượng ổn định, nhà thầu chịu trách nhiệm nghiệm thu và nhà máy phải giao đúng tiến độ.
@@ -679,12 +679,12 @@ function Index() {
                   Quy trình
                 </span>
                 <h2 className="font-serif text-5xl md:text-6xl leading-[0.98] mt-5 r-rise r-d1">
-                  Bốn bước,<br/>
-                  <span className="italic font-light text-clay/80">không bỏ qua bước nào.</span>
+                  4 bước chuẩn xưởng —<br/>
+                  <span className="italic font-light text-clay/80">bỏ một bước là có lỗi.</span>
                 </h2>
                 <p className="mt-8 text-clay/55 max-w-xs leading-relaxed r-rise r-d2">
-                  Phần lớn lỗi bong, lệch màu và làm lại đến từ một bước bị rút gọn để chạy nhanh.
-                  Cả bốn bước dưới đây đều cần thiết.
+                  Bong tróc, lệch màu, phải làm lại — phần lớn xuất phát từ việc rút gọn
+                  một bước để chạy nhanh nhịp. Dưới đây là quy trình chuẩn tại xưởng.
                 </p>
 
                 <div className="mt-10 inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-clay/50 r-rise r-d3">
