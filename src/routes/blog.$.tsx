@@ -59,6 +59,18 @@ export const Route = createFileRoute("/blog/$")({
   component: ArticlePage,
 });
 
+const linkCls = "font-medium text-accent underline underline-offset-4 decoration-accent/40 hover:decoration-accent";
+function renderRich(text: string, keyPrefix: string) {
+  return text.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!m) return part;
+    const key = `${keyPrefix}-${i}`;
+    if (m[2].startsWith("/blog/"))
+      return <Link key={key} to="/blog/$" params={{ _splat: m[2].slice(6) }} className={linkCls}>{m[1]}</Link>;
+    return <a key={key} href={m[2]} className={linkCls}>{m[1]}</a>;
+  });
+}
+
 function ArticlePage() {
   const { article } = Route.useLoaderData();
   const topic = topicFor(article.categorySlug);
@@ -81,10 +93,10 @@ function ArticlePage() {
             <aside className="my-10 border-l-2 border-accent pl-6"><p className="blog-kicker">Khuyến nghị Lotus</p><p className="mt-3 text-sm leading-7 text-muted-foreground">{article.lotusRecommendation}</p></aside>
             <div className="blog-prose">{article.sections.map((section) => <section key={section.id} id={section.id} className="scroll-mt-8 border-t border-border py-10 md:py-12">
               <h2 className="mb-6 font-serif text-3xl leading-tight md:text-4xl">{section.heading}</h2>
-              {section.paragraphs?.map((text, index) => <p key={index}>{text}</p>)}
-              {section.list && <ul className="blog-list my-6">{section.list.map((item) => <li key={item}>{item}</li>)}</ul>}
-              {section.table && <div role="region" aria-label={`Bảng: ${section.heading}`} tabIndex={0} className="my-8 max-w-full overflow-x-auto border-y border-border focus-visible:ring-1 focus-visible:ring-ring"><table className="w-full min-w-[540px] border-collapse text-left text-sm"><thead className="bg-secondary"><tr>{section.table.headers.map((header, index) => <th key={index} scope="col" className="px-4 py-5 font-semibold leading-6">{header}</th>)}</tr></thead><tbody>{section.table.rows.map((row, index) => <tr key={index} className="border-t border-border">{row.map((cell, cellIndex) => <td key={cellIndex} className="px-4 py-5 align-top leading-7">{cell}</td>)}</tr>)}</tbody></table></div>}
-              {section.steps && <ol className="my-8">{section.steps.map((step, index) => <li key={index} className="flex gap-5 border-b border-border py-6"><span className="font-mono text-xs text-accent">{String(index + 1).padStart(2, "0")}</span><div><h3 className="text-base font-semibold leading-7">{step.title}</h3><p className="mt-2">{step.desc}</p></div></li>)}</ol>}
+              {section.paragraphs?.map((text, index) => <p key={index}>{renderRich(text, `p-${index}`)}</p>)}
+              {section.list && <ul className="blog-list my-6">{section.list.map((item, index) => <li key={index}>{renderRich(item, `li-${index}`)}</li>)}</ul>}
+              {section.table && <div role="region" aria-label={`Bảng: ${section.heading}`} tabIndex={0} className="my-8 max-w-full overflow-x-auto border-y border-border focus-visible:ring-1 focus-visible:ring-ring"><table className="w-full min-w-[540px] border-collapse text-left text-sm"><thead className="bg-secondary"><tr>{section.table.headers.map((header, index) => <th key={index} scope="col" className="px-4 py-5 font-semibold leading-6">{header}</th>)}</tr></thead><tbody>{section.table.rows.map((row, index) => <tr key={index} className="border-t border-border">{row.map((cell, cellIndex) => <td key={cellIndex} className="px-4 py-5 align-top leading-7">{renderRich(cell, `td-${index}-${cellIndex}`)}</td>)}</tr>)}</tbody></table></div>}
+              {section.steps && <ol className="my-8">{section.steps.map((step, index) => <li key={index} className="flex gap-5 border-b border-border py-6"><span className="font-mono text-xs text-accent">{String(index + 1).padStart(2, "0")}</span><div><h3 className="text-base font-semibold leading-7">{step.title}</h3><p className="mt-2">{renderRich(step.desc, `st-${index}`)}</p></div></li>)}</ol>}
               {section.callout && <aside className="my-8 border-l-2 border-accent bg-secondary/40 px-6 py-5"><h3 className="text-sm font-semibold">{section.callout.title}</h3><p className="mt-3">{section.callout.text}</p></aside>}
             </section>)}</div>
             {article.faqs.length > 0 && <section id="cau-hoi" className="scroll-mt-8 border-t border-border pt-12"><p className="blog-kicker">Trao đổi kỹ thuật</p><h2 className="mt-5 mb-8 font-serif text-3xl md:text-4xl">Câu hỏi thường gặp</h2>{article.faqs.map((faq, index) => <details key={index} className="group border-b border-border py-6"><summary className="cursor-pointer text-base font-medium leading-7 marker:text-accent">{faq.question}</summary><p className="mt-5 text-sm leading-7 text-muted-foreground">{faq.answer}</p></details>)}</section>}

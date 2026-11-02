@@ -1910,6 +1910,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         heading: "5. So sánh với sơn nhựa dung môi truyền thống",
         paragraphs: [
           "Trên nền nhựa, bản chất khó bám không thay đổi giữa hệ nước và hệ dầu — cả hai đều phải xử lý nền và lót tăng bám. Điểm khác biệt thực sự: hệ nước không gây stress cracking trên ABS/PC, không mùi dung môi trong xưởng, không hơi dung môi tồn dư trong chi tiết đóng gói kín và loại bỏ rủi ro cháy nổ kho sơn.",
+          "Xem thêm quy trình chuyên sâu theo ứng dụng: [sơn cửa nhựa uPVC lõi thép](/blog/son-nhua-he-nuoc/cua-nhua-upvc) và [sơn xốp EPS cho phào chỉ, mô hình](/blog/son-nhua-he-nuoc/xop-eps).",
         ],
       },
     ],
@@ -2042,7 +2043,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         id: "dinh-muc",
         heading: "5. Định mức tiêu hao cho 1 bộ cửa",
         paragraphs: [
-          "Bộ cửa nhựa 1 cánh 900 × 2200mm (~ 4 - 4.5 m2 sơn 2 mặt gồm khuôn): lót tăng bám ~ 300 - 370 g, sơn màu 2 lớp ~ 900 g - 1.1 kg, phủ UV ~ 400 - 450 g. Một bộ cửa hoàn thiện trong nửa ngày làm việc, đóng rắn đủ sau 48 - 72 giờ mới vận hành đóng mở mạnh.",
+          "Bộ cửa nhựa 1 cánh 900 × 2200mm (~ 4 - 4.5 m2 sơn 2 mặt gồm khuôn): lót tăng bám ~ 300 - 370 g, sơn màu 2 lớp ~ 900 g - 1.1 kg, phủ UV ~ 400 - 450 g. Một bộ cửa hoàn thiện trong nửa ngày làm việc, đóng rắn đủ sau 48 - 72 giờ mới vận hành đóng mở mạnh. Với cửa nhựa muốn làm vân gỗ, xem kỹ thuật chi tiết trong [chuyên đề sơn giả gỗ hệ nước](/blog/son-gia-go-he-nuoc).",
         ],
       },
     ],
@@ -2154,7 +2155,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         heading: "4. Sơn cứng bảo vệ cho mô hình & đạo cụ chịu va chạm",
         paragraphs: [
           "Vấn đề lớn nhất của đồ xốp là bề mặt mềm, dễ móp nứt khi di chuyển. Giải pháp của xưởng đạo cụ chuyên nghiệp là sơn cứng (hard coat): hệ sơn cứng PU hệ nước 2K phủ lớp 0.5 - 1mm tạo vỏ cứng như nhựa — mô hình cầm nắm, xếp chồng, vận chuyển không sợ móp.",
-          "Thi công phun súng sần béc lớn hoặc quét, đóng rắn nhiệt độ phòng — không sấy vì xốp co nhiệt. Rẻ hơn nhiều so với đổ khuôn nhựa hoặc phủ epoxy dung môi (vốn ăn xốp).",
+          "Thi công phun súng sần béc lớn hoặc quét, đóng rắn nhiệt độ phòng — không sấy vì xốp co nhiệt. Rẻ hơn nhiều so với đổ khuôn nhựa hoặc phủ epoxy dung môi (vốn ăn xốp). Phào chỉ PS ép đặc thực chất là nền nhựa cứng — xem thêm cách [xử lý bám dính trên nhựa năng lượng thấp](/blog/son-nhua-he-nuoc).",
         ],
       },
       {
@@ -2277,7 +2278,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         id: "khoa-formaldehyde",
         heading: "4. Khóa phát thải formaldehyde & tiêu chuẩn CARB/EPA/E1",
         paragraphs: [
-          "MDF, HDF, ván ép dùng keo ure-formaldehyde — nguồn phát thải kéo dài hàng năm. Màng sơn kín mặt phẳng + lót chặn xơ cạnh giảm > 80% khí thải tổng của tấm (EN 717-1). Đơn xuất khẩu theo CARB P2 / EPA TSCA / E1-E0 / F☆☆☆☆ yêu cầu cả ván lõi lẫn màng phủ kiểm soát phát thải — Lotus hỗ trợ TDS/MSDS và phối hợp gửi mẫu thành phẩm kiểm định SGS/Intertek theo yêu cầu Buyer.",
+          "MDF, HDF, ván ép dùng keo ure-formaldehyde — nguồn phát thải kéo dài hàng năm. Màng sơn kín mặt phẳng + lót chặn xơ cạnh giảm > 80% khí thải tổng của tấm (EN 717-1). Đơn xuất khẩu theo CARB P2 / EPA TSCA / E1-E0 / F☆☆☆☆ yêu cầu cả ván lõi lẫn màng phủ kiểm soát phát thải — Lotus hỗ trợ TDS/MSDS và phối hợp gửi mẫu thành phẩm kiểm định SGS/Intertek theo yêu cầu Buyer. Xem chi tiết [hồ sơ TDS/MSDS và quy trình đệ trình kiểm định xuất khẩu EU/US](/blog/son-go-he-nuoc/tieu-chuan-xuat-khau-eu-us).",
         ],
       },
       {
@@ -2407,7 +2408,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         id: "tieu-chuan-xuat-khau",
         heading: "5. Tiêu chuẩn xuất khẩu cho hàng thủ công mỹ nghệ",
         paragraphs: [
-          "Buyer EU/US/Nhật kiểm 3 nhóm: phát thải & mùi (VOCs, mùi dung môi sót), hóa chất giới hạn (REACH SVHC, Prop 65, chất diệt nấm cấm như PCP/tin organic), và kiểm dịch thực vật (vật liệu khô sạch không sâu nấm). Hồ sơ kèm: TDS/MSDS, test report màng sơn SGS/Intertek, chứng nhận ẩm độ trước đóng gói.",
+          "Buyer EU/US/Nhật kiểm 3 nhóm: phát thải & mùi (VOCs, mùi dung môi sót), hóa chất giới hạn (REACH SVHC, Prop 65, chất diệt nấm cấm như PCP/tin organic), và kiểm dịch thực vật (vật liệu khô sạch không sâu nấm). Hồ sơ kèm: TDS/MSDS, test report màng sơn SGS/Intertek, chứng nhận ẩm độ trước đóng gói — xem chi tiết [quy trình đệ trình kiểm định xuất khẩu EU/US](/blog/son-go-he-nuoc/tieu-chuan-xuat-khau-eu-us).",
         ],
       },
     ],
@@ -2505,7 +2506,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         id: "khang-nuoc-bot",
         heading: "3. Kháng nước bọt & độ bền cọ xát — yêu cầu riêng của đồ chơi",
         paragraphs: [
-          "DIN 53160 ngâm mẫu trong dung dịch giả lập nước bọt/mồ hôi: màng không được phai màu, bong lớp hay thôi nhiễm bột màu — sơn hệ nước đạt khi đóng rắn đủ 48 giờ. Độ bền cọ xát & va đập đòi màng dẻo cứng cân bằng; hệ phủ 2K hệ nước đạt cứng 2H và chịu rơi lắp ráp nhiều lần.",
+          "DIN 53160 ngâm mẫu trong dung dịch giả lập nước bọt/mồ hôi: màng không được phai màu, bong lớp hay thôi nhiễm bột màu — sơn hệ nước đạt khi đóng rắn đủ 48 giờ. Độ bền cọ xát & va đập đòi màng dẻo cứng cân bằng; hệ phủ 2K hệ nước đạt cứng 2H và chịu rơi lắp ráp nhiều lần. Với đồ chơi xuất khẩu còn cần trọn bộ [hồ sơ TDS/MSDS đứng tên nhà máy](/blog/son-go-he-nuoc/tieu-chuan-xuat-khau-eu-us).",
         ],
       },
       {
@@ -2628,7 +2629,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         id: "phan-xa-nhiet",
         heading: "3. Sơn phản xạ nhiệt — giải pháp chống nóng mái tôn",
         paragraphs: [
-          "Hạt màu phản xạ hồng ngoại trong sơn màu sáng/trung bình phản xạ phần lớn bức xạ nhiệt — bề mặt mái mát hơn 8 - 15°C trưa nắng, tầng áp mái mát theo, giảm tải điều hòa. Quan trọng là hạt màu, không chỉ độ sáng: màu tối vẫn dùng được với hệ phản xạ nhiệt.",
+          "Hạt màu phản xạ hồng ngoại trong sơn màu sáng/trung bình phản xạ phần lớn bức xạ nhiệt — bề mặt mái mát hơn 8 - 15°C trưa nắng, tầng áp mái mát theo, giảm tải điều hòa. Quan trọng là hạt màu, không chỉ độ sáng: màu tối vẫn dùng được với hệ phản xạ nhiệt. Với nền tôn mạ nhẵn trơn, xem chi tiết cơ chế bám dính trong bài [sơn sắt mạ kẽm hệ nước](/blog/son-kim-loai-he-nuoc/sat-ma-kem).",
         ],
       },
       {
@@ -2739,7 +2740,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         id: "ung-dung",
         heading: "4. Ứng dụng theo sản phẩm & định mức",
         paragraphs: [
-          "Ứng dụng: mái tôn mạ (kèm phản xạ nhiệt), ống mạ sơn màu nhận diện, hàng rào/cổng/lan can nhúng nóng phủ màu kiến trúc, xà gồ Z khung mái mạ nhà xưởng ven biển, và sơn zinc-rich sửa điểm mạ hư thay phun kẽm.",
+          "Ứng dụng: [mái tôn mạ sơn phục hồi](/blog/son-kim-loai-he-nuoc/son-ton) (kèm phản xạ nhiệt), ống mạ sơn màu nhận diện, hàng rào/cổng/lan can nhúng nóng phủ màu kiến trúc, xà gồ Z khung mái mạ nhà xưởng ven biển, và sơn zinc-rich sửa điểm mạ hư thay phun kẽm. Nếu đang gặp lỗi bong tróc trên nền mạ, đọc thêm [nguyên nhân & xử lý bong tróc sơn mạ kẽm](/blog/loi-thi-cong/bong-troc-son-ma-kem).",
         ],
         table: {
           headers: ["Hạng mục", "Định mức / lớp", "Ghi chú"],
@@ -2843,7 +2844,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         id: "doi-mau-van-go",
         heading: "3. Đổi màu & tạo vân gỗ cho tấm WPC sản xuất",
         paragraphs: [
-          "Nhà máy WPC dùng sơn đổi màu tấm nâu/đen tiêu chuẩn thành đa dạng tông không phải pha hạt màu nhựa — tồn kho linh hoạt. Tạo vân gỗ 3D trên tấm trơn: basecoat màu thịt gỗ → kéo vân stain → phủ UV, biến tấm giá rẻ thành dòng vân gỗ cao cấp.",
+          "Nhà máy WPC dùng sơn đổi màu tấm nâu/đen tiêu chuẩn thành đa dạng tông không phải pha hạt màu nhựa — tồn kho linh hoạt. Tạo vân gỗ 3D trên tấm trơn: basecoat màu thịt gỗ → kéo vân stain → phủ UV theo [kỹ thuật sơn giả gỗ](/blog/son-gia-go-he-nuoc), biến tấm giá rẻ thành dòng vân gỗ cao cấp. Nền WPC phần nào cũng là bài toán [bám dính trên nhựa năng lượng thấp](/blog/son-nhua-he-nuoc).",
         ],
       },
       {
