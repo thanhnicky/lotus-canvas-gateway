@@ -2559,4 +2559,320 @@ export const ARTICLES: Record<string, ArticleData> = {
     ],
     relatedSlugs: ["son-go-he-nuoc/tieu-chuan-xuat-khau-eu-us", "son-go-he-nuoc", "so-sanh/son-go-he-nuoc-vs-son-pu"],
   },
+
+  "son-kim-loai-he-nuoc/son-ton": {
+    slug: "son-kim-loai-he-nuoc/son-ton",
+    category: "Sơn Kim Loại Hệ Nước",
+    categorySlug: "son-kim-loai-he-nuoc",
+    title: "Sơn Tôn Hệ Nước: Phục Hồi Mái Tôn Rỉ, Chống Nóng & Bền Màu Nắng Mưa | Sơn Lotus",
+    metaDescription:
+      "Sơn tôn hệ nước Lotus cho mái tôn, tôn mạ kẽm, tôn màu: bám trực tiếp không cần lót etchant, chống rỉ muối biển, tùy chọn màu phản xạ nhiệt giảm nóng 8-12°C, không mùi. Tư vấn khảo sát mái miễn phí.",
+    h1: "Sơn Tôn Hệ Nước: Giải Pháp Phục Hồi & Bảo Vệ Mái Tôn, Tôn Mạ Màu",
+    publishedAt: "01/11/2026",
+    readTime: "6 phút đọc",
+    quickSummary:
+      "Sơn tôn hệ nước là hệ sơn gốc nước chuyên cho mái tôn, tôn mạ kẽm và tôn sơn màu sẵn — dùng nhựa DTM bám dính trực tiếp lên nền kẽm không cần lót ăn mòn. Hệ sơn kháng muối 500 - 720 giờ, kháng UV giữ màu 5 - 8 năm, tùy chọn hạt màu phản xạ nhiệt giảm nhiệt bề mặt mái 8 - 15°C và hoàn toàn không mùi khi thi công trên mái cao.",
+    whenToChoose: [
+      "Mái tôn nhà xưởng/nhà dân bạc màu, chấm rỉ đầu sóng muốn phục hồi thay thay mái.",
+      "Mái tôn cần đổi màu theo kiến trúc hoặc sơn phản xạ nhiệt chống nóng.",
+      "Kho tôn mạ kẽm cuộn/sóng mới cần sơn bảo vệ tăng.",
+    ],
+    whenNotToChoose: [
+      "Tôn rỉ thủng, mục vảy nặng phải thay — sơn chỉ cứu được tôn còn nguyên kết cấu.",
+      "Bề mặt tôn còn dầu bảo quản hoặc lớp phủ silicon chưa vệ sinh.",
+    ],
+    lotusRecommendation:
+      "Rỉ vảy cần đánh sạch đạt St 2 trước khi sơn — sơn phủ lên rỉ giòn sẽ bong theo lớp rỉ. Chấm rỉ nhẹ dùng sơn chuyển rỉ gốc nước cục bộ trước khi phun hệ. Chỉ thi công khi mặt mái < 40°C — trưa nắng bề mặt tôn 60 - 70°C làm nước bay hơi quá nhanh gây sôi bọt màng.",
+    sections: [
+      {
+        id: "dac-thu-nen-ton",
+        heading: "1. Đặc thù nền tôn: mạ kẽm trơn, rỉ & nóng",
+        list: [
+          "Lớp kẽm trơn, năng lượng thấp: sơn dầu bong do phản ứng xà phòng hóa với kẽm — hệ nước DTM bám hóa học trực tiếp.",
+          "Rỉ đầu sóng, mép cắt, vùng tụ nước: điểm hư trước nhất, xử lý cục bộ trước hệ sơn.",
+          "Giãn nở nhiệt cực đoan trưa/mưa: màng phải đàn hồi theo, không giòn nứt tại đường vít sóng.",
+        ],
+      },
+      {
+        id: "quy-trinh-mai-ton",
+        heading: "2. Quy trình thi công mái tôn cũ 5 bước",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Đánh rỉ & rửa áp lực",
+            desc: "Đánh vảy rỉ đạt St 2, rửa áp lực tẩy bụi, dầu, rêu — khô 24 giờ.",
+          },
+          {
+            step: "Bước 2",
+            title: "Chuyển rỉ cục bộ",
+            desc: "Sơn chuyển rỉ gốc nước lên chấm rỉ còn sót sau đánh.",
+          },
+          {
+            step: "Bước 3",
+            title: "Lót DTM chống rỉ",
+            desc: "1 lớp — nền mạ kẽm khỏe có thể bỏ qua bước lót.",
+          },
+          {
+            step: "Bước 4",
+            title: "Phun/lăn màu 2 lớp",
+            desc: "Béc airless 517 - 521, phun theo chiều sóng, ưu tiên vùng tụ nước.",
+          },
+          {
+            step: "Bước 5",
+            title: "Nghiệm thu mép sóng, vít, máng",
+            desc: "Kiểm tra độ phủ các điểm kỹ thuật trước khi bàn giao.",
+          },
+        ],
+      },
+      {
+        id: "phan-xa-nhiet",
+        heading: "3. Sơn phản xạ nhiệt — giải pháp chống nóng mái tôn",
+        paragraphs: [
+          "Hạt màu phản xạ hồng ngoại trong sơn màu sáng/trung bình phản xạ phần lớn bức xạ nhiệt — bề mặt mái mát hơn 8 - 15°C trưa nắng, tầng áp mái mát theo, giảm tải điều hòa. Quan trọng là hạt màu, không chỉ độ sáng: màu tối vẫn dùng được với hệ phản xạ nhiệt.",
+        ],
+      },
+      {
+        id: "dinh-muc",
+        heading: "4. Định mức & so sánh phương án",
+        paragraphs: [
+          "Lót DTM chống rỉ 9 - 11 m2/kg; sơn màu/phản xạ 7 - 9 m2/kg/lớp — tôn sóng hệ số bề mặt 1.2 - 1.4 lần mái phẳng. Chi phí phục hồi mái chỉ ~15 - 25% so với thay mái mới, độ bền màu/rỉ 5 - 8 năm.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Mái tôn đang chấm rỉ có sơn được không?",
+        answer:
+          "Được nếu rỉ chưa thủng. Đánh vảy rỉ đạt St 2, xử lý chấm rỉ bằng sơn chuyển rỉ cục bộ rồi phun hệ DTM. Rỉ thủng/mục phải thay tôn.",
+      },
+      {
+        question: "Sơn tôn hệ nước có bám được trên tôn mạ kẽm nhẵn không?",
+        answer:
+          "Được — dòng DTM bám hóa học trực tiếp trên kẽm không cần lót ăn mòn, khác hẳn sơn dầu vốn bong do xà phòng hóa với kẽm.",
+      },
+      {
+        question: "Sơn xong bao lâu sợ mưa?",
+        answer:
+          "Ráo mặt 30 - 60 phút; chịu mưa sau 4 - 6 giờ ráo và bền rửa đủ sau 24 - 48 giờ. Không thi công khi dự báo mưa trong ngày.",
+      },
+      {
+        question: "Tôn sơn màu sẵn (loại nhập) có sơn đè được không?",
+        answer:
+          "Được — nhám nhẹ P320 lớp phủ cũ còn bám tốt, vệ sinh sạch rồi phun trực tiếp hệ màu hệ nước.",
+      },
+    ],
+    relatedSlugs: ["son-kim-loai-he-nuoc", "son-kim-loai-he-nuoc/sat-ma-kem", "loi-thi-cong/bong-troc-son-ma-kem"],
+  },
+
+  "son-kim-loai-he-nuoc/sat-ma-kem": {
+    slug: "son-kim-loai-he-nuoc/sat-ma-kem",
+    category: "Sơn Kim Loại Hệ Nước",
+    categorySlug: "son-kim-loai-he-nuoc",
+    title: "Sơn Sắt Mạ Kẽm Hệ Nước: Bám Trực Tiếp Lên Nền Kẽm Không Cần Lót Etchant | Sơn Lotus",
+    metaDescription:
+      "Sơn sắt mạ kẽm hệ nước Lotus: bám hóa học trực tiếp lên tôn mạ, ống kẽm, hàng rào mạ không bong tróc như sơn dầu; không cần lót etchant/axit, chống rỉ muối biển, không mùi. Tư vấn hệ sơn theo loại mạ.",
+    h1: "Sơn Sắt Mạ Kẽm Hệ Nước: Giải Pháp Bám Dính Trên Nền Kẽm Nhúng Nóng & Mạ Điện Không Bong Tróc",
+    publishedAt: "01/11/2026",
+    readTime: "6 phút đọc",
+    quickSummary:
+      "Sơn sắt mạ kẽm hệ nước là hệ sơn gốc nước dùng nhựa DTM bám hóa học trực tiếp lên lớp kẽm nhúng nóng, mạ điện, tôn mạ — không cần lót etchant/axit, khắc phục lỗi kinh điển của sơn dầu là bong mảng do xà phòng hóa (zinc soap) với kẽm. Bám dính 4B - 5B, kháng muối 500 - 720 giờ, ứng dụng cho tôn sóng, ống mạ, hàng rào, xà gồ và sửa chữa điểm mạ bị hư.",
+    whenToChoose: [
+      "Mái tôn mạ kẽm, ống mạ công nghiệp/dân dụng cần sơn màu hoặc tăng bảo vệ.",
+      "Hàng rào, cổng, xà gồ, khung thép nhúng nóng cần hệ phủ bảo vệ thêm.",
+      "Sửa chữa điểm mạ bị xước, hàn, cắt bằng sơn phủ zinc-rich tăng bảo vệ.",
+    ],
+    whenNotToChoose: [
+      "Bề mặt mạ còn lớp bảo quản (chromate/dầu) chưa vệ sinh.",
+      "Vết cắt sắt đen trần — cần hệ chống rỉ khác trước khi phủ.",
+    ],
+    lotusRecommendation:
+      "Test nhanh khả năng bám: chấm nước cất — loang màng đều là nền sẵn sàng; co giọt tròn là còn lớp bảo quản/dầu phải tẩy. Mạ mới < 48 giờ còn 'tươi' nên để lão hóa 1 - 2 tuần hoặc chà nhám nhẹ + tẩy dầu trước khi sơn.",
+    sections: [
+      {
+        id: "xa-phong-hoa",
+        heading: "1. Vì sao sơn dầu bong trên nền mạ kẽm",
+        paragraphs: [
+          "Nhựa alkyd/sơn dầu chứa acid béo phản ứng với kẽm tạo xà phòng kẽm (zinc soap) ở giao diện — lớp xà phòng giòn không bám, màng sơn bong mảng sau vài tháng. Sơn hệ nước DTM dùng nhựa không phản ứng với kẽm + nhóm chức bám trực tiếp lên lớp oxit kẽm, không cần lót etchant axit.",
+        ],
+      },
+      {
+        id: "phan-loai-nen-ma",
+        heading: "2. Phân loại nền mạ & mức xử lý",
+        table: {
+          headers: ["Nền mạ", "Đặc điểm", "Xử lý trước sơn"],
+          rows: [
+            ["Kẽm nhúng nóng", "Lớp kẽm dày xám sần", "Tẩy dầu + nhám nhẹ; mạ mới để lão hóa"],
+            ["Tôn mạ điện / lạnh", "Kẽm mỏng nhẵn trơn", "Tẩy dầu kỹ, lót tăng bám nhẹ"],
+            ["Tôn Aluzinc", "Bề mặt láng hơn nữa", "Tẩy dầu + lót bám bắt buộc"],
+            ["Mạ cũ có rỉ trắng", "Oxit kẽm trắng xốp", "Chà sạch rỉ trắng rồi phun trực tiếp"],
+            ["Điểm hàn/cắt mất mạ", "Lộ sắt đen trần", "Zinc-rich cục bộ trước khi phủ"],
+          ],
+        },
+      },
+      {
+        id: "quy-trinh",
+        heading: "3. Quy trình thi công chuẩn trên nền mạ kẽm",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Tẩy dầu/bảo quản + nhám nhẹ",
+            desc: "Vệ sinh dung dịch tẩy hoặc IPA; chà nhám P320 nếu nền quá trơ.",
+          },
+          {
+            step: "Bước 2",
+            title: "Lót tăng bám (nền trơ)",
+            desc: "Bắt buộc với Aluzinc/mạ điện nhẵn, flash-off 20 - 30 phút.",
+          },
+          {
+            step: "Bước 3",
+            title: "Phun sơn DTM 1 - 2 lớp",
+            desc: "Mỗi lớp cách 45 - 60 phút có quạt.",
+          },
+          {
+            step: "Bước 4",
+            title: "Đóng rắn 24 - 48 giờ",
+            desc: "Trước vận chuyển hoặc lắp đặt.",
+          },
+        ],
+      },
+      {
+        id: "ung-dung",
+        heading: "4. Ứng dụng theo sản phẩm & định mức",
+        paragraphs: [
+          "Ứng dụng: mái tôn mạ (kèm phản xạ nhiệt), ống mạ sơn màu nhận diện, hàng rào/cổng/lan can nhúng nóng phủ màu kiến trúc, xà gồ Z khung mái mạ nhà xưởng ven biển, và sơn zinc-rich sửa điểm mạ hư thay phun kẽm.",
+        ],
+        table: {
+          headers: ["Hạng mục", "Định mức / lớp", "Ghi chú"],
+          rows: [
+            ["Lót tăng bám", "10 - 12 m2/kg", "Màng siêu mỏng 15 - 25 µm"],
+            ["Sơn DTM hệ nước", "8 - 10 m2/kg", "1 - 2 lớp tùy độ phủ"],
+            ["Zinc-rich sửa mạ", "5 - 7 m2/kg", "Phủ dày cục bộ"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Sơn dầu có sơn được trực tiếp lên mạ kẽm không?",
+        answer:
+          "Không — acid béo trong alkyd phản ứng với kẽm tạo xà phòng kẽm giòn, màng bong mảng sau vài tháng.",
+      },
+      {
+        question: "Có cần dùng lót etchant/lót axit trước khi sơn mạ kẽm?",
+        answer:
+          "Không với hệ nước DTM — nhựa bám hóa học trực tiếp lên kẽm. Chỉ cần tẩy dầu/bảo quản và nhám nhẹ nếu nền quá trơ.",
+      },
+      {
+        question: "Nền mạ có rỉ trắng thì xử lý thế nào?",
+        answer:
+          "Rỉ trắng là oxit kẽm xốp — chà sạch đến nền kẽm chắc, vệ sinh rồi phun trực tiếp. Không sơn lên rỉ trắng xốp.",
+      },
+      {
+        question: "Điểm hàn/cắt mất lớp mạ thì sơn gì?",
+        answer:
+          "Vùng lộ sắt đen phải dùng sơn zinc-rich hoặc chống rỉ cục bộ trước, rồi phủ cùng hệ — không thể coi như nền mạ.",
+      },
+    ],
+    relatedSlugs: ["son-kim-loai-he-nuoc", "son-kim-loai-he-nuoc/son-ton", "loi-thi-cong/bong-troc-son-ma-kem"],
+  },
+
+  "son-composite-he-nuoc/wpc": {
+    slug: "son-composite-he-nuoc/wpc",
+    category: "Sơn Composite Hệ Nước",
+    categorySlug: "son-composite-he-nuoc",
+    title: "Sơn WPC Hệ Nước: Phục Hồi & Đổi Màu Gỗ Nhựa Composite Ngoài Trời | Sơn Lotus",
+    metaDescription:
+      "Sơn WPC hệ nước Lotus cho sàn gỗ nhựa, tấm ốp, hàng rào composite: bám trên nền nhựa-wood khó bám, phục hồi tấm bạc màu tróc vỏ, kháng UV, chịu ngoài trời, không mùi. Tư vấn hệ sơn theo loại WPC.",
+    h1: "Sơn WPC Hệ Nước: Giải Pháp Phục Hồi & Đổi Màu Sàn, Tấm Ốp Gỗ Nhựa Composite Ngoài Trời",
+    publishedAt: "01/11/2026",
+    readTime: "6 phút đọc",
+    quickSummary:
+      "Sơn WPC hệ nước là hệ sơn gốc nước chuyên cho nền gỗ nhựa composite — vật liệu lai khó bám vì chứa nhựa PE/PP/PVC năng lượng thấp trộn bột gỗ. Dùng lót tăng bám nhựa + sơn màu kháng UV ngoài trời để phục hồi tấm WPC bạc màu tróc vỏ sau 3 - 5 năm nắng hoặc đổi màu/tạo vân gỗ trên tấm sản xuất. Bám dính 4B - 5B, kháng UV 5+ năm.",
+    whenToChoose: [
+      "Sàn sân vườn, tấm ốp mặt tiền, hàng rào, lam chắn nắng WPC bạc màu, tróc lớp vỏ bề mặt.",
+      "Nhà máy WPC muốn mở rộng bảng màu/vân gỗ không phải pha hạt màu nhựa từ đầu.",
+      "Tấm WPC trơn màu muốn tạo vân gỗ 3D nâng cấp dòng sản phẩm.",
+    ],
+    whenNotToChoose: [
+      "Tấm WPC lõm nước đã trương nở, nứt vỡ cấu trúc — phải thay.",
+      "Bề mặt co-extrusion còn nguyên vẹn — không cần sơn, chỉ sơn khi vỏ đã tróc/hao mòn.",
+    ],
+    lotusRecommendation:
+      "WPC sau vài năm ngoài trời có lớp vỏ nhựa bị UV phá hủy tróc vảy — không được sơn đè lên vỏ đang bong. Phải cạo/rửa sạch lớp vỏ hư về nền lõi chắc, rồi nhám nhẹ + lót tăng bám; nếu bỏ bước này màng sơn mới bong theo lớp vỏ cũ chỉ sau vài tháng.",
+    sections: [
+      {
+        id: "nen-kho-bam-kep",
+        heading: "1. WPC là nền khó bám kép: nhựa + bột gỗ",
+        list: [
+          "Phần nhựa năng lượng thấp: sơn co giọt trên vùng giàu nhựa — cần lót tăng bám.",
+          "Phần bột gỗ hút nước không đều: vùng giàu bột hút mạnh làm màng không đều.",
+          "Bề mặt đóng da trơ từ ép: phải nhám phá da trước khi sơn.",
+          "Suy giảm UV: nhựa phấn hóa, vỏ tróc dưới nắng — lớp đang hư phải loại bỏ, không sơn đè.",
+        ],
+      },
+      {
+        id: "quy-trinh",
+        heading: "2. Quy trình phục hồi WPC bạc màu, tróc vỏ",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Rửa + cạo lớp vỏ hư",
+            desc: "Rửa áp lực, cạo sạch lớp vỏ nhựa hư và bột phấn UV.",
+          },
+          {
+            step: "Bước 2",
+            title: "Nhám về nền lõi chắc",
+            desc: "Chà nhám P180 - P240, vệ sinh sạch, khô 24 giờ.",
+          },
+          {
+            step: "Bước 3",
+            title: "Lót tăng bám WPC",
+            desc: "1 lớp mỏng đều hóa độ hút giữa vùng nhựa và bột gỗ, khô 30 - 45 phút.",
+          },
+          {
+            step: "Bước 4",
+            title: "Sơn màu kháng UV 2 lớp",
+            desc: "Lớp mỏng, phun/lăn/quét — màu ngoài trời kháng cực tím bắt buộc.",
+          },
+        ],
+      },
+      {
+        id: "doi-mau-van-go",
+        heading: "3. Đổi màu & tạo vân gỗ cho tấm WPC sản xuất",
+        paragraphs: [
+          "Nhà máy WPC dùng sơn đổi màu tấm nâu/đen tiêu chuẩn thành đa dạng tông không phải pha hạt màu nhựa — tồn kho linh hoạt. Tạo vân gỗ 3D trên tấm trơn: basecoat màu thịt gỗ → kéo vân stain → phủ UV, biến tấm giá rẻ thành dòng vân gỗ cao cấp.",
+        ],
+      },
+      {
+        id: "dinh-muc",
+        heading: "4. Định mức & độ bền ngoài trời",
+        paragraphs: [
+          "Lót tăng bám 9 - 11 m2/kg; sơn màu kháng UV 7 - 9 m2/kg — tấm rãnh sóng hệ số ~1.3x. Hệ đúng quy trình giữ màu & bám dính 5+ năm ngoài trời; sàn chịu chân đi lại nên chọn hệ mờ chống trầy + chống trượt.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Tấm WPC bạc màu, tróc vỏ có sơn phục hồi được không?",
+        answer:
+          "Được nếu lõi còn chắc — cạo sạch lớp vỏ hư về nền, nhám + lót tăng bám rồi sơn. Sơn đè lên vỏ đang tróc sẽ bong theo.",
+      },
+      {
+        question: "Sơn có bám được trên bề mặt WPC trơ không?",
+        answer:
+          "Có, sau khi nhám phá lớp da trơ + lót tăng bám. WPC chứa nhựa năng lượng thấp nên không thể sơn trực tiếp như gỗ.",
+      },
+      {
+        question: "WPC có co giãn nhiệt làm nứt màng sơn không?",
+        answer:
+          "WPC giãn nhiệt đáng kể theo chiều tấm — hệ sơn hệ nước có độ dẻo đàn hồi theo được; tránh sơn giòn cứng và lớp quá dày.",
+      },
+      {
+        question: "Có tạo vân gỗ được trên tấm WPC trơn màu không?",
+        answer:
+          "Được — quy trình giả gỗ: basecoat màu thịt gỗ, kéo vân bằng cọ/dụng cụ, phủ UV. Biến tấm trơn thành dòng vân gỗ 3D.",
+      },
+    ],
+    relatedSlugs: ["son-composite-he-nuoc", "son-nhua-he-nuoc", "son-gia-go-he-nuoc"],
+  },
 };
