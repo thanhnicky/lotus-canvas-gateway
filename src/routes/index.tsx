@@ -341,6 +341,11 @@ function Index() {
 
         {/* Bottom — editorial INDEX (the selector, type-specimen style) v2 */}
         <div id="he-son-overview" className="relative z-20 px-6 md:px-12 lg:px-16 pb-4 md:pb-12">
+          <p className="mb-3 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.3em] text-umber r-rise">
+            <span className="inline-block h-px w-8 bg-umber/60" aria-hidden="true" />
+            Chọn một hệ sơn để khám phá — nội dung thay đổi theo lựa chọn
+            <span className="hidden md:inline-block animate-pulse" aria-hidden="true">↓</span>
+          </p>
           <div ref={scrollContainerRef} className="border-t border-onyx/25 hide-scrollbar overflow-x-auto pr-12 md:pr-0 max-w-full">
             <ol className="flex md:grid md:grid-cols-6 min-w-max md:min-w-0">
               {CATEGORIES.map((c) => {
@@ -363,8 +368,8 @@ function Index() {
                       onClick={() => setActiveId(c.id)}
                       onMouseEnter={() => handleHover(c.id)}
                       onMouseLeave={handleHoverLeave}
-                      className={`group block w-[15rem] md:w-full text-left px-5 pt-5 pb-5 transition-colors duration-500 ${
-                        isActive ? "bg-paper/60" : "hover:bg-onyx/[0.025]"
+                      className={`group block w-[15rem] md:w-full text-left px-5 pt-5 pb-5 cursor-pointer transition-colors duration-500 ${
+                        isActive ? "bg-paper/60" : "hover:bg-onyx/[0.04]"
                       }`}
                     >
                       <div className="flex items-start gap-4">
@@ -398,6 +403,16 @@ function Index() {
                           >
                             <Button variant="ghost" aria-pressed={isActive} onClick={() => setActiveId(c.id)} className="h-auto whitespace-normal rounded-none p-0 text-left font-serif text-base font-normal leading-snug hover:bg-transparent md:text-[1.05rem]">
                               {c.index}. {c.name}
+                              <span
+                                aria-hidden="true"
+                                className={`ml-1.5 inline-block font-mono text-[11px] align-middle transition-all duration-300 ${
+                                  isActive
+                                    ? "opacity-0"
+                                    : "text-umber/60 group-hover:text-umber group-hover:translate-x-0.5"
+                                }`}
+                              >
+                                →
+                              </span>
                             </Button>
                           </h3>
                           {/* Reveal tagline only on active — collapses gracefully */}
