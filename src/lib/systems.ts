@@ -201,7 +201,7 @@ export const CATEGORIES: Category[] = [
     nameEn: "Wood-grain on Cement",
     tagline: "Chọn đúng hệ ngay từ đầu để bề mặt đã lên vân không phải làm lại.",
     manifesto:
-      "Tấm cement không tha thứ cho hệ sai. Một lỗi nhỏ ở lớp lót là cả mảng vân phải làm lại. Lotus tư vấn hệ đủ lớp để vân không bong sau vài tháng.",
+      "Tấm xi măng có độ kiềm cao nên lót kháng kiềm là lớp bắt buộc — bỏ lớp này thì sớm muộn vân cũng bong. Lotus tư vấn hệ đủ lớp để màng sơn bám chắc lâu dài.",
     image: catCementWood,
     imageTone: "light",
     accent: "#7a6347",
