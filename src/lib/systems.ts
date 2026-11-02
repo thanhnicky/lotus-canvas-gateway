@@ -98,7 +98,7 @@ export const CATEGORIES: Category[] = [
     index: "02",
     name: "Sơn kim loại",
     nameEn: "Metal & Steel",
-    tagline: "Đúng cấp chống ăn mòn để công trình đỡ xuống cấp sớm và dễ bàn giao hơn.",
+    tagline: "Thay sơn dung môi bằng hệ nước ít mùi, thân thiện môi trường và loại bỏ rủi ro cháy nổ khi thi công trong nhà máy.",
     manifesto:
       "Khách hàng chuyển sang hệ nước chủ yếu để thay dung môi — vì mùi, VOC và rủi ro cháy nổ trong xưởng. Lotus đề xuất hệ tương đương cấp chống ăn mòn để việc chuyển đổi không phải làm lại.",
     image: catMetal,
