@@ -2798,7 +2798,7 @@ export const ARTICLES: Record<string, ArticleData> = {
       "Bề mặt co-extrusion còn nguyên vẹn — không cần sơn, chỉ sơn khi vỏ đã tróc/hao mòn.",
     ],
     lotusRecommendation:
-      "WPC sau vài năm ngoài trời có lớp vỏ nhựa bị UV phá hủy tróc vảy — không được sơn đè lên vỏ đang bong. Phải cạo/rửa sạch lớp vỏ hư về nền lõi chắc, rồi nhám nhẹ + lót tăng bám; nếu bỏ bước này màng sơn mới bong theo lớp vỏ cũ chỉ sau vài tháng.",
+      "Lotus 2k33 là hệ sơn chuyên dụng cho gỗ nhựa ngoài trời: dùng cho cả phục hồi tấm WPC cũ bạc màu lẫn đổi màu theo ý muốn. Lưu ý nền WPC có lớp vỏ nhựa bị UV phá hủy tróc vảy thì phải cạo/rửa sạch về lõi chắc trước khi sơn — sơn đè lên vỏ đang bong sẽ bong theo chỉ sau vài tháng.",
     sections: [
       {
         id: "nen-kho-bam-kep",
@@ -2812,27 +2812,30 @@ export const ARTICLES: Record<string, ArticleData> = {
       },
       {
         id: "quy-trinh",
-        heading: "2. Quy trình phục hồi WPC bạc màu, tróc vỏ",
+        heading: "2. Quy trình phục hồi & đổi màu WPC với hệ Lotus 2k33",
+        paragraphs: [
+          "Hệ sơn chuyên dụng Lotus 2k33 cho gỗ nhựa ngoài trời áp dụng thống nhất cho 2 bài toán: sơn lại WPC cũ bạc màu/tróc vỏ và đổi màu tấm theo ý muốn. Quy trình chuẩn 4 bước:",
+        ],
         steps: [
           {
             step: "Bước 1",
             title: "Rửa + cạo lớp vỏ hư",
-            desc: "Rửa áp lực, cạo sạch lớp vỏ nhựa hư và bột phấn UV.",
+            desc: "Rửa áp lực, cạo sạch lớp vỏ nhựa hư và bột phấn UV — với tấm mới chỉ đổi màu thì chỉ cần vệ sinh sạch.",
           },
           {
             step: "Bước 2",
             title: "Nhám về nền lõi chắc",
-            desc: "Chà nhám P180 - P240, vệ sinh sạch, khô 24 giờ.",
+            desc: "Chà nhám P180 - P240 phá da trơ, vệ sinh sạch, khô 24 giờ.",
           },
           {
             step: "Bước 3",
             title: "Lót tăng bám WPC",
-            desc: "1 lớp mỏng đều hóa độ hút giữa vùng nhựa và bột gỗ, khô 30 - 45 phút.",
+            desc: "1 lớp mỏng lót tăng bám 2k33 đều hóa độ hút giữa vùng nhựa và bột gỗ, khô 30 - 45 phút.",
           },
           {
             step: "Bước 4",
-            title: "Sơn màu kháng UV 2 lớp",
-            desc: "Lớp mỏng, phun/lăn/quét — màu ngoài trời kháng cực tím bắt buộc.",
+            title: "Sơn màu Lotus 2k33 theo màu chọn",
+            desc: "Phun/lăn/quét 2 lớp mỏng màu kháng UV ngoài trời — đổi màu theo ý muốn, giữ được độ nhám gỗ tự nhiên của tấm.",
           },
         ],
       },
@@ -2847,7 +2850,7 @@ export const ARTICLES: Record<string, ArticleData> = {
         id: "dinh-muc",
         heading: "4. Định mức & độ bền ngoài trời",
         paragraphs: [
-          "Lót tăng bám 9 - 11 m2/kg; sơn màu kháng UV 7 - 9 m2/kg — tấm rãnh sóng hệ số ~1.3x. Hệ đúng quy trình giữ màu & bám dính 5+ năm ngoài trời; sàn chịu chân đi lại nên chọn hệ mờ chống trầy + chống trượt.",
+          "Hệ Lotus 2k33: lót tăng bám 9 - 11 m2/kg; sơn màu 7 - 9 m2/kg — tấm rãnh sóng hệ số ~1.3x. Hệ đúng quy trình giữ màu & bám dính 5+ năm ngoài trời; sàn chịu chân đi lại nên chọn hệ mờ chống trầy + chống trượt.",
         ],
       },
     ],

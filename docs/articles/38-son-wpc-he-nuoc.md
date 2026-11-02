@@ -44,7 +44,9 @@ WPC trộn 40 - 60% bột gỗ trong nhựa PE/PP/PVC — nền lai tạo 2 thá
 - **Bề mặt ban đầu trơ/được "đóng" sẵn:** WPC ép có da bề mặt trơ — phải nhám phá da trước khi sơn.
 - **Suy giảm UV:** nhựa trong WPC phấn hóa, vỏ tróc dưới nắng — lớp đang hư phải loại bỏ, không sơn đè.
 
-## 2. PHỤC HỒI WPC BẠC MÀU, TRÓC VỎ NGOÀI TRỜI
+## 2. PHỤC HỒI WPC BẠC MÀU, TRÓC VỎ NGOÀI TRỜI — HỆ SƠN CHUYÊN DỤNG LOTUS 2K33
+
+**Lotus 2k33** là hệ sơn chuyên dụng cho gỗ nhựa ngoài trời, áp dụng thống nhất cho 2 bài toán: sơn lại WPC cũ bạc màu/tróc vỏ và đổi màu tấm theo ý muốn.
 
 Lỗi điển hình của WPC giá rẻ/loại thường sau 3 - 5 năm: phai màu, bạc phấn, tróc lớp vỏ nhựa mỏng. Quy trình phục hồi:
 
@@ -53,9 +55,9 @@ Lỗi điển hình của WPC giá rẻ/loại thường sau 3 - 5 năm: phai m�
        ↓
 [Chà nhám P180 - P240 về nền lõi chắc, vệ sinh] → [Khô 24h]
        ↓
-[Lót tăng bám WPC 1 lớp] → [Khô 30 - 45p]
+[Lót tăng bám 2k33 cho WPC 1 lớp] → [Khô 30 - 45p]
        ↓
-[Sơn màu kháng UV ngoài trời 2 lớp]
+[Sơn màu Lotus 2k33 kháng UV theo màu chọn 2 lớp]
 ```
 
 Kết quả: tấm WPC cũ được phủ màu mới đồng đều, kháng UV tiếp 5+ năm — chi phí chỉ ~20% thay tấm mới.
