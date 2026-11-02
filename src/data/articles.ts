@@ -2201,4 +2201,362 @@ export const ARTICLES: Record<string, ArticleData> = {
     ],
     relatedSlugs: ["son-nhua-he-nuoc", "son-composite-he-nuoc", "son-loa-he-nuoc"],
   },
+
+  "son-go-he-nuoc/go-cong-nghiep": {
+    slug: "son-go-he-nuoc/go-cong-nghiep",
+    category: "Sơn Gỗ Hệ Nước",
+    categorySlug: "son-go-he-nuoc",
+    title: "Sơn Gỗ Công Nghiệp Hệ Nước: Hoàn Thiện MDF, HDF, Plywood Chuẩn Xưởng | Sơn Lotus",
+    metaDescription:
+      "Sơn gỗ công nghiệp hệ nước Lotus cho MDF, HDF, plywood, ván ép: lót chặn xơ cạnh cắt, phủ màu opaque hoặc trong suốt veneer, khóa phát thải formaldehyde, khô nhanh 45 phút, không mùi. Nhận mẫu test xưởng miễn phí.",
+    h1: "Sơn Gỗ Công Nghiệp Hệ Nước: Giải Pháp Hoàn Thiện MDF, HDF, Plywood & Ván Ép Cho Xưởng Nội Thất",
+    publishedAt: "01/11/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn gỗ công nghiệp hệ nước là hệ sơn phủ gốc nước chuyên cho ván nhân tạo — MDF, HDF, plywood, ván ép dăm — khác căn bản với sơn gỗ tự nhiên ở 3 điểm: cạnh cắt hút nước gấp 3-5 lần mặt phẳng (bắt buộc lót chặn xơ), bề mặt veneer mỏng 0.3 - 0.6mm cấm xả nhám mạnh, và khả năng khóa phát thải formaldehyde từ lõi keo. Hệ sơn đạt bám dính 5B, khô xả nhám 45 - 60 phút, VOC < 45 g/L.",
+    whenToChoose: [
+      "Xưởng nội thất công nghiệp: tủ bếp, đồ văn phòng, nội thất trẻ em, đồ flat-pack xuất khẩu IKEA-style.",
+      "Sản phẩm cần phủ màu opaque (trắng, xám, pastel) trên MDF — kiểu hoàn thiện phổ biến nhất của ván công nghiệp.",
+      "Phủ trong suốt trên veneer sồi/óc chó dán trên lõi MDF — cần giữ vân nhưng veneer siêu mỏng.",
+      "Đơn hàng yêu cầu chứng nhận khí thải formaldehyde (CARB P2, EPA TSCA, E1/E0).",
+    ],
+    whenNotToChoose: [
+      "Ván MFC/MDF đã dán melamine sẵn — bề mặt melamine chống bám dính, sơn trực tiếp sẽ bong (cần hệ lót riêng).",
+      "Ván ẩm, phồng cạnh hoặc đã thấm nước — phải thay tấm, sơn không cứu được nền đã nở.",
+    ],
+    lotusRecommendation:
+      "Trên MDF, lỗi tốn tiền nhất là phồng cạnh — xơ cạnh cắt hút nước từ sơn làm trương nở vĩnh viễn. Quy tắc vàng: lăn sơn lót chặn xơ nguyên chất vào cạnh trước khi phun lót tổng thể, chi phí tăng < 5% nhưng loại bỏ 90% tỉ lệ phải sửa lại.",
+    sections: [
+      {
+        id: "khac-go-tu-nhien",
+        heading: "1. Sơn gỗ công nghiệp khác sơn gỗ tự nhiên ở đâu",
+        table: {
+          headers: ["Khác biệt", "Gỗ tự nhiên", "Gỗ công nghiệp"],
+          rows: [
+            ["Mục tiêu hoàn thiện", "Tôn vân gỗ trong suốt", "Phủ màu opaque hoặc giữ veneer"],
+            ["Điểm yếu nền", "Xù lông gỗ, nhựa/tannin", "Cạnh hút nước phồng, veneer mỏng"],
+            ["Kỹ thuật then chốt", "Water popping, khóa tannin", "Chặn xơ cạnh, xả nhám siêu nhẹ"],
+            ["Phát thải từ lõi", "Không", "Formaldehyde — cần khóa"],
+          ],
+        },
+      },
+      {
+        id: "quy-trinh-opaque",
+        heading: "2. Quy trình phủ màu opaque trên MDF",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Xử lý nền & chặn xơ cạnh",
+            desc: "Chà nhám P180 - P240, vệ sinh bụi. Lăn lót chặn xơ nguyên chất vào cạnh cắt và lỗ khoan cam/bản lề — vùng hút nước mạnh nhất. Khô 30 - 45 phút.",
+          },
+          {
+            step: "Bước 2",
+            title: "Phun lót MDF 1 - 2 lớp",
+            desc: "Khô 45 - 60 phút xả nhám tơi P320 - P400 đến khi phẳng như lụa — màu opaque chỉ đẹp khi nền phẳng.",
+          },
+          {
+            step: "Bước 3",
+            title: "Phun màu opaque 2 lớp mỏng",
+            desc: "Mỗi lớp cách 45 - 60 phút. Màu sáng trên MDF nâu cần lót trắng/đủ độ phủ để nền nâu không ánh qua.",
+          },
+          {
+            step: "Bước 4",
+            title: "Phủ bảo vệ",
+            desc: "Mờ hoặc bóng 1 lớp, đóng gói sau 4 - 6 giờ.",
+          },
+        ],
+      },
+      {
+        id: "quy-trinh-veneer",
+        heading: "3. Phủ trong suốt trên veneer mỏng",
+        paragraphs: [
+          "Veneer óc chó/sồi dán trên MDF chỉ dày 0.3 - 0.6mm: chỉ chà nhám P320 trở lên áp lực nhẹ, không lau ẩm water popping (nước ngấm qua veneer loos hở làm trương keo dán), lót trong suốt mỏng giữ vân và phủ trong suốt 1K/2K bảo vệ — veneer mỏng không chịu cọ xát như gỗ đặc nên lớp phủ quyết định độ bền bề mặt.",
+        ],
+      },
+      {
+        id: "khoa-formaldehyde",
+        heading: "4. Khóa phát thải formaldehyde & tiêu chuẩn CARB/EPA/E1",
+        paragraphs: [
+          "MDF, HDF, ván ép dùng keo ure-formaldehyde — nguồn phát thải kéo dài hàng năm. Màng sơn kín mặt phẳng + lót chặn xơ cạnh giảm > 80% khí thải tổng của tấm (EN 717-1). Đơn xuất khẩu theo CARB P2 / EPA TSCA / E1-E0 / F☆☆☆☆ yêu cầu cả ván lõi lẫn màng phủ kiểm soát phát thải — Lotus hỗ trợ TDS/MSDS và phối hợp gửi mẫu thành phẩm kiểm định SGS/Intertek theo yêu cầu Buyer.",
+        ],
+      },
+      {
+        id: "dinh-muc",
+        heading: "5. Định mức & nhịp chuyền tham chiếu",
+        table: {
+          headers: ["Hạng mục", "Định mức / lớp", "Thời gian chờ"],
+          rows: [
+            ["Lót chặn xơ cạnh", "15 - 20 m2/kg", "30 - 45 phút"],
+            ["Lót MDF tổng thể", "8 - 10 m2/kg", "45 - 60 phút + xả nhám"],
+            ["Màu opaque", "8 - 10 m2/kg", "45 - 60 phút/lớp"],
+            ["Phủ bảo vệ", "8 - 10 m2/kg", "Đóng gói sau 4 - 6 giờ"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Sơn trên MDF có bị phồng cạnh không — làm sao tránh?",
+        answer:
+          "Có nếu bỏ qua lót chặn xơ. Cạnh cắt hút nước gấp 3 - 5 lần mặt phẳng; lăn sơn lót chặn xơ nguyên chất vào cạnh trước khi phun lót là bắt buộc.",
+      },
+      {
+        question: "Ván MFC dán melamine sẵn có sơn được không?",
+        answer:
+          "Không sơn trực tiếp được — melamine là bề mặt nhựa chống bám. Cần hệ lót bám dính chuyên cho melamine hoặc xử lý bề mặt riêng.",
+      },
+      {
+        question: "Sơn veneer mỏng có sợ thủng veneer khi xả nhám không?",
+        answer:
+          "Có, nếu chà mạnh như gỗ đặc. Chỉ dùng nhám P320 - P400 áp lực rất nhẹ, không máy chà rung mạnh. Veneer 0.3mm chỉ cho phép 1 - 2 lượt xả nhẹ mỗi lớp.",
+      },
+      {
+        question: "Sơn có khóa được mùi/formaldehyde từ ván MDF không?",
+        answer:
+          "Có giảm đáng kể. Màng sơn kín mặt phẳng + lót chặn xơ cạnh giảm > 80% phát thải theo EN 717-1. Đơn CARB P2/EPA nên chọn ván lõi đạt chuẩn từ đầu và dùng hệ sơn làm lớp khóa bổ sung.",
+      },
+    ],
+    relatedSlugs: ["son-go-he-nuoc", "son-loa-he-nuoc", "son-nhua-he-nuoc"],
+  },
+
+  "son-go-he-nuoc/tre-may": {
+    slug: "son-go-he-nuoc/tre-may",
+    category: "Sơn Gỗ Hệ Nước",
+    categorySlug: "son-go-he-nuoc",
+    title: "Sơn Tre Mây Hệ Nước: Chống Mốc, Không Mùi, Chuẩn Xuất Khẩu EU-US | Sơn Lotus",
+    metaDescription:
+      "Sơn tre mây hệ nước Lotus cho hàng đan lát, lục bình, cói xuất khẩu: lót chống nấm mốc qua container biển, màng dẻo theo uốn cong, không mùi - không chất độc, đạt yêu cầu Buyer EU/US. Nhận mẫu test làng nghề.",
+    h1: "Sơn Tre Mây Hệ Nước: Giải Pháp Chống Mốc & An Toàn Cho Hàng Đan Lát, Lục Bình, Cói Xuất Khẩu",
+    publishedAt: "01/11/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn tre mây hệ nước là hệ sơn gốc nước chuyên cho vật liệu thực vật đan lát — tre, mây, lục bình, cói — với 2 yêu cầu sống còn của hàng xuất khẩu: chống nấm mốc hồi quy trong container đường biển (lót kháng nấm, kiểm soát ẩm < 12 - 14% trước sơn) và không mùi - không VOC đáp ứng yêu cầu Buyer EU/US. Màng sơn phải dẻo theo uốn cong của sợi đan chứ không cứng giòn như sơn gỗ thông thường.",
+    whenToChoose: [
+      "Cơ sở/xí nghiệp mây tre đan, lục bình, cói xuất khẩu EU, Mỹ, Nhật bị Buyer kiểm tra mùi, VOC hoặc nấm mốc.",
+      "Đơn hàng container đường biển 30 - 45 ngày — môi trường ẩm cao dễ nấm mốc hồi quy.",
+      "Sản phẩm cần màu trang trí, phủ bóng/mờ, hay bảo quản ngoài kho ẩm.",
+      "Xưởng muốn thay sơn dầu/PU mùi nồng không đạt yêu cầu xuất khẩu.",
+    ],
+    whenNotToChoose: [
+      "Sản phẩm đan lát còn ẩm trên 14% — phải sấy đủ khô trước, sơn lên nền ẩm sẽ mốc ngược bên trong.",
+      "Sản phẩm ngâm nước lâu dài — cần hệ bảo vệ chuyên biệt khác.",
+    ],
+    lotusRecommendation:
+      "Nguyên nhân số 1 khiến container mây tre bị Buyer reject là mốc hồi quy trong 3 - 4 tuần vận chuyển biển. Ba chốt chặn bắt buộc: sản phẩm khô < 12 - 14% ẩm trước khi sơn, lót có phụ gia kháng nấm, không đóng gói khi màng còn ẩm — cộng gói hút ẩm trong thùng carton với đơn biển dài.",
+    sections: [
+      {
+        id: "dac-thu-nen",
+        heading: "1. Đặc thù nền tre mây, lục bình, cói",
+        list: [
+          "Hút nước cực mạnh & không đồng đều: sợi đan hút sơn gấp 2 - 3 lần gỗ, định mức thực tế cao.",
+          "Bề mặt uốn cong, co giãn: màng sơn cứng giòn sẽ nứt tơ chân gà dọc sợi khi sản phẩm bị vặn.",
+          "Chứa đường, tinh bột, sáp: dinh dưỡng sẵn cho nấm mốc khi gặp ẩm — đặc biệt lục bình và cói.",
+          "Nhiều khe hở: sơn phải phun được vào kẽ đan mà không chảy tụ.",
+        ],
+      },
+      {
+        id: "chong-moc-container",
+        heading: "2. Bài toán chống mốc container đường biển",
+        paragraphs: [
+          "Sản phẩm còn hơi ẩm + container nóng-ấm 30 - 40 ngày + thiếu thoáng khí = bào nấm phát triển từ lõi. 80% ca mốc container do phôi chưa đủ khô trước khi sơn, không phải chất lượng sơn.",
+        ],
+        table: {
+          headers: ["Chốt chặn", "Yêu cầu kỹ thuật"],
+          rows: [
+            ["Độ ẩm sản phẩm trước sơn", "< 12 - 14% — đo máy đo ẩm, không ước lượng tay"],
+            ["Lót kháng nấm", "Phụ gia kháng nấm an toàn, không arsenic/chất cấm REACH"],
+            ["Khô trước đóng gói", "Phơi màng tối thiểu 24h — ẩm trong carton là lồng nuôi nấm"],
+            ["Kiểm soát đóng thùng", "Gói hút ẩm + lót nilon với đơn biển dài ngày"],
+          ],
+        },
+      },
+      {
+        id: "quy-trinh-thi-cong",
+        heading: "3. Quy trình thi công chuẩn cho xưởng đan lát",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Sấy phôi & làm sạch",
+            desc: "Sấy/phơi phôi đan lát đạt < 14% ẩm, phủi sạch bụi — bước quyết định chống mốc.",
+          },
+          {
+            step: "Bước 2",
+            title: "Lót kháng nấm + tăng bám",
+            desc: "1 lớp lót kháng nấm hệ nước, khô 1 - 2 giờ.",
+          },
+          {
+            step: "Bước 3",
+            title: "Sơn màu / phủ bóng mờ",
+            desc: "Phun HVLP béc 1.4 - 1.8mm áp thấp nhiều hướng cho vào kẽ đan; hoặc nhúng/quét tùy quy mô. 1 - 2 lớp, mỗi lớp khô 1 - 2 giờ.",
+          },
+          {
+            step: "Bước 4",
+            title: "Phơi tổng 24h trước đóng gói",
+            desc: "Khu vực phơi thoáng gió — sản phẩm đan lát giữ ẩm lâu hơn sản phẩm đặc.",
+          },
+        ],
+      },
+      {
+        id: "mang-son-deo",
+        heading: "4. Chọn màng sơn: dẻo theo uốn cong",
+        paragraphs: [
+          "Sợi đan uốn cong khi xếp/vận chuyển nên bắt buộc hệ acrylic dẻo (flexible grade) — sơn PU/epoxy cứng sẽ gãy màng ngay khi vặn sản phẩm. Phủ trong suốt không ố vàng giữ tông tự nhiên của sợi; cấm dùng sơn dung môi vì mùi tồn dư nhiều tháng trong hàng xuất khẩu.",
+        ],
+      },
+      {
+        id: "tieu-chuan-xuat-khau",
+        heading: "5. Tiêu chuẩn xuất khẩu cho hàng thủ công mỹ nghệ",
+        paragraphs: [
+          "Buyer EU/US/Nhật kiểm 3 nhóm: phát thải & mùi (VOCs, mùi dung môi sót), hóa chất giới hạn (REACH SVHC, Prop 65, chất diệt nấm cấm như PCP/tin organic), và kiểm dịch thực vật (vật liệu khô sạch không sâu nấm). Hồ sơ kèm: TDS/MSDS, test report màng sơn SGS/Intertek, chứng nhận ẩm độ trước đóng gói.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Hàng lục bình/cói hay bị mốc sau khi vào container — sơn hệ nước có giúp được không?",
+        answer:
+          "Có, nhưng sơn chỉ là 1 trong 3 chốt chặn: phôi khô < 14% trước sơn, lót kháng nấm làm rào thứ hai, phơi màng 24h trước đóng thùng kèm gói hút ẩm.",
+      },
+      {
+        question: "Sơn xong sản phẩm đan bị cứng, gãy sợi khi uốn — do đâu?",
+        answer:
+          "Dùng nhầm sơn cứng giòn. Trên nền đan lát phải dùng hệ acrylic dẻo — sơn PU/epoxy sẽ nứt màng ngay khi vặn sản phẩm.",
+      },
+      {
+        question: "Phun vào kẽ đan thưa có bị chảy tụ không — khắc phục thế nào?",
+        answer:
+          "Phun độ nhớt chuẩn, áp thấp, nhiều hướng, mỗi lớp mỏng. Sản phẩm đáy hở nên đặt trên lưới/giá để thoát sơn dư.",
+      },
+      {
+        question: "Đơn xuất khẩu yêu cầu 'không mùi khi mở thùng' — sơn hệ nước đạt không?",
+        answer:
+          "Đạt nếu phơi khô đủ 24h có gió lưu thông. Mùi còn lại 99% do sơn chưa khô thấu bị đóng gói sớm, không phải bản chất sơn.",
+      },
+    ],
+    relatedSlugs: ["son-go-he-nuoc/tieu-chuan-xuat-khau-eu-us", "son-go-he-nuoc", "chuyen-doi-he-nuoc"],
+  },
+
+  "son-go-he-nuoc/do-choi-go": {
+    slug: "son-go-he-nuoc/do-choi-go",
+    category: "Sơn Gỗ Hệ Nước",
+    categorySlug: "son-go-he-nuoc",
+    title: "Sơn Đồ Chơi Gỗ Hệ Nước Chuẩn EN71-3: An Toàn Tiếp Xúc Miệng Trẻ Em | Sơn Lotus",
+    metaDescription:
+      "Sơn đồ chơi gỗ hệ nước Lotus đạt EN71-3 (không thôi nhiễm 19 kim loại nặng), ASTM F963/CPSIA cho thị trường Mỹ, kháng nước bọt DIN 53160. Hồ sơ SGS/Intertek đứng tên nhà máy. Nhận mẫu test xưởng.",
+    h1: "Sơn Đồ Chơi Gỗ Hệ Nước Chuẩn EN71-3: Giải Pháp An Toàn Cho Đồ Chơi Trẻ Em Xuất Khẩu",
+    publishedAt: "01/11/2026",
+    readTime: "7 phút đọc",
+    quickSummary:
+      "Sơn đồ chơi gỗ hệ nước là hệ sơn phủ gốc nước thiết kế để vượt các bộ tiêu chuẩn an toàn đồ chơi khắt khe nhất: EN 71-3 (giới hạn thôi nhiễm 19 kim loại nặng khi trẻ nhai/ngậm), ASTM F963 & CPSIA (Chì < 90ppm cho Mỹ) và DIN 53160 (kháng nước bọt - mồ hôi). Màng sơn không VOC, không mùi tồn dư, đáp ứng yêu cầu kiểm định của Buyer chuỗi đồ chơi quốc tế.",
+    whenToChoose: [
+      "Nhà máy sản xuất đồ chơi gỗ, khối lắp ghép, đồ Montessori, đồ mầm non xuất khẩu EU/Mỹ/Nhật.",
+      "Sản phẩm gỗ cho trẻ dưới 36 tháng tuổi — nhóm kiểm soát nghiêm ngặt nhất vì trẻ đưa vào miệng.",
+      "Nội thất trẻ em, cũi, bàn ghế mầm non yêu cầu màng sơn an toàn và mùi zero.",
+      "Đơn OEM cho thương hiệu đồ chơi quốc tế yêu cầu test report SGS/Intertek đứng tên nhà máy.",
+    ],
+    whenNotToChoose: [
+      "Sản phẩm giá rẻ nội địa không yêu cầu kiểm định — không cần cấp độ chứng nhận cao.",
+      "Đồ chơi ngâm nước liên tục (đồ chơi tắm) — cần hệ kháng nước chuyên biệt hơn.",
+    ],
+    lotusRecommendation:
+      "EN71-3 kiểm tra màng sơn đã khô trên sản phẩm, không kiểm tra lon sơn. Buyer yêu cầu test trên chính sản phẩm hoàn thiện (gỗ + keo + sơn) — phối hợp cùng Lotus và Lab từ đầu dự án: chọn gỗ nguồn sạch, cố định quy trình, rồi mới gửi mẫu thành phẩm kiểm định.",
+    sections: [
+      {
+        id: "cac-tieu-chuan",
+        heading: "1. Các bộ tiêu chuẩn an toàn áp dụng cho màng sơn đồ chơi",
+        table: {
+          headers: ["Tiêu chuẩn", "Thị trường", "Kiểm soát", "Ngưỡng trọng yếu"],
+          rows: [
+            ["EN 71-3", "EU & quốc tế", "Thôi nhiễm 19 kim loại nặng", "Chì < 23 mg/kg, Cd < 17 mg/kg"],
+            ["ASTM F963", "Mỹ", "Chì tổng + kim loại hòa tan", "Chì tổng < 90 ppm"],
+            ["CPSIA", "Mỹ", "Chì + Phthalates", "Phthalates < 0.1%"],
+            ["DIN 53160", "EU (Đức)", "Bền màu với nước bọt/mồ hôi", "Không đổi màu, không thôi nhiễm"],
+            ["California Prop 65", "Mỹ", "900+ chất gây ung thư/dị tật", "Không chứa hoặc phải cảnh báo"],
+          ],
+        },
+      },
+      {
+        id: "quy-trinh-thi-cong",
+        heading: "2. Quy trình thi công chuẩn cho xưởng đồ chơi gỗ",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Gỗ nguồn sạch & chà nhám mịn",
+            desc: "Beech, cao su, thông sấy đủ khô; chà nhám P240 - P320 mịn tuyệt đối — đồ chơi kiểm tra cả an toàn vật lý (gai, xước).",
+          },
+          {
+            step: "Bước 2",
+            title: "Lót/màu hệ nước dòng đồ chơi",
+            desc: "Chỉ dùng màu bột sạch chuyên đồ chơi — màu công nghiệp rẻ có thể chứa chì/chromate. Không trám bột lạ không rõ nguồn.",
+          },
+          {
+            step: "Bước 3",
+            title: "Phủ bảo vệ kháng nước bọt",
+            desc: "1 lớp phủ hệ nước, đóng rắn đủ 48 giờ trước đóng gói — màng chưa đóng rắn dễ tróc nhiễm vào miệng trẻ.",
+          },
+          {
+            step: "Bước 4",
+            title: "Kiểm tra xuất xưởng",
+            desc: "KCS kiểm tra cạnh sắc, vết nứt, mùi và test cạy móng tay — màng bong bột là chưa đạt.",
+          },
+        ],
+      },
+      {
+        id: "khang-nuoc-bot",
+        heading: "3. Kháng nước bọt & độ bền cọ xát — yêu cầu riêng của đồ chơi",
+        paragraphs: [
+          "DIN 53160 ngâm mẫu trong dung dịch giả lập nước bọt/mồ hôi: màng không được phai màu, bong lớp hay thôi nhiễm bột màu — sơn hệ nước đạt khi đóng rắn đủ 48 giờ. Độ bền cọ xát & va đập đòi màng dẻo cứng cân bằng; hệ phủ 2K hệ nước đạt cứng 2H và chịu rơi lắp ráp nhiều lần.",
+        ],
+      },
+      {
+        id: "de-trinh-kiem-dinh",
+        heading: "4. Quy trình đệ trình kiểm định với Buyer quốc tế",
+        steps: [
+          {
+            step: "Bước 1",
+            title: "Chốt spec với Buyer",
+            desc: "Bộ tiêu chuẩn áp dụng, tuổi sử dụng mục tiêu, danh mục vật liệu.",
+          },
+          {
+            step: "Bước 2",
+            title: "Cố định quy trình sản xuất",
+            desc: "Nguồn gỗ, loại sơn, số lớp thành văn bản — đổi quy trình là phải test lại.",
+          },
+          {
+            step: "Bước 3",
+            title: "Gửi mẫu thành phẩm kiểm định",
+            desc: "Test EN71-3/ASTM F963 tại SGS/Intertek trên sản phẩm hoàn thiện, không phải lon sơn.",
+          },
+          {
+            step: "Bước 4",
+            title: "Nhận chứng thư đứng tên",
+            desc: "Chứng thư mang tên nhà máy/dự án dùng đệ trình Buyer và lưu hồ sơ hải quan cho mọi lô cùng spec.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Sơn hệ nước có thật sự an toàn cho trẻ em ngậm đồ chơi không?",
+        answer:
+          "Có — khi sản phẩm đạt kiểm nghiệm EN71-3 trên thành phẩm thật. Màng Lotus không phát hiện 19 kim loại nặng thôi nhiễm, không mùi tồn dư, kháng nước bọt DIN 53160.",
+      },
+      {
+        question: "Màu sơn đồ chơi nhiều màu có an toàn bằng màu gỗ tự nhiên không?",
+        answer:
+          "An toàn tương đương nếu dùng bột màu sạch chuyên dòng đồ chơi. Nguy cơ nằm ở bột màu công nghiệp giá rẻ có thể chứa chì/chromate.",
+      },
+      {
+        question: "Đồ chơi gỗ có bắt buộc phải sơn không — để mộc có tốt hơn không?",
+        answer:
+          "Không bắt buộc nhưng nên sơn. Gỗ mộc hút bẩn, vi khuẩn và gây xước tay; màng hệ nước tạo lớp vệ sinh dễ lau mà vẫn giữ cảm giác gỗ nếu dùng phủ mờ trong suốt.",
+      },
+      {
+        question: "Xưởng đang làm đơn nội địa — chuyển sang đồ chơi xuất khẩu cần đổi gì?",
+        answer:
+          "Ba việc: đổi hệ sơn + màu chuyên đồ chơi có hồ sơ, cố định quy trình thành văn bản, và gửi mẫu thành phẩm kiểm định EN71-3/ASTM F963 đứng tên nhà máy.",
+      },
+    ],
+    relatedSlugs: ["son-go-he-nuoc/tieu-chuan-xuat-khau-eu-us", "son-go-he-nuoc", "so-sanh/son-go-he-nuoc-vs-son-pu"],
+  },
 };

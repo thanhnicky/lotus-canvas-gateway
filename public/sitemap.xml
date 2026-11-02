@@ -173,4 +173,19 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://lotus-canvas-gateway.lovable.app/blog/son-go-he-nuoc/go-cong-nghiep</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lotus-canvas-gateway.lovable.app/blog/son-go-he-nuoc/tre-may</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lotus-canvas-gateway.lovable.app/blog/son-go-he-nuoc/do-choi-go</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
