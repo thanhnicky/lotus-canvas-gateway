@@ -292,35 +292,6 @@ function Index() {
             <p className="mt-6 md:mt-14 max-w-md text-[1rem] md:text-[1.05rem] leading-[1.7] text-onyx/75">
               Lotus giúp bạn chọn đúng hệ nước cho đúng hạng mục.
             </p>
-
-            <div className="hidden md:flex mt-8 md:mt-14 flex-wrap items-center gap-x-8 gap-y-3">
-              <a
-                href="#he-son-overview"
-                className="group inline-flex items-center gap-3 border border-onyx/20 px-5 py-3 hover:border-onyx/40 transition-colors"
-              >
-                <span className="font-mono text-[13px] uppercase tracking-[0.32em]">
-                  Xem chi tiết 6 hệ sơn
-                </span>
-                <span
-                  className="inline-block h-px w-6 group-hover:w-10 transition-all"
-                  style={{ background: "var(--accent)" }}
-                />
-              </a>
-              <a
-                href={ZALO_URL}
-                target="_blank"
-                rel="noopener"
-                className="group inline-flex items-center gap-3 bg-onyx text-clay pl-5 pr-4 py-3 hover:bg-ash transition-colors"
-              >
-                <span className="font-mono text-[13px] uppercase tracking-[0.32em]">
-                  Nhắn Zalo để được tư vấn đúng hệ
-                </span>
-                <span
-                  className="inline-block h-px w-6 group-hover:w-10 transition-all"
-                  style={{ background: "var(--accent)" }}
-                />
-              </a>
-            </div>
           </div>
 
           {/* Right side — quiet active material mark */}
