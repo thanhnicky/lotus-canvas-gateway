@@ -15,6 +15,7 @@ const CLUSTER: Record<string, { slug: string; name: string }> = {
 
 const LEGACY_SLUGS: Record<string, string> = {
   "son-gia-go": "son-gia-go-tren-kim-loai",
+  "son-gia-go-cement": "son-gia-go-tren-tam-xi-mang",
 };
 
 export const Route = createFileRoute("/he-son/$system")({
