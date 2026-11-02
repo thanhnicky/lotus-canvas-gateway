@@ -784,7 +784,7 @@ function Index() {
             <div className="grid grid-cols-12 gap-6 md:gap-8 items-end">
               <div className="col-span-12 md:col-span-7 r-rise">
                 <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber">
-                  Công trình thật
+                  Ứng dụng
                 </span>
                 <h3 className="mt-5 font-serif text-4xl md:text-6xl italic leading-[1.03]">
                   Đã chạy trên <br/>
@@ -792,7 +792,7 @@ function Index() {
                 </h3>
               </div>
               <p className="col-span-12 md:col-span-4 md:col-start-9 text-onyx/65 leading-relaxed max-w-sm r-rise r-d1">
-                Ảnh thực tế tại xưởng và công trường đang dùng hệ {active.name.toLowerCase()} Lotus. Không render. Không dựng cảnh.
+                Một số ứng dụng thực tế của hệ {active.name.toLowerCase()} Lotus tại xưởng và công trường.
               </p>
             </div>
           </div>
