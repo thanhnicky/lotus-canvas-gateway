@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { SITE_URL, ZALO_URL } from "@/lib/site";
 import { CATEGORIES, SLUG_TO_ID } from "@/lib/systems";
 import { ALL_ARTICLES } from "@/lib/blog";
@@ -13,8 +13,15 @@ const CLUSTER: Record<string, { slug: string; name: string }> = {
   floor: { slug: "son-san-he-nuoc", name: "Sơn sàn hệ nước" },
 };
 
+const LEGACY_SLUGS: Record<string, string> = {
+  "son-gia-go": "son-gia-go-tren-kim-loai",
+};
+
 export const Route = createFileRoute("/he-son/$system")({
   loader: ({ params }) => {
+    const canonicalSlug = LEGACY_SLUGS[params.system];
+    if (canonicalSlug)
+      throw redirect({ to: "/he-son/$system", params: { system: canonicalSlug }, statusCode: 301 });
     const id = SLUG_TO_ID[params.system];
     const system = CATEGORIES.find((item) => item.id === id);
     if (!system) throw notFound();

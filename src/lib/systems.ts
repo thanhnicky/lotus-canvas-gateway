@@ -34,7 +34,7 @@ export type Category = {
 export const SYSTEM_SLUGS: Record<string, string> = {
   wood: "son-go",
   metal: "son-kim-loai",
-  "metal-wood": "son-gia-go",
+  "metal-wood": "son-gia-go-tren-kim-loai",
   "cement-wood": "son-gia-go-cement",
   composite: "son-composite",
   floor: "son-san",
