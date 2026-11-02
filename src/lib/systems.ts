@@ -106,15 +106,15 @@ export const CATEGORIES: Category[] = [
     accent: "#4a5560",
     signature: "Kim loại",
     description:
-      "Dành cho nhà thầu kết cấu thép và công trình công nghiệp cần chọn đúng cấp chống ăn mòn (C3 / C4 / C5) theo môi trường vận hành. Lotus tư vấn hệ theo vị trí công trình để giảm rủi ro bảo hành.",
+      "Dành cho nhà thầu kết cấu thép và công trình công nghiệp cần hệ chống rỉ đúng môi trường lắp đặt — trong xưởng, ngoài trời hay ven biển. Lotus tư vấn hệ theo vị trí công trình để giảm rủi ro bảo hành.",
     applications: [
       "Kết cấu thép nhà xưởng, kho",
-      "Công trình ven biển, môi trường C5",
+      "Công trình ven biển, môi trường mặn",
       "Thiết bị cơ khí, khung máy",
       "Lam nhôm và mặt tiền kim loại",
     ],
     specs: [
-      { label: "Cấp chống ăn mòn", value: "ISO 12944 · C3 / C4 / C5" },
+      { label: "Cấp chống ăn mòn", value: "Trong xưởng / ngoài trời / ven biển" },
       { label: "Bền màu ngoài trời", value: "QUV 1000h" },
       { label: "Gốc", value: "Water-based (Acrylic, PU) 1K / 2K" },
       { label: "Phù hợp", value: "Công trình có nghiệm thu kỹ thuật" },
@@ -132,7 +132,7 @@ export const CATEGORIES: Category[] = [
     ],
     projects: [
       { image: project2, title: "Mặt tiền nhôm văn phòng", meta: "Hệ PU 2K bền màu" },
-      { image: catMetal, title: "Nhà máy ven biển", meta: "Hệ C5 cho môi trường mặn" },
+      { image: catMetal, title: "Nhà máy ven biển", meta: "Hệ sơn chống rỉ cho môi trường mặn" },
       { image: project3, title: "Trần kim loại thương mại", meta: "Hoàn thiện matte kiểm soát" },
     ],
     faq: [
