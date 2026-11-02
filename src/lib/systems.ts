@@ -100,7 +100,7 @@ export const CATEGORIES: Category[] = [
     nameEn: "Metal & Steel",
     tagline: "Đúng cấp chống ăn mòn để công trình đỡ xuống cấp sớm và dễ bàn giao hơn.",
     manifesto:
-      "Kết cấu thép hỏng vì chọn sai hệ, không phải vì sơn rẻ. Lotus đề xuất hệ theo môi trường thật để giảm rủi ro bảo hành sau bàn giao.",
+      "Khách hàng chuyển sang hệ nước chủ yếu để thay dung môi — vì mùi, VOC và rủi ro cháy nổ trong xưởng. Lotus đề xuất hệ tương đương cấp chống ăn mòn để việc chuyển đổi không phải làm lại.",
     image: catMetal,
     imageTone: "dark",
     accent: "#4a5560",
