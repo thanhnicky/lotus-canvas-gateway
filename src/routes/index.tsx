@@ -883,15 +883,15 @@ function Index() {
                   Sơn Hệ Nước là website giới thiệu các hệ sơn công nghiệp hệ nước của Sơn Lotus
                 </p>
                 <h3 className="font-serif text-4xl md:text-[3.5rem] italic leading-[1.02] text-balance">
-                  Nhà sản xuất, <br />
-                  <span className="not-italic">không phải đại lý trung gian.</span>
+                  Nhà sản xuất sơn hệ nước <br />
+                  <span className="not-italic">tại Việt Nam từ 2015.</span>
                 </h3>
               </div>
 
               <div className="col-span-12 md:col-span-5 md:col-start-8 md:pt-4">
                 <p className="font-serif text-xl md:text-[1.4rem] leading-[1.6] text-onyx/70 text-pretty r-rise">
-                  Công thức nội bộ, kiểm nghiệm tại nhà máy,
-                  triển khai trực tiếp với xưởng và công trình — không qua trung gian.
+                  Chúng tôi tập trung nghiên cứu &amp; ứng dụng sơn hệ nước
+                  cho các bề mặt vật liệu khác nhau trong ngành nội thất &amp; công nghiệp.
                 </p>
               </div>
             </div>
