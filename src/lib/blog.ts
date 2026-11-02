@@ -27,5 +27,5 @@ export function relatedArticles(slug: string) {
   if (!article) return [];
   const explicit = article.relatedSlugs.map((key) => ARTICLES[key]).filter((item) => item && item.slug !== slug);
   const siblings = ALL_ARTICLES.filter((item) => item.categorySlug === article.categorySlug && item.slug !== slug);
-  return [...new Map([...explicit, ...siblings].map((item) => [item.slug, item])).values()].slice(0, 3);
+  return [...new Map([...explicit, ...siblings].map((item) => [item.slug, item])).values()].slice(0, 6);
 }

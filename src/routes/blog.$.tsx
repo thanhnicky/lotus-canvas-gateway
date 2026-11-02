@@ -47,6 +47,12 @@ export const Route = createFileRoute("/blog/$")({
             { "@type": "ListItem", position: 4, name: article.h1, item: url },
           ],
         }).replace(/</g, "\\u003c") },
+        ...(article.faqs.length > 0 ? [{ type: "application/ld+json", children: JSON.stringify({
+          "@context": "https://schema.org", "@type": "FAQPage", mainEntity: article.faqs.map((faq) => ({
+            "@type": "Question", name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }).replace(/</g, "\\u003c") }] : []),
       ],
     };
   },
