@@ -781,20 +781,12 @@ function Index() {
         {/* ── Real projects · cinematic strip + portrait pair ──── */}
         <section className="bg-clay">
           <div className="px-6 md:px-12 lg:px-16 pt-28 md:pt-40 pb-10">
-            <div className="grid grid-cols-12 gap-6 md:gap-8 items-end">
-              <div className="col-span-12 md:col-span-7 r-rise">
-                <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber">
-                  Ứng dụng
-                </span>
-                <h3 className="mt-5 font-serif text-4xl md:text-6xl italic leading-[1.03]">
-                  Đã chạy trên <br/>
-                  <span className="not-italic">xưởng và công trường.</span>
-                </h3>
-              </div>
-              <p className="col-span-12 md:col-span-4 md:col-start-9 text-onyx/65 leading-relaxed max-w-sm r-rise r-d1">
-                Một số ứng dụng thực tế của hệ {active.name.toLowerCase()} Lotus tại xưởng và công trường.
-              </p>
-            </div>
+            <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-umber">
+              Ứng dụng
+            </span>
+            <p className="mt-6 text-onyx/65 leading-relaxed max-w-sm r-rise">
+              Một số ứng dụng thực tế của hệ {active.name.toLowerCase()} Lotus tại xưởng và công trường.
+            </p>
           </div>
 
           {/* Cinematic strip */}
