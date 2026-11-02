@@ -74,6 +74,16 @@ type Category = {
   faq: { q: string; a: string }[];
 };
 
+const SYSTEM_SLUGS: Record<string, string> = {
+  wood: "son-go",
+  metal: "son-kim-loai",
+  "metal-wood": "son-gia-go",
+  "cement-wood": "son-gia-go-cement",
+  composite: "son-composite",
+  floor: "son-san",
+};
+const SLUG_TO_ID = Object.fromEntries(Object.entries(SYSTEM_SLUGS).map(([k, v]) => [v, k]));
+
 const CATEGORIES: Category[] = [
   {
     id: "wood",
@@ -420,6 +430,16 @@ const MOOD: Record<string, { crop: string; pause: string; pauseSub: string }> = 
 function Index() {
   const [activeId, setActiveId] = useState(CATEGORIES[0].id);
   const active = CATEGORIES.find((c) => c.id === activeId) ?? CATEGORIES[0];
+
+  useEffect(() => {
+    const id = SLUG_TO_ID[window.location.hash.replace("#", "")];
+    if (id) setActiveId(id);
+  }, []);
+
+  useEffect(() => {
+    const slug = SYSTEM_SLUGS[activeId];
+    if (slug) window.history.replaceState(null, "", `#${slug}`);
+  }, [activeId]);
   const mood = MOOD[active.id];
   const [openFaq, setOpenFaq] = useState(0);
   useEffect(() => { setOpenFaq(0); }, [activeId]);
