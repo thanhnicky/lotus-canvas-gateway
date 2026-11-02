@@ -10,7 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import { SITE_URL } from "@/lib/site";
-import siteIcon from "@/assets/lotus-site-icon.png";
+import siteIcon from "@/assets/favicon.png";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
