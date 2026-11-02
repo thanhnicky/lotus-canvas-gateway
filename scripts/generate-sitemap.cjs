@@ -13,10 +13,13 @@ const siteFile = fs.readFileSync(path.join(__dirname, '../src/lib/site.ts'), 'ut
 const BASE_URL = siteFile.match(/SITE_URL = "([^"]+)"/)[1];
 const topicFile = fs.readFileSync(path.join(__dirname, '../src/lib/blog.ts'), 'utf-8');
 const topics = [...topicFile.matchAll(/\{ slug: "([^"]+)"/g)].map(match => match[1]);
+const systemsFile = fs.readFileSync(path.join(__dirname, '../src/lib/systems.ts'), 'utf-8');
+const systemSlugs = [...systemsFile.match(/SYSTEM_SLUGS[^}]+}/)[0].matchAll(/:\s*"([a-z-]+)"/g)].map(m => m[1]);
 
 const xmlUrls = [
   `  <url>\n    <loc>${BASE_URL}/</loc>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`,
   `  <url><loc>${BASE_URL}/blog</loc></url>`,
+  ...systemSlugs.map(slug => `  <url><loc>${BASE_URL}/he-son/${slug}</loc></url>`),
   ...topics.map(slug => `  <url><loc>${BASE_URL}/blog/chu-de/${slug}</loc></url>`),
 ];
 
