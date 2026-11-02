@@ -65,7 +65,7 @@ export const CATEGORIES: Category[] = [
     specs: [
       { label: "Độ ổn định màu", value: "Lặp lại giữa các đợt" },
       { label: "Kiểm soát bóng", value: "Mờ 5% — Bóng gương" },
-      { label: "Gốc", value: "PU 2K / NC / Water-based" },
+      { label: "Gốc", value: "Water-based (Acrylic, PU) 1K / 2K" },
       { label: "Phù hợp", value: "Chạy xưởng số lượng lớn" },
     ],
     process: [
@@ -116,7 +116,7 @@ export const CATEGORIES: Category[] = [
     specs: [
       { label: "Cấp chống ăn mòn", value: "ISO 12944 · C3 / C4 / C5" },
       { label: "Bền màu ngoài trời", value: "QUV 1000h" },
-      { label: "Gốc", value: "Epoxy / PU 2K" },
+      { label: "Gốc", value: "Water-based (Acrylic, PU) 1K / 2K" },
       { label: "Phù hợp", value: "Công trình có nghiệm thu kỹ thuật" },
     ],
     process: [
@@ -166,7 +166,7 @@ export const CATEGORIES: Category[] = [
     specs: [
       { label: "Vân ở khoảng nhìn thật", value: "Khó phân biệt với gỗ" },
       { label: "Kháng UV ngoài trời", value: "QUV 1500h" },
-      { label: "Gốc", value: "PU giả gỗ" },
+      { label: "Gốc", value: "Water-based (Acrylic, PU) 1K / 2K" },
       { label: "Phù hợp", value: "Nhà thầu cần đúng hệ ngay từ đầu" },
     ],
     process: [
@@ -217,7 +217,7 @@ export const CATEGORIES: Category[] = [
     specs: [
       { label: "Độ bám trên cement", value: "Cao — qua lót kháng kiềm" },
       { label: "Chống thấm", value: "Ngâm 240h không bong" },
-      { label: "Gốc", value: "Acrylic giả gỗ" },
+      { label: "Gốc", value: "Water-based (Acrylic, PU) 1K / 2K" },
       { label: "Phù hợp", value: "Hạng mục ngoại thất nhà thầu" },
     ],
     process: [
@@ -268,7 +268,7 @@ export const CATEGORIES: Category[] = [
     specs: [
       { label: "Độ bám", value: "Cấp 5B (cross-cut)" },
       { label: "Ngoại quan", value: "Đồng đều trên dây chuyền" },
-      { label: "Gốc", value: "PU 2K / 1K Plastic" },
+      { label: "Gốc", value: "Water-based (Acrylic, PU) 1K / 2K" },
       { label: "Phù hợp", value: "Sản xuất xuất khẩu theo tiêu chuẩn" },
     ],
     process: [
@@ -317,7 +317,7 @@ export const CATEGORIES: Category[] = [
     specs: [
       { label: "Chịu tải", value: "Đi bộ → Xe nâng nặng" },
       { label: "Kháng hóa chất", value: "Axit / kiềm trung bình → cao" },
-      { label: "Gốc", value: "Epoxy / PU tự san phẳng" },
+      { label: "Gốc", value: "Water-based (Acrylic, PU) 1K / 2K" },
       { label: "Phù hợp", value: "Thầu thi công sàn công nghiệp" },
     ],
     process: [
